@@ -1,0 +1,139 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ASM2089231v1
+#!genome-build-accession NCBI_Assembly:GCF_020892315.1
+##sequence-region NC_073057.1 1 43104
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2851981
+NC_073057.1	RefSeq	region	1	43104	.	+	.	ID=NC_073057.1:1..43104;Dbxref=taxon:2851981;collected-by=Marco Burkolter;collection-date=28-Feb-2020;country=Switzerland: Basel;gbkey=Src;genome=genomic;identified-by=Marco Burkolter;isolation-source=sewage plant inflow;lat-lon=47.56 N 7.59 E;mol_type=genomic DNA;nat-host=Escherichia coli K-12;strain=Bas17
+NC_073057.1	RefSeq	gene	1	552	.	+	.	ID=gene-P9602_gp01;Dbxref=GeneID:79674191;Name=P9602_gp01;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp01
+NC_073057.1	RefSeq	CDS	1	552	.	+	0	ID=cds-YP_010740595.1;Parent=gene-P9602_gp01;Dbxref=GenBank:YP_010740595.1,GeneID:79674191;Name=YP_010740595.1;gbkey=CDS;locus_tag=P9602_gp01;product=terminase small subunit;protein_id=YP_010740595.1;transl_table=11
+NC_073057.1	RefSeq	gene	552	1937	.	+	.	ID=gene-P9602_gp02;Dbxref=GeneID:79674127;Name=P9602_gp02;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp02
+NC_073057.1	RefSeq	CDS	552	1937	.	+	0	ID=cds-YP_010740596.1;Parent=gene-P9602_gp02;Dbxref=GenBank:YP_010740596.1,GeneID:79674127;Name=YP_010740596.1;gbkey=CDS;locus_tag=P9602_gp02;product=terminase large subunit;protein_id=YP_010740596.1;transl_table=11
+NC_073057.1	RefSeq	gene	1948	3468	.	+	.	ID=gene-P9602_gp03;Dbxref=GeneID:79674128;Name=P9602_gp03;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp03
+NC_073057.1	RefSeq	CDS	1948	3468	.	+	0	ID=cds-YP_010740597.1;Parent=gene-P9602_gp03;Dbxref=GenBank:YP_010740597.1,GeneID:79674128;Name=YP_010740597.1;gbkey=CDS;locus_tag=P9602_gp03;product=portal protein;protein_id=YP_010740597.1;transl_table=11
+NC_073057.1	RefSeq	gene	3452	4555	.	+	.	ID=gene-P9602_gp04;Dbxref=GeneID:79674129;Name=P9602_gp04;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp04
+NC_073057.1	RefSeq	CDS	3452	4555	.	+	0	ID=cds-YP_010740598.1;Parent=gene-P9602_gp04;Dbxref=GenBank:YP_010740598.1,GeneID:79674129;Name=YP_010740598.1;gbkey=CDS;locus_tag=P9602_gp04;product=putative minor capsid protein;protein_id=YP_010740598.1;transl_table=11
+NC_073057.1	RefSeq	gene	4548	4856	.	+	.	ID=gene-P9602_gp05;Dbxref=GeneID:79674130;Name=P9602_gp05;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp05
+NC_073057.1	RefSeq	CDS	4548	4856	.	+	0	ID=cds-YP_010740599.1;Parent=gene-P9602_gp05;Dbxref=GenBank:YP_010740599.1,GeneID:79674130;Name=YP_010740599.1;gbkey=CDS;locus_tag=P9602_gp05;product=i-spanin;protein_id=YP_010740599.1;transl_table=11
+NC_073057.1	RefSeq	gene	4759	4989	.	+	.	ID=gene-P9602_gp06;Dbxref=GeneID:79674131;Name=P9602_gp06;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp06
+NC_073057.1	RefSeq	CDS	4759	4989	.	+	0	ID=cds-YP_010740600.1;Parent=gene-P9602_gp06;Dbxref=GenBank:YP_010740600.1,GeneID:79674131;Name=YP_010740600.1;gbkey=CDS;locus_tag=P9602_gp06;product=o-spanin;protein_id=YP_010740600.1;transl_table=11
+NC_073057.1	RefSeq	gene	5004	5768	.	-	.	ID=gene-P9602_gp07;Dbxref=GeneID:79674132;Name=P9602_gp07;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp07
+NC_073057.1	RefSeq	CDS	5004	5768	.	-	0	ID=cds-YP_010740601.1;Parent=gene-P9602_gp07;Dbxref=GenBank:YP_010740601.1,GeneID:79674132;Name=YP_010740601.1;gbkey=CDS;locus_tag=P9602_gp07;product=hypothetical protein;protein_id=YP_010740601.1;transl_table=11
+NC_073057.1	RefSeq	gene	5917	6621	.	+	.	ID=gene-P9602_gp08;Dbxref=GeneID:79674133;Name=P9602_gp08;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp08
+NC_073057.1	RefSeq	CDS	5917	6621	.	+	0	ID=cds-YP_010740602.1;Parent=gene-P9602_gp08;Dbxref=GenBank:YP_010740602.1,GeneID:79674133;Name=YP_010740602.1;gbkey=CDS;locus_tag=P9602_gp08;product=hypothetical protein;protein_id=YP_010740602.1;transl_table=11
+NC_073057.1	RefSeq	gene	6719	7822	.	+	.	ID=gene-P9602_gp09;Dbxref=GeneID:79674134;Name=P9602_gp09;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp09
+NC_073057.1	RefSeq	CDS	6719	7822	.	+	0	ID=cds-YP_010740603.1;Parent=gene-P9602_gp09;Dbxref=GenBank:YP_010740603.1,GeneID:79674134;Name=YP_010740603.1;gbkey=CDS;locus_tag=P9602_gp09;product=major capsid protein;protein_id=YP_010740603.1;transl_table=11
+NC_073057.1	RefSeq	gene	7881	8381	.	+	.	ID=gene-P9602_gp10;Dbxref=GeneID:79674135;Name=P9602_gp10;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp10
+NC_073057.1	RefSeq	CDS	7881	8381	.	+	0	ID=cds-YP_010740604.1;Parent=gene-P9602_gp10;Dbxref=GenBank:YP_010740604.1,GeneID:79674135;Name=YP_010740604.1;gbkey=CDS;locus_tag=P9602_gp10;product=hypothetical protein;protein_id=YP_010740604.1;transl_table=11
+NC_073057.1	RefSeq	gene	8383	8502	.	+	.	ID=gene-P9602_gp11;Dbxref=GeneID:79674136;Name=P9602_gp11;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp11
+NC_073057.1	RefSeq	CDS	8383	8502	.	+	0	ID=cds-YP_010740605.1;Parent=gene-P9602_gp11;Dbxref=GenBank:YP_010740605.1,GeneID:79674136;Name=YP_010740605.1;gbkey=CDS;locus_tag=P9602_gp11;product=hypothetical protein;protein_id=YP_010740605.1;transl_table=11
+NC_073057.1	RefSeq	gene	8489	8842	.	+	.	ID=gene-P9602_gp12;Dbxref=GeneID:79674137;Name=P9602_gp12;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp12
+NC_073057.1	RefSeq	CDS	8489	8842	.	+	0	ID=cds-YP_010740606.1;Parent=gene-P9602_gp12;Dbxref=GenBank:YP_010740606.1,GeneID:79674137;Name=YP_010740606.1;gbkey=CDS;locus_tag=P9602_gp12;product=hypothetical protein;protein_id=YP_010740606.1;transl_table=11
+NC_073057.1	RefSeq	gene	8934	9437	.	+	.	ID=gene-P9602_gp13;Dbxref=GeneID:79674138;Name=P9602_gp13;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp13
+NC_073057.1	RefSeq	CDS	8934	9437	.	+	0	ID=cds-YP_010740607.1;Parent=gene-P9602_gp13;Dbxref=GenBank:YP_010740607.1,GeneID:79674138;Name=YP_010740607.1;gbkey=CDS;locus_tag=P9602_gp13;product=putative tail protein;protein_id=YP_010740607.1;transl_table=11
+NC_073057.1	RefSeq	gene	9437	9859	.	+	.	ID=gene-P9602_gp14;Dbxref=GeneID:79674139;Name=P9602_gp14;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp14
+NC_073057.1	RefSeq	CDS	9437	9859	.	+	0	ID=cds-YP_010740608.1;Parent=gene-P9602_gp14;Dbxref=GenBank:YP_010740608.1,GeneID:79674139;Name=YP_010740608.1;gbkey=CDS;locus_tag=P9602_gp14;product=putative tail protein;protein_id=YP_010740608.1;transl_table=11
+NC_073057.1	RefSeq	gene	9921	10646	.	+	.	ID=gene-P9602_gp15;Dbxref=GeneID:79674140;Name=P9602_gp15;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp15
+NC_073057.1	RefSeq	CDS	9921	10646	.	+	0	ID=cds-YP_010740609.1;Parent=gene-P9602_gp15;Dbxref=GenBank:YP_010740609.1,GeneID:79674140;Name=YP_010740609.1;gbkey=CDS;locus_tag=P9602_gp15;product=major tail protein;protein_id=YP_010740609.1;transl_table=11
+NC_073057.1	RefSeq	gene	10716	11078	.	+	.	ID=gene-P9602_gp16;Dbxref=GeneID:79674141;Name=P9602_gp16;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp16
+NC_073057.1	RefSeq	CDS	10716	11078	.	+	0	ID=cds-YP_010740610.1;Parent=gene-P9602_gp16;Dbxref=GenBank:YP_010740610.1,GeneID:79674141;Name=YP_010740610.1;gbkey=CDS;locus_tag=P9602_gp16;product=hypothetical protein;protein_id=YP_010740610.1;transl_table=11
+NC_073057.1	RefSeq	gene	11297	11392	.	+	.	ID=gene-P9602_gp17;Dbxref=GeneID:79674142;Name=P9602_gp17;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp17
+NC_073057.1	RefSeq	CDS	11297	11392	.	+	0	ID=cds-YP_010740611.1;Parent=gene-P9602_gp17;Dbxref=GenBank:YP_010740611.1,GeneID:79674142;Name=YP_010740611.1;gbkey=CDS;locus_tag=P9602_gp17;product=hypothetical protein;protein_id=YP_010740611.1;transl_table=11
+NC_073057.1	RefSeq	gene	11574	11702	.	+	.	ID=gene-P9602_gp18;Dbxref=GeneID:79674143;Name=P9602_gp18;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp18
+NC_073057.1	RefSeq	CDS	11574	11702	.	+	0	ID=cds-YP_010740612.1;Parent=gene-P9602_gp18;Dbxref=GenBank:YP_010740612.1,GeneID:79674143;Name=YP_010740612.1;gbkey=CDS;locus_tag=P9602_gp18;product=hypothetical protein;protein_id=YP_010740612.1;transl_table=11
+NC_073057.1	RefSeq	gene	11776	14418	.	+	.	ID=gene-P9602_gp19;Dbxref=GeneID:79674144;Name=P9602_gp19;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp19
+NC_073057.1	RefSeq	CDS	11776	14418	.	+	0	ID=cds-YP_010740613.1;Parent=gene-P9602_gp19;Dbxref=GenBank:YP_010740613.1,GeneID:79674144;Name=YP_010740613.1;gbkey=CDS;locus_tag=P9602_gp19;product=tail tape measure protein;protein_id=YP_010740613.1;transl_table=11
+NC_073057.1	RefSeq	gene	14454	15053	.	+	.	ID=gene-P9602_gp20;Dbxref=GeneID:79674145;Name=P9602_gp20;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp20
+NC_073057.1	RefSeq	CDS	14454	15053	.	+	0	ID=cds-YP_010740614.1;Parent=gene-P9602_gp20;Dbxref=GenBank:YP_010740614.1,GeneID:79674145;Name=YP_010740614.1;gbkey=CDS;locus_tag=P9602_gp20;product=putative minor tail protein;protein_id=YP_010740614.1;transl_table=11
+NC_073057.1	RefSeq	gene	15050	15838	.	+	.	ID=gene-P9602_gp21;Dbxref=GeneID:79674146;Name=P9602_gp21;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp21
+NC_073057.1	RefSeq	CDS	15050	15838	.	+	0	ID=cds-YP_010740615.1;Parent=gene-P9602_gp21;Dbxref=GenBank:YP_010740615.1,GeneID:79674146;Name=YP_010740615.1;gbkey=CDS;locus_tag=P9602_gp21;product=putative minor tail protein;protein_id=YP_010740615.1;transl_table=11
+NC_073057.1	RefSeq	gene	15841	16581	.	+	.	ID=gene-P9602_gp22;Dbxref=GeneID:79674147;Name=P9602_gp22;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp22
+NC_073057.1	RefSeq	CDS	15841	16581	.	+	0	ID=cds-YP_010740616.1;Parent=gene-P9602_gp22;Dbxref=GenBank:YP_010740616.1,GeneID:79674147;Name=YP_010740616.1;gbkey=CDS;locus_tag=P9602_gp22;product=putative minor tail protein;protein_id=YP_010740616.1;transl_table=11
+NC_073057.1	RefSeq	gene	16572	17189	.	+	.	ID=gene-P9602_gp23;Dbxref=GeneID:79674148;Name=P9602_gp23;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp23
+NC_073057.1	RefSeq	CDS	16572	17189	.	+	0	ID=cds-YP_010740617.1;Parent=gene-P9602_gp23;Dbxref=GenBank:YP_010740617.1,GeneID:79674148;Name=YP_010740617.1;gbkey=CDS;locus_tag=P9602_gp23;product=putative tail assembly protein;protein_id=YP_010740617.1;transl_table=11
+NC_073057.1	RefSeq	gene	17186	20605	.	+	.	ID=gene-P9602_gp24;Dbxref=GeneID:79674149;Name=P9602_gp24;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp24
+NC_073057.1	RefSeq	CDS	17186	20605	.	+	0	ID=cds-YP_010740618.1;Parent=gene-P9602_gp24;Dbxref=GenBank:YP_010740618.1,GeneID:79674149;Name=YP_010740618.1;gbkey=CDS;locus_tag=P9602_gp24;product=J-like tail tip protein;protein_id=YP_010740618.1;transl_table=11
+NC_073057.1	RefSeq	gene	20641	20943	.	+	.	ID=gene-P9602_gp25;Dbxref=GeneID:79674150;Name=P9602_gp25;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp25
+NC_073057.1	RefSeq	CDS	20641	20943	.	+	0	ID=cds-YP_010740619.1;Parent=gene-P9602_gp25;Dbxref=GenBank:YP_010740619.1,GeneID:79674150;Name=YP_010740619.1;gbkey=CDS;locus_tag=P9602_gp25;product=hypothetical protein;protein_id=YP_010740619.1;transl_table=11
+NC_073057.1	RefSeq	gene	20943	21617	.	+	.	ID=gene-P9602_gp26;Dbxref=GeneID:79674151;Name=P9602_gp26;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp26
+NC_073057.1	RefSeq	CDS	20943	21617	.	+	0	ID=cds-YP_010740620.1;Parent=gene-P9602_gp26;Dbxref=GenBank:YP_010740620.1,GeneID:79674151;Name=YP_010740620.1;gbkey=CDS;locus_tag=P9602_gp26;product=hypothetical protein;protein_id=YP_010740620.1;transl_table=11
+NC_073057.1	RefSeq	gene	21637	21855	.	-	.	ID=gene-P9602_gp27;Dbxref=GeneID:79674152;Name=P9602_gp27;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp27
+NC_073057.1	RefSeq	CDS	21637	21855	.	-	0	ID=cds-YP_010740621.1;Parent=gene-P9602_gp27;Dbxref=GenBank:YP_010740621.1,GeneID:79674152;Name=YP_010740621.1;gbkey=CDS;locus_tag=P9602_gp27;product=hypothetical protein;protein_id=YP_010740621.1;transl_table=11
+NC_073057.1	RefSeq	gene	21936	23939	.	+	.	ID=gene-P9602_gp28;Dbxref=GeneID:79674153;Name=P9602_gp28;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp28
+NC_073057.1	RefSeq	CDS	21936	23939	.	+	0	ID=cds-YP_010740622.1;Parent=gene-P9602_gp28;Dbxref=GenBank:YP_010740622.1,GeneID:79674153;Name=YP_010740622.1;gbkey=CDS;locus_tag=P9602_gp28;product=lateral tail fiber protein;protein_id=YP_010740622.1;transl_table=11
+NC_073057.1	RefSeq	gene	23936	24193	.	+	.	ID=gene-P9602_gp29;Dbxref=GeneID:79674154;Name=P9602_gp29;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp29
+NC_073057.1	RefSeq	CDS	23936	24193	.	+	0	ID=cds-YP_010740623.1;Parent=gene-P9602_gp29;Dbxref=GenBank:YP_010740623.1,GeneID:79674154;Name=YP_010740623.1;gbkey=CDS;locus_tag=P9602_gp29;product=hypothetical protein;protein_id=YP_010740623.1;transl_table=11
+NC_073057.1	RefSeq	gene	24205	24501	.	+	.	ID=gene-P9602_gp30;Dbxref=GeneID:79674155;Name=P9602_gp30;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp30
+NC_073057.1	RefSeq	CDS	24205	24501	.	+	0	ID=cds-YP_010740624.1;Parent=gene-P9602_gp30;Dbxref=GenBank:YP_010740624.1,GeneID:79674155;Name=YP_010740624.1;gbkey=CDS;locus_tag=P9602_gp30;product=putative tail fiber protein;protein_id=YP_010740624.1;transl_table=11
+NC_073057.1	RefSeq	gene	24494	25084	.	+	.	ID=gene-P9602_gp31;Dbxref=GeneID:79674156;Name=P9602_gp31;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp31
+NC_073057.1	RefSeq	CDS	24494	25084	.	+	0	ID=cds-YP_010740625.1;Parent=gene-P9602_gp31;Dbxref=GenBank:YP_010740625.1,GeneID:79674156;Name=YP_010740625.1;gbkey=CDS;locus_tag=P9602_gp31;product=putative tail fiber protein;protein_id=YP_010740625.1;transl_table=11
+NC_073057.1	RefSeq	gene	25120	25344	.	-	.	ID=gene-P9602_gp32;Dbxref=GeneID:79674157;Name=P9602_gp32;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp32
+NC_073057.1	RefSeq	CDS	25120	25344	.	-	0	ID=cds-YP_010740626.1;Parent=gene-P9602_gp32;Dbxref=GenBank:YP_010740626.1,GeneID:79674157;Name=YP_010740626.1;gbkey=CDS;locus_tag=P9602_gp32;product=hypothetical protein;protein_id=YP_010740626.1;transl_table=11
+NC_073057.1	RefSeq	gene	25325	25810	.	-	.	ID=gene-P9602_gp33;Dbxref=GeneID:79674158;Name=P9602_gp33;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp33
+NC_073057.1	RefSeq	CDS	25325	25810	.	-	0	ID=cds-YP_010740627.1;Parent=gene-P9602_gp33;Dbxref=GenBank:YP_010740627.1,GeneID:79674158;Name=YP_010740627.1;gbkey=CDS;locus_tag=P9602_gp33;product=Dam-like N6-adenine methyltransferase;protein_id=YP_010740627.1;transl_table=11
+NC_073057.1	RefSeq	gene	25797	26261	.	-	.	ID=gene-P9602_gp34;Dbxref=GeneID:79674159;Name=P9602_gp34;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp34
+NC_073057.1	RefSeq	CDS	25797	26261	.	-	0	ID=cds-YP_010740628.1;Parent=gene-P9602_gp34;Dbxref=GenBank:YP_010740628.1,GeneID:79674159;Name=YP_010740628.1;gbkey=CDS;locus_tag=P9602_gp34;product=hypothetical protein;protein_id=YP_010740628.1;transl_table=11
+NC_073057.1	RefSeq	gene	26342	26665	.	-	.	ID=gene-P9602_gp35;Dbxref=GeneID:79674160;Name=P9602_gp35;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp35
+NC_073057.1	RefSeq	CDS	26342	26665	.	-	0	ID=cds-YP_010740629.1;Parent=gene-P9602_gp35;Dbxref=GenBank:YP_010740629.1,GeneID:79674160;Name=YP_010740629.1;gbkey=CDS;locus_tag=P9602_gp35;product=putative homing endonuclease;protein_id=YP_010740629.1;transl_table=11
+NC_073057.1	RefSeq	gene	26662	27357	.	-	.	ID=gene-P9602_gp36;Dbxref=GeneID:79674161;Name=P9602_gp36;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp36
+NC_073057.1	RefSeq	CDS	26662	27357	.	-	0	ID=cds-YP_010740630.1;Parent=gene-P9602_gp36;Dbxref=GenBank:YP_010740630.1,GeneID:79674161;Name=YP_010740630.1;gbkey=CDS;locus_tag=P9602_gp36;product=Dcm-like C5 cytosine methyltransferase;protein_id=YP_010740630.1;transl_table=11
+NC_073057.1	RefSeq	gene	27354	28778	.	-	.	ID=gene-P9602_gp37;Dbxref=GeneID:79674162;Name=P9602_gp37;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp37
+NC_073057.1	RefSeq	CDS	27354	28778	.	-	0	ID=cds-YP_010740631.1;Parent=gene-P9602_gp37;Dbxref=GenBank:YP_010740631.1,GeneID:79674162;Name=YP_010740631.1;gbkey=CDS;locus_tag=P9602_gp37;product=DNA helicase;protein_id=YP_010740631.1;transl_table=11
+NC_073057.1	RefSeq	gene	28783	29007	.	-	.	ID=gene-P9602_gp38;Dbxref=GeneID:79674163;Name=P9602_gp38;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp38
+NC_073057.1	RefSeq	CDS	28783	29007	.	-	0	ID=cds-YP_010740632.1;Parent=gene-P9602_gp38;Dbxref=GenBank:YP_010740632.1,GeneID:79674163;Name=YP_010740632.1;gbkey=CDS;locus_tag=P9602_gp38;product=hypothetical protein;protein_id=YP_010740632.1;transl_table=11
+NC_073057.1	RefSeq	gene	29045	29218	.	-	.	ID=gene-P9602_gp39;Dbxref=GeneID:79674164;Name=P9602_gp39;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp39
+NC_073057.1	RefSeq	CDS	29045	29218	.	-	0	ID=cds-YP_010740633.1;Parent=gene-P9602_gp39;Dbxref=GenBank:YP_010740633.1,GeneID:79674164;Name=YP_010740633.1;gbkey=CDS;locus_tag=P9602_gp39;product=hypothetical protein;protein_id=YP_010740633.1;transl_table=11
+NC_073057.1	RefSeq	gene	29259	29537	.	-	.	ID=gene-P9602_gp40;Dbxref=GeneID:79674165;Name=P9602_gp40;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp40
+NC_073057.1	RefSeq	CDS	29259	29537	.	-	0	ID=cds-YP_010740634.1;Parent=gene-P9602_gp40;Dbxref=GenBank:YP_010740634.1,GeneID:79674165;Name=YP_010740634.1;gbkey=CDS;locus_tag=P9602_gp40;product=hypothetical protein;protein_id=YP_010740634.1;transl_table=11
+NC_073057.1	RefSeq	gene	29534	29725	.	-	.	ID=gene-P9602_gp41;Dbxref=GeneID:79674166;Name=P9602_gp41;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp41
+NC_073057.1	RefSeq	CDS	29534	29725	.	-	0	ID=cds-YP_010740635.1;Parent=gene-P9602_gp41;Dbxref=GenBank:YP_010740635.1,GeneID:79674166;Name=YP_010740635.1;gbkey=CDS;locus_tag=P9602_gp41;product=hypothetical protein;protein_id=YP_010740635.1;transl_table=11
+NC_073057.1	RefSeq	gene	29730	32021	.	-	.	ID=gene-P9602_gp42;Dbxref=GeneID:79674167;Name=P9602_gp42;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp42
+NC_073057.1	RefSeq	CDS	29730	32021	.	-	0	ID=cds-YP_010740636.1;Parent=gene-P9602_gp42;Dbxref=GenBank:YP_010740636.1,GeneID:79674167;Name=YP_010740636.1;gbkey=CDS;locus_tag=P9602_gp42;product=DNA polymerase I;protein_id=YP_010740636.1;transl_table=11
+NC_073057.1	RefSeq	gene	32018	32188	.	-	.	ID=gene-P9602_gp43;Dbxref=GeneID:79674168;Name=P9602_gp43;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp43
+NC_073057.1	RefSeq	CDS	32018	32188	.	-	0	ID=cds-YP_010740637.1;Parent=gene-P9602_gp43;Dbxref=GenBank:YP_010740637.1,GeneID:79674168;Name=YP_010740637.1;gbkey=CDS;locus_tag=P9602_gp43;product=hypothetical protein;protein_id=YP_010740637.1;transl_table=11
+NC_073057.1	RefSeq	gene	32247	33038	.	-	.	ID=gene-P9602_gp44;Dbxref=GeneID:79674169;Name=P9602_gp44;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp44
+NC_073057.1	RefSeq	CDS	32247	33038	.	-	0	ID=cds-YP_010740638.1;Parent=gene-P9602_gp44;Dbxref=GenBank:YP_010740638.1,GeneID:79674169;Name=YP_010740638.1;gbkey=CDS;locus_tag=P9602_gp44;product=putative single-stranded DNA binding protein;protein_id=YP_010740638.1;transl_table=11
+NC_073057.1	RefSeq	gene	33114	33356	.	-	.	ID=gene-P9602_gp45;Dbxref=GeneID:79674170;Name=P9602_gp45;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp45
+NC_073057.1	RefSeq	CDS	33114	33356	.	-	0	ID=cds-YP_010740639.1;Parent=gene-P9602_gp45;Dbxref=GenBank:YP_010740639.1,GeneID:79674170;Name=YP_010740639.1;gbkey=CDS;locus_tag=P9602_gp45;product=hypothetical protein;protein_id=YP_010740639.1;transl_table=11
+NC_073057.1	RefSeq	gene	33349	34779	.	-	.	ID=gene-P9602_gp46;Dbxref=GeneID:79674171;Name=P9602_gp46;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp46
+NC_073057.1	RefSeq	CDS	33349	34779	.	-	0	ID=cds-YP_010740640.1;Parent=gene-P9602_gp46;Dbxref=GenBank:YP_010740640.1,GeneID:79674171;Name=YP_010740640.1;gbkey=CDS;locus_tag=P9602_gp46;product=PD-(D/E)XK nuclease family protein;protein_id=YP_010740640.1;transl_table=11
+NC_073057.1	RefSeq	gene	34779	34958	.	-	.	ID=gene-P9602_gp47;Dbxref=GeneID:79674172;Name=P9602_gp47;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp47
+NC_073057.1	RefSeq	CDS	34779	34958	.	-	0	ID=cds-YP_010740641.1;Parent=gene-P9602_gp47;Dbxref=GenBank:YP_010740641.1,GeneID:79674172;Name=YP_010740641.1;gbkey=CDS;locus_tag=P9602_gp47;product=hypothetical protein;protein_id=YP_010740641.1;transl_table=11
+NC_073057.1	RefSeq	gene	34958	35209	.	-	.	ID=gene-P9602_gp48;Dbxref=GeneID:79674173;Name=P9602_gp48;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp48
+NC_073057.1	RefSeq	CDS	34958	35209	.	-	0	ID=cds-YP_010740642.1;Parent=gene-P9602_gp48;Dbxref=GenBank:YP_010740642.1,GeneID:79674173;Name=YP_010740642.1;gbkey=CDS;locus_tag=P9602_gp48;product=hypothetical protein;protein_id=YP_010740642.1;transl_table=11
+NC_073057.1	RefSeq	gene	35258	35884	.	-	.	ID=gene-P9602_gp49;Dbxref=GeneID:79674174;Name=P9602_gp49;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp49
+NC_073057.1	RefSeq	CDS	35258	35884	.	-	0	ID=cds-YP_010740643.1;Parent=gene-P9602_gp49;Dbxref=GenBank:YP_010740643.1,GeneID:79674174;Name=YP_010740643.1;gbkey=CDS;locus_tag=P9602_gp49;product=hypothetical protein;protein_id=YP_010740643.1;transl_table=11
+NC_073057.1	RefSeq	gene	35920	36066	.	-	.	ID=gene-P9602_gp50;Dbxref=GeneID:79674175;Name=P9602_gp50;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp50
+NC_073057.1	RefSeq	CDS	35920	36066	.	-	0	ID=cds-YP_010740644.1;Parent=gene-P9602_gp50;Dbxref=GenBank:YP_010740644.1,GeneID:79674175;Name=YP_010740644.1;gbkey=CDS;locus_tag=P9602_gp50;product=hypothetical protein;protein_id=YP_010740644.1;transl_table=11
+NC_073057.1	RefSeq	gene	36088	36417	.	+	.	ID=gene-P9602_gp51;Dbxref=GeneID:79674176;Name=P9602_gp51;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp51
+NC_073057.1	RefSeq	CDS	36088	36417	.	+	0	ID=cds-YP_010740645.1;Parent=gene-P9602_gp51;Dbxref=GenBank:YP_010740645.1,GeneID:79674176;Name=YP_010740645.1;gbkey=CDS;locus_tag=P9602_gp51;product=hypothetical protein;protein_id=YP_010740645.1;transl_table=11
+NC_073057.1	RefSeq	gene	36428	38692	.	+	.	ID=gene-P9602_gp52;Dbxref=GeneID:79674177;Name=P9602_gp52;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp52
+NC_073057.1	RefSeq	CDS	36428	38692	.	+	0	ID=cds-YP_010740646.1;Parent=gene-P9602_gp52;Dbxref=GenBank:YP_010740646.1,GeneID:79674177;Name=YP_010740646.1;gbkey=CDS;locus_tag=P9602_gp52;product=ATP-dependent helicase;protein_id=YP_010740646.1;transl_table=11
+NC_073057.1	RefSeq	gene	38819	39004	.	+	.	ID=gene-P9602_gp53;Dbxref=GeneID:79674178;Name=P9602_gp53;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp53
+NC_073057.1	RefSeq	CDS	38819	39004	.	+	0	ID=cds-YP_010740647.1;Parent=gene-P9602_gp53;Dbxref=GenBank:YP_010740647.1,GeneID:79674178;Name=YP_010740647.1;gbkey=CDS;locus_tag=P9602_gp53;product=hypothetical protein;protein_id=YP_010740647.1;transl_table=11
+NC_073057.1	RefSeq	gene	39228	39533	.	+	.	ID=gene-P9602_gp54;Dbxref=GeneID:79674179;Name=P9602_gp54;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp54
+NC_073057.1	RefSeq	CDS	39228	39533	.	+	0	ID=cds-YP_010740648.1;Parent=gene-P9602_gp54;Dbxref=GenBank:YP_010740648.1,GeneID:79674179;Name=YP_010740648.1;gbkey=CDS;locus_tag=P9602_gp54;product=hypothetical protein;protein_id=YP_010740648.1;transl_table=11
+NC_073057.1	RefSeq	gene	39543	39812	.	+	.	ID=gene-P9602_gp55;Dbxref=GeneID:79674180;Name=P9602_gp55;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp55
+NC_073057.1	RefSeq	CDS	39543	39812	.	+	0	ID=cds-YP_010740649.1;Parent=gene-P9602_gp55;Dbxref=GenBank:YP_010740649.1,GeneID:79674180;Name=YP_010740649.1;gbkey=CDS;locus_tag=P9602_gp55;product=hypothetical protein;protein_id=YP_010740649.1;transl_table=11
+NC_073057.1	RefSeq	gene	39809	39961	.	+	.	ID=gene-P9602_gp56;Dbxref=GeneID:79674181;Name=P9602_gp56;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp56
+NC_073057.1	RefSeq	CDS	39809	39961	.	+	0	ID=cds-YP_010740650.1;Parent=gene-P9602_gp56;Dbxref=GenBank:YP_010740650.1,GeneID:79674181;Name=YP_010740650.1;gbkey=CDS;locus_tag=P9602_gp56;product=hypothetical protein;protein_id=YP_010740650.1;transl_table=11
+NC_073057.1	RefSeq	gene	39958	40530	.	+	.	ID=gene-P9602_gp57;Dbxref=GeneID:79674182;Name=P9602_gp57;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp57
+NC_073057.1	RefSeq	CDS	39958	40530	.	+	0	ID=cds-YP_010740651.1;Parent=gene-P9602_gp57;Dbxref=GenBank:YP_010740651.1,GeneID:79674182;Name=YP_010740651.1;gbkey=CDS;locus_tag=P9602_gp57;product=hypothetical protein;protein_id=YP_010740651.1;transl_table=11
+NC_073057.1	RefSeq	gene	40527	40667	.	+	.	ID=gene-P9602_gp58;Dbxref=GeneID:79674183;Name=P9602_gp58;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp58
+NC_073057.1	RefSeq	CDS	40527	40667	.	+	0	ID=cds-YP_010740652.1;Parent=gene-P9602_gp58;Dbxref=GenBank:YP_010740652.1,GeneID:79674183;Name=YP_010740652.1;gbkey=CDS;locus_tag=P9602_gp58;product=hypothetical protein;protein_id=YP_010740652.1;transl_table=11
+NC_073057.1	RefSeq	gene	40652	40939	.	+	.	ID=gene-P9602_gp59;Dbxref=GeneID:79674184;Name=P9602_gp59;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp59
+NC_073057.1	RefSeq	CDS	40652	40939	.	+	0	ID=cds-YP_010740653.1;Parent=gene-P9602_gp59;Dbxref=GenBank:YP_010740653.1,GeneID:79674184;Name=YP_010740653.1;gbkey=CDS;locus_tag=P9602_gp59;product=hypothetical protein;protein_id=YP_010740653.1;transl_table=11
+NC_073057.1	RefSeq	gene	40992	41282	.	+	.	ID=gene-P9602_gp60;Dbxref=GeneID:79674185;Name=P9602_gp60;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp60
+NC_073057.1	RefSeq	CDS	40992	41282	.	+	0	ID=cds-YP_010740654.1;Parent=gene-P9602_gp60;Dbxref=GenBank:YP_010740654.1,GeneID:79674185;Name=YP_010740654.1;gbkey=CDS;locus_tag=P9602_gp60;product=holin;protein_id=YP_010740654.1;transl_table=11
+NC_073057.1	RefSeq	gene	41279	41524	.	+	.	ID=gene-P9602_gp61;Dbxref=GeneID:79674186;Name=P9602_gp61;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp61
+NC_073057.1	RefSeq	CDS	41279	41524	.	+	0	ID=cds-YP_010740655.1;Parent=gene-P9602_gp61;Dbxref=GenBank:YP_010740655.1,GeneID:79674186;Name=YP_010740655.1;gbkey=CDS;locus_tag=P9602_gp61;product=holin;protein_id=YP_010740655.1;transl_table=11
+NC_073057.1	RefSeq	gene	41511	42002	.	+	.	ID=gene-P9602_gp62;Dbxref=GeneID:79674187;Name=P9602_gp62;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp62
+NC_073057.1	RefSeq	CDS	41511	42002	.	+	0	ID=cds-YP_010740656.1;Parent=gene-P9602_gp62;Dbxref=GenBank:YP_010740656.1,GeneID:79674187;Name=YP_010740656.1;gbkey=CDS;locus_tag=P9602_gp62;product=endolysin;protein_id=YP_010740656.1;transl_table=11
+NC_073057.1	RefSeq	gene	42019	42432	.	+	.	ID=gene-P9602_gp63;Dbxref=GeneID:79674188;Name=P9602_gp63;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp63
+NC_073057.1	RefSeq	CDS	42019	42432	.	+	0	ID=cds-YP_010740657.1;Parent=gene-P9602_gp63;Dbxref=GenBank:YP_010740657.1,GeneID:79674188;Name=YP_010740657.1;gbkey=CDS;locus_tag=P9602_gp63;product=hypothetical protein;protein_id=YP_010740657.1;transl_table=11
+NC_073057.1	RefSeq	gene	42608	42778	.	+	.	ID=gene-P9602_gp64;Dbxref=GeneID:79674189;Name=P9602_gp64;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp64
+NC_073057.1	RefSeq	CDS	42608	42778	.	+	0	ID=cds-YP_010740658.1;Parent=gene-P9602_gp64;Dbxref=GenBank:YP_010740658.1,GeneID:79674189;Name=YP_010740658.1;gbkey=CDS;locus_tag=P9602_gp64;product=hypothetical protein;protein_id=YP_010740658.1;transl_table=11
+NC_073057.1	RefSeq	gene	42775	42987	.	+	.	ID=gene-P9602_gp65;Dbxref=GeneID:79674190;Name=P9602_gp65;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P9602_gp65
+NC_073057.1	RefSeq	CDS	42775	42987	.	+	0	ID=cds-YP_010740659.1;Parent=gene-P9602_gp65;Dbxref=GenBank:YP_010740659.1,GeneID:79674190;Name=YP_010740659.1;gbkey=CDS;locus_tag=P9602_gp65;product=hypothetical protein;protein_id=YP_010740659.1;transl_table=11
+###

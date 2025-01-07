@@ -1,0 +1,226 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ViralProj14035
+#!genome-build-accession NCBI_Assembly:GCF_000836905.1
+##sequence-region NC_001895.1 1 33593
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2905681
+NC_001895.1	RefSeq	region	1	33593	.	+	.	ID=NC_001895.1:1..33593;Dbxref=taxon:2905681;gbkey=Src;genome=genomic;lab-host=Escherichia coli;mol_type=genomic DNA;nat-host=Escherichia coli;old-name=Enterobacteria phage P2
+NC_001895.1	RefSeq	sequence_feature	1	19	.	+	.	ID=id-NC_001895.1:1..19;Note=cosL%3B left cohesive end;gbkey=misc_feature
+NC_001895.1	RefSeq	terminator	160	181	.	-	.	ID=id-NC_001895.1:160..181;Note=tQ%3B putative rho-independent terminator for P operon;gbkey=regulatory;regulatory_class=terminator
+NC_001895.1	RefSeq	gene	187	1221	.	-	.	ID=gene-P2p01;Dbxref=GeneID:77440831;Name=Q;gbkey=Gene;gene=Q;gene_biotype=protein_coding;locus_tag=P2p01
+NC_001895.1	RefSeq	CDS	187	1221	.	-	0	ID=cds-NP_046757.1;Parent=gene-P2p01;Dbxref=GenBank:NP_046757.1,GeneID:77440831;Name=NP_046757.1;Note=gpQ%3B Q protein%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B Q is a connector or portal protein that joins phage head and tail%3B Q%2C P and M proteins are needed to package DNA into proheads and for the conversion of proheads to capsids;gbkey=CDS;gene=Q;locus_tag=P2p01;product=portal protein;protein_id=NP_046757.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	653	653	.	-	.	ID=id-P2p01;Dbxref=GeneID:77440831;Note=Qam34 mutation;gbkey=variation;gene=Q;locus_tag=P2p01;replace=t
+NC_001895.1	RefSeq	gene	1221	3016	.	-	.	ID=gene-P2p02;Dbxref=GeneID:77440789;Name=P;gbkey=Gene;gene=P;gene_biotype=protein_coding;locus_tag=P2p02
+NC_001895.1	RefSeq	CDS	1221	2993	.	-	0	ID=cds-NP_046758.1;Parent=gene-P2p02;Dbxref=GenBank:NP_046758.1,GeneID:77440789;Name=NP_046758.1;Note=gpP%3B P protein%3B capsid packaging%3B P protein is probably the ATPase subunit of the terminase complex%2C which directs cos cleavage of closed monomeric dsDNA circles into linear genomes with 19 nt cohesive ssDNA ends%3B Q%2C P and M proteins are needed to package DNA into capsid proheads and conversion into mature capsids;gbkey=CDS;gene=P;locus_tag=P2p02;product=terminase large subunit;protein_id=NP_046758.1;transl_table=11
+NC_001895.1	RefSeq	sequence_feature	3016	3016	.	-	.	ID=id-P2p02;Dbxref=GeneID:77440789;Note=transcription start site for P operon%3B encodes P%2CQ;gbkey=misc_feature;gene=P;locus_tag=P2p02
+NC_001895.1	RefSeq	sequence_alteration	2210	2210	.	-	.	ID=id-P2p02-2;Dbxref=GeneID:77440789;Note=Pam24 and Pam137 mutations;gbkey=variation;gene=P;locus_tag=P2p02;replace=a
+NC_001895.1	RefSeq	sequence_alteration	2948	2948	.	-	.	ID=id-P2p02-3;Dbxref=GeneID:77440789;Note=Pam253 mutation;gbkey=variation;gene=P;locus_tag=P2p02;replace=a
+NC_001895.1	RefSeq	sequence_feature	3057	3087	.	+	.	ID=id-NC_001895.1:3057..3087;Note=activator binding site%3B pO%2C pP promoters;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_feature	3127	3127	.	+	.	ID=id-NC_001895.1:3127..3127;Note=transcription start site for O operon%3B encodes O%2C N%2C M%2C L%2C X%2C Y%2C K%2C lysA%2C lysB%2C R%2C S;gbkey=misc_feature
+NC_001895.1	RefSeq	gene	3167	4021	.	+	.	ID=gene-P2p03;Dbxref=GeneID:77440790;Name=O;gbkey=Gene;gene=O;gene_biotype=protein_coding;locus_tag=P2p03
+NC_001895.1	RefSeq	CDS	3167	4021	.	+	0	ID=cds-NP_046759.1;Parent=gene-P2p03;Dbxref=GenBank:NP_046759.1,GeneID:77440790;Name=NP_046759.1;Note=gpO%3B O protein%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B gpO is required for assembly of proheads;gbkey=CDS;gene=O;locus_tag=P2p03;product=head scaffolding protein;protein_id=NP_046759.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	3206	3206	.	+	.	ID=id-P2p03;Dbxref=GeneID:77440790;Note=Oam71 mutation;gbkey=variation;gene=O;locus_tag=P2p03;replace=t
+NC_001895.1	RefSeq	sequence_alteration	3411	3411	.	+	.	ID=id-P2p03-2;Dbxref=GeneID:77440790;Note=Oam7 mutation;gbkey=variation;gene=O;locus_tag=P2p03;replace=a
+NC_001895.1	RefSeq	sequence_alteration	3878	3878	.	+	.	ID=id-P2p03-3;Dbxref=GeneID:77440790;Note=Oam279 mutation;gbkey=variation;gene=O;locus_tag=P2p03;replace=t
+NC_001895.1	RefSeq	gene	4080	5153	.	+	.	ID=gene-P2p04;Dbxref=GeneID:77440791;Name=N;gbkey=Gene;gene=N;gene_biotype=protein_coding;locus_tag=P2p04
+NC_001895.1	RefSeq	CDS	4080	5153	.	+	0	ID=cds-NP_046760.1;Parent=gene-P2p04;Dbxref=GenBank:NP_046760.1,GeneID:77440791;Name=NP_046760.1;Note=gpN%3B N protein%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B N is the major head protein%3B the mature capsid contains mainly the processed form of the protein N*%2C which lacks 31 amino acids at the N-terminus;gbkey=CDS;gene=N;locus_tag=P2p04;product=major capsid protein%2C P2 family;protein_id=NP_046760.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	4349	4350	.	+	.	ID=id-P2p04;Dbxref=GeneID:77440791;Note=Nam209 mutation;gbkey=variation;gene=N;locus_tag=P2p04;replace=at
+NC_001895.1	RefSeq	sequence_alteration	4630	4630	.	+	.	ID=id-P2p04-2;Dbxref=GeneID:77440791;Note=sir3 mutation%3B defective for choice of small capsids by satellite phage P4;gbkey=variation;gene=N;locus_tag=P2p04;replace=c
+NC_001895.1	RefSeq	sequence_alteration	4695	4697	.	+	.	ID=id-P2p04-3;Dbxref=GeneID:77440791;Note=sir9 mutation%3B defective for choice of small capsids by satellite phage P4;gbkey=variation;gene=N;locus_tag=P2p04;replace=
+NC_001895.1	RefSeq	sequence_alteration	4695	4695	.	+	.	ID=id-P2p04-4;Dbxref=GeneID:77440791;Note=sir5 mutation%3B defective for choice of small capsids by satellite phage P4;gbkey=variation;gene=N;locus_tag=P2p04;replace=t
+NC_001895.1	RefSeq	sequence_alteration	4699	4699	.	+	.	ID=id-P2p04-5;Dbxref=GeneID:77440791;Note=sir2%2C sir6 and sir8 mutations%3B defective for choice of small capsids by satellite phage P4;gbkey=variation;gene=N;locus_tag=P2p04;replace=t
+NC_001895.1	RefSeq	sequence_alteration	4740	4740	.	+	.	ID=id-P2p04-6;Dbxref=GeneID:77440791;Note=sir1 mutation%3B defective for choice of small capsids by satellite phage P4;gbkey=variation;gene=N;locus_tag=P2p04;replace=g
+NC_001895.1	RefSeq	sequence_alteration	4741	4741	.	+	.	ID=id-P2p04-7;Dbxref=GeneID:77440791;Note=sir4 mutation%3B defective for choice of small capsids by satellite phage P4;gbkey=variation;gene=N;locus_tag=P2p04;replace=a
+NC_001895.1	RefSeq	gene	5157	5900	.	+	.	ID=gene-P2p05;Dbxref=GeneID:77440792;Name=M;gbkey=Gene;gene=M;gene_biotype=protein_coding;locus_tag=P2p05
+NC_001895.1	RefSeq	CDS	5157	5900	.	+	0	ID=cds-NP_046761.1;Parent=gene-P2p05;Dbxref=GenBank:NP_046761.1,GeneID:77440792;Name=NP_046761.1;Note=gpM%3B M protein%3B capsid packaging%3B M protein is probably the endonuclease subunit of the terminase complex%2C which directs cos cleavage of closed monomeric dsDNA circles into linear genomes with 19 nt cohesive ssDNA ends%3B Q%2C P and M proteins are needed to package DNA into capsid proheads and conversion into mature capsids;gbkey=CDS;gene=M;locus_tag=P2p05;product=terminase small subunit;protein_id=NP_046761.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	5361	5361	.	+	.	ID=id-P2p05;Dbxref=GeneID:77440792;Note=Mts52 mutation;gbkey=variation;gene=M;locus_tag=P2p05;replace=a
+NC_001895.1	RefSeq	sequence_alteration	5751	5751	.	+	.	ID=id-P2p05-2;Dbxref=GeneID:77440792;Note=Mam32 mutation;gbkey=variation;gene=M;locus_tag=P2p05;replace=t
+NC_001895.1	RefSeq	gene	6000	6509	.	+	.	ID=gene-P2p06;Dbxref=GeneID:77440793;Name=L;gbkey=Gene;gene=L;gene_biotype=protein_coding;locus_tag=P2p06
+NC_001895.1	RefSeq	CDS	6000	6509	.	+	0	ID=cds-NP_046762.1;Parent=gene-P2p06;Dbxref=GenBank:NP_046762.1,GeneID:77440793;Name=NP_046762.1;gbkey=CDS;gene=L;locus_tag=P2p06;product=head-tail adaptor Ad1;protein_id=NP_046762.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	6024	6024	.	+	.	ID=id-P2p06;Dbxref=GeneID:77440793;Note=Lam79 mutation;gbkey=variation;gene=L;locus_tag=P2p06;replace=t
+NC_001895.1	RefSeq	sequence_alteration	6240	6240	.	+	.	ID=id-P2p06-2;Dbxref=GeneID:77440793;Note=Lam9 mutation;gbkey=variation;gene=L;locus_tag=P2p06;replace=t
+NC_001895.1	RefSeq	gene	6509	6712	.	+	.	ID=gene-P2p07;Dbxref=GeneID:77440794;Name=X;gbkey=Gene;gene=X;gene_biotype=protein_coding;locus_tag=P2p07
+NC_001895.1	RefSeq	CDS	6509	6712	.	+	0	ID=cds-NP_046763.1;Parent=gene-P2p07;Dbxref=GenBank:NP_046763.1,GeneID:77440794;Name=NP_046763.1;gbkey=CDS;gene=X;locus_tag=P2p07;product=baseplate hub;protein_id=NP_046763.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	6562	6562	.	+	.	ID=id-P2p07;Dbxref=GeneID:77440794;Note=Xam95 mutation;gbkey=variation;gene=X;locus_tag=P2p07;replace=g
+NC_001895.1	RefSeq	gene	6716	6997	.	+	.	ID=gene-P2p08;Dbxref=GeneID:77440795;Name=Y;gbkey=Gene;gene=Y;gene_biotype=protein_coding;locus_tag=P2p08
+NC_001895.1	RefSeq	CDS	6716	6997	.	+	0	ID=cds-NP_046764.1;Parent=gene-P2p08;Dbxref=GenBank:NP_046764.1,GeneID:77440795;Name=NP_046764.1;gbkey=CDS;gene=Y;locus_tag=P2p08;product=holin;protein_id=NP_046764.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	6852	6852	.	+	.	ID=id-P2p08;Dbxref=GeneID:77440795;Note=Yam94 mutation;gbkey=variation;gene=Y;locus_tag=P2p08;replace=a
+NC_001895.1	RefSeq	gene	6997	7494	.	+	.	ID=gene-P2p09;Dbxref=GeneID:77440796;Name=K;gbkey=Gene;gene=K;gene_biotype=protein_coding;locus_tag=P2p09
+NC_001895.1	RefSeq	CDS	6997	7494	.	+	0	ID=cds-NP_046765.1;Parent=gene-P2p09;Dbxref=GenBank:NP_046765.1,GeneID:77440796;Name=NP_046765.1;gbkey=CDS;gene=K;locus_tag=P2p09;product=endolysin;protein_id=NP_046765.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	7114	7114	.	+	.	ID=id-P2p09;Dbxref=GeneID:77440796;Note=Kts60 mutation;gbkey=variation;gene=K;locus_tag=P2p09;replace=a
+NC_001895.1	RefSeq	sequence_alteration	7126	7126	.	+	.	ID=id-P2p09-2;Dbxref=GeneID:77440796;Note=Kam218 mutation;gbkey=variation;gene=K;locus_tag=P2p09;replace=t
+NC_001895.1	RefSeq	sequence_alteration	7318	7318	.	+	.	ID=id-P2p09-3;Dbxref=GeneID:77440796;Note=Kam12 mutation;gbkey=variation;gene=K;locus_tag=P2p09;replace=t
+NC_001895.1	RefSeq	sequence_alteration	7322	7322	.	+	.	ID=id-P2p09-4;Dbxref=GeneID:77440796;Note=Kam76 mutation;gbkey=variation;gene=K;locus_tag=P2p09;replace=a
+NC_001895.1	RefSeq	gene	7509	7934	.	+	.	ID=gene-P2p10;Dbxref=GeneID:77440797;Name=lysA;gbkey=Gene;gene=lysA;gene_biotype=protein_coding;locus_tag=P2p10
+NC_001895.1	RefSeq	CDS	7509	7934	.	+	0	ID=cds-NP_046766.1;Parent=gene-P2p10;Dbxref=GenBank:NP_046766.1,GeneID:77440797;Name=NP_046766.1;gbkey=CDS;gene=lysA;locus_tag=P2p10;product=endolysin;protein_id=NP_046766.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	7694	7694	.	+	.	ID=id-P2p10;Dbxref=GeneID:77440797;Note=lysAam96 mutation;gbkey=variation;gene=lysA;locus_tag=P2p10;replace=g
+NC_001895.1	RefSeq	gene	7922	8347	.	+	.	ID=gene-P2p11;Dbxref=GeneID:77440798;Name=lysB;gbkey=Gene;gene=lysB;gene_biotype=protein_coding;locus_tag=P2p11
+NC_001895.1	RefSeq	CDS	7922	8347	.	+	0	ID=cds-NP_046767.1;Parent=gene-P2p11;Dbxref=GenBank:NP_046767.1,GeneID:77440798;Name=NP_046767.1;gbkey=CDS;gene=lysB;locus_tag=P2p11;product=Rz-like spanin;protein_id=NP_046767.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	8099	8100	.	+	.	ID=id-P2p11;Dbxref=GeneID:77440798;Note=lysBam97 mutation;gbkey=variation;gene=lysB;locus_tag=P2p11;replace=ta
+NC_001895.1	RefSeq	gene	8202	8492	.	+	.	ID=gene-P2p12;Dbxref=GeneID:77440799;Name=lysC;gbkey=Gene;gene=lysC;gene_biotype=protein_coding;locus_tag=P2p12
+NC_001895.1	RefSeq	CDS	8202	8492	.	+	0	ID=cds-NP_757382.1;Parent=gene-P2p12;Dbxref=GenBank:NP_757382.1,GeneID:77440799;Name=NP_757382.1;Note=non-essential%3B regulation of lysis;gbkey=CDS;gene=lysC;locus_tag=P2p12;product=Rz-like spanin;protein_id=NP_757382.1;transl_table=11
+NC_001895.1	RefSeq	attenuator	8399	8417	.	+	.	ID=id-P2p12;Parent=gene-P2p12;Dbxref=GeneID:77440799;Note=putative transcription attenuator%3B O operon;gbkey=regulatory;gene=lysC;locus_tag=P2p12;regulatory_class=attenuator
+NC_001895.1	RefSeq	gene	8455	8922	.	+	.	ID=gene-P2p13;Dbxref=GeneID:77440800;Name=R;gbkey=Gene;gene=R;gene_biotype=protein_coding;locus_tag=P2p13
+NC_001895.1	RefSeq	CDS	8455	8922	.	+	0	ID=cds-NP_046768.1;Parent=gene-P2p13;Dbxref=GenBank:NP_046768.1,GeneID:77440800;Name=NP_046768.1;gbkey=CDS;gene=R;locus_tag=P2p13;product=tail terminator;protein_id=NP_046768.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	8680	8680	.	+	.	ID=id-P2p13;Dbxref=GeneID:77440800;Note=Ram3 mutation;gbkey=variation;gene=R;locus_tag=P2p13;replace=t
+NC_001895.1	RefSeq	sequence_alteration	8710	8710	.	+	.	ID=id-P2p13-2;Dbxref=GeneID:77440800;Note=Ram42 mutation;gbkey=variation;gene=R;locus_tag=P2p13;replace=t
+NC_001895.1	RefSeq	sequence_alteration	8857	8857	.	+	.	ID=id-P2p13-3;Dbxref=GeneID:77440800;Note=Ram23 mutation;gbkey=variation;gene=R;locus_tag=P2p13;replace=t
+NC_001895.1	RefSeq	gene	8915	9367	.	+	.	ID=gene-P2p14;Dbxref=GeneID:77440801;Name=S;gbkey=Gene;gene=S;gene_biotype=protein_coding;locus_tag=P2p14
+NC_001895.1	RefSeq	CDS	8915	9367	.	+	0	ID=cds-NP_046769.1;Parent=gene-P2p14;Dbxref=GenBank:NP_046769.1,GeneID:77440801;Name=NP_046769.1;gbkey=CDS;gene=S;locus_tag=P2p14;product=virion morphogenesis protein;protein_id=NP_046769.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	9209	9209	.	+	.	ID=id-P2p14;Dbxref=GeneID:77440801;Note=Sam75 mutation;gbkey=variation;gene=S;locus_tag=P2p14;replace=t
+NC_001895.1	RefSeq	sequence_alteration	9213	9213	.	+	.	ID=id-P2p14-2;Dbxref=GeneID:77440801;Note=Sam89 mutation;gbkey=variation;gene=S;locus_tag=P2p14;replace=a
+NC_001895.1	RefSeq	terminator	9397	9433	.	+	.	ID=id-NC_001895.1:9397..9433;Note=putative rho-independent terminator for O operon;gbkey=regulatory;regulatory_class=terminator
+NC_001895.1	RefSeq	gene	9439	10224	.	-	.	ID=gene-P2p15;Dbxref=GeneID:77440802;Name=P2p15;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p15
+NC_001895.1	RefSeq	CDS	9439	10224	.	-	0	ID=cds-NP_046770.1;Parent=gene-P2p15;Dbxref=GenBank:NP_046770.1,GeneID:77440802;Name=NP_046770.1;gbkey=CDS;locus_tag=P2p15;product=hypothetical protein;protein_id=NP_046770.1;transl_table=11
+NC_001895.1	RefSeq	sequence_feature	10239	10266	.	+	.	ID=id-NC_001895.1:10239..10266;Note=activator binding site%3B activation of pV promoter;gbkey=misc_feature
+NC_001895.1	RefSeq	gene	10308	10943	.	+	.	ID=gene-P2p16;Dbxref=GeneID:77440824;Name=V;gbkey=Gene;gene=V;gene_biotype=protein_coding;locus_tag=P2p16
+NC_001895.1	RefSeq	CDS	10308	10943	.	+	0	ID=cds-NP_046771.1;Parent=gene-P2p16;Dbxref=GenBank:NP_046771.1,GeneID:77440824;Name=NP_046771.1;gbkey=CDS;gene=V;locus_tag=P2p16;product=baseplate assembly protein;protein_id=NP_046771.1;transl_table=11
+NC_001895.1	RefSeq	sequence_feature	10308	10308	.	+	.	ID=id-P2p16;Dbxref=GeneID:77440824;Note=transcription start site for V operon%3B encodes V%2C W%2C J%2C I%2C H%2C G;gbkey=misc_feature;gene=V;locus_tag=P2p16
+NC_001895.1	RefSeq	sequence_alteration	10329	10329	.	+	.	ID=id-P2p16-2;Dbxref=GeneID:77440824;Note=Vam42%2C Vam203 and Vam205 mutations;gbkey=variation;gene=V;locus_tag=P2p16;replace=t
+NC_001895.1	RefSeq	sequence_alteration	10498	10498	.	+	.	ID=id-P2p16-3;Dbxref=GeneID:77440824;Note=Vts199 mutation;gbkey=variation;gene=V;locus_tag=P2p16;replace=a
+NC_001895.1	RefSeq	gene	10940	11287	.	+	.	ID=gene-P2p17;Dbxref=GeneID:77440807;Name=W;gbkey=Gene;gene=W;gene_biotype=protein_coding;locus_tag=P2p17
+NC_001895.1	RefSeq	CDS	10940	11287	.	+	0	ID=cds-NP_046772.1;Parent=gene-P2p17;Dbxref=GenBank:NP_046772.1,GeneID:77440807;Name=NP_046772.1;Note=gpW%3B W protein%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B the capsid contractile tail consists of a contractile outer sheath%2C a inner tube%2C and a baseplate%3B W protein is though to be part of the baseplate because it is similar to baseplate wedge subunit gp25 of T4-like phages%2C NP_049800;gbkey=CDS;gene=W;locus_tag=P2p17;product=baseplate wedge subunit;protein_id=NP_046772.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	11237	11237	.	+	.	ID=id-P2p17;Dbxref=GeneID:77440807;Note=Wam50 mutation;gbkey=variation;gene=W;locus_tag=P2p17;replace=t
+NC_001895.1	RefSeq	gene	11292	12200	.	+	.	ID=gene-P2p18;Dbxref=GeneID:77440808;Name=J;gbkey=Gene;gene=J;gene_biotype=protein_coding;locus_tag=P2p18
+NC_001895.1	RefSeq	CDS	11292	12200	.	+	0	ID=cds-NP_046773.1;Parent=gene-P2p18;Dbxref=GenBank:NP_046773.1,GeneID:77440808;Name=NP_046773.1;Note=gpJ%3B J protein%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B the capsid contractile tail consists of a contractile outer sheath%2C a inner tube%2C and a baseplate%3B the J protein lies at the edge of the baseplate;gbkey=CDS;gene=J;locus_tag=P2p18;product=baseplate protein;protein_id=NP_046773.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	11937	11937	.	+	.	ID=id-P2p18;Dbxref=GeneID:77440808;Note=Jam31 mutation;gbkey=variation;gene=J;locus_tag=P2p18;replace=t
+NC_001895.1	RefSeq	gene	12193	12723	.	+	.	ID=gene-P2p19;Dbxref=GeneID:77440809;Name=I;gbkey=Gene;gene=I;gene_biotype=protein_coding;locus_tag=P2p19
+NC_001895.1	RefSeq	CDS	12193	12723	.	+	0	ID=cds-NP_046774.1;Parent=gene-P2p19;Dbxref=GenBank:NP_046774.1,GeneID:77440809;Name=NP_046774.1;gbkey=CDS;gene=I;locus_tag=P2p19;product=tail protein;protein_id=NP_046774.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	12235	12235	.	+	.	ID=id-P2p19;Dbxref=GeneID:77440809;Note=Iam78 mutation;gbkey=variation;gene=I;locus_tag=P2p19;replace=t
+NC_001895.1	RefSeq	gene	12734	14743	.	+	.	ID=gene-P2p20;Dbxref=GeneID:77440810;Name=H;gbkey=Gene;gene=H;gene_biotype=protein_coding;locus_tag=P2p20
+NC_001895.1	RefSeq	CDS	12734	14743	.	+	0	ID=cds-NP_046775.1;Parent=gene-P2p20;Dbxref=GenBank:NP_046775.1,GeneID:77440810;Name=NP_046775.1;gbkey=CDS;gene=H;locus_tag=P2p20;product=tail fiber protein;protein_id=NP_046775.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	13994	13994	.	+	.	ID=id-P2p20;Dbxref=GeneID:77440810;Note=Ham72 mutation;gbkey=variation;gene=H;locus_tag=P2p20;replace=t
+NC_001895.1	RefSeq	sequence_alteration	14336	14336	.	+	.	ID=id-P2p20-2;Dbxref=GeneID:77440810;Note=Ham59 mutation;gbkey=variation;gene=H;locus_tag=P2p20;replace=t
+NC_001895.1	RefSeq	gene	14747	15274	.	+	.	ID=gene-P2p21;Dbxref=GeneID:77440811;Name=G;gbkey=Gene;gene=G;gene_biotype=protein_coding;locus_tag=P2p21
+NC_001895.1	RefSeq	CDS	14747	15274	.	+	0	ID=cds-NP_046776.1;Parent=gene-P2p21;Dbxref=GenBank:NP_046776.1,GeneID:77440811;Name=NP_046776.1;gbkey=CDS;gene=G;locus_tag=P2p21;product=tail fiber assembly protein;protein_id=NP_046776.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	14879	14879	.	+	.	ID=id-P2p21;Dbxref=GeneID:77440811;Note=Gam1 mutation;gbkey=variation;gene=G;locus_tag=P2p21;replace=t
+NC_001895.1	RefSeq	sequence_alteration	15294	17233	.	+	.	ID=id-NC_001895.1:15294..17233;Note=del2 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	terminator	15639	15666	.	+	.	ID=id-NC_001895.1:15639..15666;Note=putative rho-independent terminator for V operon;gbkey=regulatory;regulatory_class=terminator
+NC_001895.1	RefSeq	gene	15675	17261	.	-	.	ID=gene-P2p22;Dbxref=GeneID:77440812;Name=fun(Z);gbkey=Gene;gene=fun(Z);gene_biotype=protein_coding;locus_tag=P2p22
+NC_001895.1	RefSeq	CDS	15675	17261	.	-	0	ID=cds-NP_046777.1;Parent=gene-P2p22;Dbxref=GenBank:NP_046777.1,GeneID:77440812;Name=NP_046777.1;Note=cloned gene blocks growth of T5;gbkey=CDS;gene=fun(Z);locus_tag=P2p22;product=Fun(Z);protein_id=NP_046777.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	15784	15784	.	-	.	ID=id-P2p22;Dbxref=GeneID:77440812;Note=Z81su3 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=a
+NC_001895.1	RefSeq	sequence_alteration	15872	15872	.	-	.	ID=id-P2p22-2;Dbxref=GeneID:77440812;Note=Z20 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=t
+NC_001895.1	RefSeq	sequence_alteration	15944	15944	.	-	.	ID=id-P2p22-3;Dbxref=GeneID:77440812;Note=Z81 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=t
+NC_001895.1	RefSeq	sequence_alteration	15946	15946	.	-	.	ID=id-P2p22-4;Dbxref=GeneID:77440812;Note=fun1 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=t
+NC_001895.1	RefSeq	sequence_alteration	16079	16079	.	-	.	ID=id-P2p22-5;Dbxref=GeneID:77440812;Note=csZ150 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=t
+NC_001895.1	RefSeq	sequence_alteration	16266	16266	.	-	.	ID=id-P2p22-6;Dbxref=GeneID:77440812;Note=fun99 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=t
+NC_001895.1	RefSeq	sequence_alteration	16638	16638	.	-	.	ID=id-P2p22-7;Dbxref=GeneID:77440812;Note=csZ150 mutation;gbkey=variation;gene=fun(Z);locus_tag=P2p22;replace=a
+NC_001895.1	RefSeq	sequence_alteration	16267	17299	.	+	.	ID=id-NC_001895.1:16267..17299;Note=del5 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	sequence_feature	17555	17583	.	+	.	ID=id-NC_001895.1:17555..17583;Note=activator binding site%3B activation of pF promoter;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_feature	17626	17628	.	+	.	ID=id-NC_001895.1:17626..17628;Note=transcription start site for F operon%3B encodes FI%2C FII%2C E%2C E'%2C T%2C U%2C D;gbkey=misc_feature
+NC_001895.1	RefSeq	gene	17652	18842	.	+	.	ID=gene-P2p23;Dbxref=GeneID:77440813;Name=FI;gbkey=Gene;gene=FI;gene_biotype=protein_coding;locus_tag=P2p23
+NC_001895.1	RefSeq	CDS	17652	18842	.	+	0	ID=cds-NP_046778.1;Parent=gene-P2p23;Dbxref=GenBank:NP_046778.1,GeneID:77440813;Name=NP_046778.1;Note=FI%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B the tail is composed of a inner tube%2C contractile sheath%2C and baseplate%3B FI is thought to constitute the tail sheath;gbkey=CDS;gene=FI;locus_tag=P2p23;product=tail sheath protein;protein_id=NP_046778.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	18183	18183	.	+	.	ID=id-P2p23;Dbxref=GeneID:77440813;Note=Fam4 mutation;gbkey=variation;gene=FI;locus_tag=P2p23;replace=t
+NC_001895.1	RefSeq	gene	18855	19373	.	+	.	ID=gene-P2p24;Dbxref=GeneID:77440814;Name=FII;gbkey=Gene;gene=FII;gene_biotype=protein_coding;locus_tag=P2p24
+NC_001895.1	RefSeq	CDS	18855	19373	.	+	0	ID=cds-NP_046779.1;Parent=gene-P2p24;Dbxref=GenBank:NP_046779.1,GeneID:77440814;Name=NP_046779.1;Note=FII%3B structural capsid protein%3B bacteriophage P2-like virions include a head and a tail%3B the tail is composed of a inner tube%2C contractile sheath%2C and baseplate%3B FII is thought to constitute the tail tube;gbkey=CDS;gene=FII;locus_tag=P2p24;product=head closure;protein_id=NP_046779.1;transl_table=11
+NC_001895.1	RefSeq	gene	19430	19857	.	+	.	ID=gene-P2p25;Dbxref=GeneID:77440815;Name=E+E';gbkey=Gene;gene=E+E';gene_biotype=protein_coding;locus_tag=P2p25
+NC_001895.1	RefSeq	CDS	19430	19684	.	+	0	ID=cds-NP_046780.1;Parent=gene-P2p25;Dbxref=GenBank:NP_046780.1,GeneID:77440815;Name=NP_046780.1;Note=shares amino terminus with gpE%3B -1 frameshift;exception=artificial frameshift;gbkey=CDS;gene=E+E';locus_tag=P2p25;product=tail protein;protein_id=NP_046780.1;transl_table=11
+NC_001895.1	RefSeq	CDS	19684	19857	.	+	0	ID=cds-NP_046780.1;Parent=gene-P2p25;Dbxref=GenBank:NP_046780.1,GeneID:77440815;Name=NP_046780.1;Note=shares amino terminus with gpE%3B -1 frameshift;exception=artificial frameshift;gbkey=CDS;gene=E+E';locus_tag=P2p25;product=tail protein;protein_id=NP_046780.1;transl_table=11
+NC_001895.1	RefSeq	sequence_feature	19685	19685	.	+	.	ID=id-P2p25;Dbxref=GeneID:77440815;Note=site of -1 translational frameshift;gbkey=misc_feature;gene=E+E';locus_tag=P2p25
+NC_001895.1	RefSeq	gene	19430	19705	.	+	.	ID=gene-P2p26;Dbxref=GeneID:77440816;Name=E;gbkey=Gene;gene=E;gene_biotype=protein_coding;locus_tag=P2p26
+NC_001895.1	RefSeq	CDS	19430	19705	.	+	0	ID=cds-NP_046781.1;Parent=gene-P2p26;Dbxref=GenBank:NP_046781.1,GeneID:77440816;Name=NP_046781.1;gbkey=CDS;gene=E;locus_tag=P2p26;product=tail protein;protein_id=NP_046781.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	19473	19473	.	+	.	ID=id-P2p26;Dbxref=GeneID:77440816;Note=Ets55 mutation;gbkey=variation;gene=E;locus_tag=P2p26;replace=a
+NC_001895.1	RefSeq	sequence_alteration	19619	19619	.	+	.	ID=id-P2p26-2;Dbxref=GeneID:77440816;Note=Eam30 mutation;gbkey=variation;gene=E;locus_tag=P2p26;replace=t
+NC_001895.1	RefSeq	gene	19850	22297	.	+	.	ID=gene-P2p27;Dbxref=GeneID:77440817;Name=T;gbkey=Gene;gene=T;gene_biotype=protein_coding;locus_tag=P2p27
+NC_001895.1	RefSeq	CDS	19850	22297	.	+	0	ID=cds-NP_046782.1;Parent=gene-P2p27;Dbxref=GenBank:NP_046782.1,GeneID:77440817;Name=NP_046782.1;gbkey=CDS;gene=T;locus_tag=P2p27;product=tail length tape measure protein;protein_id=NP_046782.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	20669	20669	.	+	.	ID=id-P2p27;Dbxref=GeneID:77440817;Note=Tam215 mutation;gbkey=variation;gene=T;locus_tag=P2p27;replace=t
+NC_001895.1	RefSeq	sequence_alteration	21101	21101	.	+	.	ID=id-P2p27-2;Dbxref=GeneID:77440817;Note=Tam5 mutation;gbkey=variation;gene=T;locus_tag=P2p27;replace=t
+NC_001895.1	RefSeq	sequence_alteration	21528	21528	.	+	.	ID=id-P2p27-3;Dbxref=GeneID:77440817;Note=Tam64 mutation;gbkey=variation;gene=T;locus_tag=P2p27;replace=a
+NC_001895.1	RefSeq	gene	22312	22791	.	+	.	ID=gene-P2p28;Dbxref=GeneID:77440818;Name=U;gbkey=Gene;gene=U;gene_biotype=protein_coding;locus_tag=P2p28
+NC_001895.1	RefSeq	CDS	22312	22791	.	+	0	ID=cds-NP_046783.1;Parent=gene-P2p28;Dbxref=GenBank:NP_046783.1,GeneID:77440818;Name=NP_046783.1;gbkey=CDS;gene=U;locus_tag=P2p28;product=tail protein;protein_id=NP_046783.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	22363	22363	.	+	.	ID=id-P2p28;Dbxref=GeneID:77440818;Note=Uam25 mutation;gbkey=variation;gene=U;locus_tag=P2p28;replace=t
+NC_001895.1	RefSeq	sequence_alteration	22501	22501	.	+	.	ID=id-P2p28-2;Dbxref=GeneID:77440818;Note=Uam77 and Uam92 mutations;gbkey=variation;gene=U;locus_tag=P2p28;replace=t
+NC_001895.1	RefSeq	gene	22791	23954	.	+	.	ID=gene-P2p29;Dbxref=GeneID:77440803;Name=D;gbkey=Gene;gene=D;gene_biotype=protein_coding;locus_tag=P2p29
+NC_001895.1	RefSeq	CDS	22791	23954	.	+	0	ID=cds-NP_046784.1;Parent=gene-P2p29;Dbxref=GenBank:NP_046784.1,GeneID:77440803;Name=NP_046784.1;Note=gpD%3B D protein%3B bacteriophage P2-like virions include a head and a tail%3B D protein contributes to tail formation;gbkey=CDS;gene=D;locus_tag=P2p29;product=tail protein;protein_id=NP_046784.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	23592	23592	.	+	.	ID=id-P2p29;Dbxref=GeneID:77440803;Note=Dam6 mutation;gbkey=variation;gene=D;locus_tag=P2p29;replace=t
+NC_001895.1	RefSeq	minus_35_signal	23973	23975	.	+	.	ID=id-NC_001895.1:23973..23975;gbkey=regulatory;regulatory_class=minus_35_signal
+NC_001895.1	RefSeq	minus_10_signal	23996	24002	.	+	.	ID=id-NC_001895.1:23996..24002;gbkey=regulatory;regulatory_class=minus_10_signal
+NC_001895.1	RefSeq	primary_transcript	24008	24288	.	+	.	ID=id-NC_001895.1:24008..24288;Note=putative;gbkey=prim_transcript
+NC_001895.1	RefSeq	gene	24036	24254	.	+	.	ID=gene-P2p30;Dbxref=GeneID:77440804;Name=ogr;gbkey=Gene;gene=ogr;gene_biotype=protein_coding;locus_tag=P2p30
+NC_001895.1	RefSeq	CDS	24036	24254	.	+	0	ID=cds-NP_046785.1;Parent=gene-P2p30;Dbxref=GenBank:NP_046785.1,GeneID:77440804;Name=NP_046785.1;gbkey=CDS;gene=ogr;locus_tag=P2p30;product=transcriptional regulator;protein_id=NP_046785.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	24160	24160	.	+	.	ID=id-P2p30;Dbxref=GeneID:77440804;Note=ogr1 and ogr52 mutations;gbkey=variation;gene=ogr;locus_tag=P2p30;replace=g
+NC_001895.1	RefSeq	sequence_alteration	24148	25274	.	+	.	ID=id-NC_001895.1:24148..25274;Note=del15 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	terminator	24265	24288	.	+	.	ID=id-NC_001895.1:24265..24288;Note=rho-independent terminator for ogr transcript and F operon;gbkey=regulatory;regulatory_class=terminator
+NC_001895.1	RefSeq	protein_binding_site	24293	24320	.	+	.	ID=id-NC_001895.1:24293..24320;Note=P arm;bound_moiety=Int;gbkey=protein_bind
+NC_001895.1	RefSeq	protein_binding_site	24324	24357	.	+	.	ID=id-NC_001895.1:24324..24357;bound_moiety=IHF;gbkey=protein_bind
+NC_001895.1	RefSeq	protein_binding_site	24356	24383	.	+	.	ID=id-NC_001895.1:24356..24383;Note=attP core;bound_moiety=Int;gbkey=protein_bind
+NC_001895.1	RefSeq	sequence_feature	24356	24382	.	-	.	ID=id-NC_001895.1:24356..24382;Note=attP;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_alteration	24372	24372	.	+	.	ID=id-NC_001895.1:24372..24372;Note=saf mutation%3B altered integration site specificity;gbkey=variation;replace=g
+NC_001895.1	RefSeq	sequence_alteration	24376	24376	.	+	.	ID=id-NC_001895.1:24376..24376;Note=left end del3 deletion/insertion;gbkey=variation
+NC_001895.1	RefSeq	sequence_alteration	24378	25927	.	+	.	ID=id-NC_001895.1:24378..25927;Note=vir22 deletion/insertion;gbkey=variation
+NC_001895.1	RefSeq	sequence_alteration	24378	25065	.	+	.	ID=id-NC_001895.1:24378..25065;Note=del6 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	sequence_alteration	24381	26340	.	+	.	ID=id-NC_001895.1:24381..26340;Note=vir94 deletion/insertion;gbkey=variation
+NC_001895.1	RefSeq	protein_binding_site	24399	24472	.	+	.	ID=id-NC_001895.1:24399..24472;bound_moiety=Cox;gbkey=protein_bind
+NC_001895.1	RefSeq	gene	24462	25475	.	-	.	ID=gene-P2p31;Dbxref=GeneID:77440805;Name=int;gbkey=Gene;gene=int;gene_biotype=protein_coding;locus_tag=P2p31
+NC_001895.1	RefSeq	CDS	24462	25475	.	-	0	ID=cds-NP_046786.1;Parent=gene-P2p31;Dbxref=GenBank:NP_046786.1,GeneID:77440805;Name=NP_046786.1;Note=Int%3B binds dsDNA%3B cleaves and religates DNA through a covalent phosphotyrosine intermediate%3B bacteriophage P2 Int mediates the site-specific recombination event leading to integration or excision of the phage genome into or out of the Escherichia coli chromosome%3B integrative recombination occurs between the phage attachment site attP and the bacterial attachment site attB%2C integrative recombination also requires E. coli IHF%3B excision requires IHF and the phage-encoded Cox protein;gbkey=CDS;gene=int;locus_tag=P2p31;product=integrase;protein_id=NP_046786.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	24539	24539	.	-	.	ID=id-P2p31;Dbxref=GeneID:77440805;Note=intam150 mutation;gbkey=variation;gene=int;locus_tag=P2p31;replace=a
+NC_001895.1	RefSeq	sequence_alteration	25130	25130	.	-	.	ID=id-P2p31-2;Dbxref=GeneID:77440805;Note=intam239 mutation;gbkey=variation;gene=int;locus_tag=P2p31;replace=a
+NC_001895.1	RefSeq	sequence_alteration	25454	25454	.	-	.	ID=id-P2p31-3;Dbxref=GeneID:77440805;Note=nip1 mutation;gbkey=variation;gene=int;locus_tag=P2p31;replace=t
+NC_001895.1	RefSeq	protein_binding_site	24470	24496	.	+	.	ID=id-NC_001895.1:24470..24496;Note=P' arm;bound_moiety=Int;gbkey=protein_bind
+NC_001895.1	RefSeq	sequence_alteration	25492	25839	.	+	.	ID=id-NC_001895.1:25492..25839;Note=vir 79 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	gene	25591	25890	.	-	.	ID=gene-P2p32;Dbxref=GeneID:77440806;Name=C;gbkey=Gene;gene=C;gene_biotype=protein_coding;locus_tag=P2p32
+NC_001895.1	RefSeq	CDS	25591	25890	.	-	0	ID=cds-NP_046787.1;Parent=gene-P2p32;Dbxref=GenBank:NP_046787.1,GeneID:77440806;Name=NP_046787.1;gbkey=CDS;gene=C;locus_tag=P2p32;product=transcriptional regulator;protein_id=NP_046787.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	25637	25637	.	-	.	ID=id-P2p32;Dbxref=GeneID:77440806;Note=sly1 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=t
+NC_001895.1	RefSeq	sequence_alteration	25682	25682	.	-	.	ID=id-P2p32-2;Dbxref=GeneID:77440806;Note=cts7 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=t
+NC_001895.1	RefSeq	sequence_alteration	25686	25702	.	-	.	ID=id-P2p32-3;Dbxref=GeneID:77440806;Note=cam11 and cam13 mutations;gbkey=variation;gene=C;locus_tag=P2p32;replace=a
+NC_001895.1	RefSeq	sequence_alteration	25702	25702	.	-	.	ID=id-P2p32-4;Dbxref=GeneID:77440806;Note=cts6 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=a
+NC_001895.1	RefSeq	sequence_alteration	25731	25731	.	-	.	ID=id-P2p32-5;Dbxref=GeneID:77440806;Note=cam10 and cam12 mutations;gbkey=variation;gene=C;locus_tag=P2p32;replace=a
+NC_001895.1	RefSeq	sequence_alteration	25772	25772	.	-	.	ID=id-P2p32-6;Dbxref=GeneID:77440806;Note=cts9 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=t
+NC_001895.1	RefSeq	sequence_alteration	25802	25802	.	-	.	ID=id-P2p32-7;Dbxref=GeneID:77440806;Note=vir1 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=t
+NC_001895.1	RefSeq	sequence_alteration	25829	25829	.	-	.	ID=id-P2p32-8;Dbxref=GeneID:77440806;Note=cts8 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=g
+NC_001895.1	RefSeq	sequence_alteration	25844	25844	.	-	.	ID=id-P2p32-9;Dbxref=GeneID:77440806;Note=cts5 mutation;gbkey=variation;gene=C;locus_tag=P2p32;replace=a
+NC_001895.1	RefSeq	minus_35_signal	25884	25889	.	+	.	ID=id-NC_001895.1:25884..25889;Note=early promoter Pe;gbkey=regulatory;regulatory_class=minus_35_signal
+NC_001895.1	RefSeq	sequence_feature	25894	25901	.	+	.	ID=id-NC_001895.1:25894..25901;Note=O1 repressor binding site;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_alteration	25899	25955	.	+	.	ID=id-NC_001895.1:25899..25955;Note=vir24 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	sequence_alteration	25900	25916	.	+	.	ID=id-NC_001895.1:25900..25916;Note=vir3 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	sequence_alteration	25904	25920	.	+	.	ID=id-NC_001895.1:25904..25920;Note=vir65 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	minus_10_signal	25907	25912	.	+	.	ID=id-NC_001895.1:25907..25912;Note=early promoter Pe;gbkey=regulatory;regulatory_class=minus_10_signal
+NC_001895.1	RefSeq	sequence_alteration	25909	25983	.	+	.	ID=id-NC_001895.1:25909..25983;Note=vir40 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	sequence_alteration	25913	25913	.	+	.	ID=id-NC_001895.1:25913..25913;Note=c1 mutation;gbkey=variation;replace=c
+NC_001895.1	RefSeq	sequence_feature	25916	25923	.	+	.	ID=id-NC_001895.1:25916..25923;Note=O2 repressor binding site;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_alteration	25922	25922	.	+	.	ID=id-NC_001895.1:25922..25922;Note=vir6 mutation;gbkey=variation;replace=
+NC_001895.1	RefSeq	minus_10_signal	25962	25967	.	-	.	ID=id-NC_001895.1:25962..25967;Note=Pc promoter;gbkey=regulatory;regulatory_class=minus_10_signal
+NC_001895.1	RefSeq	minus_35_signal	25982	25987	.	-	.	ID=id-NC_001895.1:25982..25987;Note=Pc promoter;gbkey=regulatory;regulatory_class=minus_35_signal
+NC_001895.1	RefSeq	gene	26005	26280	.	+	.	ID=gene-P2p33;Dbxref=GeneID:77440819;Name=cox;gbkey=Gene;gene=cox;gene_biotype=protein_coding;locus_tag=P2p33
+NC_001895.1	RefSeq	CDS	26005	26280	.	+	0	ID=cds-NP_046788.1;Parent=gene-P2p33;Dbxref=GenBank:NP_046788.1,GeneID:77440819;Name=NP_046788.1;gbkey=CDS;gene=cox;locus_tag=P2p33;product=Cox-like excisionase and repressor;protein_id=NP_046788.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	26069	26069	.	+	.	ID=id-P2p33;Dbxref=GeneID:77440819;Note=cox3 mutation;gbkey=variation;gene=cox;locus_tag=P2p33;replace=a
+NC_001895.1	RefSeq	sequence_alteration	26129	26129	.	+	.	ID=id-P2p33-2;Dbxref=GeneID:77440819;Note=cox2 mutation;gbkey=variation;gene=cox;locus_tag=P2p33;replace=c
+NC_001895.1	RefSeq	sequence_alteration	26164	26164	.	+	.	ID=id-P2p33-3;Dbxref=GeneID:77440819;Note=cox4 mutation;gbkey=variation;gene=cox;locus_tag=P2p33;replace=a
+NC_001895.1	RefSeq	gene	26291	26461	.	+	.	ID=gene-P2p34;Dbxref=GeneID:77440820;Name=P2p34;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p34
+NC_001895.1	RefSeq	CDS	26291	26461	.	+	0	ID=cds-NP_046789.1;Parent=gene-P2p34;Dbxref=GenBank:NP_046789.1,GeneID:77440820;Name=NP_046789.1;gbkey=CDS;locus_tag=P2p34;product=hypothetical protein;protein_id=NP_046789.1;transl_table=11
+NC_001895.1	RefSeq	gene	26458	26958	.	+	.	ID=gene-P2p35;Dbxref=GeneID:77440825;Name=B;gbkey=Gene;gene=B;gene_biotype=protein_coding;locus_tag=P2p35
+NC_001895.1	RefSeq	CDS	26458	26958	.	+	0	ID=cds-NP_046790.1;Parent=gene-P2p35;Dbxref=GenBank:NP_046790.1,GeneID:77440825;Name=NP_046790.1;gbkey=CDS;gene=B;locus_tag=P2p35;product=gpB;protein_id=NP_046790.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	26525	26525	.	+	.	ID=id-P2p35;Dbxref=GeneID:77440825;Note=rlb1 mutation;gbkey=variation;gene=B;locus_tag=P2p35;replace=g
+NC_001895.1	RefSeq	sequence_alteration	26611	26611	.	+	.	ID=id-P2p35-2;Dbxref=GeneID:77440825;Note=Bam213 mutation;gbkey=variation;gene=B;locus_tag=P2p35;replace=t
+NC_001895.1	RefSeq	sequence_alteration	26722	26722	.	+	.	ID=id-P2p35-3;Dbxref=GeneID:77440825;Note=Bam116 mutation;gbkey=variation;gene=B;locus_tag=P2p35;replace=t
+NC_001895.1	RefSeq	sequence_alteration	26762	26762	.	+	.	ID=id-P2p35-4;Dbxref=GeneID:77440825;Note=Bts6 mutation;gbkey=variation;gene=B;locus_tag=P2p35;replace=t
+NC_001895.1	RefSeq	sequence_alteration	26914	26914	.	+	.	ID=id-P2p35-5;Dbxref=GeneID:77440825;Note=Bts40 mutation;gbkey=variation;gene=B;locus_tag=P2p35;replace=t
+NC_001895.1	RefSeq	terminator	26980	27007	.	+	.	ID=id-NC_001895.1:26980..27007;Note=putative rho-independent terminator;gbkey=regulatory;regulatory_class=terminator
+NC_001895.1	RefSeq	gene	27022	27246	.	+	.	ID=gene-P2p36;Dbxref=GeneID:77440821;Name=P2p36;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p36
+NC_001895.1	RefSeq	CDS	27022	27246	.	+	0	ID=cds-NP_046791.1;Parent=gene-P2p36;Dbxref=GenBank:NP_046791.1,GeneID:77440821;Name=NP_046791.1;gbkey=CDS;locus_tag=P2p36;product=DUF2732 family protein;protein_id=NP_046791.1;transl_table=11
+NC_001895.1	RefSeq	gene	27246	27548	.	+	.	ID=gene-P2p37;Dbxref=GeneID:77440826;Name=P2p37;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p37
+NC_001895.1	RefSeq	CDS	27246	27548	.	+	0	ID=cds-NP_046792.1;Parent=gene-P2p37;Dbxref=GenBank:NP_046792.1,GeneID:77440826;Name=NP_046792.1;gbkey=CDS;locus_tag=P2p37;product=replication initiation protein;protein_id=NP_046792.1;transl_table=11
+NC_001895.1	RefSeq	gene	27548	27772	.	+	.	ID=gene-P2p38;Dbxref=GeneID:77440827;Name=P2p38;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p38
+NC_001895.1	RefSeq	CDS	27548	27772	.	+	0	ID=cds-NP_046793.1;Parent=gene-P2p38;Dbxref=GenBank:NP_046793.1,GeneID:77440827;Name=NP_046793.1;Note=putative C4-type zinc finger domain;gbkey=CDS;locus_tag=P2p38;product=DksA-like zinc-finger protein;protein_id=NP_046793.1;transl_table=11
+NC_001895.1	RefSeq	gene	27769	28044	.	+	.	ID=gene-P2p39;Dbxref=GeneID:77440828;Name=P2p39;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p39
+NC_001895.1	RefSeq	CDS	27769	28044	.	+	0	ID=cds-NP_046794.1;Parent=gene-P2p39;Dbxref=GenBank:NP_046794.1,GeneID:77440828;Name=NP_046794.1;gbkey=CDS;locus_tag=P2p39;product=DUF5405 family protein;protein_id=NP_046794.1;transl_table=11
+NC_001895.1	RefSeq	gene	28034	30320	.	+	.	ID=gene-P2p40;Dbxref=GeneID:77440829;Name=A;gbkey=Gene;gene=A;gene_biotype=protein_coding;locus_tag=P2p40
+NC_001895.1	RefSeq	CDS	28034	30319	.	+	0	ID=cds-NP_046795.1;Parent=gene-P2p40;Dbxref=GenBank:NP_046795.1,GeneID:77440829;Name=NP_046795.1;gbkey=CDS;gene=A;locus_tag=P2p40;product=nicking at origin of replication;protein_id=NP_046795.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	28649	28649	.	+	.	ID=id-P2p40;Dbxref=GeneID:77440829;Note=Aam127 mutation;gbkey=variation;gene=A;locus_tag=P2p40;replace=t
+NC_001895.1	RefSeq	sequence_alteration	29528	29528	.	+	.	ID=id-P2p40-2;Dbxref=GeneID:77440829;Note=Ats54 mutation;gbkey=variation;gene=A;locus_tag=P2p40;replace=a
+NC_001895.1	RefSeq	origin_of_replication	29892	29892	.	+	.	ID=id-NC_001895.1:29892..29892;Note=nick site at ori;gbkey=rep_origin
+NC_001895.1	RefSeq	gene	30316	30645	.	+	.	ID=gene-P2p41;Dbxref=GeneID:77440822;Name=P2p41;gbkey=Gene;gene_biotype=protein_coding;locus_tag=P2p41
+NC_001895.1	RefSeq	CDS	30316	30645	.	+	0	ID=cds-NP_046796.1;Parent=gene-P2p41;Dbxref=GenBank:NP_046796.1,GeneID:77440822;Name=NP_046796.1;gbkey=CDS;locus_tag=P2p41;product=DUF3850 domain-containing protein;protein_id=NP_046796.1;transl_table=11
+NC_001895.1	RefSeq	gene	30684	31445	.	-	.	ID=gene-P2p42;Dbxref=GeneID:77440830;Name=tin;gbkey=Gene;gene=tin;gene_biotype=protein_coding;locus_tag=P2p42
+NC_001895.1	RefSeq	CDS	30684	31445	.	-	0	ID=cds-NP_046797.1;Parent=gene-P2p42;Dbxref=GenBank:NP_046797.1,GeneID:77440830;Name=NP_046797.1;gbkey=CDS;gene=tin;locus_tag=P2p42;product=Tin;protein_id=NP_046797.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	30992	33334	.	+	.	ID=id-NC_001895.1:30992..33334;Note=del4 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	sequence_alteration	31022	33454	.	+	.	ID=id-NC_001895.1:31022..33454;Note=del1 deletion;gbkey=variation;replace=
+NC_001895.1	RefSeq	gene	31620	33380	.	-	.	ID=gene-P2p43;Dbxref=GeneID:77440823;Name=old;gbkey=Gene;gene=old;gene_biotype=protein_coding;locus_tag=P2p43
+NC_001895.1	RefSeq	CDS	31620	33380	.	-	0	ID=cds-NP_046798.1;Parent=gene-P2p43;Dbxref=GenBank:NP_046798.1,GeneID:77440823;Name=NP_046798.1;gbkey=CDS;gene=old;locus_tag=P2p43;product=AAA family ATPase;protein_id=NP_046798.1;transl_table=11
+NC_001895.1	RefSeq	sequence_alteration	31991	31991	.	-	.	ID=id-P2p43;Dbxref=GeneID:77440823;Note=oldam11 mutation;gbkey=variation;gene=old;locus_tag=P2p43;replace=a
+NC_001895.1	RefSeq	sequence_alteration	32576	32576	.	-	.	ID=id-P2p43-2;Dbxref=GeneID:77440823;Note=old1 mutation;gbkey=variation;gene=old;locus_tag=P2p43;replace=t
+NC_001895.1	RefSeq	sequence_feature	33424	33424	.	-	.	ID=id-NC_001895.1:33424..33424;Note=transcript start 1%3B old-tin mRNA;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_feature	33426	33426	.	-	.	ID=id-NC_001895.1:33426..33426;Note=transcript start 2%3B old-tin mRNA;gbkey=misc_feature
+NC_001895.1	RefSeq	sequence_feature	33575	33593	.	+	.	ID=id-NC_001895.1:33575..33593;Note=cosR%3B right cohesive end;gbkey=misc_feature
+###

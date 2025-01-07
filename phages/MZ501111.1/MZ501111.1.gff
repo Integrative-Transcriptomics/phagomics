@@ -1,0 +1,490 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ASM2089265v1
+#!genome-build-accession NCBI_Assembly:GCA_020892655.1
+##sequence-region MZ501111.1 1 140659
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2852023
+MZ501111.1	Genbank	region	1	140659	.	+	.	ID=MZ501111.1:1..140659;Dbxref=taxon:2852023;collected-by=Enea Maffei;collection-date=06-Jul-2019;country=Switzerland: Basel;gbkey=Src;genome=genomic;identified-by=Enea Maffei;isolation-source=sewage plant inflow;lat-lon=47.56 N 7.59 E;mol_type=genomic DNA;nat-host=Escherichia coli K-12;strain=Bas51
+MZ501111.1	Genbank	gene	1	399	.	+	.	ID=gene-bas51_0001;Name=bas51_0001;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0001
+MZ501111.1	Genbank	CDS	1	399	.	+	0	ID=cds-QXV85511.1;Parent=gene-bas51_0001;Dbxref=NCBI_GP:QXV85511.1;Name=QXV85511.1;gbkey=CDS;locus_tag=bas51_0001;product=i-spanin;protein_id=QXV85511.1;transl_table=11
+MZ501111.1	Genbank	gene	396	683	.	+	.	ID=gene-bas51_0002;Name=bas51_0002;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0002
+MZ501111.1	Genbank	CDS	396	683	.	+	0	ID=cds-QXV85512.1;Parent=gene-bas51_0002;Dbxref=NCBI_GP:QXV85512.1;Name=QXV85512.1;gbkey=CDS;locus_tag=bas51_0002;product=o-spanin;protein_id=QXV85512.1;transl_table=11
+MZ501111.1	Genbank	gene	683	3113	.	+	.	ID=gene-bas51_0003;Name=bas51_0003;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0003
+MZ501111.1	Genbank	CDS	683	1108	.	+	0	ID=cds-QXV85513.1;Parent=gene-bas51_0003;Dbxref=NCBI_GP:QXV85513.1;Name=QXV85513.1;gbkey=CDS;locus_tag=bas51_0003;product=terminase large subunit;protein_id=QXV85513.1;transl_table=11
+MZ501111.1	Genbank	CDS	1992	3113	.	+	0	ID=cds-QXV85513.1;Parent=gene-bas51_0003;Dbxref=NCBI_GP:QXV85513.1;Name=QXV85513.1;gbkey=CDS;locus_tag=bas51_0003;product=terminase large subunit;protein_id=QXV85513.1;transl_table=11
+MZ501111.1	Genbank	gene	1327	1917	.	+	.	ID=gene-bas51_0004;Name=bas51_0004;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0004
+MZ501111.1	Genbank	CDS	1327	1917	.	+	0	ID=cds-QXV85514.1;Parent=gene-bas51_0004;Dbxref=NCBI_GP:QXV85514.1;Name=QXV85514.1;gbkey=CDS;locus_tag=bas51_0004;product=putative homing endonuclease;protein_id=QXV85514.1;transl_table=11
+MZ501111.1	Genbank	gene	3214	4770	.	+	.	ID=gene-bas51_0005;Name=bas51_0005;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0005
+MZ501111.1	Genbank	CDS	3214	4770	.	+	0	ID=cds-QXV85515.1;Parent=gene-bas51_0005;Dbxref=NCBI_GP:QXV85515.1;Name=QXV85515.1;gbkey=CDS;locus_tag=bas51_0005;product=portal protein;protein_id=QXV85515.1;transl_table=11
+MZ501111.1	Genbank	gene	4837	5256	.	+	.	ID=gene-bas51_0006;Name=bas51_0006;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0006
+MZ501111.1	Genbank	CDS	4837	5256	.	+	0	ID=cds-QXV85516.1;Parent=gene-bas51_0006;Dbxref=NCBI_GP:QXV85516.1;Name=QXV85516.1;gbkey=CDS;locus_tag=bas51_0006;product=prohead protease;protein_id=QXV85516.1;transl_table=11
+MZ501111.1	Genbank	gene	5256	6233	.	+	.	ID=gene-bas51_0007;Name=bas51_0007;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0007
+MZ501111.1	Genbank	CDS	5256	6233	.	+	0	ID=cds-QXV85517.1;Parent=gene-bas51_0007;Dbxref=NCBI_GP:QXV85517.1;Name=QXV85517.1;gbkey=CDS;locus_tag=bas51_0007;product=head scaffold protein;protein_id=QXV85517.1;transl_table=11
+MZ501111.1	Genbank	gene	6254	6643	.	+	.	ID=gene-bas51_0008;Name=bas51_0008;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0008
+MZ501111.1	Genbank	CDS	6254	6643	.	+	0	ID=cds-QXV85518.1;Parent=gene-bas51_0008;Dbxref=NCBI_GP:QXV85518.1;Name=QXV85518.1;gbkey=CDS;locus_tag=bas51_0008;product=head decoration protein;protein_id=QXV85518.1;transl_table=11
+MZ501111.1	Genbank	gene	6692	7699	.	+	.	ID=gene-bas51_0009;Name=bas51_0009;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0009
+MZ501111.1	Genbank	CDS	6692	7699	.	+	0	ID=cds-QXV85519.1;Parent=gene-bas51_0009;Dbxref=NCBI_GP:QXV85519.1;Name=QXV85519.1;gbkey=CDS;locus_tag=bas51_0009;product=major capsid protein;protein_id=QXV85519.1;transl_table=11
+MZ501111.1	Genbank	gene	7780	8625	.	+	.	ID=gene-bas51_0010;Name=bas51_0010;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0010
+MZ501111.1	Genbank	CDS	7780	8625	.	+	0	ID=cds-QXV85520.1;Parent=gene-bas51_0010;Dbxref=NCBI_GP:QXV85520.1;Name=QXV85520.1;gbkey=CDS;locus_tag=bas51_0010;product=hypothetical protein;protein_id=QXV85520.1;transl_table=11
+MZ501111.1	Genbank	gene	8685	9305	.	+	.	ID=gene-bas51_0011;Name=bas51_0011;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0011
+MZ501111.1	Genbank	CDS	8685	9305	.	+	0	ID=cds-QXV85521.1;Parent=gene-bas51_0011;Dbxref=NCBI_GP:QXV85521.1;Name=QXV85521.1;gbkey=CDS;locus_tag=bas51_0011;product=tail capping protein;protein_id=QXV85521.1;transl_table=11
+MZ501111.1	Genbank	gene	9359	9823	.	+	.	ID=gene-bas51_0012;Name=bas51_0012;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0012
+MZ501111.1	Genbank	CDS	9359	9823	.	+	0	ID=cds-QXV85522.1;Parent=gene-bas51_0012;Dbxref=NCBI_GP:QXV85522.1;Name=QXV85522.1;gbkey=CDS;locus_tag=bas51_0012;product=hypothetical protein;protein_id=QXV85522.1;transl_table=11
+MZ501111.1	Genbank	gene	9833	10258	.	+	.	ID=gene-bas51_0013;Name=bas51_0013;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0013
+MZ501111.1	Genbank	CDS	9833	10258	.	+	0	ID=cds-QXV85523.1;Parent=gene-bas51_0013;Dbxref=NCBI_GP:QXV85523.1;Name=QXV85523.1;gbkey=CDS;locus_tag=bas51_0013;product=hypothetical protein;protein_id=QXV85523.1;transl_table=11
+MZ501111.1	Genbank	gene	10258	10809	.	+	.	ID=gene-bas51_0014;Name=bas51_0014;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0014
+MZ501111.1	Genbank	CDS	10258	10809	.	+	0	ID=cds-QXV85524.1;Parent=gene-bas51_0014;Dbxref=NCBI_GP:QXV85524.1;Name=QXV85524.1;gbkey=CDS;locus_tag=bas51_0014;product=hypothetical protein;protein_id=QXV85524.1;transl_table=11
+MZ501111.1	Genbank	gene	10882	12258	.	+	.	ID=gene-bas51_0015;Name=bas51_0015;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0015
+MZ501111.1	Genbank	CDS	10882	12258	.	+	0	ID=cds-QXV85525.1;Parent=gene-bas51_0015;Dbxref=NCBI_GP:QXV85525.1;Name=QXV85525.1;gbkey=CDS;locus_tag=bas51_0015;product=tail sheath protein;protein_id=QXV85525.1;transl_table=11
+MZ501111.1	Genbank	gene	12269	12742	.	+	.	ID=gene-bas51_0016;Name=bas51_0016;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0016
+MZ501111.1	Genbank	CDS	12269	12742	.	+	0	ID=cds-QXV85526.1;Parent=gene-bas51_0016;Dbxref=NCBI_GP:QXV85526.1;Name=QXV85526.1;gbkey=CDS;locus_tag=bas51_0016;product=tail tube protein;protein_id=QXV85526.1;transl_table=11
+MZ501111.1	Genbank	gene	12905	13378	.	+	.	ID=gene-bas51_0017;Name=bas51_0017;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0017
+MZ501111.1	Genbank	CDS	12905	13378	.	+	0	ID=cds-QXV85527.1;Parent=gene-bas51_0017;Dbxref=NCBI_GP:QXV85527.1;Name=QXV85527.1;gbkey=CDS;locus_tag=bas51_0017;product=hypothetical protein;protein_id=QXV85527.1;transl_table=11
+MZ501111.1	Genbank	gene	13390	13638	.	+	.	ID=gene-bas51_0018;Name=bas51_0018;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0018
+MZ501111.1	Genbank	CDS	13390	13638	.	+	0	ID=cds-QXV85528.1;Parent=gene-bas51_0018;Dbxref=NCBI_GP:QXV85528.1;Name=QXV85528.1;gbkey=CDS;locus_tag=bas51_0018;product=hypothetical protein;protein_id=QXV85528.1;transl_table=11
+MZ501111.1	Genbank	gene	13693	16029	.	+	.	ID=gene-bas51_0019;Name=bas51_0019;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0019
+MZ501111.1	Genbank	CDS	13693	16029	.	+	0	ID=cds-QXV85529.1;Parent=gene-bas51_0019;Dbxref=NCBI_GP:QXV85529.1;Name=QXV85529.1;gbkey=CDS;locus_tag=bas51_0019;product=tail tape measure protein;protein_id=QXV85529.1;transl_table=11
+MZ501111.1	Genbank	gene	16135	17019	.	+	.	ID=gene-bas51_0020;Name=bas51_0020;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0020
+MZ501111.1	Genbank	CDS	16135	17019	.	+	0	ID=cds-QXV85530.1;Parent=gene-bas51_0020;Dbxref=NCBI_GP:QXV85530.1;Name=QXV85530.1;gbkey=CDS;locus_tag=bas51_0020;product=tail tube initiator protein;protein_id=QXV85530.1;transl_table=11
+MZ501111.1	Genbank	gene	17032	17412	.	+	.	ID=gene-bas51_0021;Name=bas51_0021;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0021
+MZ501111.1	Genbank	CDS	17032	17412	.	+	0	ID=cds-QXV85531.1;Parent=gene-bas51_0021;Dbxref=NCBI_GP:QXV85531.1;Name=QXV85531.1;gbkey=CDS;locus_tag=bas51_0021;product=hypothetical protein;protein_id=QXV85531.1;transl_table=11
+MZ501111.1	Genbank	gene	17412	18416	.	+	.	ID=gene-bas51_0022;Name=bas51_0022;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0022
+MZ501111.1	Genbank	CDS	17412	18416	.	+	0	ID=cds-QXV85532.1;Parent=gene-bas51_0022;Dbxref=NCBI_GP:QXV85532.1;Name=QXV85532.1;gbkey=CDS;locus_tag=bas51_0022;product=baseplate hub protein;protein_id=QXV85532.1;transl_table=11
+MZ501111.1	Genbank	gene	18416	19093	.	+	.	ID=gene-bas51_0023;Name=bas51_0023;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0023
+MZ501111.1	Genbank	CDS	18416	19093	.	+	0	ID=cds-QXV85533.1;Parent=gene-bas51_0023;Dbxref=NCBI_GP:QXV85533.1;Name=QXV85533.1;gbkey=CDS;locus_tag=bas51_0023;product=baseplate central spike and tail lysozyme;protein_id=QXV85533.1;transl_table=11
+MZ501111.1	Genbank	gene	19106	19822	.	+	.	ID=gene-bas51_0024;Name=bas51_0024;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0024
+MZ501111.1	Genbank	CDS	19106	19822	.	+	0	ID=cds-QXV85534.1;Parent=gene-bas51_0024;Dbxref=NCBI_GP:QXV85534.1;Name=QXV85534.1;gbkey=CDS;locus_tag=bas51_0024;product=baseplate protein;protein_id=QXV85534.1;transl_table=11
+MZ501111.1	Genbank	gene	19832	20500	.	+	.	ID=gene-bas51_0025;Name=bas51_0025;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0025
+MZ501111.1	Genbank	CDS	19832	20500	.	+	0	ID=cds-QXV85535.1;Parent=gene-bas51_0025;Dbxref=NCBI_GP:QXV85535.1;Name=QXV85535.1;gbkey=CDS;locus_tag=bas51_0025;product=sialidase domain protein;protein_id=QXV85535.1;transl_table=11
+MZ501111.1	Genbank	gene	20502	23099	.	+	.	ID=gene-bas51_0026;Name=bas51_0026;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0026
+MZ501111.1	Genbank	CDS	20502	23099	.	+	0	ID=cds-QXV85536.1;Parent=gene-bas51_0026;Dbxref=NCBI_GP:QXV85536.1;Name=QXV85536.1;Note=lateral tail fiber protein with glycosidase domains;gbkey=CDS;locus_tag=bas51_0026;product=lateral tail fiber protein;protein_id=QXV85536.1;transl_table=11
+MZ501111.1	Genbank	gene	23135	26935	.	+	.	ID=gene-bas51_0027;Name=bas51_0027;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0027
+MZ501111.1	Genbank	CDS	23135	26935	.	+	0	ID=cds-QXV85537.1;Parent=gene-bas51_0027;Dbxref=NCBI_GP:QXV85537.1;Name=QXV85537.1;gbkey=CDS;locus_tag=bas51_0027;product=lateral tail fiber protein;protein_id=QXV85537.1;transl_table=11
+MZ501111.1	Genbank	gene	27035	27625	.	+	.	ID=gene-bas51_0028;Name=bas51_0028;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0028
+MZ501111.1	Genbank	CDS	27035	27625	.	+	0	ID=cds-QXV85538.1;Parent=gene-bas51_0028;Dbxref=NCBI_GP:QXV85538.1;Name=QXV85538.1;gbkey=CDS;locus_tag=bas51_0028;product=tail fiber protein;protein_id=QXV85538.1;transl_table=11
+MZ501111.1	Genbank	gene	27627	28178	.	+	.	ID=gene-bas51_0029;Name=bas51_0029;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0029
+MZ501111.1	Genbank	CDS	27627	28178	.	+	0	ID=cds-QXV85539.1;Parent=gene-bas51_0029;Dbxref=NCBI_GP:QXV85539.1;Name=QXV85539.1;gbkey=CDS;locus_tag=bas51_0029;product=baseplate protein;protein_id=QXV85539.1;transl_table=11
+MZ501111.1	Genbank	gene	28178	28603	.	+	.	ID=gene-bas51_0030;Name=bas51_0030;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0030
+MZ501111.1	Genbank	CDS	28178	28603	.	+	0	ID=cds-QXV85540.1;Parent=gene-bas51_0030;Dbxref=NCBI_GP:QXV85540.1;Name=QXV85540.1;gbkey=CDS;locus_tag=bas51_0030;product=cell wall hydrolase protein;protein_id=QXV85540.1;transl_table=11
+MZ501111.1	Genbank	gene	28603	32442	.	+	.	ID=gene-bas51_0031;Name=bas51_0031;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0031
+MZ501111.1	Genbank	CDS	28603	32442	.	+	0	ID=cds-QXV85541.1;Parent=gene-bas51_0031;Dbxref=NCBI_GP:QXV85541.1;Name=QXV85541.1;gbkey=CDS;locus_tag=bas51_0031;product=lateral tail fiber protein with fibronectin type III domain;protein_id=QXV85541.1;transl_table=11
+MZ501111.1	Genbank	gene	32548	34038	.	+	.	ID=gene-bas51_0032;Name=bas51_0032;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0032
+MZ501111.1	Genbank	CDS	32548	34038	.	+	0	ID=cds-QXV85542.1;Parent=gene-bas51_0032;Dbxref=NCBI_GP:QXV85542.1;Name=QXV85542.1;gbkey=CDS;locus_tag=bas51_0032;product=baseplate protein;protein_id=QXV85542.1;transl_table=11
+MZ501111.1	Genbank	gene	34050	34736	.	+	.	ID=gene-bas51_0033;Name=bas51_0033;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0033
+MZ501111.1	Genbank	CDS	34050	34736	.	+	0	ID=cds-QXV85543.1;Parent=gene-bas51_0033;Dbxref=NCBI_GP:QXV85543.1;Name=QXV85543.1;gbkey=CDS;locus_tag=bas51_0033;product=putative tail terminator protein;protein_id=QXV85543.1;transl_table=11
+MZ501111.1	Genbank	gene	34736	36808	.	+	.	ID=gene-bas51_0034;Name=bas51_0034;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0034
+MZ501111.1	Genbank	CDS	34736	36808	.	+	0	ID=cds-QXV85544.1;Parent=gene-bas51_0034;Dbxref=NCBI_GP:QXV85544.1;Name=QXV85544.1;Note=lateral tail fiber with glycosidase and deacetylase domains;gbkey=CDS;locus_tag=bas51_0034;product=lateral tail fiber protein;protein_id=QXV85544.1;transl_table=11
+MZ501111.1	Genbank	gene	36821	37861	.	+	.	ID=gene-bas51_0035;Name=bas51_0035;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0035
+MZ501111.1	Genbank	CDS	36821	37861	.	+	0	ID=cds-QXV85545.1;Parent=gene-bas51_0035;Dbxref=NCBI_GP:QXV85545.1;Name=QXV85545.1;gbkey=CDS;locus_tag=bas51_0035;product=short tail fiber protein;protein_id=QXV85545.1;transl_table=11
+MZ501111.1	Genbank	gene	37876	38460	.	+	.	ID=gene-bas51_0036;Name=bas51_0036;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0036
+MZ501111.1	Genbank	CDS	37876	38460	.	+	0	ID=cds-QXV85546.1;Parent=gene-bas51_0036;Dbxref=NCBI_GP:QXV85546.1;Name=QXV85546.1;gbkey=CDS;locus_tag=bas51_0036;product=tail fiber chaperone;protein_id=QXV85546.1;transl_table=11
+MZ501111.1	Genbank	gene	38472	38786	.	+	.	ID=gene-bas51_0037;Name=bas51_0037;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0037
+MZ501111.1	Genbank	CDS	38472	38786	.	+	0	ID=cds-QXV85547.1;Parent=gene-bas51_0037;Dbxref=NCBI_GP:QXV85547.1;Name=QXV85547.1;gbkey=CDS;locus_tag=bas51_0037;product=hypothetical protein;protein_id=QXV85547.1;transl_table=11
+MZ501111.1	Genbank	gene	38876	39919	.	+	.	ID=gene-bas51_0038;Name=bas51_0038;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0038
+MZ501111.1	Genbank	CDS	38876	39919	.	+	0	ID=cds-QXV85548.1;Parent=gene-bas51_0038;Dbxref=NCBI_GP:QXV85548.1;Name=QXV85548.1;gbkey=CDS;locus_tag=bas51_0038;product=short tail fiber protein;protein_id=QXV85548.1;transl_table=11
+MZ501111.1	Genbank	gene	39931	40197	.	+	.	ID=gene-bas51_0039;Name=bas51_0039;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0039
+MZ501111.1	Genbank	CDS	39931	40197	.	+	0	ID=cds-QXV85549.1;Parent=gene-bas51_0039;Dbxref=NCBI_GP:QXV85549.1;Name=QXV85549.1;gbkey=CDS;locus_tag=bas51_0039;product=hypothetical protein;protein_id=QXV85549.1;transl_table=11
+MZ501111.1	Genbank	gene	40207	41952	.	+	.	ID=gene-bas51_0040;Name=bas51_0040;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0040
+MZ501111.1	Genbank	CDS	40207	41952	.	+	0	ID=cds-QXV85550.1;Parent=gene-bas51_0040;Dbxref=NCBI_GP:QXV85550.1;Name=QXV85550.1;gbkey=CDS;locus_tag=bas51_0040;product=lateral tail fiber protein with glycosidase domain;protein_id=QXV85550.1;transl_table=11
+MZ501111.1	Genbank	gene	42001	47628	.	+	.	ID=gene-bas51_0041;Name=bas51_0041;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0041
+MZ501111.1	Genbank	CDS	42001	47628	.	+	0	ID=cds-QXV85551.1;Parent=gene-bas51_0041;Dbxref=NCBI_GP:QXV85551.1;Name=QXV85551.1;gbkey=CDS;locus_tag=bas51_0041;product=lateral tail fiber protein with intimin domain;protein_id=QXV85551.1;transl_table=11
+MZ501111.1	Genbank	gene	47675	47875	.	-	.	ID=gene-bas51_0042;Name=bas51_0042;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0042
+MZ501111.1	Genbank	CDS	47675	47875	.	-	0	ID=cds-QXV85552.1;Parent=gene-bas51_0042;Dbxref=NCBI_GP:QXV85552.1;Name=QXV85552.1;gbkey=CDS;locus_tag=bas51_0042;product=hypothetical protein;protein_id=QXV85552.1;transl_table=11
+MZ501111.1	Genbank	gene	47879	48286	.	-	.	ID=gene-bas51_0043;Name=bas51_0043;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0043
+MZ501111.1	Genbank	CDS	47879	48286	.	-	0	ID=cds-QXV85553.1;Parent=gene-bas51_0043;Dbxref=NCBI_GP:QXV85553.1;Name=QXV85553.1;gbkey=CDS;locus_tag=bas51_0043;product=hypothetical protein;protein_id=QXV85553.1;transl_table=11
+MZ501111.1	Genbank	gene	48451	48831	.	-	.	ID=gene-bas51_0044;Name=bas51_0044;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0044
+MZ501111.1	Genbank	CDS	48451	48831	.	-	0	ID=cds-QXV85554.1;Parent=gene-bas51_0044;Dbxref=NCBI_GP:QXV85554.1;Name=QXV85554.1;gbkey=CDS;locus_tag=bas51_0044;product=hypothetical protein;protein_id=QXV85554.1;transl_table=11
+MZ501111.1	Genbank	gene	48959	49129	.	-	.	ID=gene-bas51_0045;Name=bas51_0045;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0045
+MZ501111.1	Genbank	CDS	48959	49129	.	-	0	ID=cds-QXV85555.1;Parent=gene-bas51_0045;Dbxref=NCBI_GP:QXV85555.1;Name=QXV85555.1;gbkey=CDS;locus_tag=bas51_0045;product=hypothetical protein;protein_id=QXV85555.1;transl_table=11
+MZ501111.1	Genbank	gene	49135	49599	.	-	.	ID=gene-bas51_0046;Name=bas51_0046;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0046
+MZ501111.1	Genbank	CDS	49135	49599	.	-	0	ID=cds-QXV85556.1;Parent=gene-bas51_0046;Dbxref=NCBI_GP:QXV85556.1;Name=QXV85556.1;gbkey=CDS;locus_tag=bas51_0046;product=hypothetical protein;protein_id=QXV85556.1;transl_table=11
+MZ501111.1	Genbank	gene	49602	49877	.	-	.	ID=gene-bas51_0047;Name=bas51_0047;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0047
+MZ501111.1	Genbank	CDS	49602	49877	.	-	0	ID=cds-QXV85557.1;Parent=gene-bas51_0047;Dbxref=NCBI_GP:QXV85557.1;Name=QXV85557.1;gbkey=CDS;locus_tag=bas51_0047;product=hypothetical protein;protein_id=QXV85557.1;transl_table=11
+MZ501111.1	Genbank	gene	49937	50503	.	-	.	ID=gene-bas51_0048;Name=bas51_0048;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0048
+MZ501111.1	Genbank	CDS	49937	50503	.	-	0	ID=cds-QXV85558.1;Parent=gene-bas51_0048;Dbxref=NCBI_GP:QXV85558.1;Name=QXV85558.1;gbkey=CDS;locus_tag=bas51_0048;product=hypothetical protein;protein_id=QXV85558.1;transl_table=11
+MZ501111.1	Genbank	gene	50506	50751	.	-	.	ID=gene-bas51_0049;Name=bas51_0049;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0049
+MZ501111.1	Genbank	CDS	50506	50751	.	-	0	ID=cds-QXV85559.1;Parent=gene-bas51_0049;Dbxref=NCBI_GP:QXV85559.1;Name=QXV85559.1;gbkey=CDS;locus_tag=bas51_0049;product=hypothetical protein;protein_id=QXV85559.1;transl_table=11
+MZ501111.1	Genbank	gene	50748	51197	.	-	.	ID=gene-bas51_0050;Name=bas51_0050;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0050
+MZ501111.1	Genbank	CDS	50748	51197	.	-	0	ID=cds-QXV85560.1;Parent=gene-bas51_0050;Dbxref=NCBI_GP:QXV85560.1;Name=QXV85560.1;gbkey=CDS;locus_tag=bas51_0050;product=hypothetical protein;protein_id=QXV85560.1;transl_table=11
+MZ501111.1	Genbank	gene	51214	51447	.	-	.	ID=gene-bas51_0051;Name=bas51_0051;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0051
+MZ501111.1	Genbank	CDS	51214	51447	.	-	0	ID=cds-QXV85561.1;Parent=gene-bas51_0051;Dbxref=NCBI_GP:QXV85561.1;Name=QXV85561.1;gbkey=CDS;locus_tag=bas51_0051;product=hypothetical protein;protein_id=QXV85561.1;transl_table=11
+MZ501111.1	Genbank	gene	51449	51712	.	-	.	ID=gene-bas51_0052;Name=bas51_0052;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0052
+MZ501111.1	Genbank	CDS	51449	51712	.	-	0	ID=cds-QXV85562.1;Parent=gene-bas51_0052;Dbxref=NCBI_GP:QXV85562.1;Name=QXV85562.1;gbkey=CDS;locus_tag=bas51_0052;product=hypothetical protein;protein_id=QXV85562.1;transl_table=11
+MZ501111.1	Genbank	gene	51712	51975	.	-	.	ID=gene-bas51_0053;Name=bas51_0053;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0053
+MZ501111.1	Genbank	CDS	51712	51975	.	-	0	ID=cds-QXV85563.1;Parent=gene-bas51_0053;Dbxref=NCBI_GP:QXV85563.1;Name=QXV85563.1;gbkey=CDS;locus_tag=bas51_0053;product=hypothetical protein;protein_id=QXV85563.1;transl_table=11
+MZ501111.1	Genbank	gene	51975	52238	.	-	.	ID=gene-bas51_0054;Name=bas51_0054;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0054
+MZ501111.1	Genbank	CDS	51975	52238	.	-	0	ID=cds-QXV85564.1;Parent=gene-bas51_0054;Dbxref=NCBI_GP:QXV85564.1;Name=QXV85564.1;gbkey=CDS;locus_tag=bas51_0054;product=hypothetical protein;protein_id=QXV85564.1;transl_table=11
+MZ501111.1	Genbank	gene	52254	53714	.	-	.	ID=gene-bas51_0055;Name=bas51_0055;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0055
+MZ501111.1	Genbank	CDS	52254	53714	.	-	0	ID=cds-QXV85565.1;Parent=gene-bas51_0055;Dbxref=NCBI_GP:QXV85565.1;Name=QXV85565.1;gbkey=CDS;locus_tag=bas51_0055;product=putative metallopeptidase;protein_id=QXV85565.1;transl_table=11
+MZ501111.1	Genbank	gene	53748	54725	.	-	.	ID=gene-bas51_0056;Name=bas51_0056;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0056
+MZ501111.1	Genbank	CDS	53748	54725	.	-	0	ID=cds-QXV85566.1;Parent=gene-bas51_0056;Dbxref=NCBI_GP:QXV85566.1;Name=QXV85566.1;gbkey=CDS;locus_tag=bas51_0056;product=anti-sigma factor;protein_id=QXV85566.1;transl_table=11
+MZ501111.1	Genbank	gene	54868	55767	.	+	.	ID=gene-bas51_0057;Name=bas51_0057;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0057
+MZ501111.1	Genbank	CDS	54868	55767	.	+	0	ID=cds-QXV85567.1;Parent=gene-bas51_0057;Dbxref=NCBI_GP:QXV85567.1;Name=QXV85567.1;gbkey=CDS;locus_tag=bas51_0057;product=putative 1-3 fucosyltransferase;protein_id=QXV85567.1;transl_table=11
+MZ501111.1	Genbank	gene	55770	56042	.	+	.	ID=gene-bas51_0058;Name=bas51_0058;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0058
+MZ501111.1	Genbank	CDS	55770	56042	.	+	0	ID=cds-QXV85568.1;Parent=gene-bas51_0058;Dbxref=NCBI_GP:QXV85568.1;Name=QXV85568.1;gbkey=CDS;locus_tag=bas51_0058;product=hypothetical protein;protein_id=QXV85568.1;transl_table=11
+MZ501111.1	Genbank	gene	56056	56412	.	+	.	ID=gene-bas51_0059;Name=bas51_0059;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0059
+MZ501111.1	Genbank	CDS	56056	56412	.	+	0	ID=cds-QXV85569.1;Parent=gene-bas51_0059;Dbxref=NCBI_GP:QXV85569.1;Name=QXV85569.1;gbkey=CDS;locus_tag=bas51_0059;product=hypothetical protein;protein_id=QXV85569.1;transl_table=11
+MZ501111.1	Genbank	gene	56412	56669	.	+	.	ID=gene-bas51_0060;Name=bas51_0060;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0060
+MZ501111.1	Genbank	CDS	56412	56669	.	+	0	ID=cds-QXV85570.1;Parent=gene-bas51_0060;Dbxref=NCBI_GP:QXV85570.1;Name=QXV85570.1;gbkey=CDS;locus_tag=bas51_0060;product=hypothetical protein;protein_id=QXV85570.1;transl_table=11
+MZ501111.1	Genbank	gene	56672	57052	.	+	.	ID=gene-bas51_0061;Name=bas51_0061;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0061
+MZ501111.1	Genbank	CDS	56672	57052	.	+	0	ID=cds-QXV85571.1;Parent=gene-bas51_0061;Dbxref=NCBI_GP:QXV85571.1;Name=QXV85571.1;gbkey=CDS;locus_tag=bas51_0061;product=hypothetical protein;protein_id=QXV85571.1;transl_table=11
+MZ501111.1	Genbank	gene	57097	57366	.	+	.	ID=gene-bas51_0062;Name=bas51_0062;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0062
+MZ501111.1	Genbank	CDS	57097	57366	.	+	0	ID=cds-QXV85572.1;Parent=gene-bas51_0062;Dbxref=NCBI_GP:QXV85572.1;Name=QXV85572.1;gbkey=CDS;locus_tag=bas51_0062;product=hypothetical protein;protein_id=QXV85572.1;transl_table=11
+MZ501111.1	Genbank	gene	57366	58550	.	+	.	ID=gene-bas51_0063;Name=bas51_0063;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0063
+MZ501111.1	Genbank	CDS	57366	58550	.	+	0	ID=cds-QXV85573.1;Parent=gene-bas51_0063;Dbxref=NCBI_GP:QXV85573.1;Name=QXV85573.1;Note=MoxR ATPase;gbkey=CDS;locus_tag=bas51_0063;product=ATPase;protein_id=QXV85573.1;transl_table=11
+MZ501111.1	Genbank	gene	58560	58940	.	+	.	ID=gene-bas51_0064;Name=bas51_0064;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0064
+MZ501111.1	Genbank	CDS	58560	58940	.	+	0	ID=cds-QXV85574.1;Parent=gene-bas51_0064;Dbxref=NCBI_GP:QXV85574.1;Name=QXV85574.1;gbkey=CDS;locus_tag=bas51_0064;product=hypothetical protein;protein_id=QXV85574.1;transl_table=11
+MZ501111.1	Genbank	gene	58990	59490	.	+	.	ID=gene-bas51_0065;Name=bas51_0065;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0065
+MZ501111.1	Genbank	CDS	58990	59490	.	+	0	ID=cds-QXV85575.1;Parent=gene-bas51_0065;Dbxref=NCBI_GP:QXV85575.1;Name=QXV85575.1;gbkey=CDS;locus_tag=bas51_0065;product=putative cell wall hydrolase;protein_id=QXV85575.1;transl_table=11
+MZ501111.1	Genbank	gene	59487	61469	.	+	.	ID=gene-bas51_0066;Name=bas51_0066;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0066
+MZ501111.1	Genbank	CDS	59487	61469	.	+	0	ID=cds-QXV85576.1;Parent=gene-bas51_0066;Dbxref=NCBI_GP:QXV85576.1;Name=QXV85576.1;Note=membrane integrity protector rIIA;gbkey=CDS;locus_tag=bas51_0066;product=membrane integrity protector;protein_id=QXV85576.1;transl_table=11
+MZ501111.1	Genbank	gene	61480	62685	.	+	.	ID=gene-bas51_0067;Name=bas51_0067;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0067
+MZ501111.1	Genbank	CDS	61480	62685	.	+	0	ID=cds-QXV85577.1;Parent=gene-bas51_0067;Dbxref=NCBI_GP:QXV85577.1;Name=QXV85577.1;Note=membrane integrity protector rIIB;gbkey=CDS;locus_tag=bas51_0067;product=membrane integrity protector;protein_id=QXV85577.1;transl_table=11
+MZ501111.1	Genbank	gene	62685	64055	.	+	.	ID=gene-bas51_0068;Name=bas51_0068;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0068
+MZ501111.1	Genbank	CDS	62685	64055	.	+	0	ID=cds-QXV85578.1;Parent=gene-bas51_0068;Dbxref=NCBI_GP:QXV85578.1;Name=QXV85578.1;gbkey=CDS;locus_tag=bas51_0068;product=DNA helicase;protein_id=QXV85578.1;transl_table=11
+MZ501111.1	Genbank	gene	64052	64393	.	+	.	ID=gene-bas51_0069;Name=bas51_0069;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0069
+MZ501111.1	Genbank	CDS	64052	64393	.	+	0	ID=cds-QXV85579.1;Parent=gene-bas51_0069;Dbxref=NCBI_GP:QXV85579.1;Name=QXV85579.1;gbkey=CDS;locus_tag=bas51_0069;product=hypothetical protein;protein_id=QXV85579.1;transl_table=11
+MZ501111.1	Genbank	gene	64456	65781	.	+	.	ID=gene-bas51_0070;Name=bas51_0070;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0070
+MZ501111.1	Genbank	CDS	64456	65781	.	+	0	ID=cds-QXV85580.1;Parent=gene-bas51_0070;Dbxref=NCBI_GP:QXV85580.1;Name=QXV85580.1;gbkey=CDS;locus_tag=bas51_0070;product=putative N6 adenine methyltransferase;protein_id=QXV85580.1;transl_table=11
+MZ501111.1	Genbank	gene	65798	66100	.	+	.	ID=gene-bas51_0071;Name=bas51_0071;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0071
+MZ501111.1	Genbank	CDS	65798	66100	.	+	0	ID=cds-QXV85581.1;Parent=gene-bas51_0071;Dbxref=NCBI_GP:QXV85581.1;Name=QXV85581.1;gbkey=CDS;locus_tag=bas51_0071;product=hypothetical protein;protein_id=QXV85581.1;transl_table=11
+MZ501111.1	Genbank	gene	66100	66495	.	+	.	ID=gene-bas51_0072;Name=bas51_0072;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0072
+MZ501111.1	Genbank	CDS	66100	66495	.	+	0	ID=cds-QXV85582.1;Parent=gene-bas51_0072;Dbxref=NCBI_GP:QXV85582.1;Name=QXV85582.1;gbkey=CDS;locus_tag=bas51_0072;product=hypothetical protein;protein_id=QXV85582.1;transl_table=11
+MZ501111.1	Genbank	gene	66508	66990	.	+	.	ID=gene-bas51_0073;Name=bas51_0073;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0073
+MZ501111.1	Genbank	CDS	66508	66990	.	+	0	ID=cds-QXV85583.1;Parent=gene-bas51_0073;Dbxref=NCBI_GP:QXV85583.1;Name=QXV85583.1;gbkey=CDS;locus_tag=bas51_0073;product=hypothetical protein;protein_id=QXV85583.1;transl_table=11
+MZ501111.1	Genbank	gene	67042	67806	.	+	.	ID=gene-bas51_0074;Name=bas51_0074;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0074
+MZ501111.1	Genbank	CDS	67042	67806	.	+	0	ID=cds-QXV85584.1;Parent=gene-bas51_0074;Dbxref=NCBI_GP:QXV85584.1;Name=QXV85584.1;gbkey=CDS;locus_tag=bas51_0074;product=Dcm-like C5 cytosine methyltransferase;protein_id=QXV85584.1;transl_table=11
+MZ501111.1	Genbank	gene	67796	69874	.	+	.	ID=gene-bas51_0075;Name=bas51_0075;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0075
+MZ501111.1	Genbank	CDS	67796	69874	.	+	0	ID=cds-QXV85585.1;Parent=gene-bas51_0075;Dbxref=NCBI_GP:QXV85585.1;Name=QXV85585.1;gbkey=CDS;locus_tag=bas51_0075;product=DNA primase/helicase;protein_id=QXV85585.1;transl_table=11
+MZ501111.1	Genbank	gene	69933	70667	.	+	.	ID=gene-bas51_0076;Name=bas51_0076;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0076
+MZ501111.1	Genbank	CDS	69933	70667	.	+	0	ID=cds-QXV85586.1;Parent=gene-bas51_0076;Dbxref=NCBI_GP:QXV85586.1;Name=QXV85586.1;gbkey=CDS;locus_tag=bas51_0076;product=putative homing endonuclease;protein_id=QXV85586.1;transl_table=11
+MZ501111.1	Genbank	gene	70664	74283	.	+	.	ID=gene-bas51_0077;Name=bas51_0077;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0077
+MZ501111.1	Genbank	CDS	70664	73087	.	+	0	ID=cds-QXV85587.1;Parent=gene-bas51_0077;Dbxref=NCBI_GP:QXV85587.1;Name=QXV85587.1;gbkey=CDS;locus_tag=bas51_0077;product=DNA polymerase;protein_id=QXV85587.1;transl_table=11
+MZ501111.1	Genbank	CDS	73930	74283	.	+	0	ID=cds-QXV85587.1;Parent=gene-bas51_0077;Dbxref=NCBI_GP:QXV85587.1;Name=QXV85587.1;gbkey=CDS;locus_tag=bas51_0077;product=DNA polymerase;protein_id=QXV85587.1;transl_table=11
+MZ501111.1	Genbank	gene	73228	73734	.	+	.	ID=gene-bas51_0078;Name=bas51_0078;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0078
+MZ501111.1	Genbank	CDS	73228	73734	.	+	0	ID=cds-QXV85588.1;Parent=gene-bas51_0078;Dbxref=NCBI_GP:QXV85588.1;Name=QXV85588.1;gbkey=CDS;locus_tag=bas51_0078;product=putative homing endonuclease;protein_id=QXV85588.1;transl_table=11
+MZ501111.1	Genbank	gene	74333	74617	.	+	.	ID=gene-bas51_0079;Name=bas51_0079;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0079
+MZ501111.1	Genbank	CDS	74333	74617	.	+	0	ID=cds-QXV85589.1;Parent=gene-bas51_0079;Dbxref=NCBI_GP:QXV85589.1;Name=QXV85589.1;gbkey=CDS;locus_tag=bas51_0079;product=hypothetical protein;protein_id=QXV85589.1;transl_table=11
+MZ501111.1	Genbank	gene	74614	74781	.	+	.	ID=gene-bas51_0080;Name=bas51_0080;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0080
+MZ501111.1	Genbank	CDS	74614	74781	.	+	0	ID=cds-QXV85590.1;Parent=gene-bas51_0080;Dbxref=NCBI_GP:QXV85590.1;Name=QXV85590.1;gbkey=CDS;locus_tag=bas51_0080;product=hypothetical protein;protein_id=QXV85590.1;transl_table=11
+MZ501111.1	Genbank	gene	74839	75033	.	+	.	ID=gene-bas51_0081;Name=bas51_0081;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0081
+MZ501111.1	Genbank	CDS	74839	75033	.	+	0	ID=cds-QXV85591.1;Parent=gene-bas51_0081;Dbxref=NCBI_GP:QXV85591.1;Name=QXV85591.1;gbkey=CDS;locus_tag=bas51_0081;product=hypothetical protein;protein_id=QXV85591.1;transl_table=11
+MZ501111.1	Genbank	gene	75044	75415	.	+	.	ID=gene-bas51_0082;Name=bas51_0082;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0082
+MZ501111.1	Genbank	CDS	75044	75415	.	+	0	ID=cds-QXV85592.1;Parent=gene-bas51_0082;Dbxref=NCBI_GP:QXV85592.1;Name=QXV85592.1;gbkey=CDS;locus_tag=bas51_0082;product=hypothetical protein;protein_id=QXV85592.1;transl_table=11
+MZ501111.1	Genbank	gene	75492	75746	.	+	.	ID=gene-bas51_0083;Name=bas51_0083;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0083
+MZ501111.1	Genbank	CDS	75492	75746	.	+	0	ID=cds-QXV85593.1;Parent=gene-bas51_0083;Dbxref=NCBI_GP:QXV85593.1;Name=QXV85593.1;gbkey=CDS;locus_tag=bas51_0083;product=hypothetical protein;protein_id=QXV85593.1;transl_table=11
+MZ501111.1	Genbank	gene	75777	76070	.	+	.	ID=gene-bas51_0084;Name=bas51_0084;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0084
+MZ501111.1	Genbank	CDS	75777	76070	.	+	0	ID=cds-QXV85594.1;Parent=gene-bas51_0084;Dbxref=NCBI_GP:QXV85594.1;Name=QXV85594.1;gbkey=CDS;locus_tag=bas51_0084;product=hypothetical protein;protein_id=QXV85594.1;transl_table=11
+MZ501111.1	Genbank	gene	76070	76459	.	+	.	ID=gene-bas51_0085;Name=bas51_0085;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0085
+MZ501111.1	Genbank	CDS	76070	76459	.	+	0	ID=cds-QXV85595.1;Parent=gene-bas51_0085;Dbxref=NCBI_GP:QXV85595.1;Name=QXV85595.1;gbkey=CDS;locus_tag=bas51_0085;product=hypothetical protein;protein_id=QXV85595.1;transl_table=11
+MZ501111.1	Genbank	gene	76449	76751	.	+	.	ID=gene-bas51_0086;Name=bas51_0086;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0086
+MZ501111.1	Genbank	CDS	76449	76751	.	+	0	ID=cds-QXV85596.1;Parent=gene-bas51_0086;Dbxref=NCBI_GP:QXV85596.1;Name=QXV85596.1;gbkey=CDS;locus_tag=bas51_0086;product=hypothetical protein;protein_id=QXV85596.1;transl_table=11
+MZ501111.1	Genbank	gene	76769	77014	.	+	.	ID=gene-bas51_0087;Name=bas51_0087;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0087
+MZ501111.1	Genbank	CDS	76769	77014	.	+	0	ID=cds-QXV85597.1;Parent=gene-bas51_0087;Dbxref=NCBI_GP:QXV85597.1;Name=QXV85597.1;gbkey=CDS;locus_tag=bas51_0087;product=hypothetical protein;protein_id=QXV85597.1;transl_table=11
+MZ501111.1	Genbank	gene	77098	77463	.	+	.	ID=gene-bas51_0088;Name=bas51_0088;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0088
+MZ501111.1	Genbank	CDS	77098	77463	.	+	0	ID=cds-QXV85598.1;Parent=gene-bas51_0088;Dbxref=NCBI_GP:QXV85598.1;Name=QXV85598.1;gbkey=CDS;locus_tag=bas51_0088;product=hypothetical protein;protein_id=QXV85598.1;transl_table=11
+MZ501111.1	Genbank	gene	77463	78689	.	+	.	ID=gene-bas51_0089;Name=bas51_0089;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0089
+MZ501111.1	Genbank	CDS	77463	78689	.	+	0	ID=cds-QXV85599.1;Parent=gene-bas51_0089;Dbxref=NCBI_GP:QXV85599.1;Name=QXV85599.1;gbkey=CDS;locus_tag=bas51_0089;product=hypothetical protein;protein_id=QXV85599.1;transl_table=11
+MZ501111.1	Genbank	gene	78698	79276	.	+	.	ID=gene-bas51_0090;Name=bas51_0090;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0090
+MZ501111.1	Genbank	CDS	78698	79276	.	+	0	ID=cds-QXV85600.1;Parent=gene-bas51_0090;Dbxref=NCBI_GP:QXV85600.1;Name=QXV85600.1;gbkey=CDS;locus_tag=bas51_0090;product=putative homing endonuclease;protein_id=QXV85600.1;transl_table=11
+MZ501111.1	Genbank	gene	79339	79755	.	+	.	ID=gene-bas51_0091;Name=bas51_0091;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0091
+MZ501111.1	Genbank	CDS	79339	79755	.	+	0	ID=cds-QXV85601.1;Parent=gene-bas51_0091;Dbxref=NCBI_GP:QXV85601.1;Name=QXV85601.1;gbkey=CDS;locus_tag=bas51_0091;product=hypothetical protein;protein_id=QXV85601.1;transl_table=11
+MZ501111.1	Genbank	gene	79852	80049	.	+	.	ID=gene-bas51_0092;Name=bas51_0092;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0092
+MZ501111.1	Genbank	CDS	79852	80049	.	+	0	ID=cds-QXV85602.1;Parent=gene-bas51_0092;Dbxref=NCBI_GP:QXV85602.1;Name=QXV85602.1;gbkey=CDS;locus_tag=bas51_0092;product=hypothetical protein;protein_id=QXV85602.1;transl_table=11
+MZ501111.1	Genbank	gene	80118	80543	.	+	.	ID=gene-bas51_0093;Name=bas51_0093;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0093
+MZ501111.1	Genbank	CDS	80118	80543	.	+	0	ID=cds-QXV85603.1;Parent=gene-bas51_0093;Dbxref=NCBI_GP:QXV85603.1;Name=QXV85603.1;gbkey=CDS;locus_tag=bas51_0093;product=hypothetical protein;protein_id=QXV85603.1;transl_table=11
+MZ501111.1	Genbank	gene	80533	80991	.	+	.	ID=gene-bas51_0094;Name=bas51_0094;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0094
+MZ501111.1	Genbank	CDS	80533	80991	.	+	0	ID=cds-QXV85604.1;Parent=gene-bas51_0094;Dbxref=NCBI_GP:QXV85604.1;Name=QXV85604.1;gbkey=CDS;locus_tag=bas51_0094;product=hypothetical protein;protein_id=QXV85604.1;transl_table=11
+MZ501111.1	Genbank	gene	81046	81216	.	+	.	ID=gene-bas51_0095;Name=bas51_0095;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0095
+MZ501111.1	Genbank	CDS	81046	81216	.	+	0	ID=cds-QXV85605.1;Parent=gene-bas51_0095;Dbxref=NCBI_GP:QXV85605.1;Name=QXV85605.1;gbkey=CDS;locus_tag=bas51_0095;product=hypothetical protein;protein_id=QXV85605.1;transl_table=11
+MZ501111.1	Genbank	gene	81243	81437	.	+	.	ID=gene-bas51_0096;Name=bas51_0096;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0096
+MZ501111.1	Genbank	CDS	81243	81437	.	+	0	ID=cds-QXV85606.1;Parent=gene-bas51_0096;Dbxref=NCBI_GP:QXV85606.1;Name=QXV85606.1;gbkey=CDS;locus_tag=bas51_0096;product=hypothetical protein;protein_id=QXV85606.1;transl_table=11
+MZ501111.1	Genbank	gene	81501	81692	.	+	.	ID=gene-bas51_0097;Name=bas51_0097;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0097
+MZ501111.1	Genbank	CDS	81501	81692	.	+	0	ID=cds-QXV85607.1;Parent=gene-bas51_0097;Dbxref=NCBI_GP:QXV85607.1;Name=QXV85607.1;gbkey=CDS;locus_tag=bas51_0097;product=hypothetical protein;protein_id=QXV85607.1;transl_table=11
+MZ501111.1	Genbank	gene	81703	82035	.	+	.	ID=gene-bas51_0098;Name=bas51_0098;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0098
+MZ501111.1	Genbank	CDS	81703	82035	.	+	0	ID=cds-QXV85608.1;Parent=gene-bas51_0098;Dbxref=NCBI_GP:QXV85608.1;Name=QXV85608.1;gbkey=CDS;locus_tag=bas51_0098;product=hypothetical protein;protein_id=QXV85608.1;transl_table=11
+MZ501111.1	Genbank	gene	82056	82301	.	+	.	ID=gene-bas51_0099;Name=bas51_0099;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0099
+MZ501111.1	Genbank	CDS	82056	82301	.	+	0	ID=cds-QXV85609.1;Parent=gene-bas51_0099;Dbxref=NCBI_GP:QXV85609.1;Name=QXV85609.1;gbkey=CDS;locus_tag=bas51_0099;product=hypothetical protein;protein_id=QXV85609.1;transl_table=11
+MZ501111.1	Genbank	gene	82294	82491	.	+	.	ID=gene-bas51_0100;Name=bas51_0100;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0100
+MZ501111.1	Genbank	CDS	82294	82491	.	+	0	ID=cds-QXV85610.1;Parent=gene-bas51_0100;Dbxref=NCBI_GP:QXV85610.1;Name=QXV85610.1;gbkey=CDS;locus_tag=bas51_0100;product=hypothetical protein;protein_id=QXV85610.1;transl_table=11
+MZ501111.1	Genbank	gene	82488	82817	.	+	.	ID=gene-bas51_0101;Name=bas51_0101;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0101
+MZ501111.1	Genbank	CDS	82488	82817	.	+	0	ID=cds-QXV85611.1;Parent=gene-bas51_0101;Dbxref=NCBI_GP:QXV85611.1;Name=QXV85611.1;gbkey=CDS;locus_tag=bas51_0101;product=hypothetical protein;protein_id=QXV85611.1;transl_table=11
+MZ501111.1	Genbank	gene	83113	83259	.	+	.	ID=gene-bas51_0102;Name=bas51_0102;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0102
+MZ501111.1	Genbank	CDS	83113	83259	.	+	0	ID=cds-QXV85612.1;Parent=gene-bas51_0102;Dbxref=NCBI_GP:QXV85612.1;Name=QXV85612.1;gbkey=CDS;locus_tag=bas51_0102;product=hypothetical protein;protein_id=QXV85612.1;transl_table=11
+MZ501111.1	Genbank	gene	83265	83369	.	+	.	ID=gene-bas51_0103;Name=bas51_0103;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0103
+MZ501111.1	Genbank	CDS	83265	83369	.	+	0	ID=cds-QXV85613.1;Parent=gene-bas51_0103;Dbxref=NCBI_GP:QXV85613.1;Name=QXV85613.1;gbkey=CDS;locus_tag=bas51_0103;product=hypothetical protein;protein_id=QXV85613.1;transl_table=11
+MZ501111.1	Genbank	gene	83424	83717	.	+	.	ID=gene-bas51_0104;Name=bas51_0104;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0104
+MZ501111.1	Genbank	CDS	83424	83717	.	+	0	ID=cds-QXV85614.1;Parent=gene-bas51_0104;Dbxref=NCBI_GP:QXV85614.1;Name=QXV85614.1;gbkey=CDS;locus_tag=bas51_0104;product=hypothetical protein;protein_id=QXV85614.1;transl_table=11
+MZ501111.1	Genbank	gene	83841	84017	.	+	.	ID=gene-bas51_0105;Name=bas51_0105;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0105
+MZ501111.1	Genbank	CDS	83841	84017	.	+	0	ID=cds-QXV85615.1;Parent=gene-bas51_0105;Dbxref=NCBI_GP:QXV85615.1;Name=QXV85615.1;gbkey=CDS;locus_tag=bas51_0105;product=hypothetical protein;protein_id=QXV85615.1;transl_table=11
+MZ501111.1	Genbank	gene	84103	84300	.	+	.	ID=gene-bas51_0106;Name=bas51_0106;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0106
+MZ501111.1	Genbank	CDS	84103	84300	.	+	0	ID=cds-QXV85616.1;Parent=gene-bas51_0106;Dbxref=NCBI_GP:QXV85616.1;Name=QXV85616.1;gbkey=CDS;locus_tag=bas51_0106;product=hypothetical protein;protein_id=QXV85616.1;transl_table=11
+MZ501111.1	Genbank	gene	84365	84763	.	+	.	ID=gene-bas51_0107;Name=bas51_0107;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0107
+MZ501111.1	Genbank	CDS	84365	84763	.	+	0	ID=cds-QXV85617.1;Parent=gene-bas51_0107;Dbxref=NCBI_GP:QXV85617.1;Name=QXV85617.1;gbkey=CDS;locus_tag=bas51_0107;product=hypothetical protein;protein_id=QXV85617.1;transl_table=11
+MZ501111.1	Genbank	gene	84847	85242	.	+	.	ID=gene-bas51_0108;Name=bas51_0108;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0108
+MZ501111.1	Genbank	CDS	84847	85242	.	+	0	ID=cds-QXV85618.1;Parent=gene-bas51_0108;Dbxref=NCBI_GP:QXV85618.1;Name=QXV85618.1;gbkey=CDS;locus_tag=bas51_0108;product=hypothetical protein;protein_id=QXV85618.1;transl_table=11
+MZ501111.1	Genbank	gene	85323	85442	.	+	.	ID=gene-bas51_0109;Name=bas51_0109;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0109
+MZ501111.1	Genbank	CDS	85323	85442	.	+	0	ID=cds-QXV85619.1;Parent=gene-bas51_0109;Dbxref=NCBI_GP:QXV85619.1;Name=QXV85619.1;gbkey=CDS;locus_tag=bas51_0109;product=hypothetical protein;protein_id=QXV85619.1;transl_table=11
+MZ501111.1	Genbank	gene	85523	85873	.	+	.	ID=gene-bas51_0110;Name=bas51_0110;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0110
+MZ501111.1	Genbank	CDS	85523	85873	.	+	0	ID=cds-QXV85620.1;Parent=gene-bas51_0110;Dbxref=NCBI_GP:QXV85620.1;Name=QXV85620.1;gbkey=CDS;locus_tag=bas51_0110;product=hypothetical protein;protein_id=QXV85620.1;transl_table=11
+MZ501111.1	Genbank	gene	85963	86208	.	+	.	ID=gene-bas51_0111;Name=bas51_0111;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0111
+MZ501111.1	Genbank	CDS	85963	86208	.	+	0	ID=cds-QXV85621.1;Parent=gene-bas51_0111;Dbxref=NCBI_GP:QXV85621.1;Name=QXV85621.1;gbkey=CDS;locus_tag=bas51_0111;product=hypothetical protein;protein_id=QXV85621.1;transl_table=11
+MZ501111.1	Genbank	gene	86283	86636	.	+	.	ID=gene-bas51_0112;Name=bas51_0112;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0112
+MZ501111.1	Genbank	CDS	86283	86636	.	+	0	ID=cds-QXV85622.1;Parent=gene-bas51_0112;Dbxref=NCBI_GP:QXV85622.1;Name=QXV85622.1;gbkey=CDS;locus_tag=bas51_0112;product=hypothetical protein;protein_id=QXV85622.1;transl_table=11
+MZ501111.1	Genbank	gene	86626	86823	.	+	.	ID=gene-bas51_0113;Name=bas51_0113;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0113
+MZ501111.1	Genbank	CDS	86626	86823	.	+	0	ID=cds-QXV85623.1;Parent=gene-bas51_0113;Dbxref=NCBI_GP:QXV85623.1;Name=QXV85623.1;gbkey=CDS;locus_tag=bas51_0113;product=hypothetical protein;protein_id=QXV85623.1;transl_table=11
+MZ501111.1	Genbank	gene	87065	87325	.	+	.	ID=gene-bas51_0114;Name=bas51_0114;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0114
+MZ501111.1	Genbank	CDS	87065	87325	.	+	0	ID=cds-QXV85624.1;Parent=gene-bas51_0114;Dbxref=NCBI_GP:QXV85624.1;Name=QXV85624.1;gbkey=CDS;locus_tag=bas51_0114;product=hypothetical protein;protein_id=QXV85624.1;transl_table=11
+MZ501111.1	Genbank	gene	87400	88023	.	+	.	ID=gene-bas51_0115;Name=bas51_0115;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0115
+MZ501111.1	Genbank	CDS	87400	88023	.	+	0	ID=cds-QXV85625.1;Parent=gene-bas51_0115;Dbxref=NCBI_GP:QXV85625.1;Name=QXV85625.1;gbkey=CDS;locus_tag=bas51_0115;product=hypothetical protein;protein_id=QXV85625.1;transl_table=11
+MZ501111.1	Genbank	gene	88113	88493	.	+	.	ID=gene-bas51_0116;Name=bas51_0116;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0116
+MZ501111.1	Genbank	CDS	88113	88493	.	+	0	ID=cds-QXV85626.1;Parent=gene-bas51_0116;Dbxref=NCBI_GP:QXV85626.1;Name=QXV85626.1;gbkey=CDS;locus_tag=bas51_0116;product=hypothetical protein;protein_id=QXV85626.1;transl_table=11
+MZ501111.1	Genbank	gene	88558	88929	.	+	.	ID=gene-bas51_0117;Name=bas51_0117;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0117
+MZ501111.1	Genbank	CDS	88558	88929	.	+	0	ID=cds-QXV85627.1;Parent=gene-bas51_0117;Dbxref=NCBI_GP:QXV85627.1;Name=QXV85627.1;gbkey=CDS;locus_tag=bas51_0117;product=putative holin;protein_id=QXV85627.1;transl_table=11
+MZ501111.1	Genbank	gene	88907	89128	.	+	.	ID=gene-bas51_0118;Name=bas51_0118;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0118
+MZ501111.1	Genbank	CDS	88907	89128	.	+	0	ID=cds-QXV85628.1;Parent=gene-bas51_0118;Dbxref=NCBI_GP:QXV85628.1;Name=QXV85628.1;gbkey=CDS;locus_tag=bas51_0118;product=hypothetical protein;protein_id=QXV85628.1;transl_table=11
+MZ501111.1	Genbank	gene	89149	89268	.	+	.	ID=gene-bas51_0119;Name=bas51_0119;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0119
+MZ501111.1	Genbank	CDS	89149	89268	.	+	0	ID=cds-QXV85629.1;Parent=gene-bas51_0119;Dbxref=NCBI_GP:QXV85629.1;Name=QXV85629.1;gbkey=CDS;locus_tag=bas51_0119;product=hypothetical protein;protein_id=QXV85629.1;transl_table=11
+MZ501111.1	Genbank	gene	89702	90001	.	+	.	ID=gene-bas51_0120;Name=bas51_0120;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0120
+MZ501111.1	Genbank	CDS	89702	90001	.	+	0	ID=cds-QXV85630.1;Parent=gene-bas51_0120;Dbxref=NCBI_GP:QXV85630.1;Name=QXV85630.1;gbkey=CDS;locus_tag=bas51_0120;product=hypothetical protein;protein_id=QXV85630.1;transl_table=11
+MZ501111.1	Genbank	gene	90019	90369	.	+	.	ID=gene-bas51_0121;Name=bas51_0121;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0121
+MZ501111.1	Genbank	CDS	90019	90369	.	+	0	ID=cds-QXV85631.1;Parent=gene-bas51_0121;Dbxref=NCBI_GP:QXV85631.1;Name=QXV85631.1;gbkey=CDS;locus_tag=bas51_0121;product=hypothetical protein;protein_id=QXV85631.1;transl_table=11
+MZ501111.1	Genbank	gene	90575	90859	.	+	.	ID=gene-bas51_0122;Name=bas51_0122;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0122
+MZ501111.1	Genbank	CDS	90575	90859	.	+	0	ID=cds-QXV85632.1;Parent=gene-bas51_0122;Dbxref=NCBI_GP:QXV85632.1;Name=QXV85632.1;gbkey=CDS;locus_tag=bas51_0122;product=hypothetical protein;protein_id=QXV85632.1;transl_table=11
+MZ501111.1	Genbank	gene	90915	91148	.	+	.	ID=gene-bas51_0123;Name=bas51_0123;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0123
+MZ501111.1	Genbank	CDS	90915	91148	.	+	0	ID=cds-QXV85633.1;Parent=gene-bas51_0123;Dbxref=NCBI_GP:QXV85633.1;Name=QXV85633.1;gbkey=CDS;locus_tag=bas51_0123;product=hypothetical protein;protein_id=QXV85633.1;transl_table=11
+MZ501111.1	Genbank	gene	91220	91399	.	+	.	ID=gene-bas51_0124;Name=bas51_0124;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0124
+MZ501111.1	Genbank	CDS	91220	91399	.	+	0	ID=cds-QXV85634.1;Parent=gene-bas51_0124;Dbxref=NCBI_GP:QXV85634.1;Name=QXV85634.1;gbkey=CDS;locus_tag=bas51_0124;product=hypothetical protein;protein_id=QXV85634.1;transl_table=11
+MZ501111.1	Genbank	gene	91490	91594	.	+	.	ID=gene-bas51_0125;Name=bas51_0125;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0125
+MZ501111.1	Genbank	CDS	91490	91594	.	+	0	ID=cds-QXV85635.1;Parent=gene-bas51_0125;Dbxref=NCBI_GP:QXV85635.1;Name=QXV85635.1;gbkey=CDS;locus_tag=bas51_0125;product=hypothetical protein;protein_id=QXV85635.1;transl_table=11
+MZ501111.1	Genbank	gene	91604	91819	.	+	.	ID=gene-bas51_0126;Name=bas51_0126;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0126
+MZ501111.1	Genbank	CDS	91604	91819	.	+	0	ID=cds-QXV85636.1;Parent=gene-bas51_0126;Dbxref=NCBI_GP:QXV85636.1;Name=QXV85636.1;gbkey=CDS;locus_tag=bas51_0126;product=hypothetical protein;protein_id=QXV85636.1;transl_table=11
+MZ501111.1	Genbank	gene	91911	92195	.	+	.	ID=gene-bas51_0127;Name=bas51_0127;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0127
+MZ501111.1	Genbank	CDS	91911	92195	.	+	0	ID=cds-QXV85637.1;Parent=gene-bas51_0127;Dbxref=NCBI_GP:QXV85637.1;Name=QXV85637.1;gbkey=CDS;locus_tag=bas51_0127;product=hypothetical protein;protein_id=QXV85637.1;transl_table=11
+MZ501111.1	Genbank	gene	92198	92332	.	+	.	ID=gene-bas51_0128;Name=bas51_0128;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0128
+MZ501111.1	Genbank	CDS	92198	92332	.	+	0	ID=cds-QXV85638.1;Parent=gene-bas51_0128;Dbxref=NCBI_GP:QXV85638.1;Name=QXV85638.1;gbkey=CDS;locus_tag=bas51_0128;product=hypothetical protein;protein_id=QXV85638.1;transl_table=11
+MZ501111.1	Genbank	gene	92345	92536	.	+	.	ID=gene-bas51_0129;Name=bas51_0129;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0129
+MZ501111.1	Genbank	CDS	92345	92536	.	+	0	ID=cds-QXV85639.1;Parent=gene-bas51_0129;Dbxref=NCBI_GP:QXV85639.1;Name=QXV85639.1;gbkey=CDS;locus_tag=bas51_0129;product=hypothetical protein;protein_id=QXV85639.1;transl_table=11
+MZ501111.1	Genbank	gene	92579	92668	.	+	.	ID=gene-bas51_0130;Name=bas51_0130;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0130
+MZ501111.1	Genbank	CDS	92579	92668	.	+	0	ID=cds-QXV85640.1;Parent=gene-bas51_0130;Dbxref=NCBI_GP:QXV85640.1;Name=QXV85640.1;gbkey=CDS;locus_tag=bas51_0130;product=hypothetical protein;protein_id=QXV85640.1;transl_table=11
+MZ501111.1	Genbank	gene	92749	93021	.	+	.	ID=gene-bas51_0131;Name=bas51_0131;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0131
+MZ501111.1	Genbank	CDS	92749	93021	.	+	0	ID=cds-QXV85641.1;Parent=gene-bas51_0131;Dbxref=NCBI_GP:QXV85641.1;Name=QXV85641.1;gbkey=CDS;locus_tag=bas51_0131;product=hypothetical protein;protein_id=QXV85641.1;transl_table=11
+MZ501111.1	Genbank	gene	93084	93347	.	+	.	ID=gene-bas51_0132;Name=bas51_0132;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0132
+MZ501111.1	Genbank	CDS	93084	93347	.	+	0	ID=cds-QXV85642.1;Parent=gene-bas51_0132;Dbxref=NCBI_GP:QXV85642.1;Name=QXV85642.1;gbkey=CDS;locus_tag=bas51_0132;product=hypothetical protein;protein_id=QXV85642.1;transl_table=11
+MZ501111.1	Genbank	gene	93492	93911	.	+	.	ID=gene-bas51_0133;Name=bas51_0133;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0133
+MZ501111.1	Genbank	CDS	93492	93911	.	+	0	ID=cds-QXV85643.1;Parent=gene-bas51_0133;Dbxref=NCBI_GP:QXV85643.1;Name=QXV85643.1;gbkey=CDS;locus_tag=bas51_0133;product=hypothetical protein;protein_id=QXV85643.1;transl_table=11
+MZ501111.1	Genbank	gene	96377	96592	.	-	.	ID=gene-bas51_0134;Name=bas51_0134;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0134
+MZ501111.1	Genbank	CDS	96377	96592	.	-	0	ID=cds-QXV85644.1;Parent=gene-bas51_0134;Dbxref=NCBI_GP:QXV85644.1;Name=QXV85644.1;gbkey=CDS;locus_tag=bas51_0134;product=hypothetical protein;protein_id=QXV85644.1;transl_table=11
+MZ501111.1	Genbank	gene	96628	96726	.	-	.	ID=gene-bas51_0135;Name=bas51_0135;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0135
+MZ501111.1	Genbank	CDS	96628	96726	.	-	0	ID=cds-QXV85645.1;Parent=gene-bas51_0135;Dbxref=NCBI_GP:QXV85645.1;Name=QXV85645.1;gbkey=CDS;locus_tag=bas51_0135;product=hypothetical protein;protein_id=QXV85645.1;transl_table=11
+MZ501111.1	Genbank	gene	96713	96925	.	-	.	ID=gene-bas51_0136;Name=bas51_0136;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0136
+MZ501111.1	Genbank	CDS	96713	96925	.	-	0	ID=cds-QXV85646.1;Parent=gene-bas51_0136;Dbxref=NCBI_GP:QXV85646.1;Name=QXV85646.1;gbkey=CDS;locus_tag=bas51_0136;product=hypothetical protein;protein_id=QXV85646.1;transl_table=11
+MZ501111.1	Genbank	gene	96922	97023	.	-	.	ID=gene-bas51_0137;Name=bas51_0137;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0137
+MZ501111.1	Genbank	CDS	96922	97023	.	-	0	ID=cds-QXV85647.1;Parent=gene-bas51_0137;Dbxref=NCBI_GP:QXV85647.1;Name=QXV85647.1;gbkey=CDS;locus_tag=bas51_0137;product=hypothetical protein;protein_id=QXV85647.1;transl_table=11
+MZ501111.1	Genbank	gene	97095	97229	.	-	.	ID=gene-bas51_0138;Name=bas51_0138;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0138
+MZ501111.1	Genbank	CDS	97095	97229	.	-	0	ID=cds-QXV85648.1;Parent=gene-bas51_0138;Dbxref=NCBI_GP:QXV85648.1;Name=QXV85648.1;gbkey=CDS;locus_tag=bas51_0138;product=hypothetical protein;protein_id=QXV85648.1;transl_table=11
+MZ501111.1	Genbank	gene	97286	97585	.	-	.	ID=gene-bas51_0139;Name=bas51_0139;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0139
+MZ501111.1	Genbank	CDS	97286	97585	.	-	0	ID=cds-QXV85649.1;Parent=gene-bas51_0139;Dbxref=NCBI_GP:QXV85649.1;Name=QXV85649.1;gbkey=CDS;locus_tag=bas51_0139;product=hypothetical protein;protein_id=QXV85649.1;transl_table=11
+MZ501111.1	Genbank	gene	97594	97920	.	-	.	ID=gene-bas51_0140;Name=bas51_0140;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0140
+MZ501111.1	Genbank	CDS	97594	97920	.	-	0	ID=cds-QXV85650.1;Parent=gene-bas51_0140;Dbxref=NCBI_GP:QXV85650.1;Name=QXV85650.1;gbkey=CDS;locus_tag=bas51_0140;product=hypothetical protein;protein_id=QXV85650.1;transl_table=11
+MZ501111.1	Genbank	gene	97973	98278	.	-	.	ID=gene-bas51_0141;Name=bas51_0141;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0141
+MZ501111.1	Genbank	CDS	97973	98278	.	-	0	ID=cds-QXV85651.1;Parent=gene-bas51_0141;Dbxref=NCBI_GP:QXV85651.1;Name=QXV85651.1;gbkey=CDS;locus_tag=bas51_0141;product=hypothetical protein;protein_id=QXV85651.1;transl_table=11
+MZ501111.1	Genbank	gene	98307	98558	.	-	.	ID=gene-bas51_0142;Name=bas51_0142;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0142
+MZ501111.1	Genbank	CDS	98307	98558	.	-	0	ID=cds-QXV85652.1;Parent=gene-bas51_0142;Dbxref=NCBI_GP:QXV85652.1;Name=QXV85652.1;gbkey=CDS;locus_tag=bas51_0142;product=hypothetical protein;protein_id=QXV85652.1;transl_table=11
+MZ501111.1	Genbank	gene	98545	98685	.	-	.	ID=gene-bas51_0143;Name=bas51_0143;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0143
+MZ501111.1	Genbank	CDS	98545	98685	.	-	0	ID=cds-QXV85653.1;Parent=gene-bas51_0143;Dbxref=NCBI_GP:QXV85653.1;Name=QXV85653.1;gbkey=CDS;locus_tag=bas51_0143;product=hypothetical protein;protein_id=QXV85653.1;transl_table=11
+MZ501111.1	Genbank	gene	98714	98977	.	-	.	ID=gene-bas51_0144;Name=bas51_0144;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0144
+MZ501111.1	Genbank	CDS	98714	98977	.	-	0	ID=cds-QXV85654.1;Parent=gene-bas51_0144;Dbxref=NCBI_GP:QXV85654.1;Name=QXV85654.1;gbkey=CDS;locus_tag=bas51_0144;product=hypothetical protein;protein_id=QXV85654.1;transl_table=11
+MZ501111.1	Genbank	gene	99067	99354	.	-	.	ID=gene-bas51_0145;Name=bas51_0145;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0145
+MZ501111.1	Genbank	CDS	99067	99354	.	-	0	ID=cds-QXV85655.1;Parent=gene-bas51_0145;Dbxref=NCBI_GP:QXV85655.1;Name=QXV85655.1;gbkey=CDS;locus_tag=bas51_0145;product=hypothetical protein;protein_id=QXV85655.1;transl_table=11
+MZ501111.1	Genbank	gene	99354	99683	.	-	.	ID=gene-bas51_0146;Name=bas51_0146;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0146
+MZ501111.1	Genbank	CDS	99354	99683	.	-	0	ID=cds-QXV85656.1;Parent=gene-bas51_0146;Dbxref=NCBI_GP:QXV85656.1;Name=QXV85656.1;gbkey=CDS;locus_tag=bas51_0146;product=hypothetical protein;protein_id=QXV85656.1;transl_table=11
+MZ501111.1	Genbank	gene	99683	100033	.	-	.	ID=gene-bas51_0147;Name=bas51_0147;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0147
+MZ501111.1	Genbank	CDS	99683	100033	.	-	0	ID=cds-QXV85657.1;Parent=gene-bas51_0147;Dbxref=NCBI_GP:QXV85657.1;Name=QXV85657.1;gbkey=CDS;locus_tag=bas51_0147;product=hypothetical protein;protein_id=QXV85657.1;transl_table=11
+MZ501111.1	Genbank	gene	100034	100291	.	-	.	ID=gene-bas51_0148;Name=bas51_0148;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0148
+MZ501111.1	Genbank	CDS	100034	100291	.	-	0	ID=cds-QXV85658.1;Parent=gene-bas51_0148;Dbxref=NCBI_GP:QXV85658.1;Name=QXV85658.1;gbkey=CDS;locus_tag=bas51_0148;product=hypothetical protein;protein_id=QXV85658.1;transl_table=11
+MZ501111.1	Genbank	gene	100371	100766	.	-	.	ID=gene-bas51_0149;Name=bas51_0149;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0149
+MZ501111.1	Genbank	CDS	100371	100766	.	-	0	ID=cds-QXV85659.1;Parent=gene-bas51_0149;Dbxref=NCBI_GP:QXV85659.1;Name=QXV85659.1;gbkey=CDS;locus_tag=bas51_0149;product=hypothetical protein;protein_id=QXV85659.1;transl_table=11
+MZ501111.1	Genbank	gene	100766	101098	.	-	.	ID=gene-bas51_0150;Name=bas51_0150;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0150
+MZ501111.1	Genbank	CDS	100766	101098	.	-	0	ID=cds-QXV85660.1;Parent=gene-bas51_0150;Dbxref=NCBI_GP:QXV85660.1;Name=QXV85660.1;gbkey=CDS;locus_tag=bas51_0150;product=hypothetical protein;protein_id=QXV85660.1;transl_table=11
+MZ501111.1	Genbank	gene	101103	101366	.	-	.	ID=gene-bas51_0151;Name=bas51_0151;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0151
+MZ501111.1	Genbank	CDS	101103	101366	.	-	0	ID=cds-QXV85661.1;Parent=gene-bas51_0151;Dbxref=NCBI_GP:QXV85661.1;Name=QXV85661.1;gbkey=CDS;locus_tag=bas51_0151;product=hypothetical protein;protein_id=QXV85661.1;transl_table=11
+MZ501111.1	Genbank	gene	101458	101727	.	-	.	ID=gene-bas51_0152;Name=bas51_0152;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0152
+MZ501111.1	Genbank	CDS	101458	101727	.	-	0	ID=cds-QXV85662.1;Parent=gene-bas51_0152;Dbxref=NCBI_GP:QXV85662.1;Name=QXV85662.1;gbkey=CDS;locus_tag=bas51_0152;product=hypothetical protein;protein_id=QXV85662.1;transl_table=11
+MZ501111.1	Genbank	gene	101754	101855	.	-	.	ID=gene-bas51_0153;Name=bas51_0153;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0153
+MZ501111.1	Genbank	CDS	101754	101855	.	-	0	ID=cds-QXV85663.1;Parent=gene-bas51_0153;Dbxref=NCBI_GP:QXV85663.1;Name=QXV85663.1;gbkey=CDS;locus_tag=bas51_0153;product=hypothetical protein;protein_id=QXV85663.1;transl_table=11
+MZ501111.1	Genbank	gene	101865	102182	.	-	.	ID=gene-bas51_0154;Name=bas51_0154;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0154
+MZ501111.1	Genbank	CDS	101865	102182	.	-	0	ID=cds-QXV85664.1;Parent=gene-bas51_0154;Dbxref=NCBI_GP:QXV85664.1;Name=QXV85664.1;gbkey=CDS;locus_tag=bas51_0154;product=ribosome hibernation factor;protein_id=QXV85664.1;transl_table=11
+MZ501111.1	Genbank	gene	102265	102555	.	-	.	ID=gene-bas51_0155;Name=bas51_0155;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0155
+MZ501111.1	Genbank	CDS	102265	102555	.	-	0	ID=cds-QXV85665.1;Parent=gene-bas51_0155;Dbxref=NCBI_GP:QXV85665.1;Name=QXV85665.1;gbkey=CDS;locus_tag=bas51_0155;product=hypothetical protein;protein_id=QXV85665.1;transl_table=11
+MZ501111.1	Genbank	gene	102573	102944	.	-	.	ID=gene-bas51_0156;Name=bas51_0156;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0156
+MZ501111.1	Genbank	CDS	102573	102944	.	-	0	ID=cds-QXV85666.1;Parent=gene-bas51_0156;Dbxref=NCBI_GP:QXV85666.1;Name=QXV85666.1;gbkey=CDS;locus_tag=bas51_0156;product=hypothetical protein;protein_id=QXV85666.1;transl_table=11
+MZ501111.1	Genbank	gene	102984	103238	.	-	.	ID=gene-bas51_0157;Name=bas51_0157;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0157
+MZ501111.1	Genbank	CDS	102984	103238	.	-	0	ID=cds-QXV85667.1;Parent=gene-bas51_0157;Dbxref=NCBI_GP:QXV85667.1;Name=QXV85667.1;gbkey=CDS;locus_tag=bas51_0157;product=hypothetical protein;protein_id=QXV85667.1;transl_table=11
+MZ501111.1	Genbank	gene	103228	103452	.	-	.	ID=gene-bas51_0158;Name=bas51_0158;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0158
+MZ501111.1	Genbank	CDS	103228	103452	.	-	0	ID=cds-QXV85668.1;Parent=gene-bas51_0158;Dbxref=NCBI_GP:QXV85668.1;Name=QXV85668.1;gbkey=CDS;locus_tag=bas51_0158;product=hypothetical protein;protein_id=QXV85668.1;transl_table=11
+MZ501111.1	Genbank	gene	103452	103733	.	-	.	ID=gene-bas51_0159;Name=bas51_0159;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0159
+MZ501111.1	Genbank	CDS	103452	103733	.	-	0	ID=cds-QXV85669.1;Parent=gene-bas51_0159;Dbxref=NCBI_GP:QXV85669.1;Name=QXV85669.1;gbkey=CDS;locus_tag=bas51_0159;product=hypothetical protein;protein_id=QXV85669.1;transl_table=11
+MZ501111.1	Genbank	gene	103736	104032	.	-	.	ID=gene-bas51_0160;Name=bas51_0160;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0160
+MZ501111.1	Genbank	CDS	103736	104032	.	-	0	ID=cds-QXV85670.1;Parent=gene-bas51_0160;Dbxref=NCBI_GP:QXV85670.1;Name=QXV85670.1;gbkey=CDS;locus_tag=bas51_0160;product=hypothetical protein;protein_id=QXV85670.1;transl_table=11
+MZ501111.1	Genbank	gene	104036	104125	.	-	.	ID=gene-bas51_0161;Name=bas51_0161;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0161
+MZ501111.1	Genbank	CDS	104036	104125	.	-	0	ID=cds-QXV85671.1;Parent=gene-bas51_0161;Dbxref=NCBI_GP:QXV85671.1;Name=QXV85671.1;gbkey=CDS;locus_tag=bas51_0161;product=hypothetical protein;protein_id=QXV85671.1;transl_table=11
+MZ501111.1	Genbank	gene	104128	104313	.	-	.	ID=gene-bas51_0162;Name=bas51_0162;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0162
+MZ501111.1	Genbank	CDS	104128	104313	.	-	0	ID=cds-QXV85672.1;Parent=gene-bas51_0162;Dbxref=NCBI_GP:QXV85672.1;Name=QXV85672.1;gbkey=CDS;locus_tag=bas51_0162;product=hypothetical protein;protein_id=QXV85672.1;transl_table=11
+MZ501111.1	Genbank	gene	104331	104525	.	-	.	ID=gene-bas51_0163;Name=bas51_0163;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0163
+MZ501111.1	Genbank	CDS	104331	104525	.	-	0	ID=cds-QXV85673.1;Parent=gene-bas51_0163;Dbxref=NCBI_GP:QXV85673.1;Name=QXV85673.1;gbkey=CDS;locus_tag=bas51_0163;product=hypothetical protein;protein_id=QXV85673.1;transl_table=11
+MZ501111.1	Genbank	gene	104522	104809	.	-	.	ID=gene-bas51_0164;Name=bas51_0164;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0164
+MZ501111.1	Genbank	CDS	104522	104809	.	-	0	ID=cds-QXV85674.1;Parent=gene-bas51_0164;Dbxref=NCBI_GP:QXV85674.1;Name=QXV85674.1;gbkey=CDS;locus_tag=bas51_0164;product=hypothetical protein;protein_id=QXV85674.1;transl_table=11
+MZ501111.1	Genbank	gene	104806	105153	.	-	.	ID=gene-bas51_0165;Name=bas51_0165;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0165
+MZ501111.1	Genbank	CDS	104806	105153	.	-	0	ID=cds-QXV85675.1;Parent=gene-bas51_0165;Dbxref=NCBI_GP:QXV85675.1;Name=QXV85675.1;gbkey=CDS;locus_tag=bas51_0165;product=hypothetical protein;protein_id=QXV85675.1;transl_table=11
+MZ501111.1	Genbank	gene	105216	105623	.	-	.	ID=gene-bas51_0166;Name=bas51_0166;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0166
+MZ501111.1	Genbank	CDS	105216	105623	.	-	0	ID=cds-QXV85676.1;Parent=gene-bas51_0166;Dbxref=NCBI_GP:QXV85676.1;Name=QXV85676.1;gbkey=CDS;locus_tag=bas51_0166;product=hypothetical protein;protein_id=QXV85676.1;transl_table=11
+MZ501111.1	Genbank	gene	105676	105861	.	-	.	ID=gene-bas51_0167;Name=bas51_0167;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0167
+MZ501111.1	Genbank	CDS	105676	105861	.	-	0	ID=cds-QXV85677.1;Parent=gene-bas51_0167;Dbxref=NCBI_GP:QXV85677.1;Name=QXV85677.1;gbkey=CDS;locus_tag=bas51_0167;product=hypothetical protein;protein_id=QXV85677.1;transl_table=11
+MZ501111.1	Genbank	gene	105848	105955	.	-	.	ID=gene-bas51_0168;Name=bas51_0168;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0168
+MZ501111.1	Genbank	CDS	105848	105955	.	-	0	ID=cds-QXV85678.1;Parent=gene-bas51_0168;Dbxref=NCBI_GP:QXV85678.1;Name=QXV85678.1;gbkey=CDS;locus_tag=bas51_0168;product=hypothetical protein;protein_id=QXV85678.1;transl_table=11
+MZ501111.1	Genbank	gene	105945	106097	.	-	.	ID=gene-bas51_0169;Name=bas51_0169;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0169
+MZ501111.1	Genbank	CDS	105945	106097	.	-	0	ID=cds-QXV85679.1;Parent=gene-bas51_0169;Dbxref=NCBI_GP:QXV85679.1;Name=QXV85679.1;gbkey=CDS;locus_tag=bas51_0169;product=hypothetical protein;protein_id=QXV85679.1;transl_table=11
+MZ501111.1	Genbank	gene	106081	106308	.	-	.	ID=gene-bas51_0170;Name=bas51_0170;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0170
+MZ501111.1	Genbank	CDS	106081	106308	.	-	0	ID=cds-QXV85680.1;Parent=gene-bas51_0170;Dbxref=NCBI_GP:QXV85680.1;Name=QXV85680.1;gbkey=CDS;locus_tag=bas51_0170;product=hypothetical protein;protein_id=QXV85680.1;transl_table=11
+MZ501111.1	Genbank	gene	106339	106863	.	-	.	ID=gene-bas51_0171;Name=bas51_0171;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0171
+MZ501111.1	Genbank	CDS	106339	106863	.	-	0	ID=cds-QXV85681.1;Parent=gene-bas51_0171;Dbxref=NCBI_GP:QXV85681.1;Name=QXV85681.1;gbkey=CDS;locus_tag=bas51_0171;product=putative glycosidase;protein_id=QXV85681.1;transl_table=11
+MZ501111.1	Genbank	gene	106869	107102	.	-	.	ID=gene-bas51_0172;Name=bas51_0172;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0172
+MZ501111.1	Genbank	CDS	106869	107102	.	-	0	ID=cds-QXV85682.1;Parent=gene-bas51_0172;Dbxref=NCBI_GP:QXV85682.1;Name=QXV85682.1;gbkey=CDS;locus_tag=bas51_0172;product=hypothetical protein;protein_id=QXV85682.1;transl_table=11
+MZ501111.1	Genbank	gene	107140	107538	.	-	.	ID=gene-bas51_0173;Name=bas51_0173;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0173
+MZ501111.1	Genbank	CDS	107140	107538	.	-	0	ID=cds-QXV85683.1;Parent=gene-bas51_0173;Dbxref=NCBI_GP:QXV85683.1;Name=QXV85683.1;gbkey=CDS;locus_tag=bas51_0173;product=hypothetical protein;protein_id=QXV85683.1;transl_table=11
+MZ501111.1	Genbank	gene	107535	107774	.	-	.	ID=gene-bas51_0174;Name=bas51_0174;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0174
+MZ501111.1	Genbank	CDS	107535	107774	.	-	0	ID=cds-QXV85684.1;Parent=gene-bas51_0174;Dbxref=NCBI_GP:QXV85684.1;Name=QXV85684.1;gbkey=CDS;locus_tag=bas51_0174;product=hypothetical protein;protein_id=QXV85684.1;transl_table=11
+MZ501111.1	Genbank	gene	107810	108094	.	-	.	ID=gene-bas51_0175;Name=bas51_0175;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0175
+MZ501111.1	Genbank	CDS	107810	108094	.	-	0	ID=cds-QXV85685.1;Parent=gene-bas51_0175;Dbxref=NCBI_GP:QXV85685.1;Name=QXV85685.1;gbkey=CDS;locus_tag=bas51_0175;product=hypothetical protein;protein_id=QXV85685.1;transl_table=11
+MZ501111.1	Genbank	gene	108091	108624	.	-	.	ID=gene-bas51_0176;Name=bas51_0176;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0176
+MZ501111.1	Genbank	CDS	108091	108624	.	-	0	ID=cds-QXV85686.1;Parent=gene-bas51_0176;Dbxref=NCBI_GP:QXV85686.1;Name=QXV85686.1;gbkey=CDS;locus_tag=bas51_0176;product=putative N6 adenine methyltransferase;protein_id=QXV85686.1;transl_table=11
+MZ501111.1	Genbank	gene	108676	109725	.	-	.	ID=gene-bas51_0177;Name=bas51_0177;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0177
+MZ501111.1	Genbank	CDS	108676	109725	.	-	0	ID=cds-QXV85687.1;Parent=gene-bas51_0177;Dbxref=NCBI_GP:QXV85687.1;Name=QXV85687.1;gbkey=CDS;locus_tag=bas51_0177;product=ClpP-like protease;protein_id=QXV85687.1;transl_table=11
+MZ501111.1	Genbank	gene	109786	110097	.	-	.	ID=gene-bas51_0178;Name=bas51_0178;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0178
+MZ501111.1	Genbank	CDS	109786	110097	.	-	0	ID=cds-QXV85688.1;Parent=gene-bas51_0178;Dbxref=NCBI_GP:QXV85688.1;Name=QXV85688.1;gbkey=CDS;locus_tag=bas51_0178;product=hypothetical protein;protein_id=QXV85688.1;transl_table=11
+MZ501111.1	Genbank	gene	110201	110989	.	-	.	ID=gene-bas51_0179;Name=bas51_0179;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0179
+MZ501111.1	Genbank	CDS	110201	110989	.	-	0	ID=cds-QXV85689.1;Parent=gene-bas51_0179;Dbxref=NCBI_GP:QXV85689.1;Name=QXV85689.1;gbkey=CDS;locus_tag=bas51_0179;product=PhoH-like ATPase;protein_id=QXV85689.1;transl_table=11
+MZ501111.1	Genbank	gene	111028	111378	.	-	.	ID=gene-bas51_0180;Name=bas51_0180;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0180
+MZ501111.1	Genbank	CDS	111028	111378	.	-	0	ID=cds-QXV85690.1;Parent=gene-bas51_0180;Dbxref=NCBI_GP:QXV85690.1;Name=QXV85690.1;gbkey=CDS;locus_tag=bas51_0180;product=hypothetical protein;protein_id=QXV85690.1;transl_table=11
+MZ501111.1	Genbank	gene	111375	111488	.	-	.	ID=gene-bas51_0181;Name=bas51_0181;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0181
+MZ501111.1	Genbank	CDS	111375	111488	.	-	0	ID=cds-QXV85691.1;Parent=gene-bas51_0181;Dbxref=NCBI_GP:QXV85691.1;Name=QXV85691.1;gbkey=CDS;locus_tag=bas51_0181;product=hypothetical protein;protein_id=QXV85691.1;transl_table=11
+MZ501111.1	Genbank	gene	111551	112024	.	-	.	ID=gene-bas51_0182;Name=bas51_0182;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0182
+MZ501111.1	Genbank	CDS	111551	112024	.	-	0	ID=cds-QXV85692.1;Parent=gene-bas51_0182;Dbxref=NCBI_GP:QXV85692.1;Name=QXV85692.1;gbkey=CDS;locus_tag=bas51_0182;product=class III anaerobic NTP reductase activator;protein_id=QXV85692.1;transl_table=11
+MZ501111.1	Genbank	gene	112011	112256	.	-	.	ID=gene-bas51_0183;Name=bas51_0183;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0183
+MZ501111.1	Genbank	CDS	112011	112256	.	-	0	ID=cds-QXV85693.1;Parent=gene-bas51_0183;Dbxref=NCBI_GP:QXV85693.1;Name=QXV85693.1;gbkey=CDS;locus_tag=bas51_0183;product=hypothetical protein;protein_id=QXV85693.1;transl_table=11
+MZ501111.1	Genbank	gene	112288	112392	.	-	.	ID=gene-bas51_0184;Name=bas51_0184;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0184
+MZ501111.1	Genbank	CDS	112288	112392	.	-	0	ID=cds-QXV85694.1;Parent=gene-bas51_0184;Dbxref=NCBI_GP:QXV85694.1;Name=QXV85694.1;gbkey=CDS;locus_tag=bas51_0184;product=hypothetical protein;protein_id=QXV85694.1;transl_table=11
+MZ501111.1	Genbank	gene	112408	112524	.	-	.	ID=gene-bas51_0185;Name=bas51_0185;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0185
+MZ501111.1	Genbank	CDS	112408	112524	.	-	0	ID=cds-QXV85695.1;Parent=gene-bas51_0185;Dbxref=NCBI_GP:QXV85695.1;Name=QXV85695.1;gbkey=CDS;locus_tag=bas51_0185;product=hypothetical protein;protein_id=QXV85695.1;transl_table=11
+MZ501111.1	Genbank	gene	112573	113565	.	-	.	ID=gene-bas51_0186;Name=bas51_0186;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0186
+MZ501111.1	Genbank	CDS	112573	113565	.	-	0	ID=cds-QXV85696.1;Parent=gene-bas51_0186;Dbxref=NCBI_GP:QXV85696.1;Name=QXV85696.1;gbkey=CDS;locus_tag=bas51_0186;product=putative homing endonuclease;protein_id=QXV85696.1;transl_table=11
+MZ501111.1	Genbank	gene	113603	116310	.	-	.	ID=gene-bas51_0187;Name=bas51_0187;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0187
+MZ501111.1	Genbank	CDS	115664	116310	.	-	0	ID=cds-QXV85697.1;Parent=gene-bas51_0187;Dbxref=NCBI_GP:QXV85697.1;Name=QXV85697.1;gbkey=CDS;locus_tag=bas51_0187;product=class III anaerobic NTP reductase;protein_id=QXV85697.1;transl_table=11
+MZ501111.1	Genbank	CDS	113603	114866	.	-	1	ID=cds-QXV85697.1;Parent=gene-bas51_0187;Dbxref=NCBI_GP:QXV85697.1;Name=QXV85697.1;gbkey=CDS;locus_tag=bas51_0187;product=class III anaerobic NTP reductase;protein_id=QXV85697.1;transl_table=11
+MZ501111.1	Genbank	gene	114905	115438	.	-	.	ID=gene-bas51_0188;Name=bas51_0188;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0188
+MZ501111.1	Genbank	CDS	114905	115438	.	-	0	ID=cds-QXV85698.1;Parent=gene-bas51_0188;Dbxref=NCBI_GP:QXV85698.1;Name=QXV85698.1;gbkey=CDS;locus_tag=bas51_0188;product=putative homing endonuclease;protein_id=QXV85698.1;transl_table=11
+MZ501111.1	Genbank	gene	116520	116798	.	-	.	ID=gene-bas51_0189;Name=bas51_0189;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0189
+MZ501111.1	Genbank	CDS	116520	116798	.	-	0	ID=cds-QXV85699.1;Parent=gene-bas51_0189;Dbxref=NCBI_GP:QXV85699.1;Name=QXV85699.1;gbkey=CDS;locus_tag=bas51_0189;product=glutaredoxin 1;protein_id=QXV85699.1;transl_table=11
+MZ501111.1	Genbank	gene	116802	117890	.	-	.	ID=gene-bas51_0190;Name=bas51_0190;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0190
+MZ501111.1	Genbank	CDS	116802	117890	.	-	0	ID=cds-QXV85700.1;Parent=gene-bas51_0190;Dbxref=NCBI_GP:QXV85700.1;Name=QXV85700.1;gbkey=CDS;locus_tag=bas51_0190;product=class I NTP reductase beta subunit;protein_id=QXV85700.1;transl_table=11
+MZ501111.1	Genbank	gene	117930	120245	.	-	.	ID=gene-bas51_0191;Name=bas51_0191;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0191
+MZ501111.1	Genbank	CDS	117930	120245	.	-	0	ID=cds-QXV85701.1;Parent=gene-bas51_0191;Dbxref=NCBI_GP:QXV85701.1;Name=QXV85701.1;gbkey=CDS;locus_tag=bas51_0191;product=class I NTP reductase alpha subunit;protein_id=QXV85701.1;transl_table=11
+MZ501111.1	Genbank	gene	120242	120472	.	-	.	ID=gene-bas51_0192;Name=bas51_0192;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0192
+MZ501111.1	Genbank	CDS	120242	120472	.	-	0	ID=cds-QXV85702.1;Parent=gene-bas51_0192;Dbxref=NCBI_GP:QXV85702.1;Name=QXV85702.1;gbkey=CDS;locus_tag=bas51_0192;product=hypothetical protein;protein_id=QXV85702.1;transl_table=11
+MZ501111.1	Genbank	gene	120483	120983	.	-	.	ID=gene-bas51_0193;Name=bas51_0193;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0193
+MZ501111.1	Genbank	CDS	120483	120983	.	-	0	ID=cds-QXV85703.1;Parent=gene-bas51_0193;Dbxref=NCBI_GP:QXV85703.1;Name=QXV85703.1;gbkey=CDS;locus_tag=bas51_0193;product=hypothetical protein;protein_id=QXV85703.1;transl_table=11
+MZ501111.1	Genbank	gene	121043	122026	.	-	.	ID=gene-bas51_0194;Name=bas51_0194;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0194
+MZ501111.1	Genbank	CDS	121043	122026	.	-	0	ID=cds-QXV85704.1;Parent=gene-bas51_0194;Dbxref=NCBI_GP:QXV85704.1;Name=QXV85704.1;gbkey=CDS;locus_tag=bas51_0194;product=thymidylate synthase;protein_id=QXV85704.1;transl_table=11
+MZ501111.1	Genbank	gene	122026	122226	.	-	.	ID=gene-bas51_0195;Name=bas51_0195;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0195
+MZ501111.1	Genbank	CDS	122026	122226	.	-	0	ID=cds-QXV85705.1;Parent=gene-bas51_0195;Dbxref=NCBI_GP:QXV85705.1;Name=QXV85705.1;gbkey=CDS;locus_tag=bas51_0195;product=hypothetical protein;protein_id=QXV85705.1;transl_table=11
+MZ501111.1	Genbank	gene	122228	122821	.	-	.	ID=gene-bas51_0196;Name=bas51_0196;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0196
+MZ501111.1	Genbank	CDS	122228	122821	.	-	0	ID=cds-QXV85706.1;Parent=gene-bas51_0196;Dbxref=NCBI_GP:QXV85706.1;Name=QXV85706.1;gbkey=CDS;locus_tag=bas51_0196;product=hypothetical protein;protein_id=QXV85706.1;transl_table=11
+MZ501111.1	Genbank	gene	122815	123429	.	-	.	ID=gene-bas51_0197;Name=bas51_0197;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0197
+MZ501111.1	Genbank	CDS	122815	123429	.	-	0	ID=cds-QXV85707.1;Parent=gene-bas51_0197;Dbxref=NCBI_GP:QXV85707.1;Name=QXV85707.1;gbkey=CDS;locus_tag=bas51_0197;product=putative P-loop NTPase protein;protein_id=QXV85707.1;transl_table=11
+MZ501111.1	Genbank	gene	123429	123620	.	-	.	ID=gene-bas51_0198;Name=bas51_0198;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0198
+MZ501111.1	Genbank	CDS	123429	123620	.	-	0	ID=cds-QXV85708.1;Parent=gene-bas51_0198;Dbxref=NCBI_GP:QXV85708.1;Name=QXV85708.1;gbkey=CDS;locus_tag=bas51_0198;product=hypothetical protein;protein_id=QXV85708.1;transl_table=11
+MZ501111.1	Genbank	gene	123648	124106	.	-	.	ID=gene-bas51_0199;Name=bas51_0199;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0199
+MZ501111.1	Genbank	CDS	123648	124106	.	-	0	ID=cds-QXV85709.1;Parent=gene-bas51_0199;Dbxref=NCBI_GP:QXV85709.1;Name=QXV85709.1;gbkey=CDS;locus_tag=bas51_0199;product=hypothetical protein;protein_id=QXV85709.1;transl_table=11
+MZ501111.1	Genbank	gene	124069	124887	.	-	.	ID=gene-bas51_0200;Name=bas51_0200;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0200
+MZ501111.1	Genbank	CDS	124069	124887	.	-	0	ID=cds-QXV85710.1;Parent=gene-bas51_0200;Dbxref=NCBI_GP:QXV85710.1;Name=QXV85710.1;gbkey=CDS;locus_tag=bas51_0200;product=putative N6 adenine methyltransferase;protein_id=QXV85710.1;transl_table=11
+MZ501111.1	Genbank	gene	124933	125916	.	-	.	ID=gene-bas51_0201;Name=bas51_0201;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0201
+MZ501111.1	Genbank	CDS	124933	125916	.	-	0	ID=cds-QXV85711.1;Parent=gene-bas51_0201;Dbxref=NCBI_GP:QXV85711.1;Name=QXV85711.1;gbkey=CDS;locus_tag=bas51_0201;product=DnaQ-like 3'-5' exonuclease;protein_id=QXV85711.1;transl_table=11
+MZ501111.1	Genbank	gene	125929	126150	.	-	.	ID=gene-bas51_0202;Name=bas51_0202;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0202
+MZ501111.1	Genbank	CDS	125929	126150	.	-	0	ID=cds-QXV85712.1;Parent=gene-bas51_0202;Dbxref=NCBI_GP:QXV85712.1;Name=QXV85712.1;gbkey=CDS;locus_tag=bas51_0202;product=hypothetical protein;protein_id=QXV85712.1;transl_table=11
+MZ501111.1	Genbank	gene	126089	126694	.	-	.	ID=gene-bas51_0203;Name=bas51_0203;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0203
+MZ501111.1	Genbank	CDS	126089	126694	.	-	0	ID=cds-QXV85713.1;Parent=gene-bas51_0203;Dbxref=NCBI_GP:QXV85713.1;Name=QXV85713.1;Note=EndoVII packaging and recombination endonuclease;gbkey=CDS;locus_tag=bas51_0203;product=packaging and recombination endonuclease;protein_id=QXV85713.1;transl_table=11
+MZ501111.1	Genbank	gene	126646	127275	.	-	.	ID=gene-bas51_0204;Name=bas51_0204;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0204
+MZ501111.1	Genbank	CDS	126646	127275	.	-	0	ID=cds-QXV85714.1;Parent=gene-bas51_0204;Dbxref=NCBI_GP:QXV85714.1;Name=QXV85714.1;gbkey=CDS;locus_tag=bas51_0204;product=hypothetical protein;protein_id=QXV85714.1;transl_table=11
+MZ501111.1	Genbank	gene	127272	127604	.	-	.	ID=gene-bas51_0205;Name=bas51_0205;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0205
+MZ501111.1	Genbank	CDS	127272	127604	.	-	0	ID=cds-QXV85715.1;Parent=gene-bas51_0205;Dbxref=NCBI_GP:QXV85715.1;Name=QXV85715.1;gbkey=CDS;locus_tag=bas51_0205;product=hypothetical protein;protein_id=QXV85715.1;transl_table=11
+MZ501111.1	Genbank	gene	127604	128743	.	-	.	ID=gene-bas51_0206;Name=bas51_0206;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0206
+MZ501111.1	Genbank	CDS	127604	128743	.	-	0	ID=cds-QXV85716.1;Parent=gene-bas51_0206;Dbxref=NCBI_GP:QXV85716.1;Name=QXV85716.1;gbkey=CDS;locus_tag=bas51_0206;product=putative 5'-exonuclease;protein_id=QXV85716.1;transl_table=11
+MZ501111.1	Genbank	gene	128736	129044	.	-	.	ID=gene-bas51_0207;Name=bas51_0207;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0207
+MZ501111.1	Genbank	CDS	128736	129044	.	-	0	ID=cds-QXV85717.1;Parent=gene-bas51_0207;Dbxref=NCBI_GP:QXV85717.1;Name=QXV85717.1;gbkey=CDS;locus_tag=bas51_0207;product=hypothetical protein;protein_id=QXV85717.1;transl_table=11
+MZ501111.1	Genbank	gene	129104	129394	.	-	.	ID=gene-bas51_0208;Name=bas51_0208;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0208
+MZ501111.1	Genbank	CDS	129104	129394	.	-	0	ID=cds-QXV85718.1;Parent=gene-bas51_0208;Dbxref=NCBI_GP:QXV85718.1;Name=QXV85718.1;gbkey=CDS;locus_tag=bas51_0208;product=hypothetical protein;protein_id=QXV85718.1;transl_table=11
+MZ501111.1	Genbank	gene	129387	129833	.	-	.	ID=gene-bas51_0209;Name=bas51_0209;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0209
+MZ501111.1	Genbank	CDS	129387	129833	.	-	0	ID=cds-QXV85719.1;Parent=gene-bas51_0209;Dbxref=NCBI_GP:QXV85719.1;Name=QXV85719.1;gbkey=CDS;locus_tag=bas51_0209;product=putative homing endonuclease;protein_id=QXV85719.1;transl_table=11
+MZ501111.1	Genbank	gene	129861	130067	.	-	.	ID=gene-bas51_0210;Name=bas51_0210;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0210
+MZ501111.1	Genbank	CDS	129861	130067	.	-	0	ID=cds-QXV85720.1;Parent=gene-bas51_0210;Dbxref=NCBI_GP:QXV85720.1;Name=QXV85720.1;gbkey=CDS;locus_tag=bas51_0210;product=hypothetical protein;protein_id=QXV85720.1;transl_table=11
+MZ501111.1	Genbank	gene	130131	130601	.	-	.	ID=gene-bas51_0211;Name=bas51_0211;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0211
+MZ501111.1	Genbank	CDS	130131	130601	.	-	0	ID=cds-QXV85721.1;Parent=gene-bas51_0211;Dbxref=NCBI_GP:QXV85721.1;Name=QXV85721.1;gbkey=CDS;locus_tag=bas51_0211;product=endolysin;protein_id=QXV85721.1;transl_table=11
+MZ501111.1	Genbank	gene	130726	132009	.	-	.	ID=gene-bas51_0212;Name=bas51_0212;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0212
+MZ501111.1	Genbank	CDS	130726	132009	.	-	0	ID=cds-QXV85722.1;Parent=gene-bas51_0212;Dbxref=NCBI_GP:QXV85722.1;Name=QXV85722.1;gbkey=CDS;locus_tag=bas51_0212;product=ATP-dependent DNA ligase;protein_id=QXV85722.1;transl_table=11
+MZ501111.1	Genbank	gene	132009	132278	.	-	.	ID=gene-bas51_0213;Name=bas51_0213;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0213
+MZ501111.1	Genbank	CDS	132009	132278	.	-	0	ID=cds-QXV85723.1;Parent=gene-bas51_0213;Dbxref=NCBI_GP:QXV85723.1;Name=QXV85723.1;gbkey=CDS;locus_tag=bas51_0213;product=hypothetical protein;protein_id=QXV85723.1;transl_table=11
+MZ501111.1	Genbank	gene	132265	132594	.	-	.	ID=gene-bas51_0214;Name=bas51_0214;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0214
+MZ501111.1	Genbank	CDS	132265	132594	.	-	0	ID=cds-QXV85724.1;Parent=gene-bas51_0214;Dbxref=NCBI_GP:QXV85724.1;Name=QXV85724.1;gbkey=CDS;locus_tag=bas51_0214;product=hypothetical protein;protein_id=QXV85724.1;transl_table=11
+MZ501111.1	Genbank	gene	132637	133350	.	-	.	ID=gene-bas51_0215;Name=bas51_0215;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0215
+MZ501111.1	Genbank	CDS	132637	133350	.	-	0	ID=cds-QXV85725.1;Parent=gene-bas51_0215;Dbxref=NCBI_GP:QXV85725.1;Name=QXV85725.1;gbkey=CDS;locus_tag=bas51_0215;product=hypothetical protein;protein_id=QXV85725.1;transl_table=11
+MZ501111.1	Genbank	gene	133364	134125	.	-	.	ID=gene-bas51_0216;Name=bas51_0216;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0216
+MZ501111.1	Genbank	CDS	133364	134125	.	-	0	ID=cds-QXV85726.1;Parent=gene-bas51_0216;Dbxref=NCBI_GP:QXV85726.1;Name=QXV85726.1;gbkey=CDS;locus_tag=bas51_0216;product=sirtuin domain NAD-dependent deacetylase;protein_id=QXV85726.1;transl_table=11
+MZ501111.1	Genbank	gene	134134	134484	.	-	.	ID=gene-bas51_0217;Name=bas51_0217;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0217
+MZ501111.1	Genbank	CDS	134134	134484	.	-	0	ID=cds-QXV85727.1;Parent=gene-bas51_0217;Dbxref=NCBI_GP:QXV85727.1;Name=QXV85727.1;gbkey=CDS;locus_tag=bas51_0217;product=hypothetical protein;protein_id=QXV85727.1;transl_table=11
+MZ501111.1	Genbank	gene	134481	135398	.	-	.	ID=gene-bas51_0218;Name=bas51_0218;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0218
+MZ501111.1	Genbank	CDS	134481	135398	.	-	0	ID=cds-QXV85728.1;Parent=gene-bas51_0218;Dbxref=NCBI_GP:QXV85728.1;Name=QXV85728.1;gbkey=CDS;locus_tag=bas51_0218;product=RNA ligase;protein_id=QXV85728.1;transl_table=11
+MZ501111.1	Genbank	gene	135517	135927	.	+	.	ID=gene-bas51_0219;Name=bas51_0219;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0219
+MZ501111.1	Genbank	CDS	135517	135927	.	+	0	ID=cds-QXV85729.1;Parent=gene-bas51_0219;Dbxref=NCBI_GP:QXV85729.1;Name=QXV85729.1;gbkey=CDS;locus_tag=bas51_0219;product=polynucleotide kinase;protein_id=QXV85729.1;transl_table=11
+MZ501111.1	Genbank	gene	135935	136489	.	+	.	ID=gene-bas51_0220;Name=bas51_0220;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0220
+MZ501111.1	Genbank	CDS	135935	136489	.	+	0	ID=cds-QXV85730.1;Parent=gene-bas51_0220;Dbxref=NCBI_GP:QXV85730.1;Name=QXV85730.1;gbkey=CDS;locus_tag=bas51_0220;product=putative phosphoresterase;protein_id=QXV85730.1;transl_table=11
+MZ501111.1	Genbank	gene	136537	136887	.	+	.	ID=gene-bas51_0221;Name=bas51_0221;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0221
+MZ501111.1	Genbank	CDS	136537	136887	.	+	0	ID=cds-QXV85731.1;Parent=gene-bas51_0221;Dbxref=NCBI_GP:QXV85731.1;Name=QXV85731.1;gbkey=CDS;locus_tag=bas51_0221;product=putative transcriptional regulator;protein_id=QXV85731.1;transl_table=11
+MZ501111.1	Genbank	gene	136934	137035	.	+	.	ID=gene-bas51_0222;Name=bas51_0222;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0222
+MZ501111.1	Genbank	CDS	136934	137035	.	+	0	ID=cds-QXV85732.1;Parent=gene-bas51_0222;Dbxref=NCBI_GP:QXV85732.1;Name=QXV85732.1;gbkey=CDS;locus_tag=bas51_0222;product=hypothetical protein;protein_id=QXV85732.1;transl_table=11
+MZ501111.1	Genbank	gene	137184	137279	.	+	.	ID=gene-bas51_0223;Name=bas51_0223;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0223
+MZ501111.1	Genbank	CDS	137184	137279	.	+	0	ID=cds-QXV85733.1;Parent=gene-bas51_0223;Dbxref=NCBI_GP:QXV85733.1;Name=QXV85733.1;gbkey=CDS;locus_tag=bas51_0223;product=hypothetical protein;protein_id=QXV85733.1;transl_table=11
+MZ501111.1	Genbank	gene	137283	137453	.	+	.	ID=gene-bas51_0224;Name=bas51_0224;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0224
+MZ501111.1	Genbank	CDS	137283	137453	.	+	0	ID=cds-QXV85734.1;Parent=gene-bas51_0224;Dbxref=NCBI_GP:QXV85734.1;Name=QXV85734.1;gbkey=CDS;locus_tag=bas51_0224;product=hypothetical protein;protein_id=QXV85734.1;transl_table=11
+MZ501111.1	Genbank	gene	137548	138126	.	+	.	ID=gene-bas51_0225;Name=bas51_0225;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0225
+MZ501111.1	Genbank	CDS	137548	138126	.	+	0	ID=cds-QXV85735.1;Parent=gene-bas51_0225;Dbxref=NCBI_GP:QXV85735.1;Name=QXV85735.1;gbkey=CDS;locus_tag=bas51_0225;product=hypothetical protein;protein_id=QXV85735.1;transl_table=11
+MZ501111.1	Genbank	gene	138137	138325	.	+	.	ID=gene-bas51_0226;Name=bas51_0226;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0226
+MZ501111.1	Genbank	CDS	138137	138325	.	+	0	ID=cds-QXV85736.1;Parent=gene-bas51_0226;Dbxref=NCBI_GP:QXV85736.1;Name=QXV85736.1;gbkey=CDS;locus_tag=bas51_0226;product=hypothetical protein;protein_id=QXV85736.1;transl_table=11
+MZ501111.1	Genbank	gene	138402	138644	.	+	.	ID=gene-bas51_0227;Name=bas51_0227;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0227
+MZ501111.1	Genbank	CDS	138402	138644	.	+	0	ID=cds-QXV85737.1;Parent=gene-bas51_0227;Dbxref=NCBI_GP:QXV85737.1;Name=QXV85737.1;gbkey=CDS;locus_tag=bas51_0227;product=hypothetical protein;protein_id=QXV85737.1;transl_table=11
+MZ501111.1	Genbank	gene	138629	138739	.	+	.	ID=gene-bas51_0228;Name=bas51_0228;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0228
+MZ501111.1	Genbank	CDS	138629	138739	.	+	0	ID=cds-QXV85738.1;Parent=gene-bas51_0228;Dbxref=NCBI_GP:QXV85738.1;Name=QXV85738.1;gbkey=CDS;locus_tag=bas51_0228;product=hypothetical protein;protein_id=QXV85738.1;transl_table=11
+MZ501111.1	Genbank	gene	138991	139329	.	+	.	ID=gene-bas51_0229;Name=bas51_0229;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0229
+MZ501111.1	Genbank	CDS	138991	139329	.	+	0	ID=cds-QXV85739.1;Parent=gene-bas51_0229;Dbxref=NCBI_GP:QXV85739.1;Name=QXV85739.1;gbkey=CDS;locus_tag=bas51_0229;product=hypothetical protein;protein_id=QXV85739.1;transl_table=11
+MZ501111.1	Genbank	gene	139426	139500	.	+	.	ID=gene-bas51_0230;Name=bas51_0230;gbkey=Gene;gene_biotype=tRNA;locus_tag=bas51_0230
+MZ501111.1	Genbank	tRNA	139426	139500	.	+	.	ID=rna-bas51_0230;Parent=gene-bas51_0230;Note=codon recognized: AGA;gbkey=tRNA;locus_tag=bas51_0230;product=tRNA-Arg
+MZ501111.1	Genbank	exon	139426	139500	.	+	.	ID=exon-bas51_0230-1;Parent=rna-bas51_0230;Note=codon recognized: AGA;gbkey=tRNA;locus_tag=bas51_0230;product=tRNA-Arg
+MZ501111.1	Genbank	gene	139505	139591	.	+	.	ID=gene-bas51_0231;Name=bas51_0231;gbkey=Gene;gene_biotype=tRNA;locus_tag=bas51_0231
+MZ501111.1	Genbank	tRNA	139505	139591	.	+	.	ID=rna-bas51_0231;Parent=gene-bas51_0231;Note=codon recognized: TAC;gbkey=tRNA;locus_tag=bas51_0231;product=tRNA-Tyr
+MZ501111.1	Genbank	exon	139505	139591	.	+	.	ID=exon-bas51_0231-1;Parent=rna-bas51_0231;Note=codon recognized: TAC;gbkey=tRNA;locus_tag=bas51_0231;product=tRNA-Tyr
+MZ501111.1	Genbank	gene	139895	139991	.	+	.	ID=gene-bas51_0232;Name=bas51_0232;gbkey=Gene;gene_biotype=tRNA;locus_tag=bas51_0232
+MZ501111.1	Genbank	tRNA	139895	139991	.	+	.	ID=rna-bas51_0232;Parent=gene-bas51_0232;Note=codon recognized: AAA;gbkey=tRNA;locus_tag=bas51_0232;product=tRNA-Lys
+MZ501111.1	Genbank	exon	139895	139991	.	+	.	ID=exon-bas51_0232-1;Parent=rna-bas51_0232;Note=codon recognized: AAA;gbkey=tRNA;locus_tag=bas51_0232;product=tRNA-Lys
+MZ501111.1	Genbank	gene	139999	140074	.	+	.	ID=gene-bas51_0233;Name=bas51_0233;gbkey=Gene;gene_biotype=tRNA;locus_tag=bas51_0233
+MZ501111.1	Genbank	tRNA	139999	140074	.	+	.	ID=rna-bas51_0233;Parent=gene-bas51_0233;Note=codon recognized: ACA;gbkey=tRNA;locus_tag=bas51_0233;product=tRNA-Thr
+MZ501111.1	Genbank	exon	139999	140074	.	+	.	ID=exon-bas51_0233-1;Parent=rna-bas51_0233;Note=codon recognized: ACA;gbkey=tRNA;locus_tag=bas51_0233;product=tRNA-Thr
+MZ501111.1	Genbank	gene	140076	140150	.	+	.	ID=gene-bas51_0234;Name=bas51_0234;gbkey=Gene;gene_biotype=tRNA;locus_tag=bas51_0234
+MZ501111.1	Genbank	tRNA	140076	140150	.	+	.	ID=rna-bas51_0234;Parent=gene-bas51_0234;Note=codon recognized: ATA;gbkey=tRNA;locus_tag=bas51_0234;product=tRNA-Ile
+MZ501111.1	Genbank	exon	140076	140150	.	+	.	ID=exon-bas51_0234-1;Parent=rna-bas51_0234;Note=codon recognized: ATA;gbkey=tRNA;locus_tag=bas51_0234;product=tRNA-Ile
+MZ501111.1	Genbank	gene	140162	140238	.	+	.	ID=gene-bas51_0235;Name=bas51_0235;gbkey=Gene;gene_biotype=tRNA;locus_tag=bas51_0235
+MZ501111.1	Genbank	tRNA	140162	140238	.	+	.	ID=rna-bas51_0235;Parent=gene-bas51_0235;Note=codon recognized: CCA;gbkey=tRNA;locus_tag=bas51_0235;product=tRNA-Pro
+MZ501111.1	Genbank	exon	140162	140238	.	+	.	ID=exon-bas51_0235-1;Parent=rna-bas51_0235;Note=codon recognized: CCA;gbkey=tRNA;locus_tag=bas51_0235;product=tRNA-Pro
+MZ501111.1	Genbank	gene	140285	140554	.	+	.	ID=gene-bas51_0236;Name=bas51_0236;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas51_0236
+MZ501111.1	Genbank	CDS	140285	140554	.	+	0	ID=cds-QXV85740.1;Parent=gene-bas51_0236;Dbxref=NCBI_GP:QXV85740.1;Name=QXV85740.1;gbkey=CDS;locus_tag=bas51_0236;product=hypothetical protein;protein_id=QXV85740.1;transl_table=11
+###
