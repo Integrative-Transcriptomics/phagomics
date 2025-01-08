@@ -4,6 +4,9 @@ include { filterFunction }                      from "./bin/filter.nf"
 include { annotateGenome as annotateGenome1 }   from "./bin/annotateGenomes.nf"
 include { annotateGenome as annotateGenome2 }   from "./bin/annotateGenomes.nf"
 include { mmseqscluster }                       from "./bin/cluster.nf"
+include { mmseqscluster_refine }                from "./bin/cluster.nf"
+include { colabfold }                           from "./bin/colabfold.nf"
+
 
 
 workflow {
@@ -97,6 +100,16 @@ workflow {
     // Concat all functional proteins of phages into prot_seqs and run clustering on them.
     prot_seqs = ch_known.collectFile( name: 'prots' ) { it[1] }
 
-    mmseqscluster( prot_seqs ) 
+    cluster_reps = mmseqscluster( prot_seqs ) 
+    cluster_reps_refined = mmseqscluster_refine( cluster_reps )
+
+
+    ///
+    /// STRUCTURE PREDICTION
+    ///
+
+
+    colabfold_search( cluster_reps_refined )
+    colabfold_batch( cluster_reps_refined )
 
 }   
