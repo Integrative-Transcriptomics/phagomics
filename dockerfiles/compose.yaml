@@ -1,0 +1,7 @@
+services:
+  precluster:
+    build: docker_phage_image/
+  cluster:
+    image: "soedinglab/mmseqs2"
+  predict:
+    build: docker_colabfold/
