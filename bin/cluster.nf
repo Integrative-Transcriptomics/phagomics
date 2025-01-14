@@ -52,7 +52,7 @@ process mmseqscluster_refine {
     path(prot_reps)
 
     output:
-    path("protein_clusters/clu2_rep_seq.*"), emit: reps_refined
+    path("protein_clusters/clu2_rep_seq.fasta"), emit: reps_refined
 
     script:
     """
