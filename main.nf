@@ -5,21 +5,16 @@ include { annotateGenome as annotateGenome1 }   from "./bin/annotateGenomes.nf"
 include { annotateGenome as annotateGenome2 }   from "./bin/annotateGenomes.nf"
 include { mmseqscluster }                       from "./bin/cluster.nf"
 include { mmseqscluster_refine }                from "./bin/cluster.nf"
-include { colabfold }                           from "./bin/colabfold.nf"
+include { colabfold_search }                    from "./bin/colabfold.nf"
+include { colabfold_batch }                     from "./bin/colabfold.nf"
+include { colabfold_batch_wsl }                 from "./bin/colabfold.nf"
+include { foldseek }                            from "./bin/foldseek.nf"
 
 
 
 workflow {
 
-    // Import files and do some preliminary tagging
-    // old combined channel of fastas + gffs
-    // Channel.fromFilePairs( [params.genomes, params.features], checkIfExists: true )
-    // | map { id, files ->
-    //    [id:id, paths:files]
-    // }
-    // | view
-    // | set{ ch_genomes }
-
+    // import feature data from .gff
     Channel.fromPath( params.features, checkIfExists: true) 
     | map{ path ->
         // could skip this because it gets undone at ch_filtered.functional... step
@@ -83,33 +78,58 @@ workflow {
     
     // Run annotations on both channels
     annotateGenome1( ch_joinF )
-    // | view
     | set{ ch_known }
 
     // annotateGenome2( ch_joinH )
-    // // | view
 
 
     ///
     /// CLUSTERING
     ///
 
-
     // potentially add flag to allow input of premade protein seqs db (.fasta format)
 
     // Concat all functional proteins of phages into prot_seqs and run clustering on them.
-    prot_seqs = ch_known.collectFile( name: 'prots' ) { it[1] }
+    ch_known
+    | collectFile ( name: 'prots' ) { it[1] }
+    | set { prot_seqs}
 
-    cluster_reps = mmseqscluster( prot_seqs ) 
-    cluster_reps_refined = mmseqscluster_refine( cluster_reps )
+    // run clustering
+    mmseqscluster( prot_seqs )
+    | mmseqscluster_refine
+    /// use only 2 sequences for testing purposes
+    | splitFasta
+    | take(2)
+    | collectFile ( name: 'clust.fasta' )
+    ///
+    | set { cluster_reps_refined }
 
 
     ///
     /// STRUCTURE PREDICTION
     ///
 
+    if (params.wsl) {
+        colabfold_batch_wsl( cluster_reps_refined )
+        | flatten
+        | map{ it -> 
+            // extract gene ID from colabfold output (=~ find operator with matching regex)
+            [id:(it =~ /gene-(.*?)_unrelaxed/)[0][1], path:it]
+        }
+        | set{ ch_structures }
+    } else {
+        colabfold_batch( cluster_reps_refined )
+        | flatten
+        | map{ it -> 
+            [id:(it =~ /gene-(.*?)_unrelaxed/)[0][1], path:it]
+        }
+        | set{ ch_structures }
+    }
 
-    colabfold_search( cluster_reps_refined )
-    colabfold_batch( cluster_reps_refined )
 
+    ///
+    /// FOLDSEEK SEARCH
+    /// 
+    
+    foldseek( ch_structures )
 }   
