@@ -19,7 +19,7 @@ process colabfold_search {
 
 process colabfold_batch {
     // ONLY PASSES RANK 1 PREDICTIONS AT THE MOMENT!
-    debug true
+    //debug true
     publishDir "$params.outDir", mode: 'copy'
     // docker flags, remove to run on CPU
     // containerOptions { "--runtime=nvidia --gpus 1" }
@@ -39,7 +39,7 @@ process colabfold_batch {
 
 process colabfold_batch_wsl {
     // additional flags for WSL support
-    debug true
+    //debug true
     publishDir "$params.outDir", mode: 'copy'
     containerOptions { "--runtime=nvidia --gpus 1" }
 

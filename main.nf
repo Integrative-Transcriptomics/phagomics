@@ -41,11 +41,11 @@ workflow {
     }
     | set{ ch_functional }
 
-    // ch_filtered.hypothetical
-    // | map { id, files ->
-    //     [id.id, "hypothetical", files]
-    // }
-    // | set{ ch_hypothetical }
+    ch_filtered.hypothetical
+    | map { id, files ->
+        [id.id, "hypothetical", files]
+    }
+    | set{ ch_hypothetical }
 
 
     ///
@@ -69,18 +69,19 @@ workflow {
     }
     | set{ ch_joinF }
 
-    // ch_hypothetical
-    // | join( ch_genomes )
-    // | map{ id, type, path1, path2 -> 
-    //     [[id:id, type:type], path1, path2]
-    // }
-    // | set{ ch_joinH }
+    ch_hypothetical
+    | join( ch_genomes )
+    | map{ id, type, path1, path2 -> 
+        [[id:id, type:type], path1, path2]
+    }
+    | set{ ch_joinH }
     
     // Run annotations on both channels
     annotateGenome1( ch_joinF )
     | set{ ch_known }
 
-    // annotateGenome2( ch_joinH )
+    annotateGenome2( ch_joinH )
+    | set{ ch_unknown }
 
 
     ///
@@ -89,13 +90,15 @@ workflow {
 
     // potentially add flag to allow input of premade protein seqs db (.fasta format)
 
-    // Concat all functional proteins of phages into prot_seqs and run clustering on them.
+    // Concat all functional proteins of phages into prot_seqs_k/u and run clustering on them.
+    // combine known and unkown here
     ch_known
-    | collectFile ( name: 'prots' ) { it[1] }
-    | set { prot_seqs}
+    | collectFile ( name: 'protsk' ) { it[1] }
+    | set { prot_seqs_k}
+
 
     // run clustering
-    mmseqscluster( prot_seqs )
+    mmseqscluster( prot_seqs_k )
     | mmseqscluster_refine
     /// use only 2 sequences for testing purposes
     | splitFasta
@@ -131,5 +134,5 @@ workflow {
     /// FOLDSEEK SEARCH
     /// 
     
-    foldseek( ch_structures )
+    foldseek( ch_structures)
 }   

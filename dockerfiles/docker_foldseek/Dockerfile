@@ -9,11 +9,13 @@ RUN wget https://mmseqs.com/foldseek/foldseek-linux-gpu.tar.gz \
 
 
 # temporary SP
-RUN mkdir db
-RUN foldseek/bin/foldseek databases Alphafold/Swiss-Prot db/AFSP tmp
+#RUN mkdir db
+# RUN foldseek/bin/foldseek databases Alphafold/Swiss-Prot db/AFSP tmp
 
 # doesn't work ?
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV PATH="/foldseek/bin/:$PATH"
 
-COPY gene-bas42_0221_unrelaxed_rank_001_alphafold2_ptm_model_2_seed_000.pdb .
+COPY gene-bas53_0001_unrelaxed_rank_001_alphafold2_ptm_model_3_seed_000.pdb .
+
+VOLUME /db
