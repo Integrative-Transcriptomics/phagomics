@@ -19,8 +19,7 @@ process foldseek {
 
     script:
     """
-    foldseek easy-search $path $database/db aln tmp
+    foldseek easy-search $path $database/db aln tmp \
+    --format-output "query,target,fident,alnlen,qlen,tlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits,alntmscore"
     """
-    //cd BFVD
-    //--format-output "query,target,fident,alnlen,qlen,tlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits,alntmscore"
 }
