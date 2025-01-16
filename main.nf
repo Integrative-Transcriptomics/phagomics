@@ -3,6 +3,8 @@
 include { filterFunction }                      from "./bin/filter.nf"
 include { annotateGenome as annotateGenome1 }   from "./bin/annotateGenomes.nf"
 include { annotateGenome as annotateGenome2 }   from "./bin/annotateGenomes.nf"
+include { addFlag as addFlag1 }                 from "./bin/annotateGenomes.nf"
+include { addFlag as addFlag2 }                 from "./bin/annotateGenomes.nf"
 include { mmseqscluster }                       from "./bin/cluster.nf"
 include { mmseqscluster_refine }                from "./bin/cluster.nf"
 include { colabfold_search }                    from "./bin/colabfold.nf"
@@ -78,9 +80,11 @@ workflow {
     
     // Run annotations on both channels
     annotateGenome1( ch_joinF )
+    | addFlag1
     | set{ ch_known }
 
     annotateGenome2( ch_joinH )
+    | addFlag2
     | set{ ch_unknown }
 
 
