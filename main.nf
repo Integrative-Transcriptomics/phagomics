@@ -97,16 +97,20 @@ workflow {
     // Concat all functional proteins of phages into prot_seqs_k/u and run clustering on them.
     // combine known and unkown here
     ch_known
-    | collectFile ( name: 'protsk' ) { it[1] }
-    | set { prot_seqs_k}
+    | concat(ch_unknown )
+    | collectFile( name: 'prots' ) { it[1] }
+    | set { prot_seqs }
 
 
     // run clustering
-    mmseqscluster( prot_seqs_k )
+    mmseqscluster( prot_seqs )
     | mmseqscluster_refine
-    /// use only 2 sequences for testing purposes
-    | splitFasta
-    | take(2)
+    | set { cluster_reps_refined }
+
+    cluster_reps_refined.reps_refined
+    /// use only 100 sequences for testing purposes
+    | splitFasta()
+    | take(100)
     | collectFile ( name: 'clust.fasta' )
     ///
     | set { cluster_reps_refined }
