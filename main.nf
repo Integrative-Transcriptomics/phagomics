@@ -1,18 +1,18 @@
 #!/usr/bin/env nextflow
 
-include { filterFunction }                      from "./bin/filter.nf"
-include { annotateGenome as annotateGenome1 }   from "./bin/annotateGenomes.nf"
-include { annotateGenome as annotateGenome2 }   from "./bin/annotateGenomes.nf"
-include { addFlag as addFlag1 }                 from "./bin/annotateGenomes.nf"
-include { addFlag as addFlag2 }                 from "./bin/annotateGenomes.nf"
-include { mmseqscluster }                       from "./bin/cluster.nf"
-include { mmseqscluster_refine }                from "./bin/cluster.nf"
-include { colabfold_search }                    from "./bin/colabfold.nf"
-include { colabfold_batch }                     from "./bin/colabfold.nf"
-include { colabfold_batch_wsl }                 from "./bin/colabfold.nf"
-include { foldseek }                            from "./bin/foldseek.nf"
+include { filterFunction }                      from "./bin/modules/filter.nf"
+include { annotateGenome as annotateGenome1 }   from "./bin/modules/annotateGenomes.nf"
+include { annotateGenome as annotateGenome2 }   from "./bin/modules/annotateGenomes.nf"
+include { addFlag as addFlag1 }                 from "./bin/modules/annotateGenomes.nf"
+include { addFlag as addFlag2 }                 from "./bin/modules/annotateGenomes.nf"
+include { mmseqscluster }                       from "./bin/modules/cluster.nf"
+include { mmseqscluster_refine }                from "./bin/modules/cluster.nf"
+include { colabfold_search }                    from "./bin/modules/colabfold.nf"
+include { colabfold_batch }                     from "./bin/modules/colabfold.nf"
+include { colabfold_batch_wsl }                 from "./bin/modules/colabfold.nf"
+include { foldseek }                            from "./bin/modules/foldseek.nf"
 
-
+include { validateFoldseek }                    from "./bin/subworkflows/validate.nf" 
 
 workflow {
 
@@ -121,18 +121,19 @@ workflow {
     ///
 
     if (params.wsl) {
-        colabfold_batch_wsl( cluster_reps_refined )
-        | flatten
-        | map{ it -> 
+        //colabfold_batch_wsl( cluster_reps_refined )
+        //| flatten
+        Channel.fromPath("./100test/*_relaxed*_001_*.pdb") // take files from colabfold local run (not in docker)
+        | map { it -> 
             // extract gene ID from colabfold output (=~ find operator with matching regex)
-            [id:(it =~ /gene-(.*?)_unrelaxed/)[0][1], path:it]
+            [id:(it =~ /gene-(.*?)_rank/)[0][1], path:it]
         }
         | set{ ch_structures }
     } else {
         colabfold_batch( cluster_reps_refined )
         | flatten
-        | map{ it -> 
-            [id:(it =~ /gene-(.*?)_unrelaxed/)[0][1], path:it]
+        | map { it -> 
+            [id:(it =~ /gene-(.*?)_rank/)[0][1], path:it]
         }
         | set{ ch_structures }
     }
@@ -142,5 +143,39 @@ workflow {
     /// FOLDSEEK SEARCH
     /// 
     
-    foldseek( ch_structures)
+    // Run foldseek on all predicted structures, known or unknown against given DB
+    foldseek( ch_structures )
+    | splitCsv( sep: "\t" )
+    | filter { it ->                    // Filter to (from birth of proteins folds)
+        it[1][14].toDouble() > 0.4 &&   // TM-score > 0.4 
+        it[1][12].toDouble() < 0.001    // e-value  < 0.001
+    } 
+    // convoluted way to write a csv (from https://github.com/nf-core/sarek/blob/master/subworkflows/local/channel_variant_calling_create_csv/main.nf)
+    | collectFile( keepHeader: true, skip: 1,sort: true, storeDir: "${params.outDir}/foldseek" ) { id, csv ->
+        query      = csv[0]
+        target     = csv[1] 
+        evalue     = csv[12]
+        alntmscore = csv[14]
+        bits       = csv[13]
+        ["result.csv", "query,target,evalue,TM-score,bits\n${query},${target},${evalue},${alntmscore},${bits}\n"] }
+    
+    // Validate known proteins by searching against BaselDB
+    ch_structures
+    | filter ( ~/.*_(known)_.*/ )
+    | validateFoldseek
+
+
+            // Branch known/unknown. DOn't know if needed
+            // ch_structures
+            // | branch { it ->
+            //     known:      it =~ /.*_(known)_.*/
+            //     unknown:    it =~ /.*_(unknown)_.*/
+            // }
+            // | set { struc }
+
+            // struc.known
+            // | view
+
+            // struc.unknown
+            // | view
 }   
