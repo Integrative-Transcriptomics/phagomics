@@ -11,8 +11,11 @@ include { colabfold_search }                    from "./bin/modules/colabfold.nf
 include { colabfold_batch }                     from "./bin/modules/colabfold.nf"
 include { colabfold_batch_wsl }                 from "./bin/modules/colabfold.nf"
 include { foldseek }                            from "./bin/modules/foldseek.nf"
+include { clusterMembers }                      from "./bin/modules/cluster.nf"
 
-include { validateFoldseek }                    from "./bin/subworkflows/validate.nf" 
+include { validateFoldseek }                    from "./bin/subworkflows/validate.nf"
+include { outputReport }                        from "./bin/subworkflows/output.nf" 
+
 
 workflow {
 
@@ -108,12 +111,12 @@ workflow {
     | set { cluster_reps_refined }
 
     cluster_reps_refined.reps_refined
-    /// use only 100 sequences for testing purposes
+    /// use only 50 sequences for testing purposes
     | splitFasta()
-    | take(100)
+    | take(50)
     | collectFile ( name: 'clust.fasta' )
     ///
-    | set { cluster_reps_refined }
+    | set { cluster_reps_refined_sample }
 
 
     ///
@@ -121,16 +124,16 @@ workflow {
     ///
 
     if (params.wsl) {
-        //colabfold_batch_wsl( cluster_reps_refined )
-        //| flatten
-        Channel.fromPath("./100test/*_relaxed*_001_*.pdb") // take files from colabfold local run (not in docker)
+        colabfold_batch_wsl( cluster_reps_refined_sample )
+        | flatten
+        //Channel.fromPath("./100test/*_relaxed*_001_*.pdb") // take files from colabfold local run (not in docker)
         | map { it -> 
             // extract gene ID from colabfold output (=~ find operator with matching regex)
             [id:(it =~ /gene-(.*?)_rank/)[0][1], path:it]
         }
         | set{ ch_structures }
     } else {
-        colabfold_batch( cluster_reps_refined )
+        colabfold_batch( cluster_reps_refined.reps_refined )
         | flatten
         | map { it -> 
             [id:(it =~ /gene-(.*?)_rank/)[0][1], path:it]
@@ -142,40 +145,28 @@ workflow {
     ///
     /// FOLDSEEK SEARCH
     /// 
-    
-    // Run foldseek on all predicted structures, known or unknown against given DB
-    foldseek( ch_structures )
-    | splitCsv( sep: "\t" )
-    | filter { it ->                    // Filter to (from birth of proteins folds)
-        it[1][14].toDouble() > 0.4 &&   // TM-score > 0.4 
-        it[1][12].toDouble() < 0.001    // e-value  < 0.001
-    } 
-    // convoluted way to write a csv (from https://github.com/nf-core/sarek/blob/master/subworkflows/local/channel_variant_calling_create_csv/main.nf)
-    | collectFile( keepHeader: true, skip: 1,sort: true, storeDir: "${params.outDir}/foldseek" ) { id, csv ->
-        query      = csv[0]
-        target     = csv[1] 
-        evalue     = csv[12]
-        alntmscore = csv[14]
-        bits       = csv[13]
-        ["result.csv", "query,target,evalue,TM-score,bits\n${query},${target},${evalue},${alntmscore},${bits}\n"] }
-    
-    // Validate known proteins by searching against BaselDB
+
+    // Branch known/unknown
     ch_structures
-    | filter ( ~/.*_(known)_.*/ )
+    | branch { it ->
+        known:      it =~ /.*_(known)_.*/
+        unknown:    it =~ /.*_(unknown)_.*/
+    }
+    | set { struc }
+
+    // Run validation on known proteins
+    struc.known
     | validateFoldseek
+    
+    // Run all proteins with foldseek
+    // Alternative: run on only unknown proteins
+    ch_structures
+    // struc.unknown
+    | foldseek
+    | set{ out }
 
+    // Generate output report
+    outputReport( out , cluster_reps_refined.clu_Members )
 
-            // Branch known/unknown. DOn't know if needed
-            // ch_structures
-            // | branch { it ->
-            //     known:      it =~ /.*_(known)_.*/
-            //     unknown:    it =~ /.*_(unknown)_.*/
-            // }
-            // | set { struc }
-
-            // struc.known
-            // | view
-
-            // struc.unknown
-            // | view
+    
 }   

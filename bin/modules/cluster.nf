@@ -53,7 +53,7 @@ process mmseqscluster_refine {
 
     output:
     path("protein_clusters/clu2_rep_seq.fasta"), emit: reps_refined
-    path("protein_clusters/clu2_cluster.tsv")
+    path("protein_clusters/clu2_cluster.tsv"), emit: clu_Members
 
     script:
     """
@@ -70,4 +70,39 @@ process mmseqscluster_refine {
     """
 }
 
-    
+process clusterMembers {
+    input:
+    val(file)
+
+    output:
+    path("clusterNumbers.csv"), emit: result
+
+    script:
+    """
+    #!/usr/bin/env python
+
+    ### Takes a .tsv file and keeps rows with a evalue of < 1 and TM-score > 0.4
+    ### csv fields: ...
+
+    import csv
+    from collections import defaultdict
+
+    input = "${file}"
+    output = "clusterNumbers.csv"
+
+    cluster_count = defaultdict(int)
+
+    with open(input, newline='') as infile, open(output, "w") as outfile:
+        reader = csv.reader(infile,  delimiter='\t')
+        writer = csv.writer(outfile, delimiter='\t')
+        
+        for row in reader:
+            cluster_count[row[0]] += 1
+        
+        writer.writerow(["cluster", "members"])
+        for cluster, count in cluster_count.items():
+            writer.writerow([cluster, count])
+
+
+    """
+}

@@ -18,7 +18,7 @@ process colabfold_search {
 }
 
 process colabfold_batch {
-    // ONLY PASSES RANK 1 PREDICTIONS AT THE MOMENT!
+    // ONLY PASSES RANK 1 PREDICTIONS AT THE MOMENT! TODO output all, emit rank 1 strucutres
     //debug true
     publishDir "$params.outDir", mode: 'copy'
     // docker flags, remove to run on CPU

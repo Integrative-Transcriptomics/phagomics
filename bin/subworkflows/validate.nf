@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 include { foldseekValidate }        from "../modules/foldseek.nf"
-include { generateFoldseekReport }  from "../modules/foldseek.nf"
+include { generateValidationReport }  from "../modules/foldseek.nf"
 
 workflow validateFoldseek {
     take:
@@ -10,9 +10,9 @@ workflow validateFoldseek {
     main:
     ch_structures
     | foldseekValidate
-    | generateFoldseekReport
-    | collectFile( name: 'report.tsv', storeDir: "$params.outDir" )
+    | generateValidationReport
+    | collectFile( name: 'validationReport.tsv', storeDir: "$params.outDir", keepHeader: true )
 
     emit:
-    'report.tsv'
+    'validationReport.tsv'
 }
