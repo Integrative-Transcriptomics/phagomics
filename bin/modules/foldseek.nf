@@ -13,10 +13,10 @@ process foldseek {
     maxForks 4
 
     input:
-    tuple val(id), path(path)
+    tuple val(id), path(path), path(json)
 
     output:
-    path(aln)
+    tuple val(id), path(aln), path(json)
 
     script:
     """
@@ -40,10 +40,10 @@ process foldseekValidate {
     maxForks 4 // to run locally with limited memory
 
     input:
-    tuple val(id), path(structures)
+    tuple val(id), path(structures), path(json)
 
     output:
-    path(aln), emit: file
+    tuple val(id), path(aln), path(json)
 
     script:
     """
@@ -62,7 +62,7 @@ process foldseekValidate {
 process generateValidationReport {
     debug true
     input:
-    path(file)
+    tuple val(id), path(file), path(json)
 
     output:
     path("validationReport.tsv"), emit: report
@@ -76,6 +76,7 @@ process generateValidationReport {
 
     import csv
 
+    id = "${id}"
     input = "${file}"
     output = "validationReport.tsv"
 
@@ -88,6 +89,13 @@ process generateValidationReport {
         for count, row in enumerate(reader):
             query = row[0]
             target = row[1]
+
+            # make sure id = query
+            if id not in query:
+                raise Exception("Id is not query!")
+
+            row[0] = id
+
             if float(row[2]) > 0.8:
                 if target in query:
                     writer.writerow(row + ["true"])
@@ -115,7 +123,7 @@ process generateValidationReport {
 process generateFoldseekReport {
     debug true
     input:
-    path(alnfile)
+    tuple val(id), path(alnfile), path(json)
     val(clusterMembers)
 
     output:
@@ -125,19 +133,29 @@ process generateFoldseekReport {
     """
     #!/usr/bin/env python
 
-    import csv
+    import csv, json
 
+    id = "${id}"
     input = "${alnfile}"
     output = "reports.csv"
+    input_json = "${json}"
     clusters = "${clusterMembers}"
 
-    with open(input, "r") as infile, open(output, "w") as outfile, open(clusters, "r") as clufile:
+    # open all required files
+    with open(input, "r")      as infile,  \
+         open(output, "w")     as outfile, \
+         open(clusters, "r")   as clufile, \
+         open(input_json, "r") as jsonfile:
+
+        # create readers/writers
         reader = csv.reader(infile,  delimiter='\t')
         writer = csv.writer(outfile, delimiter='\t')
         readerCluster = csv.reader(clufile, delimiter='\t')
+        json_content = json.loads(jsonfile.read())
         clusterNumber = 0
-
-        writer.writerow(['query','clunum','target','evalue','fident','bits'])
+        
+        # Write header
+        writer.writerow(['query','clunum','pTM','target','evalue','fident','bits'])
 
         for count, row in enumerate(reader):
 
@@ -145,6 +163,10 @@ process generateFoldseekReport {
             target = row[1]
             evalue = row[3]
             #alntmscore = row[5]
+
+            # make sure id = query
+            if id not in query:
+                raise Exception("Id is not query!")
 
             if count == 3:
                 break
@@ -156,7 +178,7 @@ process generateFoldseekReport {
 
             # Filter on evalue
             if (float(evalue) < 0.1):
-                writer.writerow([query, clusterNumber, target, evalue, row[2], row[4]])
+                writer.writerow([id, clusterNumber, json_content['ptm'], target, evalue, row[2], row[4]])
             else:
                 count -= 1
                 break

@@ -28,7 +28,7 @@ process colabfold_batch {
     val(path)
 
     output:
-    path("colabfold/*_relaxed*_001_*.pdb")
+    tuple path("colabfold/*_relaxed*_001_*.pdb"), path("colabfold/*_001_*.json")
 
     script:
     """
@@ -47,7 +47,7 @@ process colabfold_batch_wsl {
     val(path)
 
     output:
-    path("colabfold/*_relaxed*_001_*.pdb")
+    tuple path("colabfold/*_relaxed*_001_*.pdb"), path("colabfold/*_001_*.json")
 
     script:
     """
