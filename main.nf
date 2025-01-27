@@ -97,12 +97,11 @@ workflow {
 
     // potentially add flag to allow input of premade protein seqs db (.fasta format)
 
-    // Concat all functional proteins of phages into prot_seqs_k/u and run clustering on them.
-    // combine known and unkown here
+    // Concat all proteins of phages into prot_seqs_k/u and run clustering on them.
     ch_known
-    | concat(ch_unknown )
+    | concat( ch_unknown )
     | collectFile( name: 'prots' ) { it[1] }
-    | set { prot_seqs }
+    | set{ prot_seqs }
 
 
     // run clustering
@@ -113,7 +112,7 @@ workflow {
     cluster_reps_refined.reps_refined
     /// use only 50 sequences for testing purposes
     | splitFasta()
-    | take(50)
+    | take(2)
     | collectFile ( name: 'clust.fasta' )
     ///
     | set { cluster_reps_refined_sample }
@@ -124,19 +123,37 @@ workflow {
     ///
 
     if (params.wsl) {
-        colabfold_batch_wsl( cluster_reps_refined_sample )
-        | flatten
-        //Channel.fromPath("./100test/*_relaxed*_001_*.pdb") // take files from colabfold local run (not in docker)
+        // testsetup
+        Channel.fromPath(["./100test/*_relaxed*_001_*.pdb", "./100test/*_rank_001_*.json"]) // take files from colabfold local run (not in docker)
         | map { it -> 
-            // extract gene ID from colabfold output (=~ find operator with matching regex)
-            [id:(it =~ /gene-(.*?)_rank/)[0][1], path:it]
+            tuple((it =~ /100test\/(.*?)_(relaxed|scores)/)[0][1], it)
+        }
+        // Output is colabofold .pdb and .json. The following extracts the id from filename and maps
+        // the files according to id
+        //colabfold_batch_wsl( cluster_reps_refined_sample )
+        // | flatten
+        // | map { it -> 
+        //     tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it)
+        // }
+        | groupTuple()
+        | map { id, paths ->
+            [id:id, 
+            pdb:  paths.find{ it -> it.toString().endsWith(".pdb") },
+            json: paths.find{ it -> it.toString().endsWith(".json")}] 
         }
         | set{ ch_structures }
     } else {
-        colabfold_batch( cluster_reps_refined.reps_refined )
+        // Run normally
+        colabfold_batch( cluster_reps_refined_sample )
         | flatten
         | map { it -> 
-            [id:(it =~ /gene-(.*?)_rank/)[0][1], path:it]
+            tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it)
+        }
+        | groupTuple()
+        | map { id, paths ->
+            [id:id, 
+            pdb:  paths.find{ it -> it.toString().endsWith(".pdb") },
+            json: paths.find{ it -> it.toString().endsWith(".json")}] 
         }
         | set{ ch_structures }
     }
@@ -146,7 +163,7 @@ workflow {
     /// FOLDSEEK SEARCH
     /// 
 
-    // Branch known/unknown
+    //Branch known/unknown
     ch_structures
     | branch { it ->
         known:      it =~ /.*_(known)_.*/
@@ -164,6 +181,9 @@ workflow {
     // struc.unknown
     | foldseek
     | set{ out }
+
+    // ch_structures
+    // | view
 
     // Generate output report
     outputReport( out , cluster_reps_refined.clu_Members )
