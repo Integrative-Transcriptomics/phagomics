@@ -124,17 +124,17 @@ workflow {
 
     if (params.wsl) {
         // testsetup
-        Channel.fromPath(["./100test/*_relaxed*_001_*.pdb", "./100test/*_rank_001_*.json"]) // take files from colabfold local run (not in docker)
-        | map { it -> 
-            tuple((it =~ /100test\/(.*?)_(relaxed|scores)/)[0][1], it)
-        }
+        // Channel.fromPath(["./100test/*_relaxed*_001_*.pdb", "./100test/*_rank_001_*.json"]) // take files from colabfold local run (not in docker)
+        // | map { it -> 
+        //     tuple((it =~ /100test\/(.*?)_(relaxed|scores)/)[0][1], it)
+        // }
         // Output is colabofold .pdb and .json. The following extracts the id from filename and maps
         // the files according to id
-        //colabfold_batch_wsl( cluster_reps_refined_sample )
-        // | flatten
-        // | map { it -> 
-        //     tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it)
-        // }
+        colabfold_batch_wsl( cluster_reps_refined_sample )
+        | flatten
+        | map { it -> 
+            tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it)
+        }
         | groupTuple()
         | map { id, paths ->
             [id:id, 
