@@ -40,13 +40,13 @@ workflow {
     // Select the functional/hypothetical annotations and create channels
     // Add functional/hypothetical tag to gff files
     // Maybe outsource this to filter.nf (?)
-    ch_filtered.functional
+    ch_filtered.bedF
     | map { id, files ->
         [id.id, "functional", files]
     }
     | set{ ch_functional }
 
-    ch_filtered.hypothetical
+    ch_filtered.bedH
     | map { id, files ->
         [id.id, "hypothetical", files]
     }
