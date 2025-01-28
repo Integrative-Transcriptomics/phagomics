@@ -7,7 +7,6 @@ include { addFlag as addFlag1 }                 from "./bin/modules/annotateGeno
 include { addFlag as addFlag2 }                 from "./bin/modules/annotateGenomes.nf"
 include { mmseqscluster }                       from "./bin/modules/cluster.nf"
 include { mmseqscluster_refine }                from "./bin/modules/cluster.nf"
-include { colabfold_search }                    from "./bin/modules/colabfold.nf"
 include { colabfold_batch }                     from "./bin/modules/colabfold.nf"
 include { colabfold_batch_wsl }                 from "./bin/modules/colabfold.nf"
 include { foldseek }                            from "./bin/modules/foldseek.nf"
@@ -110,10 +109,10 @@ workflow {
     | set { cluster_reps_refined }
 
     cluster_reps_refined.reps_refined
-    /// use only a few sequences for testing purposes
-    // | splitFasta()
-    // | take(2)
-    // | collectFile ( name: 'clust.fasta' )
+    /// use only 50 sequences for testing purposes
+    | splitFasta()
+    | take(50)
+    | collectFile ( name: 'clust.fasta' )
     ///
     | set { cluster_reps_refined_sample }
 
@@ -123,10 +122,10 @@ workflow {
     ///
 
     if (params.wsl) {
-        // testsetup
-        // Channel.fromPath(["./100test/*_relaxed*_001_*.pdb", "./100test/*_rank_001_*.json"]) // take files from colabfold local run (not in docker)
+        // testsetup with cached results
+        // Channel.fromPath(["./results/colabfold/*.pdb", "./results/colabfold/*.json"]) 
         // | map { it -> 
-        //     tuple((it =~ /100test\/(.*?)_(relaxed|scores)/)[0][1], it)
+        //     tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it)
         // }
         // Output is colabofold .pdb and .json. The following extracts the id from filename and maps
         // the files according to id

@@ -1,27 +1,15 @@
 #!/usr/bin/env nextflow
 
-process colabfold_search {
-    // Will be used for MSA generation
-    debug true
-    publishDir "$params.outDir", mode: 'copy'
-
-    input:
-    path(path)
-
-    // output:
-    // path("colabfold_search/*")
-
-    script:
-    """
-    echo "search!"
-    """
-}
+// mount for database
+if( params.colabdb ==  "." && !params.wsl)
+    throw new Exception("Missing colabfold database!")
+database = file(params.colabdb)
 
 process colabfold_batch {
     // ONLY PASSES RANK 1 PREDICTIONS AT THE MOMENT! TODO output all, emit rank 1 strucutres
     //debug true
     publishDir "$params.outDir", mode: 'copy'
-    // docker flags, remove to run on CPU
+    // docker flags, remove to run on CPU, don't need
     // containerOptions { "--runtime=nvidia --gpus 1" }
 
     input:
