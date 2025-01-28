@@ -16,7 +16,7 @@ process annotateGenome {
    
     script:
     """
-    gffread -g ${genome} -y ${meta.id}_${meta.type}_proteins.fasta ${annotation}
+    bedtools getfasta -fi ${genome} -bed ${annotation} -fo ${meta.id}_${meta.type}_proteins.fasta -name
     """
 }
 
