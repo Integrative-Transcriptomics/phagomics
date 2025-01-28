@@ -20,8 +20,8 @@ process colabfold_batch {
 
     script:
     """
-    colabfold_batch $path colabfold --msa-only
-    colabfold_batch $path colabfold --amber --use-gpu-relax
+    colabfold_search $path $database msas
+    colabfold_batch msas colabfold --amber --use-gpu-relax
     """
 }
 

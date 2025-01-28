@@ -111,7 +111,7 @@ workflow {
     cluster_reps_refined.reps_refined
     /// use only 50 sequences for testing purposes
     | splitFasta()
-    | take(50)
+    | take(2)
     | collectFile ( name: 'clust.fasta' )
     ///
     | set { cluster_reps_refined_sample }
