@@ -1,8 +1,10 @@
 #!/usr/bin/env nextflow
 
 // mount for database
-database = file(params.db)
-validateDB = file(params.validDB)
+if( (params.foldseekdb ==  ".") || (params.validdb ==  "."))
+    throw new Exception("Missing foldseek database(s)!")
+database = file(params.foldseekdb)
+validateDB = file(params.validdb)
 
 // Input: [gene-id, path] rank 1 predicted structures, .pdb format
 // Output: Foldseek aln file
@@ -20,7 +22,7 @@ process foldseek {
 
     script:
     """
-    foldseek easy-search $path $database/db aln tmp \
+    foldseek easy-search "$path" "$database" aln tmp \
     --format-output "query,target,fident,evalue,bits"
     """
 }
@@ -47,7 +49,7 @@ process foldseekValidate {
 
     script:
     """
-    foldseek easy-search $structures $validateDB aln tmp \
+    foldseek easy-search "$structures" "$validateDB" aln tmp \
     --format-output "query,target,fident,evalue,bits" 
     """
 }
