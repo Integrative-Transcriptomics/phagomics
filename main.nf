@@ -18,102 +18,134 @@ include { outputReport }                        from "./bin/subworkflows/output.
 
 workflow {
 
-    // import feature data from .gff
-    Channel.fromPath( params.features, checkIfExists: true) 
-    | map{ path ->
-        // could skip this because it gets undone at ch_filtered.functional... step
-        meta = [id:path.getParent().getName()]
-        [meta, path]
+
+    // Import protein files and cap at length 1500 
+    //Channel.fromPath( params.proteins, checkIfExists: true )
+    Channel.fromPath( "./phage_data/NC_001604.1/*.faa", checkIfExists: true )
+    | splitFasta( record: [id:true, desc:true, seqString:true] )
+    | filter { record -> record.seqString.length() < 1500 }
+    | set { ch_proteins_all }
+
+    // Split into known and unknown proteins
+    ch_proteins_all
+    | branch { record ->
+        unknown: record.desc =~ /\[protein=[^\]]*(hypothetical|putative|postulated)[^\]]*\]/
+        known: true // the rest of the proteins 
     }
-    | set{ ch_annot }
+    | set{ ch_proteins }
+
+    // Collect all unknown proteins into file
+    ch_proteins.unknown
+    | map { it -> ">${it.id}_[unknown] \n $it.seqString"}
+    | set { ch_proteins_unknown }
+    
+    ch_proteins_unknown
+    | collectFile( name:'unknown_prots.faa', newLine: true ) 
+    | set{ proteins_unknown }
+
+    // Collect all known proteins into file
+    ch_proteins.known
+    | map { it -> ">${it.id}_[known] \n $it.seqString"}
+    | set { ch_proteins_known }
+    
+    ch_proteins_known
+    | collectFile( name:'known_prots.faa', newLine: true ) 
+    | set{ proteins_known }
+
+    // Collect all proteins into file
+    ch_proteins_unknown
+    | concat( ch_proteins_known )
+    | collectFile( name:'all_prots.faa', newLine: true ) 
+    | set{ proteins_all }
 
 
+    // ALL OLD
+    // //old
+    // // import feature data from .gff
+    // Channel.fromPath( params.features, checkIfExists: true) 
+    // | map{ path ->
+    //     // could skip this because it gets undone at ch_filtered.functional... step
+    //     meta = [id:path.getParent().getName()]
+    //     [meta, path]
+    // }
+    // | set{ ch_annot }
     ///
     /// FILTERING
     ///
  
     // Call the filter Function. Emits 2 channels: functional, hypothetical
-    filterFunction( ch_annot )
-    | set{ ch_filtered }
+    // filterFunction( ch_proteins )
+    // | set{ ch_filtered }
     
-    // Select the functional/hypothetical annotations and create channels
-    // Add functional/hypothetical tag to gff files
-    // Maybe outsource this to filter.nf (?)
-    ch_filtered.bedF
-    | map { id, files ->
-        [id.id, "functional", files]
-    }
-    | set{ ch_functional }
+    // // Select the functional/hypothetical annotations and create channels
+    // // Add functional/hypothetical tag to gff files
+    // // Maybe outsource this to filter.nf (?)
+    // ch_filtered.bedF
+    // | map { id, files ->
+    //     [id.id, "functional", files]
+    // }
+    // | set{ ch_functional }
 
-    ch_filtered.bedH
-    | map { id, files ->
-        [id.id, "hypothetical", files]
-    }
-    | set{ ch_hypothetical }
+    // ch_filtered.bedH
+    // | map { id, files ->
+    //     [id.id, "hypothetical", files]
+    // }
+    // | set{ ch_hypothetical }
 
 
-    ///
-    /// ANNOTATION
-    ///
+    // ///
+    // /// ANNOTATION
+    // ///
 
-    // Create channel for genome files
-    Channel.fromPath( params.genomes, checkIfExists: true) 
-    | map{ path ->
-        // get id from parent folder
-        [path.getParent().getName(), path]
-    }
-    | set{ ch_genomes }
+    // // Create channel for genome files
+    // Channel.fromPath( params.genomes, checkIfExists: true) 
+    // | map{ path ->
+    //     // get id from parent folder
+    //     [path.getParent().getName(), path]
+    // }
+    // | set{ ch_genomes }
 
-    // Combine genome files and functional/hypothetical annotations channels,
-    // Adds meta map [id:id, type:type]
-    ch_functional
-    | join( ch_genomes )
-    | map{ id, type, path1, path2 -> 
-        [[id:id, type:type], path1, path2]
-    }
-    | set{ ch_joinF }
+    // // Combine genome files and functional/hypothetical annotations channels,
+    // // Adds meta map [id:id, type:type]
+    // ch_functional
+    // | join( ch_genomes )
+    // | map{ id, type, path1, path2 -> 
+    //     [[id:id, type:type], path1, path2]
+    // }
+    // | set{ ch_joinF }
 
-    ch_hypothetical
-    | join( ch_genomes )
-    | map{ id, type, path1, path2 -> 
-        [[id:id, type:type], path1, path2]
-    }
-    | set{ ch_joinH }
+    // ch_hypothetical
+    // | join( ch_genomes )
+    // | map{ id, type, path1, path2 -> 
+    //     [[id:id, type:type], path1, path2]
+    // }
+    // | set{ ch_joinH }
     
-    // Run annotations on both channels
-    annotateGenome1( ch_joinF )
-    | addFlag1
-    | set{ ch_known }
+    // // Run annotations on both channels
+    // annotateGenome1( ch_joinF )
+    // | addFlag1
+    // | set{ ch_known }
 
-    annotateGenome2( ch_joinH )
-    | addFlag2
-    | set{ ch_unknown }
-
+    // annotateGenome2( ch_joinH )
+    // | addFlag2
+    // | set{ ch_unknown }
+    
+    // OLD ENDS HERE
 
     ///
     /// CLUSTERING
     ///
 
-    // potentially add flag to allow input of premade protein seqs db (.fasta format)
-
-    // Concat all proteins of phages into prot_seqs_k/u and run clustering on them.
-    ch_known
-    | concat( ch_unknown )
-    | collectFile( name: 'prots' ) { it[1] }
-    | set{ prot_seqs }
-
-
-    // run clustering
-    mmseqscluster( prot_seqs )
+    //run clustering
+    mmseqscluster( proteins_all )
     | mmseqscluster_refine
     | set { cluster_reps_refined }
 
+    // split into files of 500 sequences
     cluster_reps_refined.reps_refined
-    /// use only 50 sequences for testing purposes
-    | splitFasta()
-    | take(2)
-    | collectFile ( name: 'clust.fasta' )
-    ///
+    | splitFasta(by: 500, file: true)
+    // | take (2)
+    // | view
     | set { cluster_reps_refined_sample }
 
 
@@ -123,9 +155,9 @@ workflow {
 
     if (params.wsl) {
         // testsetup with cached results
-        // Channel.fromPath(["./results/colabfold/*.pdb", "./results/colabfold/*.json"]) 
+        // Channel.fromPath(["./100test/*_rank_001*.pdb", "./100test/*_rank_001*.json"]) 
         // | map { it -> 
-        //     tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it)
+        //     tuple((it =~ /100test\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
         // }
         // Output is colabofold .pdb and .json. The following extracts the id from filename and maps
         // the files according to id
@@ -165,8 +197,8 @@ workflow {
     //Branch known/unknown
     ch_structures
     | branch { it ->
-        known:      it =~ /.*_(known)_.*/
-        unknown:    it =~ /.*_(unknown)_.*/
+        known:      it =~ /.*_[known]_.*/
+        unknown:    it =~ /.*_[unknown]_.*/
     }
     | set { struc }
 

@@ -11,12 +11,12 @@ process annotateGenome {
     tuple val(meta), path(annotation), path(genome)
 
     output:
-    tuple val(meta), path("*_*_proteins.fasta")
+    tuple val(meta), path("*_*_cds.fasta")
     // tuple val(meta), path("hypothetical/*__hypothetical_proteins.fasta"), emit: hypothetical_protein
    
     script:
     """
-    bedtools getfasta -fi ${genome} -bed ${annotation} -fo ${meta.id}_${meta.type}_proteins.fasta -name
+    bedtools getfasta -fi ${genome} -bed ${annotation} -fo ${meta.id}_${meta.type}_cds.fasta -name
     """
 }
 
@@ -39,7 +39,7 @@ process addFlag {
     os.makedirs("hypothetical/", exist_ok=True)
 
     input = "${path}"
-    output = "${meta.type}/${meta.id}_${meta.type}_proteins.fasta"
+    output = "${meta.type}/${meta.id}_${meta.type}_cds.fasta"
     
 
     with open(input, "r") as infile, open(output, "w") as outfile:

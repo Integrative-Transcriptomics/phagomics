@@ -77,3 +77,61 @@ open(outputHypothetical, "w") as outfileH, open(outputbedH, "w") as outfilebedH,
 
     """
 }
+
+process filterProteins {
+    input:
+    tuple val(meta), path(path)
+
+    output:
+    tuple val(meta), path("known/*_known.gff"), emit: known
+    tuple val(meta), path("unknown/*_unknown.gff"), emit: unknown
+
+    script:
+    """
+    #!/usr/bin/env python
+
+    import argparse, os, re
+
+    os.makedirs("known/", exist_ok=True)
+    os.makedirs("unknown/", exist_ok=True)
+
+    input = "${path}"
+    outputFunction = "functional/${meta.id}_functional.faa"
+    outputHypothetical = "hypothetical/${meta.id}_hypothetical.faa"
+    filterWords = ["hypothetical", "putative", "postulated"]
+
+    with open(input, "r") as infile, open(outputFunction, "w") as outfileF, \
+    open(outputHypothetical, "w") as outfileH, open(outputbedH, "w") as outfilebedH, open(outputbedF, "w") as outfilebedF:
+
+    for row in infile:
+        if row.startswith("#"):
+            outfileF.write(row)
+            outfileH.write(row)
+            continue
+
+        columns = row.split("\t")
+        chrom = columns[0]
+        start = int(columns[3]) - 1
+        end = int(columns[4])
+        attributes = columns[8]
+
+        # only take CDS segments, edit this to also collect rest
+        if columns[2] == "CDS":
+            #Get ID from attributes
+            match = re.search(r'ID=([^;]+)', attributes)
+
+            if any(x in columns[8] for x in filterWords):
+                outfileH.write(row)
+                if match:
+                    feature_id = match.group(1)
+                    # Write to output file in BED format
+                    outfilebedH.write(f"{chrom}\\t{start}\\t{end}\\t{feature_id}\\n")
+            else:
+                outfileF.write(row)
+                if match:
+                    feature_id = match.group(1)
+                    # Write to output file in BED format
+                    outfilebedF.write(f"{chrom}\\t{start}\\t{end}\\t{feature_id}\\n")
+
+    """
+}

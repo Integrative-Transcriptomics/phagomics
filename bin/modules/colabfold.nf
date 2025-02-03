@@ -11,6 +11,7 @@ process colabfold_batch {
     publishDir "$params.outDir", mode: 'copy'
     // docker flags, remove to run on CPU, don't need
     // containerOptions { "--runtime=nvidia --gpus 1" }
+    maxForks 1
 
     input:
     val(path)
@@ -30,6 +31,7 @@ process colabfold_batch_wsl {
     //debug true
     publishDir "$params.outDir", mode: 'copy'
     containerOptions { "--runtime=nvidia --gpus 1" }
+    maxForks 1
 
     input:
     val(path)
