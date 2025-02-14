@@ -1,18 +1,15 @@
 #!/usr/bin/env nextflow
 
-include { foldseekValidate }        from "../modules/foldseek.nf"
-include { generateValidationReport }  from "../modules/foldseek.nf"
+include { foldseekValidate }            from "../modules/foldseek.nf"
+include { generateValidationReport }    from "../modules/scripts.nf"
 
-workflow validateFoldseek {
+workflow VALIDATE {
     take:
-    ch_structures
+        knownProteins
 
     main:
-    ch_structures
-    | foldseekValidate
-    | generateValidationReport
-    | collectFile( name: 'validationReport.tsv', storeDir: "$params.outDir", keepHeader: true )
-
-    emit:
-    'validationReport.tsv'
+        knownProteins
+        | foldseekValidate
+        | generateValidationReport
+        | collectFile( name: 'validationReport.tsv', storeDir: "$params.outDir", keepHeader: true )
 }
