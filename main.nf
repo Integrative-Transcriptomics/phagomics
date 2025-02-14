@@ -18,7 +18,7 @@ workflow {
     Channel.fromPath( params.proteins, checkIfExists: true )
     // Channel.fromPath( "./phage_data/MZ501063.1_copy/*.faa", checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
-    | filter { record -> record.seqString.length() < 100 }
+    | filter { record -> record.seqString.length() < 1500 }
     | set { ch_allProteins }
 
     FILTER( ch_allProteins )
