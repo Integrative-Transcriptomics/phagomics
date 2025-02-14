@@ -1,9 +1,9 @@
 #!/usr/bin/env nextflow
 
-include { clusterMembers }          from "../modules/cluster.nf"
-include { generateFoldseekReport }  from "../modules/foldseek.nf"
+include { clusterMembers }          from "../modules/scripts.nf"
+include { generateFoldseekReport }  from "../modules/scripts.nf"
 
-workflow outputReport {
+workflow REPORT {
     take:
     ch_alnfile
     clufile
@@ -11,11 +11,8 @@ workflow outputReport {
     main:
     clusterMembers( clufile )
     | first // convert to value-ch so it can be used indefinetly in generateFoldseekReport
-    | set { clu_out }
+    | set{ clu_out }
 
     generateFoldseekReport( ch_alnfile, clu_out )
     | collectFile( name: 'report.tsv', storeDir: "$params.outDir", keepHeader: true )
-
-    emit:
-    'report.tsv'
 }
