@@ -43,9 +43,10 @@ process clusterMembers {
 
 /** 
 *   Takes channel of foldseek aln files and cluster Member file.
-*   Writes top 3 entries with an evalue < 0.1. Looks for cluster member number 
+*   Writes top 3 entries sorted my TMscore. Looks for cluster member number 
 *   and adds it to output fields.
-*   Returns a .tsv file with the fields: query,clunum,target,evalue,fident,bits
+*   Returns a .tsv file with the fields: 
+*   "target", "function", "qstart", "qend", "tstart", "tend", "prob", "alntmscore", "evalue", "lddt"
 */ 
 process generateFoldseekReport {
     debug true
@@ -171,5 +172,73 @@ process generateValidationReport {
                 break
 
         writer.writerow(" ")
+    """
+}
+
+
+process foldseekReport {
+    debug true
+    input:
+    tuple val(id), path(file), path(json)
+
+    when:
+    file.size() > 0
+
+    output:
+    tuple val(id), path("${id}_fs.json")
+
+    script:
+    """
+    #!/usr/bin/env python
+
+    import requests, sys, re
+    import pandas as pd
+    import xml.etree.ElementTree as ET
+    import json
+
+    # generate foldseek part for outputReport JSON file.
+    # Uses fields from alnfile aswell as getting protein function from uniprotAPI.
+    # alnfile fields: query,target,qstart,qend,tstart,tend,qtmscore,prob,alntmscore,evalue,lddt
+    def generateFoldseekReport(alnfile):
+        df = pd.read_csv(alnfile, 
+                        sep='\t', 
+                        names=["query", "target", "qstart", "qend", "tstart", "tend", "prob", "alntmscore", "evalue"])
+        pattern = r"(?<=AF-)[A-Z0-9]+(?=-F)"
+
+        # get top hit for each criteria
+        topHits = [pd.DataFrame([df.loc[df[criteria].idxmax()]]) for criteria in ["evalue", "prob", "alntmscore"]]
+        
+        # applies regex to all dataframes in topHits, extracting the Alphafold-ID in "target"
+        topHitsId = map(lambda hit: re.search(pattern, hit.iat[0, 1]).group(), topHits)
+
+        # API call for protein name
+        protNames = []
+        namespace = {'ns': 'https://uniprot.org/uniprot'}
+        for elem in topHitsId:
+            requestURL = f"https://www.ebi.ac.uk/proteins/api/proteins/{elem}"
+            r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
+
+            if not r.ok:
+                name = None
+            else:
+                # create tree element from API response XML
+                root = ET.fromstring(r.text)
+                # UniProt entries can have a "recommendedName" and "submittedName"
+                name = root.find(".//ns:protein/ns:recommendedName/ns:fullName", namespace)
+                if name is None: name = root.find(".//ns:protein/ns:submittedName/ns:fullName", namespace)
+                
+            protNames.append(name.text) if name is not None else protNames.append("None")
+
+        # Put top hits into new df and insert name column. Convert to JSON format
+        newdf = pd.concat(topHits)
+        newdf.insert(2, "name", protNames, True)
+        newdf.insert(0, "criteria", ["best e-value", "best probability", "best aln-score"], True)
+
+        return json.dumps(json.loads(newdf.to_json(orient='records', double_precision=2)), indent=4)
+
+    infile = "$file"
+
+    with open("${id}_fs.json", "w") as f:
+        f.write(generateFoldseekReport(infile))
     """
 }
