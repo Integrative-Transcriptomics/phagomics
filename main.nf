@@ -6,6 +6,7 @@ include { STRUCTURE_PREDICITON  } from "./bin/subworkflows/structure.nf"
 include { SEARCH                } from "./bin/subworkflows/search.nf"
 include { VALIDATE              } from "./bin/subworkflows/validate.nf"
 include { REPORT                } from "./bin/subworkflows/output.nf"
+include { REPORT_NEW                } from "./bin/subworkflows/output_new.nf"
 
 
 workflow {
@@ -18,7 +19,7 @@ workflow {
     Channel.fromPath( params.proteins, checkIfExists: true )
     // Channel.fromPath( "./phage_data/MZ501063.1_copy/*.faa", checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
-    | filter { record -> record.seqString.length() < 1500 }
+    | filter { record -> record.seqString.length() < 100 }
     | set { ch_allProteins }
 
     FILTER( ch_allProteins )
@@ -59,6 +60,8 @@ workflow {
 
     VALIDATE( structures.known )
     REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
+
+    REPORT_NEW( SEARCH.out )
 }   
 
 workflow.onComplete {

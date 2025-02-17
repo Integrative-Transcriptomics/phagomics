@@ -6,11 +6,10 @@ if( params.colabdb ==  "." && !params.wsl)
 database = file(params.colabdb)
 
 process colabfold_batch {
-    // ONLY PASSES RANK 1 PREDICTIONS AT THE MOMENT! TODO output all, emit rank 1 strucutres
+    // ONLY PASSES RANK 1 PREDICTIONS
     //debug true
     publishDir "$params.outDir", mode: 'copy'
-    // docker flags, remove to run on CPU, don't need
-    // containerOptions { "--runtime=nvidia --gpus 1" }
+    containerOptions { "--runtime=nvidia --gpus all" }
     maxForks 1
 
     input:
@@ -27,7 +26,7 @@ process colabfold_batch {
 }
 
 process colabfold_batch_wsl {
-    // additional flags for WSL support
+    // additional flags for WSL support and less recycles
     //debug true
     publishDir "$params.outDir", mode: 'copy'
     containerOptions { "--runtime=nvidia --gpus 1" }

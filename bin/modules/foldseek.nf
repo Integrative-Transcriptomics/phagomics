@@ -9,21 +9,22 @@ validateDB = file(params.validdb)
 // Input: [gene-id, path] rank 1 predicted structures, .pdb format
 // Output: Foldseek aln file
 // aln = TSV query,target,fident,evalue,bits
+// https://github.com/steineggerlab/foldseek?tab=readme-ov-file#alignment-mode <- OUTPUTFIELDS DESCRIBED HERE
 process foldseek {
     //debug true
-    publishDir "$params.outDir/foldseek", mode: 'copy', saveAs: {aln -> "${id}_aln.tsv"}
+    publishDir "$params.outDir/foldseek", mode: 'copy', saveAs: { file -> file.endsWith("aln") ? "${id}_aln.tsv" : file }
     maxForks 4
 
     input:
     tuple val(id), path(path), path(json)
 
     output:
-    tuple val(id), path(aln), path(json)
+    tuple val(id), path("aln"), path(json)
 
     script:
     """
-    foldseek easy-search "$path" "$database" aln tmp \
-    --format-output "query,target,fident,evalue,bits"
+    foldseek easy-search "$path" "$database" aln tmp --alignment-type 1 \
+    --format-output "query,target,qstart,qend,tstart,tend,prob,alntmscore,evalue"
     """
 }
 
