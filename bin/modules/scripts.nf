@@ -175,17 +175,17 @@ process generateValidationReport {
     """
 }
 
-
+// This returns a report per protein
 process foldseekReport {
     debug true
     input:
     tuple val(id), path(file), path(json)
 
     when:
-    file.size() > 0
+    file.size() > 0 //Ignote empty foldseek results
 
     output:
-    tuple val(id), path("${id}_fs.json")
+    tuple val(id), path("*_fs.json")
 
     script:
     """
@@ -203,12 +203,12 @@ process foldseekReport {
         df = pd.read_csv(alnfile, 
                         sep='\t', 
                         names=["query", "target", "qstart", "qend", "tstart", "tend", "prob", "alntmscore", "evalue"])
-        pattern = r"(?<=AF-)[A-Z0-9]+(?=-F)"
-
+        
         # get top hit for each criteria
         topHits = [pd.DataFrame([df.loc[df[criteria].idxmax()]]) for criteria in ["evalue", "prob", "alntmscore"]]
         
         # applies regex to all dataframes in topHits, extracting the Alphafold-ID in "target"
+        pattern = r"(?<=AF-)[A-Z0-9]+(?=-F)"
         topHitsId = map(lambda hit: re.search(pattern, hit.iat[0, 1]).group(), topHits)
 
         # API call for protein name
@@ -234,11 +234,143 @@ process foldseekReport {
         newdf.insert(2, "name", protNames, True)
         newdf.insert(0, "criteria", ["best e-value", "best probability", "best aln-score"], True)
 
-        return json.dumps(json.loads(newdf.to_json(orient='records', double_precision=2)), indent=4)
+        # Format to json -> format to proper json format -> each json object (report) to own file
+        objs = json.loads(newdf.to_json(orient='records', double_precision=2))
+        id = objs[0]["query"]
+        with open(f"{id}_fs.json", "w") as fh:
+            fh.write(json.dumps(objs, indent=4))
 
-    infile = "$file"
-
-    with open("${id}_fs.json", "w") as f:
-        f.write(generateFoldseekReport(infile))
+    generateFoldseekReport("$file")
     """
+}
+
+// This returns a report per protein
+// Report can be with method "clusterMember" or "clusterRep"
+// clusterMember: A non-rep member is known, function applies to all cluster members
+// clusterRep: Rep is known, function applies to all members, 
+//  but also creates seperate reports for each member (TODO: Fix this behaviour) 
+process clusterReport {
+    debug true
+    input:
+    path(clusterfile)
+    path(proteinDescriptionsfile)
+
+    output:
+    path("*_cl.json")
+
+    script:
+    """
+    #!/usr/bin/env python
+
+    import re, json
+    import pandas as pd
+
+    def generateClusterReport(clusterFile, descriptions):
+        # Read cluster file and collect reps and their members
+        clusterData = pd.read_csv(clusterFile, delimiter="\t", names=["id", "member"], index_col=False)
+        clusterData = clusterData.groupby("id")["member"].apply(list).reset_index()
+
+        # Read descriptions file
+        descriptionData = pd.read_csv(descriptions, delimiter="\t", names=["id", "desc"], index_col=False)
+        # Extract protein function from description
+        f = lambda x: re.search(r"protein=([^\\]].[^\\]]*)", x).group(1)
+        descriptionData["desc"] = descriptionData["desc"].apply(f)
+        descriptionData.set_index('id', inplace=True)
+
+        # Add function for each rep
+        df = descriptionData.merge(clusterData, on="id", how="inner")
+
+        # If any member is known and there are unknown members -> assign known function to unknown members
+        outputDf = pd.DataFrame(columns=["target", "method", "clusterRep", "members", "function", "memberCount", "knownCount", "unknownCount"])
+        for index, row in df.iterrows():
+            rep     = row["id"]
+            members = row["member"]
+            knownCount, unknownCount = 0, 0
+            for member in members:
+                if member.endswith("_known"): knownCount += 1
+                else: unknownCount += 1
+        
+            # Case singleton cluster
+            if len(members) == 1:
+                pass
+            # Case non-Singleton cluster
+            else:
+                # If there are known and unknown members in the same cluster
+                if any(member.endswith("_known") for member in members) and any(member.endswith("_unknown") for member in members):
+                    # If the rep is the known member, assign function to other unknown members
+                    if rep == members[0] and rep.endswith("_known"):
+                        for member in members[1:]:
+                            outputDf.loc[len(outputDf)] = [
+                                member, "clusterRep", rep, members,
+                                descriptionData.iloc[descriptionData.index.get_loc(rep), 0],
+                                len(members), knownCount, unknownCount
+                            ]
+                    else:
+                        # If rep is not the known member
+                        known = None
+                        # Get first known member
+                        for member in members:
+                            if member.endswith("_known"):
+                                known = member
+                                break
+                        # If a member is unknown assign the known function
+                        for member in members:
+                            if member.endswith("_unknown"):
+                                outputDf.loc[len(outputDf)] = [
+                                    member, "clusterMember", rep, members,
+                                    descriptionData.iloc[descriptionData.index.get_loc(known), 0],
+                                    len(members), knownCount, unknownCount
+                                ]
+
+        # Format to json -> format to proper json format -> each json object (report) to own file
+        objs = json.loads(outputDf.to_json(orient='records', double_precision=2))
+        for obj in objs:
+            id = obj["target"]
+            with open(f"{id}_cl.json", "w") as fh:
+                fh.write(json.dumps(obj, indent=4))
+
+
+    generateClusterReport("$clusterfile", "$proteinDescriptionsfile")
+    """
+}
+
+// Returns a report per protein
+// function is the originally assigned annotation
+// excludes "hypothetical protein" annotation
+process postulatedReport {
+    debug true
+    input:
+    path(proteinDescriptionsfile)
+
+    output:
+    path("*_ps.json")
+
+    script:
+    """
+    #!/usr/bin/env python
+
+    import pandas as pd
+    import re, json
+
+    def postulatedReport(descriptions):
+        # Read descriptions file
+        descriptionData = pd.read_csv(descriptions, delimiter="\t", names=["id", "desc"], index_col=False)
+        # Extract protein function from description
+        f = lambda x: re.search(r"protein=([^\\]].[^\\]]*)", x).group(1)
+        descriptionData["desc"] = descriptionData["desc"].apply(f)
+
+        outputDf = pd.DataFrame(columns=["method", "target", "function"])
+        for index, row in descriptionData.iterrows():
+            if row["id"].endswith("_unknown") and row["desc"] != "hypothetical protein":
+                outputDf.loc[len(outputDf)] = ["postulated function", row["id"], row["desc"]]
+
+        # Format to json -> format to proper json format -> each json object (report) to own file
+        objs = json.loads(outputDf.to_json(orient='records', double_precision=2))
+        for obj in objs:
+            id = obj["target"]
+            with open(f"{id}_ps.json", "w") as fh:
+                fh.write(json.dumps(obj, indent=4))
+
+    postulatedReport("$proteinDescriptionsfile")
+    """  
 }

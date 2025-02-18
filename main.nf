@@ -6,7 +6,7 @@ include { STRUCTURE_PREDICITON  } from "./bin/subworkflows/structure.nf"
 include { SEARCH                } from "./bin/subworkflows/search.nf"
 include { VALIDATE              } from "./bin/subworkflows/validate.nf"
 include { REPORT                } from "./bin/subworkflows/output.nf"
-include { REPORT_NEW                } from "./bin/subworkflows/output_new.nf"
+include { REPORT_NEW            } from "./bin/subworkflows/output_new.nf"
 
 
 workflow {
@@ -20,6 +20,7 @@ workflow {
     // Channel.fromPath( "./phage_data/MZ501063.1_copy/*.faa", checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
     | filter { record -> record.seqString.length() < 100 }
+    | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
     | set { ch_allProteins }
 
     FILTER( ch_allProteins )
@@ -29,7 +30,7 @@ workflow {
     /// CLUSTERING
     ///
 
-    CLUSTER( FILTER.out )
+    CLUSTER( FILTER.out.allProteins )
 
 
     ///
@@ -61,7 +62,11 @@ workflow {
     VALIDATE( structures.known )
     REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
 
-    REPORT_NEW( SEARCH.out )
+    REPORT_NEW( 
+        SEARCH.out, 
+        CLUSTER.out.clusterMembers,
+        FILTER.out.proteinDescriptions
+    )
 }   
 
 workflow.onComplete {
