@@ -4,6 +4,7 @@ include { FILTER                } from "./bin/subworkflows/filter.nf"
 include { CLUSTER               } from "./bin/subworkflows/cluster.nf"
 include { STRUCTURE_PREDICITON  } from "./bin/subworkflows/structure.nf"
 include { SEARCH                } from "./bin/subworkflows/search.nf"
+include { INTERPROSCAN          } from "./bin/subworkflows/interproscan.nf"
 include { VALIDATE              } from "./bin/subworkflows/validate.nf"
 include { REPORT                } from "./bin/subworkflows/output.nf"
 include { REPORT_NEW            } from "./bin/subworkflows/output_new.nf"
@@ -24,6 +25,9 @@ workflow {
     | set { ch_allProteins }
 
     FILTER( ch_allProteins )
+
+
+    INTERPROSCAN( FILTER.out.unknownProteins )
 
 
     ///

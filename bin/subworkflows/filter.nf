@@ -24,6 +24,7 @@ workflow FILTER {
 
         ch_proteins_unknown_seqs
         | collectFile( name:'unknownProteins.faa', newLine: true, storeDir: "$params.outDir/proteins" )
+        | set{ unknownProteins }
         ///
 
         // Same for known proteins
@@ -56,4 +57,5 @@ workflow FILTER {
     emit:
         allProteins
         proteinDescriptions
+        unknownProteins
 }
