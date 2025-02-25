@@ -18,7 +18,6 @@ workflow {
 
     // Import protein files and limit length to 1500 residues
     Channel.fromPath( params.proteins, checkIfExists: true )
-    // Channel.fromPath( "./phage_data/MZ501063.1_copy/*.faa", checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
     | filter { record -> record.seqString.length() < 100 }
     | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
@@ -26,6 +25,10 @@ workflow {
 
     FILTER( ch_allProteins )
 
+
+    ///
+    /// INPERPROSCAN
+    ///
 
     INTERPROSCAN( FILTER.out.unknownProteins )
 
