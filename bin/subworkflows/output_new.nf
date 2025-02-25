@@ -13,19 +13,19 @@ workflow REPORT_NEW {
 
     main:
         foldseekReport( alnfile )
-        | view{it -> "Foldseek report: $it"}
+        //| view{it -> "Foldseek report: $it"} // restore [id, path] convention
         
         clusterReport( clusterfile, proteinDescriptionsfile )
         | flatten
         | map{ it -> [it.name[0..-9], it] } // restore [id, path] convention
-        | view{it -> "Cluster report: $it"}
+        //| view{it -> "Cluster report: $it"}
         
         postulatedReport( proteinDescriptionsfile )
         | flatten
         | map{ it -> [it.name[0..-9], it] } // restore [id, path] convention
         | take( 2 )
-        | view{it -> "Postulated report: $it"}
+        //| view{it -> "Postulated report: $it"}
         
-        // interproscanReport()
+        // interproscanReport is done in modules/interproscan.nf
 
 }

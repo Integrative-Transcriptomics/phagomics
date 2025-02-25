@@ -178,6 +178,7 @@ process generateValidationReport {
 // This returns a report per protein
 process foldseekReport {
     debug true
+    publishDir "$params.outDir/reports", mode: 'copy'
     input:
     tuple val(id), path(file), path(json)
 
@@ -251,6 +252,7 @@ process foldseekReport {
 //  but also creates seperate reports for each member (TODO: Fix this behaviour) 
 process clusterReport {
     debug true
+    publishDir "$params.outDir/reports", mode: 'copy'
     input:
     path(clusterfile)
     path(proteinDescriptionsfile)
@@ -339,6 +341,7 @@ process clusterReport {
 // excludes "hypothetical protein" annotation
 process postulatedReport {
     debug true
+    publishDir "$params.outDir/reports", mode: 'copy'
     input:
     path(proteinDescriptionsfile)
 

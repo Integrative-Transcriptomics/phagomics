@@ -4,10 +4,12 @@ include { interproscan } from "../modules/interproscan.nf"
 
 workflow INTERPROSCAN {
     take:
-        unknownProteins
+        unknownProteins // fasta file
     
     main:
-        interproscan( unknownProteins )
+        unknownProteins
+        | splitFasta( by: 30 )
+        | interproscan
 
     // emit:
     //     results
