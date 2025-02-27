@@ -1,8 +1,9 @@
 #!/usr/bin/env nextflow
 
 process interproscan {
-    publishDir "$params.outDir/reports", mode: 'copy'
+    publishDir "$params.outDir/reports", mode: 'move'
     maxForks 1 // make only 1 API request at a time
+    containerOptions { "--rm" }
 
     input:
     val(unknownProteins)

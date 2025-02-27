@@ -8,8 +8,8 @@ database = file(params.colabdb)
 process colabfold_batch {
     // ONLY PASSES RANK 1 PREDICTIONS
     //debug true
-    publishDir "$params.outDir", mode: 'copy'
-    containerOptions { "--runtime=nvidia --gpus all" }
+    publishDir "$params.outDir", mode: 'move'
+    containerOptions { "--rm --runtime=nvidia --gpus all" }
     maxForks 1
 
     input:
@@ -29,7 +29,7 @@ process colabfold_batch_wsl {
     // additional flags for WSL support and less recycles
     //debug true
     publishDir "$params.outDir", mode: 'copy'
-    containerOptions { "--runtime=nvidia --gpus 1" }
+    containerOptions { "--rm --runtime=nvidia --gpus 1" }
     maxForks 1
 
     input:

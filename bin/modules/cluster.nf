@@ -3,6 +3,7 @@
 process mmseqscluster {
     debug false
     publishDir "$params.outDir", mode: 'copy'
+    containerOptions { "--rm" }
 
     input: 
     path(prot_db)
@@ -29,6 +30,7 @@ process mmseqscluster {
 process mmseqsclusterRefine {
     debug false
     publishDir "$params.outDir", mode: 'copy'
+    containerOptions { "--rm" }
 
     input: 
     path(prot_reps)
