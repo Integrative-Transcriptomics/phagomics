@@ -19,7 +19,7 @@ workflow {
     // Import protein files and limit length to 1500 residues
     Channel.fromPath( params.proteins, checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
-    | filter { record -> record.seqString.length() < 100 }
+    | filter { record -> record.seqString.length() < 1000 }
     | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
     | set { ch_allProteins }
 
