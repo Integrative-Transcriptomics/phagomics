@@ -29,7 +29,7 @@ workflow STRUCTURE_PREDICITON {
             | set{ structures }
         } else {
             // Run normally
-            colabfold_batch_wsl( clusterReps )
+            colabfold_batch( clusterReps )
             | flatten
             | map{ it -> 
                 tuple((it =~ /colabfold\/(.*?)_(relaxed|scores)/)[0][1], it) }

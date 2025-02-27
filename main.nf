@@ -30,7 +30,7 @@ workflow {
     /// INPERPROSCAN
     ///
 
-    INTERPROSCAN( FILTER.out.unknownProteins )
+    // INTERPROSCAN( FILTER.out.unknownProteins )
 
 
     ///
@@ -52,28 +52,28 @@ workflow {
     /// 
 
     // Branch known/unknown
-    STRUCTURE_PREDICITON.out
-    | branch { it ->
-        known:      it =~ /.*_known_.*/
-        unknown:    it =~ /.*_unknown_.*/
-    }
-    | set { structures }
+    // STRUCTURE_PREDICITON.out
+    // | branch { it ->
+    //     known:      it =~ /.*_known_.*/
+    //     unknown:    it =~ /.*_unknown_.*/
+    // }
+    // | set { structures }
 
-    SEARCH( structures.unknown )
+    // SEARCH( structures.unknown )
 
 
-    ///
-    /// VALIDATION & OUTPUT
-    /// 
+    // ///
+    // /// VALIDATION & OUTPUT
+    // /// 
 
-    VALIDATE( structures.known )
-    REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
+    // VALIDATE( structures.known )
+    // REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
 
-    REPORT_NEW( 
-        SEARCH.out, 
-        CLUSTER.out.clusterMembers,
-        FILTER.out.proteinDescriptions
-    )
+    // REPORT_NEW( 
+    //     SEARCH.out, 
+    //     CLUSTER.out.clusterMembers,
+    //     FILTER.out.proteinDescriptions
+    // )
 }   
 
 workflow.onComplete {
