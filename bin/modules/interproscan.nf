@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 process interproscan {
-    publishDir "$params.outDir/reports", mode: 'move'
+    publishDir "$params.outDir/reports", mode: 'copy'
     maxForks 1 // make only 1 API request at a time
     containerOptions { "--rm" }
 
@@ -90,6 +90,7 @@ def interproscanReport(input):
         if result["matches"]:
             id = result["xref"][0]["name"]
             with open(f"{id}_ip.json", "w") as fh:
+                    result = {"method": "interproscan", **result}
                     fh.write(json.dumps(result, indent=4))
 
 interproscanReport(interproscanAPI(\"""$unknownProteins\"""))

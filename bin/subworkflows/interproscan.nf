@@ -9,9 +9,9 @@ workflow INTERPROSCAN {
     main:
         unknownProteins
         | splitFasta( by: 30 )
-        | take( 15 )
         | interproscan
+        | set{ report }
 
-    // emit:
-    //     results
+    emit:
+        report
 }
