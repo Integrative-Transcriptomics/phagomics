@@ -184,7 +184,7 @@ process generateValidationReport {
 // This returns a report per protein
 process foldseekReport {
     debug true
-    publishDir "$params.outDir/reports", mode: 'move'
+    publishDir "$params.outDir/reports", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
@@ -194,7 +194,7 @@ process foldseekReport {
     file.size() > 0 //Ignote empty foldseek results
 
     output:
-    tuple val(id), path("*_fs.json")
+    path("*_fs.json")
 
     script:
     """
@@ -245,9 +245,13 @@ process foldseekReport {
 
         # Format to json -> format to proper json format -> each json object (report) to own file
         objs = json.loads(newdf.to_json(orient='records', double_precision=2))
-        id = objs[0]["query"]
+        id = re.match(r"^(.*?known)", objs[0]["query"]).group(1) # regex removes _relaxed... from coldabfold
         with open(f"{id}_fs.json", "w") as fh:
+            fh.write('{\\n')
+            fh.write('    "method":"foldseek",\\n')
+            fh.write('    "hits": ')
             fh.write(json.dumps(objs, indent=4))
+            fh.write('\\n}')
 
     generateFoldseekReport("$file")
     """
@@ -260,7 +264,7 @@ process foldseekReport {
 //  but also creates seperate reports for each member (TODO: Fix this behaviour) 
 process clusterReport {
     debug true
-    publishDir "$params.outDir/reports", mode: 'move'
+    publishDir "$params.outDir/reports", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
@@ -293,7 +297,7 @@ process clusterReport {
         df = descriptionData.merge(clusterData, on="id", how="inner")
 
         # If any member is known and there are unknown members -> assign known function to unknown members
-        outputDf = pd.DataFrame(columns=["target", "method", "clusterRep", "members", "function", "memberCount", "knownCount", "unknownCount"])
+        outputDf = pd.DataFrame(columns=["method", "target", "clusterRep", "members", "function", "memberCount", "knownCount", "unknownCount"])
         for index, row in df.iterrows():
             rep     = row["id"]
             members = row["member"]
@@ -313,7 +317,7 @@ process clusterReport {
                     if rep == members[0] and rep.endswith("_known"):
                         for member in members[1:]:
                             outputDf.loc[len(outputDf)] = [
-                                member, "clusterRep", rep, members,
+                                "clusterRep", member, rep, members,
                                 descriptionData.iloc[descriptionData.index.get_loc(rep), 0],
                                 len(members), knownCount, unknownCount
                             ]
@@ -329,7 +333,7 @@ process clusterReport {
                         for member in members:
                             if member.endswith("_unknown"):
                                 outputDf.loc[len(outputDf)] = [
-                                    member, "clusterMember", rep, members,
+                                    "clusterMember", member, rep, members,
                                     descriptionData.iloc[descriptionData.index.get_loc(known), 0],
                                     len(members), knownCount, unknownCount
                                 ]
@@ -351,7 +355,7 @@ process clusterReport {
 // excludes "hypothetical protein" annotation
 process postulatedReport {
     debug true
-    publishDir "$params.outDir/reports", mode: 'move'
+    publishDir "$params.outDir/reports", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
@@ -388,4 +392,46 @@ process postulatedReport {
 
     postulatedReport("$proteinDescriptionsfile")
     """  
+}
+
+process mergeReports {
+    publishDir "$params.outDir/reports/final", mode: 'copy'
+    debug true
+    containerOptions { "--rm" }
+
+    input:
+    tuple val(id), path(path)
+
+    output:
+    path("${id}_report.json")
+
+
+    script:
+    """
+    #!/usr/bin/env python
+
+    from collections import defaultdict
+    import json
+
+    resultReport = []
+    proteinList = defaultdict(list)
+
+    # Group same proteins together, so we can create a report per protein
+    for item in "$path".split():
+        key = item[0:-8]
+        proteinList[key].append(item)
+
+    # Write predictions (reports) for each protein to json object
+    for sameProteinReports in proteinList:
+        proteinEntry = {"protein": sameProteinReports, "predictions": []}
+
+        for report in proteinList[sameProteinReports]:
+            with open(report, "r") as infile:
+                proteinEntry["predictions"].append(json.loads(infile.read()))
+
+        resultReport.append(proteinEntry)
+    
+    with open("${id}_report.json", "w") as fh:
+        fh.write(json.dumps(resultReport, indent=4))    
+    """
 }

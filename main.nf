@@ -19,7 +19,7 @@ workflow {
     // Import protein files and limit length to 1500 residues
     Channel.fromPath( params.proteins, checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
-    | filter { record -> record.seqString.length() < 1000 }
+    | filter { record -> record.seqString.length() < 100 }
     | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
     | set { ch_allProteins }
 
@@ -30,7 +30,7 @@ workflow {
     /// INPERPROSCAN
     ///
 
-    // INTERPROSCAN( FILTER.out.unknownProteins )
+    INTERPROSCAN( FILTER.out.unknownProteins )
 
 
     ///
@@ -46,34 +46,47 @@ workflow {
 
     STRUCTURE_PREDICITON( CLUSTER.out.splitClusterReps )
 
+    // Channel.fromPath(["./results/colabfold_full/*_rank_001*.pdb", "./results/colabfold_full/*_rank_001*.json"]) 
+    // | map { it -> 
+    //     tuple((it =~ /colabfold_full\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
+    // }
+    // | groupTuple()
+    // | map{ id, paths ->
+    //     [id:id[4..-2], 
+    //     pdb:  paths.find{ it -> it.toString().endsWith(".pdb") },
+    //     json: paths.find{ it -> it.toString().endsWith(".json")}] }
+    // | set{ temp }
+
 
     ///
     /// FOLDSEEK SEARCH
     /// 
 
     // Branch known/unknown
-    // STRUCTURE_PREDICITON.out
-    // | branch { it ->
-    //     known:      it =~ /.*_known_.*/
-    //     unknown:    it =~ /.*_unknown_.*/
-    // }
-    // | set { structures }
+    STRUCTURE_PREDICITON.out
+    // temp
+    | branch { it ->
+        known:      it =~ /.*_known_.*/
+        unknown:    it =~ /.*_unknown_.*/
+    }
+    | set { structures }
 
-    // SEARCH( structures.unknown )
+    SEARCH( structures.unknown )
 
 
-    // ///
-    // /// VALIDATION & OUTPUT
-    // /// 
+    ///
+    /// VALIDATION & OUTPUT
+    /// 
 
-    // VALIDATE( structures.known )
-    // REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
+    //VALIDATE( structures.known )
+    //REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
 
-    // REPORT_NEW( 
-    //     SEARCH.out, 
-    //     CLUSTER.out.clusterMembers,
-    //     FILTER.out.proteinDescriptions
-    // )
+    REPORT_NEW( 
+        SEARCH.out, 
+        CLUSTER.out.clusterMembers,
+        FILTER.out.proteinDescriptions,
+        INTERPROSCAN.out
+    )
 }   
 
 workflow.onComplete {

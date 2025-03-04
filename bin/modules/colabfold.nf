@@ -8,7 +8,7 @@ database = file(params.colabdb)
 process colabfold_batch {
     // ONLY PASSES RANK 1 PREDICTIONS
     //debug true
-    publishDir "$params.outDir", mode: 'move'
+    publishDir "$params.outDir", mode: 'copy'
     containerOptions { "--rm --runtime=nvidia --gpus all" }
     maxForks 1
 

@@ -12,7 +12,7 @@ validateDB = file(params.validdb)
 // https://github.com/steineggerlab/foldseek?tab=readme-ov-file#alignment-mode <- OUTPUTFIELDS DESCRIBED HERE
 process foldseek {
     //debug true
-    publishDir "$params.outDir/foldseek", mode: 'move', saveAs: { file -> file.endsWith("aln") ? "${id}_aln.tsv" : file }
+    publishDir "$params.outDir/foldseek", mode: 'copy', saveAs: { file -> file.endsWith("aln") ? "${id}_aln.tsv" : file }
     maxForks 4
     containerOptions { "--rm" }
 
@@ -40,7 +40,7 @@ process foldseek {
 process foldseekValidate {
     // Can't have TM-score (alntmscore) with current BaselDB setup
     //debug true
-    publishDir "$params.outDir/foldseek/validate", mode: 'move'
+    publishDir "$params.outDir/foldseek/validate", mode: 'copy'
     maxForks 4 // to run locally with limited memory
     containerOptions { "--rm" }
 
