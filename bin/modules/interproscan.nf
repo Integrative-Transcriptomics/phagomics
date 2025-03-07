@@ -3,6 +3,7 @@
 process interproscan {
     publishDir "$params.outDir/reports", mode: 'copy'
     maxForks 1 // make only 1 API request at a time
+    errorStrategy 'retry'
     containerOptions { "--rm" }
 
     input:

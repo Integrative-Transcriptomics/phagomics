@@ -185,6 +185,7 @@ process generateValidationReport {
 process foldseekReport {
     debug true
     publishDir "$params.outDir/reports", mode: 'copy'
+    errorStrategy 'retry'
     containerOptions { "--rm" }
 
     input:
