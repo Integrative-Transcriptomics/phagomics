@@ -6,7 +6,6 @@ include { STRUCTURE_PREDICITON  } from "./bin/subworkflows/structure.nf"
 include { SEARCH                } from "./bin/subworkflows/search.nf"
 include { INTERPROSCAN          } from "./bin/subworkflows/interproscan.nf"
 include { VALIDATE              } from "./bin/subworkflows/validate.nf"
-include { REPORT                } from "./bin/subworkflows/output.nf"
 include { REPORT_NEW            } from "./bin/subworkflows/output_new.nf"
 
 
@@ -19,18 +18,11 @@ workflow {
     // Import protein files and limit length to 1500 residues
     Channel.fromPath( params.proteins, checkIfExists: true )
     | splitFasta( record: [id:true, desc:true, seqString:true] )
-    | filter { record -> record.seqString.length() < 100 }
+    | filter { record -> record.seqString.length() < params.maxProteinLength }
     | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
     | set { ch_allProteins }
 
     FILTER( ch_allProteins )
-
-
-    ///
-    /// INPERPROSCAN
-    ///
-
-    INTERPROSCAN( FILTER.out.unknownProteins )
 
 
     ///
@@ -41,11 +33,19 @@ workflow {
 
 
     ///
+    /// INTERPROSCAN
+    ///
+
+    INTERPROSCAN( CLUSTER.out.splitClusterReps )
+
+
+    ///
     /// STRUCTURE PREDICTION
     ///
 
     STRUCTURE_PREDICITON( CLUSTER.out.splitClusterReps )
 
+    // Test setup
     // Channel.fromPath(["./results/colabfold_full/*_rank_001*.pdb", "./results/colabfold_full/*_rank_001*.json"]) 
     // | map { it -> 
     //     tuple((it =~ /colabfold_full\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
@@ -62,12 +62,11 @@ workflow {
     /// FOLDSEEK SEARCH
     /// 
 
-    // Branch known/unknown
     STRUCTURE_PREDICITON.out
     // temp
     | branch { it ->
-        known:      it =~ /.*_known_.*/
-        unknown:    it =~ /.*_unknown_.*/
+        known:      it =~ /.*_known.*/
+        unknown:    it =~ /.*_unknown.*/
     }
     | set { structures }
 
@@ -78,8 +77,7 @@ workflow {
     /// VALIDATION & OUTPUT
     /// 
 
-    //VALIDATE( structures.known )
-    //REPORT( SEARCH.out , CLUSTER.out.clusterMembers )
+    // //VALIDATE( structures.known )
 
     REPORT_NEW( 
         SEARCH.out, 
@@ -104,4 +102,5 @@ workflow.onComplete {
         exit status : ${workflow.exitStatus}
         """
     )
+    workflow.workDir.deleteDir()
 }
