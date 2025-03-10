@@ -77,7 +77,7 @@ workflow {
     /// VALIDATION & OUTPUT
     /// 
 
-    // //VALIDATE( structures.known )
+    VALIDATE( structures.known )
 
     REPORT_NEW( 
         SEARCH.out, 
@@ -94,7 +94,7 @@ workflow.onComplete {
         Completed at: ${workflow.complete}
         Duration    : ${workflow.duration}
         Success     : ${workflow.success}
-        workDir     : ${workflow.workDir}
+        workDir     : Auto delete
         outDir      : ${params.outDir}
         exit status : ${workflow.exitStatus}
         """ : """

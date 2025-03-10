@@ -4,6 +4,7 @@
 /// All miscellaneous scripts go here
 ///
 
+// DELETE
 process clusterMembers {
     containerOptions { "--rm" }
     
@@ -43,7 +44,7 @@ process clusterMembers {
     """
 }
 
-/** 
+/** DELETE
 *   Takes channel of foldseek aln files and cluster Member file.
 *   Writes top 3 entries sorted my TMscore. Looks for cluster member number 
 *   and adds it to output fields.
