@@ -77,9 +77,9 @@ workflow {
     /// VALIDATION & OUTPUT
     /// 
 
-    VALIDATE( structures.known )
+    // VALIDATE( structures.known )
 
-    REPORT_NEW( 
+    REPORT_NEW ( 
         SEARCH.out, 
         CLUSTER.out.clusterMembers,
         FILTER.out.proteinDescriptions,

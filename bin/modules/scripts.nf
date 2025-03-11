@@ -242,7 +242,7 @@ process foldseekReport {
 
         # Put top hits into new df and insert name column. Convert to JSON format
         newdf = pd.concat(topHits)
-        newdf.insert(2, "name", protNames, True)
+        newdf.insert(2, "function", protNames, True)
         newdf.insert(0, "criteria", ["best e-value", "best probability", "best aln-score"], True)
 
         # Format to json -> format to proper json format -> each json object (report) to own file
@@ -352,7 +352,7 @@ process clusterReport {
     """
 }
 
-// Returns a report per protein
+// Returns a report per cluster Rep
 // function is the originally assigned annotation
 // excludes "hypothetical protein" annotation
 process postulatedReport {

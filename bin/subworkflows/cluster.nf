@@ -19,4 +19,5 @@ workflow CLUSTER {
     emit:
         splitClusterReps
         clusterMembers = clusterRefine.out.cluMembers
+        allClusterReps = clusterRefine.out.repsRefined 
 }
