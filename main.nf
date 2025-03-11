@@ -83,6 +83,7 @@ workflow {
         SEARCH.out, 
         CLUSTER.out.clusterMembers,
         FILTER.out.proteinDescriptions,
+        CLUSTER.out.allClusterReps,
         INTERPROSCAN.out
     )
 }   

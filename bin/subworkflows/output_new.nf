@@ -11,6 +11,7 @@ workflow REPORT_NEW {
         alnfile
         clusterfile
         proteinDescriptionsfile
+        clusterReps
         interproscanReport
 
     main:
@@ -23,7 +24,7 @@ workflow REPORT_NEW {
         | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, prot_id, path]
         | set{ cl }
         
-        postulatedReport( proteinDescriptionsfile )
+        postulatedReport( proteinDescriptionsfile, clusterReps )
         | flatten
         | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, prot_id, path]
         | set{ ps }
