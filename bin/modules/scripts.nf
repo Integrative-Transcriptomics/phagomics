@@ -362,6 +362,7 @@ process postulatedReport {
 
     input:
     path(proteinDescriptionsfile)
+    path(clusterReps)
 
     output:
     path("*_ps.json")
@@ -370,29 +371,39 @@ process postulatedReport {
     """
     #!/usr/bin/env python
 
-    import pandas as pd
-    import re, json
+import pandas as pd
+import re, json
 
-    def postulatedReport(descriptions):
-        # Read descriptions file
-        descriptionData = pd.read_csv(descriptions, delimiter="\t", names=["id", "desc"], index_col=False)
-        # Extract protein function from description
-        f = lambda x: re.search(r"protein=([^\\]].[^\\]]*)", x).group(1)
-        descriptionData["desc"] = descriptionData["desc"].apply(f)
+def postulatedReport(descriptions, reps):
+    # get cluster reps
+    repList = []
+    for line in open(reps, "r"):
+        if line.startswith(">"):
+            repList.append(line[1:].strip())
+    
+    # Read descriptions file
+    descriptionData = pd.read_csv(descriptions, delimiter="\t", names=["id", "desc"], index_col=False)
+    
+    # Extract protein function from description
+    f = lambda x: re.search(r"protein=([^\\]].[^\\]]*)", x).group(1)
+    descriptionData["desc"] = descriptionData["desc"].apply(f)
+    # Filter out non-reps
+    descriptionData = descriptionData[descriptionData["id"].isin(repList)]   
+    
+    # Get function from description
+    outputDf = pd.DataFrame(columns=["method", "target", "function"])
+    for index, row in descriptionData.iterrows():
+        if row["id"].endswith("_unknown") and row["desc"] != "hypothetical protein":
+            outputDf.loc[len(outputDf)] = ["postulated function", row["id"], row["desc"]]
 
-        outputDf = pd.DataFrame(columns=["method", "target", "function"])
-        for index, row in descriptionData.iterrows():
-            if row["id"].endswith("_unknown") and row["desc"] != "hypothetical protein":
-                outputDf.loc[len(outputDf)] = ["postulated function", row["id"], row["desc"]]
+    # Format to json -> format to proper json format -> each json object (report) to own file
+    objs = json.loads(outputDf.to_json(orient='records', double_precision=2))
+    for obj in objs:
+        id = obj["target"]
+        with open(f"{id}_ps.json", "w") as fh:
+            fh.write(json.dumps(obj, indent=4))
 
-        # Format to json -> format to proper json format -> each json object (report) to own file
-        objs = json.loads(outputDf.to_json(orient='records', double_precision=2))
-        for obj in objs:
-            id = obj["target"]
-            with open(f"{id}_ps.json", "w") as fh:
-                fh.write(json.dumps(obj, indent=4))
-
-    postulatedReport("$proteinDescriptionsfile")
+postulatedReport("$proteinDescriptionsfile", "$clusterReps")
     """  
 }
 
