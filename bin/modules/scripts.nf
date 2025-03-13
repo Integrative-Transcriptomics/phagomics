@@ -185,7 +185,7 @@ process generateValidationReport {
 // This returns a report per protein
 process foldseekReport {
     debug true
-    publishDir "$params.outDir/reports", mode: 'copy'
+    publishDir "$params.outDir/reports/single", mode: 'copy'
     errorStrategy 'retry'
     containerOptions { "--rm" }
 
@@ -259,14 +259,11 @@ process foldseekReport {
     """
 }
 
-// This returns a report per protein
-// Report can be with method "clusterMember" or "clusterRep"
-// clusterMember: A non-rep member is known, function applies to all cluster members
-// clusterRep: Rep is known, function applies to all members, 
-//  but also creates seperate reports for each member (TODO: Fix this behaviour) 
+// Known and unknown member in same cluster -> assign known funtion to unknown
+// Currently does not confirm similarity of proteins in cluster so annotation could be wrong
 process clusterReport {
     debug true
-    publishDir "$params.outDir/reports", mode: 'copy'
+    publishDir "$params.outDir/reports/single", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
@@ -295,10 +292,7 @@ process clusterReport {
         descriptionData["desc"] = descriptionData["desc"].apply(f)
         descriptionData.set_index('id', inplace=True)
 
-        # Add function for each rep
         df = descriptionData.merge(clusterData, on="id", how="inner")
-
-        # If any member is known and there are unknown members -> assign known function to unknown members
         outputDf = pd.DataFrame(columns=["method", "target", "clusterRep", "members", "function", "memberCount", "knownCount", "unknownCount"])
         for index, row in df.iterrows():
             rep     = row["id"]
@@ -309,36 +303,25 @@ process clusterReport {
                 else: unknownCount += 1
         
             # Case singleton cluster
-            if len(members) == 1:
-                pass
+            if len(members) == 1: pass
             # Case non-Singleton cluster
             else:
-                # If there are known and unknown members in the same cluster
+                # Go through member list, add entry to outputdf for every unknown member
                 if any(member.endswith("_known") for member in members) and any(member.endswith("_unknown") for member in members):
-                    # If the rep is the known member, assign function to other unknown members
-                    if rep == members[0] and rep.endswith("_known"):
-                        for member in members[1:]:
+                    # Get first known member
+                    known = None
+                    for member in members:
+                        if member.endswith("_known"):
+                            known = member
+                            break
+                    # If a member is unknown, assign it the known function
+                    for member in members:
+                        if member.endswith("_unknown"):
                             outputDf.loc[len(outputDf)] = [
-                                "clusterRep", member, rep, members,
-                                descriptionData.iloc[descriptionData.index.get_loc(rep), 0],
+                                "clusterMember", member, rep, members,
+                                descriptionData.iloc[descriptionData.index.get_loc(known), 0],
                                 len(members), knownCount, unknownCount
                             ]
-                    else:
-                        # If rep is not the known member
-                        known = None
-                        # Get first known member
-                        for member in members:
-                            if member.endswith("_known"):
-                                known = member
-                                break
-                        # If a member is unknown assign the known function
-                        for member in members:
-                            if member.endswith("_unknown"):
-                                outputDf.loc[len(outputDf)] = [
-                                    "clusterMember", member, rep, members,
-                                    descriptionData.iloc[descriptionData.index.get_loc(known), 0],
-                                    len(members), knownCount, unknownCount
-                                ]
 
         # Format to json -> format to proper json format -> each json object (report) to own file
         objs = json.loads(outputDf.to_json(orient='records', double_precision=2))
@@ -346,7 +329,6 @@ process clusterReport {
             id = obj["target"]
             with open(f"{id}_cl.json", "w") as fh:
                 fh.write(json.dumps(obj, indent=4))
-
 
     generateClusterReport("$clusterfile", "$proteinDescriptionsfile")
     """
@@ -357,7 +339,7 @@ process clusterReport {
 // excludes "hypothetical protein" annotation
 process postulatedReport {
     debug true
-    publishDir "$params.outDir/reports", mode: 'copy'
+    publishDir "$params.outDir/reports/single", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
