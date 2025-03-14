@@ -78,7 +78,7 @@ workflow {
     /// VALIDATION & OUTPUT
     /// 
 
-    // VALIDATE( structures.known )
+    VALIDATE( structures.known )
 
     REPORT_NEW ( 
         SEARCH.out, 
@@ -92,6 +92,7 @@ workflow {
 }   
 
 workflow.onComplete {
+    workflow.workDir.deleteDir()
     println ( workflow.success ? """
         Pipeline execution summary
         ---------------------------
@@ -106,5 +107,4 @@ workflow.onComplete {
         exit status : ${workflow.exitStatus}
         """
     )
-    //workflow.workDir.deleteDir()
 }
