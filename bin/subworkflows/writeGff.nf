@@ -14,8 +14,4 @@ workflow GFF {
         | map{ it -> tuple(it[0], it[1][0], it[1][1])}
         | filter{ it[2] != null } // during testing some .json reports were not there
         | writeGff
-
-
-
-    
 }

@@ -448,6 +448,7 @@ process writeGff {
 import pandas as pd
 
 def safeGet(match):
+    # Check for entries that are None
     # Try signature -> entry -> desc.
     # Try signature -> desc.
     # Try signature -> name
@@ -494,7 +495,7 @@ def chooseFunction(input):
             if method == "interproscan": 
                 for match in entry["matches"]:
                     # Check if match is using an accepted library
-                    libs = {"SUPERFAMILY", "PFAM", "GENE3D"}
+                    libs = {"SUPERFAMILY", "PFAM", "PROSITE_PROFILES"}
                     if match["signature"]["signatureLibraryRelease"]["library"] in libs:
                         domain = safeGet(match)
                         if domain:
