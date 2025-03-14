@@ -303,7 +303,12 @@ process clusterReport {
                 else: unknownCount += 1
         
             # Case singleton cluster
-            if len(members) == 1: pass
+            if len(members) == 1 and not member.endswith("_known"):
+                outputDf.loc[len(outputDf)] = [
+                    "singletonCluster", member, rep, members,
+                    descriptionData.iloc[descriptionData.index.get_loc(members[0]), 0],
+                    len(members), knownCount, unknownCount
+                ]
             # Case non-Singleton cluster
             else:
                 # Go through member list, add entry to outputdf for every unknown member
@@ -517,6 +522,12 @@ def chooseFunction(input):
                     function = entry["function"]
                     rep = entry["clusterRep"]
                     entryString += ";cluster=" + function + ";clusterRep=" + rep
+                
+                # singleton cluster
+                if method == "singletonCluster":
+                    function = entry["function"]
+                    rep = entry["clusterRep"]
+                    entryString += ";cluster=singletonCluster"
 
         entryStrings.append(entryString)
 
