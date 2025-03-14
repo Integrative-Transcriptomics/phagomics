@@ -38,5 +38,9 @@ workflow REPORT_NEW {
         fs.concat ( cl, ps, ip )
         | groupTuple()
         | mergeReports
+        | map{ it -> tuple(it.name[0..-13] , it) } // [phage, path]
+        | set{ report }
 
+    emit:
+        report
 }

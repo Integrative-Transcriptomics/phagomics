@@ -16,7 +16,6 @@ workflow STRUCTURE_PREDICITON {
             // }
             // Output is colabofold .pdb and .json. The following extracts the id from filename and maps
             // the files according to id
-            clusterReps
             colabfold_batch_wsl( clusterReps )
             | flatten
             | map{ it -> 

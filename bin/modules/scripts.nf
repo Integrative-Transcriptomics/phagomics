@@ -193,7 +193,7 @@ process foldseekReport {
     tuple val(id), path(file), path(json)
 
     when:
-    file.size() > 0 //Ignote empty foldseek results
+    file.size() > 0 //Ignore empty foldseek results
 
     output:
     path("*_fs.json")
@@ -271,7 +271,7 @@ process clusterReport {
     path(proteinDescriptionsfile)
 
     output:
-    path("*_cl.json")
+    path("*_cl.json"), optional: true
 
     script:
     """
@@ -347,7 +347,7 @@ process postulatedReport {
     path(clusterReps)
 
     output:
-    path("*_ps.json")
+    path("*_ps.json"), optional: true
 
     script:
     """
@@ -428,5 +428,134 @@ process mergeReports {
     
     with open("${id}_report.json", "w") as fh:
         fh.write(json.dumps(resultReport, indent=4))    
+    """
+}
+
+process writeGff {
+    publishDir "$params.outDir/reports/gff", mode: 'copy'
+    debug true
+    containerOptions { "--rm" }
+
+    input:
+    tuple val(id), path(gff), path(json)
+
+    output:
+    path("*.gff")
+
+    script:
+    """
+    #!/usr/bin/env python
+import pandas as pd
+
+def safeGet(match):
+    # Check for entries that are None
+    # Try signature -> entry -> desc.
+    # Try signature -> desc.
+    # Try signature -> name
+    # Else None
+
+    try:
+        domain = match.get("signature", {}).get("entry", {}).get("description")
+    except:
+        domain = None
+    if domain is not None:
+        return domain
+
+    try:
+        domain = match.get("signature", {}).get("description")
+    except:
+        domain = None
+    if domain is not None:
+        return domain
+
+    try:
+        domain = match.get("signature", {}).get("name")
+    except:
+        domain = None
+    if domain is not None:
+        return domain
+
+    return None
+
+
+def chooseFunction(input):
+    with open(input, "r") as infile:
+        df = pd.DataFrame(pd.read_json(infile))
+
+    df["protein"] = df["protein"].str.extract(r"prot_(.*?)_\\d+_unknown")
+
+    entryStrings = []
+
+    for entries in df["predictions"]:
+        entryString = ""
+
+        for entry in entries:
+            method = entry["method"]
+            # Case: Has interproscan result -> append domains
+            if method == "interproscan": 
+                for match in entry["matches"]:
+                    # Check if match is using an accepted library
+                    libs = {"SUPERFAMILY", "PFAM", "PROSITE_PROFILES"}
+                    if match["signature"]["signatureLibraryRelease"]["library"] in libs:
+                        domain = safeGet(match)
+                        if domain:
+                            entryString += ";domain=" + domain
+            elif method != "postulated function":
+                # Case foldseek
+                if method == "foldseek":
+                    function = ""
+                    # if its an unacceptable result, fall back on other results
+                    for i in [2, 0, 1]:  # = [best aln-score, e-value, prob] in foldseek report
+                        function = entry["hits"][i]["function"]
+                        if function not in ["Uncharacterized protein", "None"]:
+                            break
+
+                    entryString += ";foldseek=" + function
+
+                # Case cluster
+                if method == "clusterMember":
+                    function = entry["function"]
+                    rep = entry["clusterRep"]
+                    entryString += ";cluster=" + function + ";clusterRep=" + rep
+
+        entryStrings.append(entryString)
+
+    df["entryString"] = entryStrings
+
+    return df
+
+
+def writeGff(df, gfffile):
+    # read original gff, and save headers
+    headers = []
+    cols = ["id", "source", "type", "start", "end", "score", "strand", "phase", "attributes"]
+    with open(gfffile, "r") as infile:
+        for line in infile:
+            if line.startswith("#"):
+                headers.append(line.strip())
+    headers.append("##predicted functions and domains via #github link#")
+
+    gdf = pd.read_csv(gfffile, sep="\t", comment="#", names=cols)
+
+    # go through gff file (gdf dataframe), search for protein id (from df) in the attributes field
+    # if you find a match, meaning there is a potential function, append it to attributes string
+    # and write the gff file.
+    for index, row in gdf.iterrows():
+        str = row["attributes"]
+        match = df.loc[df["protein"].apply(lambda x: x in str), "entryString"]
+        result = match.tolist()
+        # ignore empty fields (putative funtion entries)
+        if result and result[0] != "":
+            gdf.at[index, "attributes"] += result[0]
+
+    with open("${id}_features_predicted.gff", "w") as outfile:
+        outfile.write("\\n".join(headers) + "\\n")  # write headers
+        gdf.to_csv(outfile, sep="\t", index=False, header=False)
+
+
+reports = "${json}"
+gffFile = "${gff}"
+
+writeGff(chooseFunction(reports), gffFile)
     """
 }

@@ -24,7 +24,7 @@ process foldseek {
 
     script:
     """
-    foldseek easy-search "$path" "$database" aln tmp --alignment-type 1 \
+    foldseek easy-search "$path" "$database" aln tmp --alignment-type 1 --tmscore-threshold 0.5 \
     --format-output "query,target,qstart,qend,tstart,tend,prob,alntmscore,evalue"
     """
 }
