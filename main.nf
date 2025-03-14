@@ -92,7 +92,7 @@ workflow {
 }   
 
 workflow.onComplete {
-    workflow.workDir.deleteDir()
+    //workflow.workDir.deleteDir()
     println ( workflow.success ? """
         Pipeline execution summary
         ---------------------------

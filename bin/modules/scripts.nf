@@ -193,7 +193,7 @@ process foldseekReport {
     tuple val(id), path(file), path(json)
 
     when:
-    file.size() > 0 //Ignote empty foldseek results
+    file.size() > 0 //Ignore empty foldseek results
 
     output:
     path("*_fs.json")
@@ -271,7 +271,7 @@ process clusterReport {
     path(proteinDescriptionsfile)
 
     output:
-    path("*_cl.json")
+    path("*_cl.json"), optional: true
 
     script:
     """
@@ -347,7 +347,7 @@ process postulatedReport {
     path(clusterReps)
 
     output:
-    path("*_ps.json")
+    path("*_ps.json"), optional: true
 
     script:
     """
@@ -447,6 +447,36 @@ process writeGff {
     #!/usr/bin/env python
 import pandas as pd
 
+def safeGet(match):
+    # Try signature -> entry -> desc.
+    # Try signature -> desc.
+    # Try signature -> name
+    # Else None
+
+    try:
+        domain = match.get("signature", {}).get("entry", {}).get("description")
+    except:
+        domain = None
+    if domain is not None:
+        return domain
+
+    try:
+        domain = match.get("signature", {}).get("description")
+    except:
+        domain = None
+    if domain is not None:
+        return domain
+
+    try:
+        domain = match.get("signature", {}).get("name")
+    except:
+        domain = None
+    if domain is not None:
+        return domain
+
+    return None
+
+
 def chooseFunction(input):
     with open(input, "r") as infile:
         df = pd.DataFrame(pd.read_json(infile))
@@ -464,12 +494,10 @@ def chooseFunction(input):
             if method == "interproscan": 
                 for match in entry["matches"]:
                     # Check if match is using an accepted library
-                    if match["signature"]["signatureLibraryRelease"]["library"] in ["PFAM", "GENE3D"]:
-                        try:
-                            domain = match["signature"]["entry"]["description"]
-                            entryString += ";domain=" + domain
-                        except:
-                            domain = match["signature"]["description"]
+                    libs = {"SUPERFAMILY", "PFAM", "GENE3D"}
+                    if match["signature"]["signatureLibraryRelease"]["library"] in libs:
+                        domain = safeGet(match)
+                        if domain:
                             entryString += ";domain=" + domain
             elif method != "postulated function":
                 # Case foldseek
