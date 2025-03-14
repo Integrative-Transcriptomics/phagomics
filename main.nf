@@ -7,6 +7,7 @@ include { SEARCH                } from "./bin/subworkflows/search.nf"
 include { INTERPROSCAN          } from "./bin/subworkflows/interproscan.nf"
 include { VALIDATE              } from "./bin/subworkflows/validate.nf"
 include { REPORT_NEW            } from "./bin/subworkflows/output_new.nf"
+include { GFF                   } from "./bin/subworkflows/writeGff.nf"
 
 
 workflow {
@@ -86,6 +87,8 @@ workflow {
         CLUSTER.out.allClusterReps,
         INTERPROSCAN.out
     )
+
+    GFF ( REPORT_NEW.out )
 }   
 
 workflow.onComplete {
@@ -103,5 +106,5 @@ workflow.onComplete {
         exit status : ${workflow.exitStatus}
         """
     )
-    workflow.workDir.deleteDir()
+    //workflow.workDir.deleteDir()
 }

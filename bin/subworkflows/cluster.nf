@@ -13,7 +13,8 @@ workflow CLUSTER {
 
         // split into files of 500 sequences
         clusterRefine.out.repsRefined
-        | splitFasta( by:500, file: true )
+        | splitFasta( by:2, file: true )
+        | take( 2 )
         | set{ splitClusterReps }
 
     emit:
