@@ -14,7 +14,6 @@ workflow INTERPROSCAN {
         | collectFile
         | splitFasta( by:30 )
         | interproscan
-        | view
         | set{ report }
 
     emit:

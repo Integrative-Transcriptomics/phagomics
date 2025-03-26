@@ -17,27 +17,33 @@ workflow {
     ///
 
     // Import protein files and limit length to 1500 residues
-    Channel.fromPath( params.proteins, checkIfExists: true )
-    | splitFasta( record: [id:true, desc:true, seqString:true] )
-    | filter { record -> record.seqString.length() < params.maxProteinLength }
-    | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
-    | set { ch_allProteins }
+    // Channel.fromPath( params.proteins, checkIfExists: true )
+    // | splitFasta( record: [id:true, desc:true, seqString:true] )
+    // | filter { record -> record.seqString.length() < params.maxProteinLength }
+    // | map{ it -> [id:it.id.replace("lcl|", ""), desc:it.desc, seqString:it.seqString]} // remove lcl| from start of id
+    // | set { ch_allProteins }
 
-    FILTER( ch_allProteins )
+    // FILTER( ch_allProteins )
 
 
     ///
     /// CLUSTERING
     ///
 
-    CLUSTER( FILTER.out.allProteins )
+    // CLUSTER( FILTER.out.allProteins )
 
 
     ///
     /// INTERPROSCAN
     ///
 
-    INTERPROSCAN( CLUSTER.out.splitClusterReps )
+    // INTERPROSCAN( CLUSTER.out.splitClusterReps )
+
+    //def my = file("resultsFull/protein_clusters/clu2_rep_seq.fasta")
+    Channel.fromPath("resultsFull/protein_clusters/clu2_rep_seq.fasta")
+    | set{ my }
+
+    INTERPROSCAN( my )
 
 
     ///
@@ -80,11 +86,19 @@ workflow {
 
     // VALIDATE( structures.known )
 
+    // REPORT_NEW ( 
+    //     SEARCH.out, 
+    //     CLUSTER.out.clusterMembers,
+    //     FILTER.out.proteinDescriptions,
+    //     CLUSTER.out.allClusterReps,
+    //     INTERPROSCAN.out
+    // )
+
     REPORT_NEW ( 
         SEARCH.out, 
-        CLUSTER.out.clusterMembers,
-        FILTER.out.proteinDescriptions,
-        CLUSTER.out.allClusterReps,
+        file("resultsFull/protein_clusters/clu2_cluster.tsv"),
+        file("resultsFull/proteins/proteinDescriptions.tsv"),
+        file("resultsFull/protein_clusters/clu2_rep_seq.fasta"),
         INTERPROSCAN.out
     )
 
