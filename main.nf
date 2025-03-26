@@ -84,7 +84,7 @@ workflow {
     /// VALIDATION & OUTPUT
     /// 
 
-    // VALIDATE( structures.known )
+    VALIDATE( structures.known )
 
     // REPORT_NEW ( 
     //     SEARCH.out, 
