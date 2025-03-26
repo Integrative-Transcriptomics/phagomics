@@ -44,27 +44,27 @@ workflow {
     /// STRUCTURE PREDICTION
     ///
 
-    STRUCTURE_PREDICITON( CLUSTER.out.splitClusterReps )
+    // STRUCTURE_PREDICITON( CLUSTER.out.splitClusterReps )
 
     // Test setup
-    // Channel.fromPath(["./results/colabfold_full/*_rank_001*.pdb", "./results/colabfold_full/*_rank_001*.json"]) 
-    // | map { it -> 
-    //     tuple((it =~ /colabfold_full\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
-    // }
-    // | groupTuple()
-    // | map{ id, paths ->
-    //     [id:id[4..-2], 
-    //     pdb:  paths.find{ it -> it.toString().endsWith(".pdb") },
-    //     json: paths.find{ it -> it.toString().endsWith(".json")}] }
-    // | set{ temp }
+    Channel.fromPath(["./resultsFull/colabfold/*_rank_001*.pdb", "./resultsFull/colabfold/*_rank_001*.json"]) 
+    | map { it -> 
+        tuple((it =~ /colabfold\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
+    }
+    | groupTuple()
+    | map{ id, paths ->
+        [id:id, 
+        pdb:  paths.find{ it -> it.toString().endsWith(".pdb") },
+        json: paths.find{ it -> it.toString().endsWith(".json")}] }
+    | set{ temp }
 
 
     ///
     /// FOLDSEEK SEARCH
     /// 
 
-    STRUCTURE_PREDICITON.out
-    // temp
+    // STRUCTURE_PREDICITON.out
+    temp
     | branch { it ->
         known:      it =~ /.*_known.*/
         unknown:    it =~ /.*_unknown.*/
@@ -78,7 +78,7 @@ workflow {
     /// VALIDATION & OUTPUT
     /// 
 
-    VALIDATE( structures.known )
+    // VALIDATE( structures.known )
 
     REPORT_NEW ( 
         SEARCH.out, 

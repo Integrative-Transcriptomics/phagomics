@@ -7,7 +7,7 @@ workflow SEARCH {
         unknownProteins
     
     main:
-        // Run unknown proteins with foldseek
+        // Run foldseek with unknown proteins 
         unknownProteins
         | foldseek
         | set{ alignments }

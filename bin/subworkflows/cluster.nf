@@ -11,9 +11,9 @@ workflow CLUSTER {
         cluster( allProteins )
         | clusterRefine
 
-        // split into files of 500 sequences
+        // split into files of 200 sequences
         clusterRefine.out.repsRefined
-        | splitFasta( by: 500, file: true )
+        | splitFasta( by: 200, file: true )
         | set{ splitClusterReps }
 
     emit:
