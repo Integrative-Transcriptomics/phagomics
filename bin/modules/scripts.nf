@@ -185,7 +185,7 @@ process generateValidationReport {
 // This returns a report per protein
 process foldseekReport {
     debug true
-    publishDir "$params.outDir/reports/single", mode: 'copy'
+    //publishDir "$params.outDir/reports/single", mode: 'copy'
     errorStrategy 'retry'
     containerOptions { "--rm" }
 
@@ -263,7 +263,7 @@ process foldseekReport {
 // Currently does not confirm similarity of proteins in cluster so annotation could be wrong
 process clusterReport {
     debug true
-    publishDir "$params.outDir/reports/single", mode: 'copy'
+    //publishDir "$params.outDir/reports/single", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
@@ -344,7 +344,7 @@ process clusterReport {
 // excludes "hypothetical protein" annotation
 process postulatedReport {
     debug true
-    publishDir "$params.outDir/reports/single", mode: 'copy'
+    //publishDir "$params.outDir/reports/single", mode: 'copy'
     containerOptions { "--rm" }
 
     input:
@@ -499,12 +499,15 @@ def chooseFunction(input):
             # Case: Has interproscan result -> append domains
             if method == "interproscan": 
                 for match in entry["matches"]:
+                   
                     # Check if match is using an accepted library
-                    libs = {"SUPERFAMILY", "PFAM", "PROSITE_PROFILES"}
-                    if match["signature"]["signatureLibraryRelease"]["library"] in libs:
-                        domain = safeGet(match)
-                        if domain:
-                            entryString += ";domain=" + domain
+                   # libs = {"SUPERFAMILY", "PFAM", "PROSITE_PROFILES"}
+                    #if match["signature"]["signatureLibraryRelease"]["library"] in libs:
+                    
+                    domain = safeGet(match)
+                    if domain:
+                        entryString += ";domain=" + domain
+                        
             elif method != "postulated function":
                 # Case foldseek
                 if method == "foldseek":

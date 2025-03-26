@@ -12,19 +12,19 @@ validateDB = file(params.validdb)
 // https://github.com/steineggerlab/foldseek?tab=readme-ov-file#alignment-mode <- OUTPUTFIELDS DESCRIBED HERE
 process foldseek {
     //debug true
-    publishDir "$params.outDir/foldseek", mode: 'copy', saveAs: { file -> file.endsWith("aln") ? "${id}_aln.tsv" : file }
-    maxForks 4
+    publishDir "$params.outDir/foldseek", mode: 'copy'
+    maxForks 10
     containerOptions { "--rm" }
 
     input:
     tuple val(id), path(path), path(json)
 
     output:
-    tuple val(id), path("aln"), path(json)
+    tuple val(id), path("*.tsv"), path(json)
 
     script:
     """
-    foldseek easy-search "$path" "$database" aln tmp --alignment-type 1 --tmscore-threshold 0.5 \
+    foldseek easy-search "$path" "$database" ${id}.tsv tmp --alignment-type 1 --tmscore-threshold 0.5 \
     --format-output "query,target,qstart,qend,tstart,tend,prob,alntmscore,evalue"
     """
 }

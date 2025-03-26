@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 process interproscan {
-    publishDir "$params.outDir/reports/single", mode: 'copy'
+    //publishDir "$params.outDir/reports/single", mode: 'copy'
     maxForks 1 // make only 1 API request at a time
     errorStrategy 'retry'
     containerOptions { "--rm" }
@@ -84,9 +84,19 @@ def interproscanAPI(input):
     
     return None
 
-# input sets of 30 results (if using API) or all results (local)
+
+def filterMatches(contents):
+    libs = {"SUPERFAMILY", "PFAM", "PROSITE_PROFILES"}
+    for result in contents["results"]:
+        result["matches"] = [
+            match for match in result["matches"]
+            if match["signature"]["signatureLibraryRelease"]["library"] in libs
+        ]    
+
+# input sets of 30 results
 def interproscanReport(input):
     contents = json.loads(input)
+    filterMatches(contents)
     for result in contents["results"]:
         if result["matches"]:
             id = result["xref"][0]["name"]
