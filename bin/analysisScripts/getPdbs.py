@@ -6,8 +6,8 @@ import os, shutil
 ###
 
 fastaFile = "foldseekHits.fasta"
-pdbFolder = "resultsFull/colabfold"
-outputFolder = "out/fsHitsFull"
+pdbFolder = "results/colabfold"
+outputFolder = "out/fsHits"
 
 os.makedirs(outputFolder, exist_ok=True)
 

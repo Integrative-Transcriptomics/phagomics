@@ -84,7 +84,7 @@ def proteinRatio(allProteins):
     #ax2.set_title("Phage ID (Phage 40–78)", fontsize=14)
 
     plt.tight_layout()
-    plt.savefig("figures/phagesProteinCountsStack.pdf", dpi=400, bbox_inches='tight')
+    plt.savefig("figures/phagesProteinCountsStack.svg", dpi=400, bbox_inches='tight')
     # plt.show()
 
 
@@ -147,10 +147,11 @@ def clusterHet(clusterData):
     plt.xlabel("Cluster")
     plt.ylabel("Proportion of Known Members")
     plt.title("Heterogeneity per Cluster")
+    plt.savefig("figures/clusterHet.svg", dpi=400, bbox_inches='tight')
     #plt.show()
     
-cluData = processClusterFile("resultsFull/protein_clusters/clu2_cluster.tsv")
+cluData = processClusterFile("results/protein_clusters/clu2_cluster.tsv")
 #cluData = processClusterFile("")  # Structural clustering
-proteinRatio("resultsFull/proteins/allProteins.faa")
+proteinRatio("results/proteins/allProteins.faa")
 plot_cluster_data(cluData)
 clusterHet(cluData)
