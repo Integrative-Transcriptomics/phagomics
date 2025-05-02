@@ -1,0 +1,1099 @@
+[
+    {
+        "protein": "MZ501050.1_prot_QXV75943.1_89_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501050.1_prot_QXV75943.1_89_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9XWC0-F1-model_v4",
+                        "function": "Transposase",
+                        "qstart": 3,
+                        "qend": 91,
+                        "tstart": 1,
+                        "tend": 82,
+                        "prob": 0.84,
+                        "alntmscore": 0.73,
+                        "evalue": 0.62
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501050.1_prot_QXV75943.1_89_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O25612-F1-model_v4",
+                        "function": "C4-type zinc ribbon domain-containing protein",
+                        "qstart": 1,
+                        "qend": 91,
+                        "tstart": 37,
+                        "tend": 131,
+                        "prob": 0.9,
+                        "alntmscore": 0.7,
+                        "evalue": 0.46
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501050.1_prot_QXV75943.1_89_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0N4U869-F1-model_v4",
+                        "function": "serine--tRNA ligase",
+                        "qstart": 1,
+                        "qend": 91,
+                        "tstart": 41,
+                        "tend": 101,
+                        "prob": 0.54,
+                        "alntmscore": 0.8,
+                        "evalue": 0.32
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV75907.1_53_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501050.1_prot_QXV75907.1_53_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q9I2P3-F1-model_v4",
+                        "function": "DUF3509 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 66,
+                        "tstart": 5,
+                        "tend": 86,
+                        "prob": 0.77,
+                        "alntmscore": 0.69,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501050.1_prot_QXV75907.1_53_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q8I282-F1-model_v4",
+                        "function": "3'-5' exonuclease",
+                        "qstart": 1,
+                        "qend": 66,
+                        "tstart": 2,
+                        "tend": 444,
+                        "prob": 0.86,
+                        "alntmscore": 0.73,
+                        "evalue": 0.39
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501050.1_prot_QXV75907.1_53_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A4I160-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 5,
+                        "qend": 66,
+                        "tstart": 455,
+                        "tend": 555,
+                        "prob": 0.84,
+                        "alntmscore": 0.76,
+                        "evalue": 0.35
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV75907.1_53_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV75907.1_53_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV75907.1_53_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76061.1_207_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501050.1_prot_QXV76061.1_207_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q2G0Y2-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 82,
+                        "tstart": 9,
+                        "tend": 86,
+                        "prob": 0.75,
+                        "alntmscore": 0.82,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501050.1_prot_QXV76061.1_207_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q4CLR1-F1-model_v4",
+                        "function": "Protein kinase, putative",
+                        "qstart": 1,
+                        "qend": 84,
+                        "tstart": 32,
+                        "tend": 120,
+                        "prob": 0.93,
+                        "alntmscore": 0.9,
+                        "evalue": 0.45
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501050.1_prot_QXV76061.1_207_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q4CLR1-F1-model_v4",
+                        "function": "Protein kinase, putative",
+                        "qstart": 1,
+                        "qend": 84,
+                        "tstart": 32,
+                        "tend": 120,
+                        "prob": 0.93,
+                        "alntmscore": 0.9,
+                        "evalue": 0.45
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76061.1_207_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76061.1_207_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76061.1_207_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MEVVMLYSKAREIYETKIKEAVLQFATTMRWTNDWEYSKNHKKPLVTRKAHMLVLIDREQIKAREALQNHKKAAFEWFMDNTAPETKKAVSAWFSGKNCERSFF",
+                "md5": "27c871535c99baa7aebc0a7e17021697",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23833",
+                            "name": "DUF7203",
+                            "description": "Family of unknown function (DUF7203)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055627",
+                                "name": "DUF7203",
+                                "description": "Protein of unknown function DUF7203",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 104,
+                                "representative": false,
+                                "hmmStart": 4,
+                                "hmmEnd": 109,
+                                "hmmLength": 109,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 4.2e-12,
+                                "score": 57.6,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 104,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 104,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.8e-12,
+                        "score": 57.7,
+                        "model-ac": "PF23833"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501050.1_prot_QXV76061.1_207_unknown",
+                        "id": "MZ501050.1_prot_QXV76061.1_207_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76074.1_220_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501050.1_prot_QXV76074.1_220_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q58173-F1-model_v4",
+                        "function": "Uncharacterized protein MJ0763",
+                        "qstart": 12,
+                        "qend": 128,
+                        "tstart": 5,
+                        "tend": 119,
+                        "prob": 0.93,
+                        "alntmscore": 0.82,
+                        "evalue": 0.72
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501050.1_prot_QXV76074.1_220_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q7CQF9-F1-model_v4",
+                        "function": "Cytoplasmic protein",
+                        "qstart": 11,
+                        "qend": 128,
+                        "tstart": 9,
+                        "tend": 156,
+                        "prob": 0.98,
+                        "alntmscore": 0.88,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501050.1_prot_QXV76074.1_220_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q7CQF9-F1-model_v4",
+                        "function": "Cytoplasmic protein",
+                        "qstart": 11,
+                        "qend": 128,
+                        "tstart": 9,
+                        "tend": 156,
+                        "prob": 0.98,
+                        "alntmscore": 0.88,
+                        "evalue": 0.7
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76074.1_220_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76074.1_220_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76074.1_220_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKFSDFSQSGKPSKADEYLGLLMAAQAYFHSAHFETKSYARHKAYDFIFSELPDLIDKFGEQYLGYSGRKYTPSIPDASKLPTDTIKMIDRILDQSNSIYKEMPPAIQSTIDDITGMFYQSKYLLSLE",
+                "md5": "1c7fd69bfd5cd7a5b948f492a66232e3",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF19174",
+                            "name": "DUF5856",
+                            "description": "Family of unknown function (DUF5856)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR043876",
+                                "name": "DUF5856",
+                                "description": "Protein of unknown function DUF5856",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 33,
+                                "end": 125,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 94,
+                                "hmmLength": 94,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 1.6e-29,
+                                "score": 114.1,
+                                "envelopeStart": 33,
+                                "envelopeEnd": 125,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 33,
+                                        "end": 125,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.2e-29,
+                        "score": 114.5,
+                        "model-ac": "PF19174"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501050.1_prot_QXV76074.1_220_unknown",
+                        "id": "MZ501050.1_prot_QXV76074.1_220_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV75924.1_70_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501050.1_prot_QXV75924.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q8IB57-F1-model_v4",
+                        "function": "Small nuclear ribonucleoprotein G",
+                        "qstart": 3,
+                        "qend": 80,
+                        "tstart": 1,
+                        "tend": 78,
+                        "prob": 0.6,
+                        "alntmscore": 0.62,
+                        "evalue": 0.54
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501050.1_prot_QXV75924.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P9WH17-F1-model_v4",
+                        "function": "Ribosome maturation factor RimP",
+                        "qstart": 1,
+                        "qend": 80,
+                        "tstart": 83,
+                        "tend": 155,
+                        "prob": 0.77,
+                        "alntmscore": 0.71,
+                        "evalue": 0.45
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501050.1_prot_QXV75924.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q60286-F1-model_v4",
+                        "function": "Uncharacterized protein MJECL27",
+                        "qstart": 16,
+                        "qend": 80,
+                        "tstart": 101,
+                        "tend": 158,
+                        "prob": 0.5,
+                        "alntmscore": 0.73,
+                        "evalue": 0.4
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV75924.1_70_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV75924.1_70_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV75924.1_70_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76049.1_195_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501050.1_prot_QXV76049.1_195_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-Q9VVZ8-F1-model_v4",
+                        "function": "Brivido-1",
+                        "qstart": 2,
+                        "qend": 95,
+                        "tstart": 41,
+                        "tend": 436,
+                        "prob": 0.77,
+                        "alntmscore": 0.73,
+                        "evalue": 0.36
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501050.1_prot_QXV76049.1_195_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-Q9VVZ8-F1-model_v4",
+                        "function": "Brivido-1",
+                        "qstart": 2,
+                        "qend": 95,
+                        "tstart": 41,
+                        "tend": 436,
+                        "prob": 0.77,
+                        "alntmscore": 0.73,
+                        "evalue": 0.36
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501050.1_prot_QXV76049.1_195_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-Q8T8Z2-F1-model_v4",
+                        "function": "AT14535p",
+                        "qstart": 6,
+                        "qend": 95,
+                        "tstart": 145,
+                        "tend": 445,
+                        "prob": 0.75,
+                        "alntmscore": 0.74,
+                        "evalue": 0.35
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76049.1_195_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76049.1_195_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76049.1_195_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV75941.1_87_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV75941.1_87_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV75941.1_87_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV75941.1_87_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV75961.1_107_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV75961.1_107_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV75961.1_107_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV75961.1_107_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MIYCMNIGDSDIKEIKLHGNHHANIVYCNKFEFGHEKLGFLYCNDVIVMDKKELDELDRESLDENDRIYYGTLKVYNAYLSGKKESLNAENESGFTETISDSDIYPIEQ",
+                "md5": "74e66fac492211570b5f56cc7b145002",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24193",
+                            "name": "DUF7418",
+                            "description": "Domain of unknown function (DUF7418)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055841",
+                                "name": "DUF7418",
+                                "description": "Domain of unknown function DUF7418",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 109,
+                                "representative": true,
+                                "hmmStart": 1,
+                                "hmmEnd": 101,
+                                "hmmLength": 101,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 1e-33,
+                                "score": 127.1,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 109,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 109,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 9e-34,
+                        "score": 127.3,
+                        "model-ac": "PF24193"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501050.1_prot_QXV75961.1_107_unknown",
+                        "id": "MZ501050.1_prot_QXV75961.1_107_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76044.1_190_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76044.1_190_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76044.1_190_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76044.1_190_unknown"
+                ],
+                "function": "putative homing endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501050.1_prot_QXV76044.1_190_unknown",
+                "function": "putative homing endonuclease"
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76092.1_238_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76092.1_238_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76092.1_238_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76092.1_238_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKTYQEFITEAAINSQIIAESFTDLLKFKKGQKITAVLDDGTEVEMDVQGYNYAVDGKLYNKSHAKFDSFDDFVNTVEDEKTRRSIATGDAKVLMAHGHERIRAKQNKMGEDNFALVGYQSGKQTYGYQRTATMYNKNGKIAFVNSKGSIQYVKSFK",
+                "md5": "b79103145b8e59c2ee7d93b997b499c9",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24183",
+                            "name": "DUF7412",
+                            "description": "Family of unknown function (DUF7412)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055835",
+                                "name": "DUF7412",
+                                "description": "Domain of unknown function DUF7412",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 157,
+                                "representative": true,
+                                "hmmStart": 1,
+                                "hmmEnd": 158,
+                                "hmmLength": 158,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 1.6e-92,
+                                "score": 319.3,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 157,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 157,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.4e-92,
+                        "score": 319.4,
+                        "model-ac": "PF24183"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501050.1_prot_QXV76092.1_238_unknown",
+                        "id": "MZ501050.1_prot_QXV76092.1_238_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76099.1_245_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76099.1_245_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76099.1_245_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76099.1_245_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76104.1_250_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501050.1_prot_QXV76104.1_250_unknown",
+                "clusterRep": "MZ501050.1_prot_QXV76104.1_250_unknown",
+                "members": [
+                    "MZ501050.1_prot_QXV76104.1_250_unknown"
+                ],
+                "function": "putative homing endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501050.1_prot_QXV76104.1_250_unknown",
+                "function": "putative homing endonuclease"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MHFYLYKITNKINNKIYIGVHSTENLDDGYMGSGKLLKRAQDKYGIENFSKEILEYFDDKESMLKAEKNIVTEEFLNRPDVYNLKLGGEGGWDHINNYPMTDQQRELISLGVKKAHSNGKLKGWSSNGLMKNGFAGKTHSQEAKRKIAKANEAKVSADERKRRIEISKLYDFSKRGELSKYAKHIGVSHTQAKRILNQINNI",
+                "md5": "c700223939fa95160b20d9dbaa2ca9a7",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF07460",
+                            "name": "NUMOD3",
+                            "description": "NUMOD3 motif",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003611",
+                                "name": "NUMOD3",
+                                "description": "Nuclease associated modular domain 3",
+                                "type": "DOMAIN",
+                                "goXRefs": [
+                                    {
+                                        "name": "DNA binding",
+                                        "databaseName": "GO",
+                                        "category": "MOLECULAR_FUNCTION",
+                                        "id": "GO:0003677"
+                                    }
+                                ],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 134,
+                                "end": 148,
+                                "representative": false,
+                                "hmmStart": 23,
+                                "hmmEnd": 37,
+                                "hmmLength": 37,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 26.0,
+                                "score": 16.2,
+                                "envelopeStart": 130,
+                                "envelopeEnd": 151,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 134,
+                                        "end": 148,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.2,
+                        "score": 20.4,
+                        "model-ac": "PF07460"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF01541",
+                            "name": "GIY-YIG",
+                            "description": "GIY-YIG catalytic domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR000305",
+                                "name": "GIY-YIG_endonuc",
+                                "description": "GIY-YIG endonuclease",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6783310"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-6783310"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6783310"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-5693568"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-6783310"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 3,
+                                "end": 71,
+                                "representative": false,
+                                "hmmStart": 2,
+                                "hmmEnd": 69,
+                                "hmmLength": 78,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 0.023,
+                                "score": 26.3,
+                                "envelopeStart": 2,
+                                "envelopeEnd": 76,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 3,
+                                        "end": 71,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 0.023,
+                        "score": 26.3,
+                        "model-ac": "PF01541"
+                    },
+                    {
+                        "signature": {
+                            "accession": "SSF82771",
+                            "name": "GIY-YIG endonuclease",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR035901",
+                                "name": "GIY-YIG_endonuc_sf",
+                                "description": "GIY-YIG endonuclease superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6783310"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-6783310"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6783310"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-5693568"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-6783310"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 2,
+                                "end": 88,
+                                "representative": false,
+                                "hmmLength": 97,
+                                "location-fragments": [
+                                    {
+                                        "start": 2,
+                                        "end": 88,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.92e-12,
+                        "model-ac": "0040970"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PS50164",
+                            "name": "GIY_YIG",
+                            "description": "GIY-YIG domain profile.",
+                            "signatureLibraryRelease": {
+                                "library": "PROSITE_PROFILES",
+                                "version": "2023_05"
+                            },
+                            "entry": {
+                                "accession": "IPR000305",
+                                "name": "GIY-YIG_endonuc",
+                                "description": "GIY-YIG endonuclease",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6783310"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-6783310"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6783310"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-5693568"
+                                    },
+                                    {
+                                        "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-5693568"
+                                    },
+                                    {
+                                        "name": "Fanconi Anemia Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-6783310"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 84,
+                                "representative": false,
+                                "score": 15.534451,
+                                "alignment": "MHFYLYKITNKINNKIYIGVHSteNLDDGYMGSGKLLKRAQDKYGIENFSKEILEYF-DDKESMLKAEKNIVTEeflnRPDVYNL",
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 84,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "model-ac": "PS50164"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501050.1_prot_QXV76104.1_250_unknown",
+                        "id": "MZ501050.1_prot_QXV76104.1_250_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501050.1_prot_QXV76067.1_213_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MKAVIETTDLFGDLVIEKRGNVYVLTQEDDSITILPMELAAILSYAPSGVTGVTNITGDLQVRFYRGLYGGNIETEFMCLSINNWATFVAKVKEFLESETVETPEKAKLQWAKDRGANIINPVAANYTTTLDVKTSYEDGDVVLVRQNDDSRAHIVTFTKDEAIALKTYLDSVIPTMISK",
+                "md5": "11bec4d7147b854f654a2e25850104e9",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24448",
+                            "name": "T4_y05I_C",
+                            "description": "y05I-like putative transcription factor C-terminal domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 108,
+                                "end": 177,
+                                "representative": true,
+                                "hmmStart": 1,
+                                "hmmEnd": 69,
+                                "hmmLength": 69,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 8.4e-13,
+                                "score": 59.8,
+                                "envelopeStart": 108,
+                                "envelopeEnd": 177,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 108,
+                                        "end": 177,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 7e-14,
+                        "score": 63.3,
+                        "model-ac": "PF24448"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF24449",
+                            "name": "T4_y05I_N",
+                            "description": "y05I-like putative transcription factor N-terminal domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 100,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 99,
+                                "hmmLength": 99,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 8.4e-28,
+                                "score": 108.2,
+                                "envelopeStart": 3,
+                                "envelopeEnd": 100,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 100,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.9e-28,
+                        "score": 109.3,
+                        "model-ac": "PF24449"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501050.1_prot_QXV76067.1_213_unknown",
+                        "id": "MZ501050.1_prot_QXV76067.1_213_unknown"
+                    }
+                ]
+            }
+        ]
+    }
+]

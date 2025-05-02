@@ -21,7 +21,7 @@ import requests, json, time
 # Input is 30 fasta sequences
 def interproscanAPI(input):
     REQUEST_URL = "https://www.ebi.ac.uk/Tools/services/rest/iprscan5/"
-    EMAIL = "samu.mueller@student.uni-tuebingen.de"
+    EMAIL = "${params.email}"
 
     def getPayload(input):
         seqs = {

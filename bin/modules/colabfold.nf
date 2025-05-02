@@ -10,7 +10,6 @@ process colabfold_batch {
     //debug true
     publishDir "$params.outDir", mode: 'copy'
     containerOptions { "--rm --runtime=nvidia --gpus all" }
-    maxForks 1
 
     input:
     val(path)
@@ -26,10 +25,10 @@ process colabfold_batch {
 }
 
 process colabfold_batch_wsl {
-    // additional flags for WSL support and less recycles
+    // additional flags for WSL
     //debug true
     publishDir "$params.outDir", mode: 'copy'
-    containerOptions { "--rm --runtime=nvidia --gpus 1" }
+    containerOptions { "--rm --runtime=nvidia --gpus all" }
     maxForks 1
 
     input:
@@ -45,6 +44,6 @@ process colabfold_batch_wsl {
     export XLA_PYTHON_CLIENT_ALLOCATOR="platform"
     export TF_FORCE_GPU_ALLOW_GROWTH="true"
     colabfold_batch $path colabfold --msa-only
-    colabfold_batch $path colabfold --num-recycle 0 --amber --use-gpu-relax
+    colabfold_batch $path colabfold --amber --use-gpu-relax
     """
 }

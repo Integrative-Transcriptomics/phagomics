@@ -1,0 +1,805 @@
+[
+    {
+        "protein": "MZ501089.1_prot_QXV82161.1_180_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501089.1_prot_QXV82161.1_180_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A5K4F7B8-F1-model_v4",
+                        "function": "Alcohol dehydrogenase transcription factor myb/sant-like protein",
+                        "qstart": 1,
+                        "qend": 98,
+                        "tstart": 7,
+                        "tend": 94,
+                        "prob": 0.63,
+                        "alntmscore": 0.71,
+                        "evalue": 0.38
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501089.1_prot_QXV82161.1_180_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A5K4F7B8-F1-model_v4",
+                        "function": "Alcohol dehydrogenase transcription factor myb/sant-like protein",
+                        "qstart": 1,
+                        "qend": 98,
+                        "tstart": 7,
+                        "tend": 94,
+                        "prob": 0.63,
+                        "alntmscore": 0.71,
+                        "evalue": 0.38
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501089.1_prot_QXV82161.1_180_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A5K4F7B8-F1-model_v4",
+                        "function": "Alcohol dehydrogenase transcription factor myb/sant-like protein",
+                        "qstart": 1,
+                        "qend": 98,
+                        "tstart": 7,
+                        "tend": 94,
+                        "prob": 0.63,
+                        "alntmscore": 0.71,
+                        "evalue": 0.38
+                    }
+                ]
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MTIQIKNVINSYAYDKVVSLLEKGDIVTPQILDKWEKELHQTMKQNDQKIGRNTIRELLVQYILSEFDVKAFGVESKAYQKHEISDKTIRRMKNQRKKKFADLKITKV",
+                "md5": "0b27399f95728251520e729a089080c9",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24454",
+                            "name": "DUF7570",
+                            "description": "Family of unknown function (DUF7570)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055992",
+                                "name": "DUF7570",
+                                "description": "Protein of unknown function DUF7570",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 6,
+                                "end": 99,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 94,
+                                "hmmLength": 94,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 5.6e-39,
+                                "score": 143.4,
+                                "envelopeStart": 6,
+                                "envelopeEnd": 99,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 6,
+                                        "end": 99,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 4.9e-39,
+                        "score": 143.6,
+                        "model-ac": "PF24454"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501089.1_prot_QXV82161.1_180_unknown",
+                        "id": "MZ501089.1_prot_QXV82161.1_180_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82183.1_202_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501089.1_prot_QXV82183.1_202_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0K0EAJ6-F1-model_v4",
+                        "function": "Replication protein A subunit",
+                        "qstart": 8,
+                        "qend": 121,
+                        "tstart": 91,
+                        "tend": 574,
+                        "prob": 0.47,
+                        "alntmscore": 0.61,
+                        "evalue": 0.32
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501089.1_prot_QXV82183.1_202_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0K0EAJ6-F1-model_v4",
+                        "function": "Replication protein A subunit",
+                        "qstart": 8,
+                        "qend": 121,
+                        "tstart": 91,
+                        "tend": 574,
+                        "prob": 0.47,
+                        "alntmscore": 0.61,
+                        "evalue": 0.32
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501089.1_prot_QXV82183.1_202_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0K0EAJ6-F1-model_v4",
+                        "function": "Replication protein A subunit",
+                        "qstart": 8,
+                        "qend": 121,
+                        "tstart": 91,
+                        "tend": 574,
+                        "prob": 0.47,
+                        "alntmscore": 0.61,
+                        "evalue": 0.32
+                    }
+                ]
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKQLIIKRLNLLICCLCIVIAYGYYAINDYMHYKDYDVTVVNTFTGTQGKGSSLSFIAVYELNDGYRFSEYISPEMYSSIEKGDNITVSLRPFDVKQTLFDNIVWFFGMVLVQSVCGAYISLFHHILRI",
+                "md5": "add54ef71f1ae3da675a1e11fbcc2eca",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "SSF53623",
+                            "name": "MurD-like peptide ligases, catalytic domain",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR036565",
+                                "name": "Mur-like_cat_sf",
+                                "description": "Mur-like, catalytic domain superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [
+                                    {
+                                        "name": "ATP binding",
+                                        "databaseName": "GO",
+                                        "category": "MOLECULAR_FUNCTION",
+                                        "id": "GO:0005524"
+                                    },
+                                    {
+                                        "name": "biosynthetic process",
+                                        "databaseName": "GO",
+                                        "category": "BIOLOGICAL_PROCESS",
+                                        "id": "GO:0009058"
+                                    }
+                                ],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "Metabolism of folate and pterines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-196757"
+                                    },
+                                    {
+                                        "name": "echinomycin and triostin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7735"
+                                    },
+                                    {
+                                        "name": "pyoverdine I biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6409"
+                                    },
+                                    {
+                                        "name": "peptidoglycan biosynthesis IV (Enterococcus faecium)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6471"
+                                    },
+                                    {
+                                        "name": "5-N-acetylardeemin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7543"
+                                    },
+                                    {
+                                        "name": "asperlicin E biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7549"
+                                    },
+                                    {
+                                        "name": "factor 430 biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5196"
+                                    },
+                                    {
+                                        "name": "UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7953"
+                                    },
+                                    {
+                                        "name": "ferrichrome biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7577"
+                                    },
+                                    {
+                                        "name": "gliotoxin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7533"
+                                    },
+                                    {
+                                        "name": "peramine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7600"
+                                    },
+                                    {
+                                        "name": "indolmycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7770"
+                                    },
+                                    {
+                                        "name": "UDP-yelosamine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7842"
+                                    },
+                                    {
+                                        "name": "apicidin F biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7668"
+                                    },
+                                    {
+                                        "name": "tenellin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7561"
+                                    },
+                                    {
+                                        "name": "Metabolism of folate and pterines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-196757"
+                                    },
+                                    {
+                                        "name": "(-)-microperfuranone biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7556"
+                                    },
+                                    {
+                                        "name": "chaetoglobosin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7612"
+                                    },
+                                    {
+                                        "name": "UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6386"
+                                    },
+                                    {
+                                        "name": "nocardicin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7797"
+                                    },
+                                    {
+                                        "name": "aureobasidin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7665"
+                                    },
+                                    {
+                                        "name": "peptidoglycan biosynthesis II (staphylococci)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5265"
+                                    },
+                                    {
+                                        "name": "roquefortine C biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7605"
+                                    },
+                                    {
+                                        "name": "Metabolism of folate and pterines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-196757"
+                                    },
+                                    {
+                                        "name": "Metabolism of folate and pterines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-196757"
+                                    },
+                                    {
+                                        "name": "vibriobactin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6374"
+                                    },
+                                    {
+                                        "name": "arginomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7569"
+                                    },
+                                    {
+                                        "name": "fumiquinazoline D biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7542"
+                                    },
+                                    {
+                                        "name": "rhizocticin A and B biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7510"
+                                    },
+                                    {
+                                        "name": "aspyridone A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7565"
+                                    },
+                                    {
+                                        "name": "petrobactin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6289"
+                                    },
+                                    {
+                                        "name": "ferrichrome A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7571"
+                                    },
+                                    {
+                                        "name": "putrebactin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6378"
+                                    },
+                                    {
+                                        "name": "fusaridione A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7670"
+                                    },
+                                    {
+                                        "name": "folate polyglutamylation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-2161"
+                                    },
+                                    {
+                                        "name": "thiocoraline biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7737"
+                                    },
+                                    {
+                                        "name": "mupirocin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8012"
+                                    },
+                                    {
+                                        "name": "tetrahydrofolate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6614"
+                                    },
+                                    {
+                                        "name": "Metabolism of folate and pterines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-196757"
+                                    },
+                                    {
+                                        "name": "rhizobactin 1021 biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-761"
+                                    },
+                                    {
+                                        "name": "acinetoferrin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7989"
+                                    },
+                                    {
+                                        "name": "baumannoferrin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7988"
+                                    },
+                                    {
+                                        "name": "holomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7690"
+                                    },
+                                    {
+                                        "name": "echinocandin B biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7650"
+                                    },
+                                    {
+                                        "name": "tryptoquialanine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7660"
+                                    },
+                                    {
+                                        "name": "fusarin C biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7673"
+                                    },
+                                    {
+                                        "name": "cyanophycin metabolism",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7052"
+                                    },
+                                    {
+                                        "name": "Metabolism of folate and pterines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-196757"
+                                    },
+                                    {
+                                        "name": "UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6387"
+                                    },
+                                    {
+                                        "name": "achromobactin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6574"
+                                    },
+                                    {
+                                        "name": "apicidin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7667"
+                                    },
+                                    {
+                                        "name": "peptidoglycan recycling II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7883"
+                                    },
+                                    {
+                                        "name": "alcaligin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6379"
+                                    },
+                                    {
+                                        "name": "alpha-cyclopiazonate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7555"
+                                    },
+                                    {
+                                        "name": "tabtoxinine-beta-lactam biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7954"
+                                    },
+                                    {
+                                        "name": "bassianin and desmethylbassianin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7563"
+                                    },
+                                    {
+                                        "name": "blasticidin S biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7570"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 40,
+                                "end": 82,
+                                "representative": false,
+                                "hmmLength": 296,
+                                "location-fragments": [
+                                    {
+                                        "start": 40,
+                                        "end": 82,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 5.49e-05,
+                        "model-ac": "0041699"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501089.1_prot_QXV82183.1_202_unknown",
+                        "id": "MZ501089.1_prot_QXV82183.1_202_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82195.1_214_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501089.1_prot_QXV82195.1_214_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0D2E018-F1-model_v4",
+                        "function": "Nascent polypeptide-associated complex subunit alpha-like UBA domain-containing protein",
+                        "qstart": 10,
+                        "qend": 60,
+                        "tstart": 1,
+                        "tend": 58,
+                        "prob": 0.75,
+                        "alntmscore": 0.76,
+                        "evalue": 0.61
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501089.1_prot_QXV82195.1_214_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-I1NIT6-F1-model_v4",
+                        "function": "non-specific serine/threonine protein kinase",
+                        "qstart": 1,
+                        "qend": 62,
+                        "tstart": 362,
+                        "tend": 434,
+                        "prob": 0.94,
+                        "alntmscore": 0.8,
+                        "evalue": 0.39
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501089.1_prot_QXV82195.1_214_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P53423-F1-model_v4",
+                        "function": "ATP-dependent Clp protease adapter protein ClpS",
+                        "qstart": 1,
+                        "qend": 59,
+                        "tstart": 35,
+                        "tend": 77,
+                        "prob": 0.66,
+                        "alntmscore": 0.84,
+                        "evalue": 0.46
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501089.1_prot_QXV82195.1_214_unknown",
+                "clusterRep": "MZ501089.1_prot_QXV82195.1_214_unknown",
+                "members": [
+                    "MZ501089.1_prot_QXV82195.1_214_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82222.1_241_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501089.1_prot_QXV82222.1_241_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0D2F8V5-F1-model_v4",
+                        "function": "Unplaced genomic scaffold supercont1.2, whole genome shotgun sequence",
+                        "qstart": 1,
+                        "qend": 56,
+                        "tstart": 20,
+                        "tend": 73,
+                        "prob": 0.8,
+                        "alntmscore": 0.72,
+                        "evalue": 0.54
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501089.1_prot_QXV82222.1_241_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-P50599-F1-model_v4",
+                        "function": "Tol-Pal system protein TolR",
+                        "qstart": 1,
+                        "qend": 58,
+                        "tstart": 59,
+                        "tend": 118,
+                        "prob": 0.94,
+                        "alntmscore": 0.8,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501089.1_prot_QXV82222.1_241_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A132Z0S9-F1-model_v4",
+                        "function": "DUF2188 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 56,
+                        "tstart": 86,
+                        "tend": 140,
+                        "prob": 0.94,
+                        "alntmscore": 0.82,
+                        "evalue": 0.52
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501089.1_prot_QXV82222.1_241_unknown",
+                "clusterRep": "MZ501089.1_prot_QXV82222.1_241_unknown",
+                "members": [
+                    "MZ501089.1_prot_QXV82222.1_241_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82103.1_122_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501089.1_prot_QXV82103.1_122_unknown",
+                "clusterRep": "MZ501089.1_prot_QXV82103.1_122_unknown",
+                "members": [
+                    "MZ501089.1_prot_QXV82103.1_122_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MIKINTTYQMKKPSEIDFQTMSNTTDSKFWELLGTTGGYPFTVISVNSGILIGTVYMEIRNYYGRVSSFIIYEEDFNLLTEIEKEEQEKSHIDMDLVSMYVTPVEKIEDPTDLLCKAVYIRRPFANPVGGWVTDQWVEDGVELLNVVHAGEYSVVPRSAVINVRVS",
+                "md5": "a39f05000ffd46155238ee9e338c6207",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF17613",
+                            "name": "motB",
+                            "description": "Modifier of transcription",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR020230",
+                                "name": "Tscrpt_reg_MotB",
+                                "description": "Transcription regulator MotB",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 122,
+                                "end": 160,
+                                "representative": false,
+                                "hmmStart": 115,
+                                "hmmEnd": 153,
+                                "hmmLength": 162,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 8.7e-05,
+                                "score": 33.9,
+                                "envelopeStart": 77,
+                                "envelopeEnd": 164,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 122,
+                                        "end": 160,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 6.5e-05,
+                        "score": 34.3,
+                        "model-ac": "PF17613"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501089.1_prot_QXV82103.1_122_unknown",
+                        "id": "MZ501089.1_prot_QXV82103.1_122_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82124.1_143_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501089.1_prot_QXV82124.1_143_unknown",
+                "clusterRep": "MZ501089.1_prot_QXV82124.1_143_unknown",
+                "members": [
+                    "MZ501089.1_prot_QXV82124.1_143_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82227.1_246_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501089.1_prot_QXV82227.1_246_unknown",
+                "clusterRep": "MZ501089.1_prot_QXV82227.1_246_unknown",
+                "members": [
+                    "MZ501089.1_prot_QXV82227.1_246_unknown"
+                ],
+                "function": "putative homing endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501089.1_prot_QXV82227.1_246_unknown",
+                "function": "putative homing endonuclease"
+            }
+        ]
+    },
+    {
+        "protein": "MZ501089.1_prot_QXV82047.1_66_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MVHFWGNYVGKDAGSREAAIELFKKDFIRRIKSGEITKAHLEPLRGMRLGCTCKPKPCHGDIIAHIVNRLFKDDFQVEDLCN",
+                "md5": "b0a5493fc1c38cce7216b80d6a234809",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF14216",
+                            "name": "DUF4326",
+                            "description": "Domain of unknown function (DUF4326)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR025475",
+                                "name": "DUF4326",
+                                "description": "Domain of unknown function DUF4326",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 64,
+                                "representative": false,
+                                "hmmStart": 20,
+                                "hmmEnd": 81,
+                                "hmmLength": 82,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 7.5e-13,
+                                "score": 60.3,
+                                "envelopeStart": 2,
+                                "envelopeEnd": 65,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 64,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 6e-13,
+                        "score": 60.6,
+                        "model-ac": "PF14216"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501089.1_prot_QXV82047.1_66_unknown",
+                        "id": "MZ501089.1_prot_QXV82047.1_66_unknown"
+                    }
+                ]
+            }
+        ]
+    }
+]

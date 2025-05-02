@@ -1,0 +1,199 @@
+[
+    {
+        "protein": "NC_008720.1_prot_YP_950492.1_14_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "NC_008720.1_prot_YP_950492.1_14_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A8JNW5-F1-model_v4",
+                        "function": "Macro domain-containing protein",
+                        "qstart": 1,
+                        "qend": 126,
+                        "tstart": 18,
+                        "tend": 144,
+                        "prob": 0.94,
+                        "alntmscore": 0.76,
+                        "evalue": 0.67
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "NC_008720.1_prot_YP_950492.1_14_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A4I3E1-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 124,
+                        "tstart": 6,
+                        "tend": 360,
+                        "prob": 0.97,
+                        "alntmscore": 0.81,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "NC_008720.1_prot_YP_950492.1_14_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-O53605-F1-model_v4",
+                        "function": "DNA ADP-ribosyl glycohydrolase",
+                        "qstart": 1,
+                        "qend": 112,
+                        "tstart": 13,
+                        "tend": 149,
+                        "prob": 0.94,
+                        "alntmscore": 0.84,
+                        "evalue": 0.5
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "NC_008720.1_prot_YP_950492.1_14_unknown",
+                "clusterRep": "NC_008720.1_prot_YP_950492.1_14_unknown",
+                "members": [
+                    "NC_008720.1_prot_YP_950492.1_14_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "NC_008720.1_prot_YP_950526.1_48_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "NC_008720.1_prot_YP_950526.1_48_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P9WL61-F1-model_v4",
+                        "function": "Uncharacterized protein Rv2632c",
+                        "qstart": 8,
+                        "qend": 102,
+                        "tstart": 9,
+                        "tend": 85,
+                        "prob": 0.54,
+                        "alntmscore": 0.84,
+                        "evalue": 0.6
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "NC_008720.1_prot_YP_950526.1_48_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P9WL61-F1-model_v4",
+                        "function": "Uncharacterized protein Rv2632c",
+                        "qstart": 8,
+                        "qend": 102,
+                        "tstart": 9,
+                        "tend": 85,
+                        "prob": 0.54,
+                        "alntmscore": 0.84,
+                        "evalue": 0.6
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "NC_008720.1_prot_YP_950526.1_48_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P9WL61-F1-model_v4",
+                        "function": "Uncharacterized protein Rv2632c",
+                        "qstart": 8,
+                        "qend": 102,
+                        "tstart": 9,
+                        "tend": 85,
+                        "prob": 0.54,
+                        "alntmscore": 0.84,
+                        "evalue": 0.6
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "NC_008720.1_prot_YP_950526.1_48_unknown",
+                "clusterRep": "NC_008720.1_prot_YP_950526.1_48_unknown",
+                "members": [
+                    "NC_008720.1_prot_YP_950526.1_48_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MNRITEEHIDSIIEGVYYFNMAKAVENEAVLIPEDHLKALSTTTVCALVLSNGFTITGKSACVDPNTFNEELGKKYAYEQAVDKVWELEGYLLKQNLHEKTQSQEMLKGFLQDDNCEGGGCKI",
+                "md5": "eea1298b8609d6a4e28470663aae967e",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF13876",
+                            "name": "Phage_gp49_66",
+                            "description": "Phage protein (N4 Gp49/phage Sf6 gene 66) family",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR025915",
+                                "name": "Phage_gp49_66",
+                                "description": "Phage protein (N4 Gp49/phage Sf6 gene 66) family",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 97,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 82,
+                                "hmmLength": 82,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 2.8e-31,
+                                "score": 119.2,
+                                "envelopeStart": 4,
+                                "envelopeEnd": 97,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 97,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.2e-31,
+                        "score": 119.5,
+                        "model-ac": "PF13876"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "NC_008720.1_prot_YP_950526.1_48_unknown",
+                        "id": "NC_008720.1_prot_YP_950526.1_48_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "NC_008720.1_prot_YP_950483.1_5_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "NC_008720.1_prot_YP_950483.1_5_unknown",
+                "clusterRep": "NC_008720.1_prot_YP_950483.1_5_unknown",
+                "members": [
+                    "NC_008720.1_prot_YP_950483.1_5_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,108 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ASM2089281v1
+#!genome-build-accession NCBI_Assembly:GCA_020892815.1
+##sequence-region MZ501055.1 1 39466
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2852039
+###
+##predicted functions and domains via #github link#
+MZ501055.1	Genbank	region	1	39466	.	+	.	ID=MZ501055.1:1..39466;Dbxref=taxon:2852039;collected-by=Alexander Harms;collection-date=08-Nov-2020;country=Switzerland: Basel;gbkey=Src;genome=genomic;identified-by=Alexander Harms;isolation-source=hospital sewage;lat-lon=47.56 N 7.59 E;mol_type=genomic DNA;nat-host=Escherichia coli K-12;strain=Bas68
+MZ501055.1	Genbank	gene	1	207	.	+	.	ID=gene-bas68_0001;Name=bas68_0001;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0001
+MZ501055.1	Genbank	CDS	1	207	.	+	0	ID=cds-QXV76796.1;Parent=gene-bas68_0001;Dbxref=NCBI_GP:QXV76796.1;Name=QXV76796.1;gbkey=CDS;locus_tag=bas68_0001;product=holin;protein_id=QXV76796.1;transl_table=11
+MZ501055.1	Genbank	gene	200	469	.	+	.	ID=gene-bas68_0002;Name=bas68_0002;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0002
+MZ501055.1	Genbank	CDS	200	469	.	+	0	ID=cds-QXV76797.1;Parent=gene-bas68_0002;Dbxref=NCBI_GP:QXV76797.1;Name=QXV76797.1;gbkey=CDS;locus_tag=bas68_0002;product=terminase small subunit;protein_id=QXV76797.1;transl_table=11
+MZ501055.1	Genbank	gene	568	1008	.	+	.	ID=gene-bas68_0003;Name=bas68_0003;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0003
+MZ501055.1	Genbank	CDS	568	1008	.	+	0	ID=cds-QXV76798.1;Parent=gene-bas68_0003;Dbxref=NCBI_GP:QXV76798.1;Name=QXV76798.1;gbkey=CDS;locus_tag=bas68_0003;product=i-spanin;protein_id=QXV76798.1;transl_table=11
+MZ501055.1	Genbank	gene	644	937	.	+	.	ID=gene-bas68_0004;Name=bas68_0004;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0004
+MZ501055.1	Genbank	CDS	644	937	.	+	0	ID=cds-QXV76799.1;Parent=gene-bas68_0004;Dbxref=NCBI_GP:QXV76799.1;Name=QXV76799.1;gbkey=CDS;locus_tag=bas68_0004;product=o-spanin;protein_id=QXV76799.1;transl_table=11
+MZ501055.1	Genbank	gene	1010	1567	.	+	.	ID=gene-bas68_0005;Name=bas68_0005;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0005
+MZ501055.1	Genbank	CDS	1010	1567	.	+	0	ID=cds-QXV76800.1;Parent=gene-bas68_0005;Dbxref=NCBI_GP:QXV76800.1;Name=QXV76800.1;gbkey=CDS;locus_tag=bas68_0005;product=hypothetical protein;protein_id=QXV76800.1;transl_table=11;cluster=singletonCluster
+MZ501055.1	Genbank	gene	1583	3343	.	+	.	ID=gene-bas68_0006;Name=bas68_0006;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0006
+MZ501055.1	Genbank	CDS	1583	3343	.	+	0	ID=cds-QXV76801.1;Parent=gene-bas68_0006;Dbxref=NCBI_GP:QXV76801.1;Name=QXV76801.1;gbkey=CDS;locus_tag=bas68_0006;product=terminase large subunit;protein_id=QXV76801.1;transl_table=11
+MZ501055.1	Genbank	gene	3611	3766	.	+	.	ID=gene-bas68_0007;Name=bas68_0007;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0007
+MZ501055.1	Genbank	CDS	3611	3766	.	+	0	ID=cds-QXV76802.1;Parent=gene-bas68_0007;Dbxref=NCBI_GP:QXV76802.1;Name=QXV76802.1;gbkey=CDS;locus_tag=bas68_0007;product=hypothetical protein;protein_id=QXV76802.1;transl_table=11;cluster=singletonCluster
+MZ501055.1	Genbank	gene	5128	5586	.	+	.	ID=gene-bas68_0008;Name=bas68_0008;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0008
+MZ501055.1	Genbank	CDS	5128	5586	.	+	0	ID=cds-QXV76803.1;Parent=gene-bas68_0008;Dbxref=NCBI_GP:QXV76803.1;Name=QXV76803.1;gbkey=CDS;locus_tag=bas68_0008;product=SAM hydrolase / restriction inhibitor;protein_id=QXV76803.1;transl_table=11
+MZ501055.1	Genbank	gene	5588	5785	.	+	.	ID=gene-bas68_0009;Name=bas68_0009;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0009
+MZ501055.1	Genbank	CDS	5588	5785	.	+	0	ID=cds-QXV76804.1;Parent=gene-bas68_0009;Dbxref=NCBI_GP:QXV76804.1;Name=QXV76804.1;gbkey=CDS;locus_tag=bas68_0009;product=hypothetical protein;protein_id=QXV76804.1;transl_table=11
+MZ501055.1	Genbank	gene	5772	5933	.	+	.	ID=gene-bas68_0010;Name=bas68_0010;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0010
+MZ501055.1	Genbank	CDS	5772	5933	.	+	0	ID=cds-QXV76805.1;Parent=gene-bas68_0010;Dbxref=NCBI_GP:QXV76805.1;Name=QXV76805.1;gbkey=CDS;locus_tag=bas68_0010;product=hypothetical protein;protein_id=QXV76805.1;transl_table=11;foldseek=Cytoplasmic protein
+MZ501055.1	Genbank	gene	5954	7057	.	+	.	ID=gene-bas68_0011;Name=bas68_0011;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0011
+MZ501055.1	Genbank	CDS	5954	7057	.	+	0	ID=cds-QXV76806.1;Parent=gene-bas68_0011;Dbxref=NCBI_GP:QXV76806.1;Name=QXV76806.1;Note=T3/T7-like protein kinase;gbkey=CDS;locus_tag=bas68_0011;product=protein kinase;protein_id=QXV76806.1;transl_table=11
+MZ501055.1	Genbank	gene	7130	9778	.	+	.	ID=gene-bas68_0012;Name=bas68_0012;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0012
+MZ501055.1	Genbank	CDS	7130	9778	.	+	0	ID=cds-QXV76807.1;Parent=gene-bas68_0012;Dbxref=NCBI_GP:QXV76807.1;Name=QXV76807.1;Note=T3/T7-like RNA polymerase;gbkey=CDS;locus_tag=bas68_0012;product=RNA polymerase;protein_id=QXV76807.1;transl_table=11
+MZ501055.1	Genbank	gene	9868	10425	.	+	.	ID=gene-bas68_0013;Name=bas68_0013;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0013
+MZ501055.1	Genbank	CDS	9868	10425	.	+	0	ID=cds-QXV76808.1;Parent=gene-bas68_0013;Dbxref=NCBI_GP:QXV76808.1;Name=QXV76808.1;gbkey=CDS;locus_tag=bas68_0013;product=hypothetical protein;protein_id=QXV76808.1;transl_table=11
+MZ501055.1	Genbank	gene	10517	10666	.	+	.	ID=gene-bas68_0014;Name=bas68_0014;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0014
+MZ501055.1	Genbank	CDS	10517	10666	.	+	0	ID=cds-QXV76809.1;Parent=gene-bas68_0014;Dbxref=NCBI_GP:QXV76809.1;Name=QXV76809.1;gbkey=CDS;locus_tag=bas68_0014;product=hypothetical protein;protein_id=QXV76809.1;transl_table=11;foldseek=Uncharacterized protein;cluster=singletonCluster;domain=Bacteriophage T7, Gp1.1
+MZ501055.1	Genbank	gene	10666	10938	.	+	.	ID=gene-bas68_0015;Name=bas68_0015;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0015
+MZ501055.1	Genbank	CDS	10666	10938	.	+	0	ID=cds-QXV76810.1;Parent=gene-bas68_0015;Dbxref=NCBI_GP:QXV76810.1;Name=QXV76810.1;gbkey=CDS;locus_tag=bas68_0015;product=host dGTPase inhibitor;protein_id=QXV76810.1;transl_table=11
+MZ501055.1	Genbank	gene	11040	12059	.	+	.	ID=gene-bas68_0016;Name=bas68_0016;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0016
+MZ501055.1	Genbank	CDS	11040	12059	.	+	0	ID=cds-QXV76811.1;Parent=gene-bas68_0016;Dbxref=NCBI_GP:QXV76811.1;Name=QXV76811.1;gbkey=CDS;locus_tag=bas68_0016;product=ATP-dependent DNA ligase;protein_id=QXV76811.1;transl_table=11
+MZ501055.1	Genbank	gene	12243	12506	.	+	.	ID=gene-bas68_0017;Name=bas68_0017;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0017
+MZ501055.1	Genbank	CDS	12243	12506	.	+	0	ID=cds-QXV76812.1;Parent=gene-bas68_0017;Dbxref=NCBI_GP:QXV76812.1;Name=QXV76812.1;gbkey=CDS;locus_tag=bas68_0017;product=hypothetical protein;protein_id=QXV76812.1;transl_table=11
+MZ501055.1	Genbank	gene	12506	12817	.	+	.	ID=gene-bas68_0018;Name=bas68_0018;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0018
+MZ501055.1	Genbank	CDS	12506	12817	.	+	0	ID=cds-QXV76813.1;Parent=gene-bas68_0018;Dbxref=NCBI_GP:QXV76813.1;Name=QXV76813.1;gbkey=CDS;locus_tag=bas68_0018;product=hypothetical protein;protein_id=QXV76813.1;transl_table=11;cluster=singletonCluster;domain=SaV-like
+MZ501055.1	Genbank	gene	12810	12914	.	+	.	ID=gene-bas68_0019;Name=bas68_0019;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0019
+MZ501055.1	Genbank	CDS	12810	12914	.	+	0	ID=cds-QXV76814.1;Parent=gene-bas68_0019;Dbxref=NCBI_GP:QXV76814.1;Name=QXV76814.1;gbkey=CDS;locus_tag=bas68_0019;product=hypothetical protein;protein_id=QXV76814.1;transl_table=11;cluster=singletonCluster
+MZ501055.1	Genbank	gene	12898	12996	.	+	.	ID=gene-bas68_0020;Name=bas68_0020;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0020
+MZ501055.1	Genbank	CDS	12898	12996	.	+	0	ID=cds-QXV76815.1;Parent=gene-bas68_0020;Dbxref=NCBI_GP:QXV76815.1;Name=QXV76815.1;gbkey=CDS;locus_tag=bas68_0020;product=hypothetical protein;protein_id=QXV76815.1;transl_table=11
+MZ501055.1	Genbank	gene	12993	13184	.	+	.	ID=gene-bas68_0021;Name=bas68_0021;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0021
+MZ501055.1	Genbank	CDS	12993	13184	.	+	0	ID=cds-QXV76816.1;Parent=gene-bas68_0021;Dbxref=NCBI_GP:QXV76816.1;Name=QXV76816.1;gbkey=CDS;locus_tag=bas68_0021;product=host RNA polymerase inhibitor;protein_id=QXV76816.1;transl_table=11
+MZ501055.1	Genbank	gene	13254	13952	.	+	.	ID=gene-bas68_0022;Name=bas68_0022;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0022
+MZ501055.1	Genbank	CDS	13254	13952	.	+	0	ID=cds-QXV76817.1;Parent=gene-bas68_0022;Dbxref=NCBI_GP:QXV76817.1;Name=QXV76817.1;gbkey=CDS;locus_tag=bas68_0022;product=ssDNA-binding protein;protein_id=QXV76817.1;transl_table=11
+MZ501055.1	Genbank	gene	13952	14398	.	+	.	ID=gene-bas68_0023;Name=bas68_0023;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0023
+MZ501055.1	Genbank	CDS	13952	14398	.	+	0	ID=cds-QXV76818.1;Parent=gene-bas68_0023;Dbxref=NCBI_GP:QXV76818.1;Name=QXV76818.1;gbkey=CDS;locus_tag=bas68_0023;product=endonuclease;protein_id=QXV76818.1;transl_table=11
+MZ501055.1	Genbank	gene	14395	14850	.	+	.	ID=gene-bas68_0024;Name=bas68_0024;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0024
+MZ501055.1	Genbank	CDS	14395	14850	.	+	0	ID=cds-QXV76819.1;Parent=gene-bas68_0024;Dbxref=NCBI_GP:QXV76819.1;Name=QXV76819.1;gbkey=CDS;locus_tag=bas68_0024;product=endolysin;protein_id=QXV76819.1;transl_table=11
+MZ501055.1	Genbank	gene	14856	14948	.	+	.	ID=gene-bas68_0025;Name=bas68_0025;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0025
+MZ501055.1	Genbank	CDS	14856	14948	.	+	0	ID=cds-QXV76820.1;Parent=gene-bas68_0025;Dbxref=NCBI_GP:QXV76820.1;Name=QXV76820.1;gbkey=CDS;locus_tag=bas68_0025;product=hypothetical protein;protein_id=QXV76820.1;transl_table=11
+MZ501055.1	Genbank	gene	15116	16828	.	+	.	ID=gene-bas68_0026;Name=bas68_0026;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0026
+MZ501055.1	Genbank	CDS	15116	16828	.	+	0	ID=cds-QXV76821.1;Parent=gene-bas68_0026;Dbxref=NCBI_GP:QXV76821.1;Name=QXV76821.1;gbkey=CDS;locus_tag=bas68_0026;product=DNA primase/helicase;protein_id=QXV76821.1;transl_table=11
+MZ501055.1	Genbank	gene	16960	17172	.	+	.	ID=gene-bas68_0027;Name=bas68_0027;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0027
+MZ501055.1	Genbank	CDS	16960	17172	.	+	0	ID=cds-QXV76822.1;Parent=gene-bas68_0027;Dbxref=NCBI_GP:QXV76822.1;Name=QXV76822.1;gbkey=CDS;locus_tag=bas68_0027;product=hypothetical protein;protein_id=QXV76822.1;transl_table=11;cluster=singletonCluster;domain=Protein of unknown function DUF5471
+MZ501055.1	Genbank	gene	17366	17668	.	+	.	ID=gene-bas68_0028;Name=bas68_0028;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0028
+MZ501055.1	Genbank	CDS	17366	17668	.	+	0	ID=cds-QXV76823.1;Parent=gene-bas68_0028;Dbxref=NCBI_GP:QXV76823.1;Name=QXV76823.1;gbkey=CDS;locus_tag=bas68_0028;product=hypothetical protein;protein_id=QXV76823.1;transl_table=11
+MZ501055.1	Genbank	gene	17757	17936	.	+	.	ID=gene-bas68_0029;Name=bas68_0029;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0029
+MZ501055.1	Genbank	CDS	17757	17936	.	+	0	ID=cds-QXV76824.1;Parent=gene-bas68_0029;Dbxref=NCBI_GP:QXV76824.1;Name=QXV76824.1;gbkey=CDS;locus_tag=bas68_0029;product=hypothetical protein;protein_id=QXV76824.1;transl_table=11;foldseek=None;cluster=singletonCluster
+MZ501055.1	Genbank	gene	17944	18156	.	+	.	ID=gene-bas68_0030;Name=bas68_0030;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0030
+MZ501055.1	Genbank	CDS	17944	18156	.	+	0	ID=cds-QXV76825.1;Parent=gene-bas68_0030;Dbxref=NCBI_GP:QXV76825.1;Name=QXV76825.1;gbkey=CDS;locus_tag=bas68_0030;product=hypothetical protein;protein_id=QXV76825.1;transl_table=11;foldseek=Preprotein translocase, YajC subunit;cluster=singletonCluster
+MZ501055.1	Genbank	gene	18176	20290	.	+	.	ID=gene-bas68_0031;Name=bas68_0031;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0031
+MZ501055.1	Genbank	CDS	18176	20290	.	+	0	ID=cds-QXV76826.1;Parent=gene-bas68_0031;Dbxref=NCBI_GP:QXV76826.1;Name=QXV76826.1;gbkey=CDS;locus_tag=bas68_0031;product=DNA polymerase;protein_id=QXV76826.1;transl_table=11
+MZ501055.1	Genbank	gene	20306	20533	.	+	.	ID=gene-bas68_0032;Name=bas68_0032;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0032
+MZ501055.1	Genbank	CDS	20306	20533	.	+	0	ID=cds-QXV76827.1;Parent=gene-bas68_0032;Dbxref=NCBI_GP:QXV76827.1;Name=QXV76827.1;gbkey=CDS;locus_tag=bas68_0032;product=putative homing endonuclease;protein_id=QXV76827.1;transl_table=11
+MZ501055.1	Genbank	gene	20546	20839	.	+	.	ID=gene-bas68_0033;Name=bas68_0033;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0033
+MZ501055.1	Genbank	CDS	20546	20839	.	+	0	ID=cds-QXV76828.1;Parent=gene-bas68_0033;Dbxref=NCBI_GP:QXV76828.1;Name=QXV76828.1;gbkey=CDS;locus_tag=bas68_0033;product=host HNS-interacting protein;protein_id=QXV76828.1;transl_table=11
+MZ501055.1	Genbank	gene	20839	21048	.	+	.	ID=gene-bas68_0034;Name=bas68_0034;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0034
+MZ501055.1	Genbank	CDS	20839	21048	.	+	0	ID=cds-QXV76829.1;Parent=gene-bas68_0034;Dbxref=NCBI_GP:QXV76829.1;Name=QXV76829.1;gbkey=CDS;locus_tag=bas68_0034;product=inhibitor of RpoS-bound host RNAP;protein_id=QXV76829.1;transl_table=11
+MZ501055.1	Genbank	gene	21045	21959	.	+	.	ID=gene-bas68_0035;Name=bas68_0035;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0035
+MZ501055.1	Genbank	CDS	21045	21959	.	+	0	ID=cds-QXV76830.1;Parent=gene-bas68_0035;Dbxref=NCBI_GP:QXV76830.1;Name=QXV76830.1;gbkey=CDS;locus_tag=bas68_0035;product=exonuclease;protein_id=QXV76830.1;transl_table=11
+MZ501055.1	Genbank	gene	21932	22018	.	+	.	ID=gene-bas68_0036;Name=bas68_0036;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0036
+MZ501055.1	Genbank	CDS	21932	22018	.	+	0	ID=cds-QXV76831.1;Parent=gene-bas68_0036;Dbxref=NCBI_GP:QXV76831.1;Name=QXV76831.1;gbkey=CDS;locus_tag=bas68_0036;product=hypothetical protein;protein_id=QXV76831.1;transl_table=11
+MZ501055.1	Genbank	gene	22122	22367	.	+	.	ID=gene-bas68_0037;Name=bas68_0037;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0037
+MZ501055.1	Genbank	CDS	22122	22367	.	+	0	ID=cds-QXV76832.1;Parent=gene-bas68_0037;Dbxref=NCBI_GP:QXV76832.1;Name=QXV76832.1;gbkey=CDS;locus_tag=bas68_0037;product=hypothetical protein;protein_id=QXV76832.1;transl_table=11;foldseek=Stressosome-associated protein Prli42;cluster=singletonCluster;domain=Bacteriophage T7-like gene 6.5
+MZ501055.1	Genbank	gene	22383	22655	.	+	.	ID=gene-bas68_0038;Name=bas68_0038;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0038
+MZ501055.1	Genbank	CDS	22383	22655	.	+	0	ID=cds-QXV76833.1;Parent=gene-bas68_0038;Dbxref=NCBI_GP:QXV76833.1;Name=QXV76833.1;gbkey=CDS;locus_tag=bas68_0038;product=hypothetical protein;protein_id=QXV76833.1;transl_table=11;cluster=singletonCluster;domain=Bacteriophage T7-like, protein 6.7
+MZ501055.1	Genbank	gene	22670	23026	.	+	.	ID=gene-bas68_0039;Name=bas68_0039;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0039
+MZ501055.1	Genbank	CDS	22670	23026	.	+	0	ID=cds-QXV76834.1;Parent=gene-bas68_0039;Dbxref=NCBI_GP:QXV76834.1;Name=QXV76834.1;gbkey=CDS;locus_tag=bas68_0039;product=tail assembly protein;protein_id=QXV76834.1;transl_table=11
+MZ501055.1	Genbank	gene	23039	24640	.	+	.	ID=gene-bas68_0040;Name=bas68_0040;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0040
+MZ501055.1	Genbank	CDS	23039	24640	.	+	0	ID=cds-QXV76835.1;Parent=gene-bas68_0040;Dbxref=NCBI_GP:QXV76835.1;Name=QXV76835.1;gbkey=CDS;locus_tag=bas68_0040;product=head-tail-joining protein;protein_id=QXV76835.1;transl_table=11
+MZ501055.1	Genbank	gene	24713	25624	.	+	.	ID=gene-bas68_0041;Name=bas68_0041;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0041
+MZ501055.1	Genbank	CDS	24713	25624	.	+	0	ID=cds-QXV76836.1;Parent=gene-bas68_0041;Dbxref=NCBI_GP:QXV76836.1;Name=QXV76836.1;gbkey=CDS;locus_tag=bas68_0041;product=capsid assembly protein;protein_id=QXV76836.1;transl_table=11
+MZ501055.1	Genbank	gene	25752	26795	.	+	.	ID=gene-bas68_0042;Name=bas68_0042;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0042
+MZ501055.1	Genbank	CDS	25752	26795	.	+	0	ID=cds-QXV76837.1;Parent=gene-bas68_0042;Dbxref=NCBI_GP:QXV76837.1;Name=QXV76837.1;gbkey=CDS;locus_tag=bas68_0042;product=major capsid protein;protein_id=QXV76837.1;transl_table=11
+MZ501055.1	Genbank	gene	27021	27611	.	+	.	ID=gene-bas68_0043;Name=bas68_0043;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0043
+MZ501055.1	Genbank	CDS	27021	27611	.	+	0	ID=cds-QXV76838.1;Parent=gene-bas68_0043;Dbxref=NCBI_GP:QXV76838.1;Name=QXV76838.1;gbkey=CDS;locus_tag=bas68_0043;product=tail tube protein A;protein_id=QXV76838.1;transl_table=11
+MZ501055.1	Genbank	gene	27541	30015	.	+	.	ID=gene-bas68_0044;Name=bas68_0044;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0044
+MZ501055.1	Genbank	CDS	27541	30015	.	+	0	ID=cds-QXV76839.1;Parent=gene-bas68_0044;Dbxref=NCBI_GP:QXV76839.1;Name=QXV76839.1;gbkey=CDS;locus_tag=bas68_0044;product=tail tube protein B;protein_id=QXV76839.1;transl_table=11
+MZ501055.1	Genbank	gene	30094	30507	.	+	.	ID=gene-bas68_0045;Name=bas68_0045;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0045
+MZ501055.1	Genbank	CDS	30094	30507	.	+	0	ID=cds-QXV76840.1;Parent=gene-bas68_0045;Dbxref=NCBI_GP:QXV76840.1;Name=QXV76840.1;gbkey=CDS;locus_tag=bas68_0045;product=putative scaffold protein;protein_id=QXV76840.1;transl_table=11;foldseek=N-acetyltransferase domain-containing protein;domain=Probable scaffold protein Gp13, bacteriophage T7
+MZ501055.1	Genbank	gene	30510	31115	.	+	.	ID=gene-bas68_0046;Name=bas68_0046;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0046
+MZ501055.1	Genbank	CDS	30510	31115	.	+	0	ID=cds-QXV76841.1;Parent=gene-bas68_0046;Dbxref=NCBI_GP:QXV76841.1;Name=QXV76841.1;gbkey=CDS;locus_tag=bas68_0046;product=DNA injection channel protein A;protein_id=QXV76841.1;transl_table=11
+MZ501055.1	Genbank	gene	31133	33412	.	+	.	ID=gene-bas68_0047;Name=bas68_0047;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0047
+MZ501055.1	Genbank	CDS	31133	33412	.	+	0	ID=cds-QXV76842.1;Parent=gene-bas68_0047;Dbxref=NCBI_GP:QXV76842.1;Name=QXV76842.1;gbkey=CDS;locus_tag=bas68_0047;product=DNA injection protein B;protein_id=QXV76842.1;transl_table=11
+MZ501055.1	Genbank	gene	33436	37383	.	+	.	ID=gene-bas68_0048;Name=bas68_0048;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0048
+MZ501055.1	Genbank	CDS	33436	37383	.	+	0	ID=cds-QXV76843.1;Parent=gene-bas68_0048;Dbxref=NCBI_GP:QXV76843.1;Name=QXV76843.1;gbkey=CDS;locus_tag=bas68_0048;product=DNA injection protein C;protein_id=QXV76843.1;transl_table=11
+MZ501055.1	Genbank	gene	37455	39422	.	+	.	ID=gene-bas68_0049;Name=bas68_0049;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas68_0049
+MZ501055.1	Genbank	CDS	37455	39422	.	+	0	ID=cds-QXV76844.1;Parent=gene-bas68_0049;Dbxref=NCBI_GP:QXV76844.1;Name=QXV76844.1;gbkey=CDS;locus_tag=bas68_0049;product=tail fiber protein;protein_id=QXV76844.1;transl_table=11

@@ -1,0 +1,1532 @@
+[
+    {
+        "protein": "MZ501069.1_prot_QXV79382.1_25_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79382.1_25_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K7KWV8-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 18,
+                        "qend": 87,
+                        "tstart": 3,
+                        "tend": 100,
+                        "prob": 0.47,
+                        "alntmscore": 0.67,
+                        "evalue": 0.37
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79382.1_25_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A133CYL7-F1-model_v4",
+                        "function": "Dihydrolipoamide dehydrogenase",
+                        "qstart": 15,
+                        "qend": 89,
+                        "tstart": 58,
+                        "tend": 290,
+                        "prob": 0.57,
+                        "alntmscore": 0.67,
+                        "evalue": 0.36
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79382.1_25_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K7KWV8-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 18,
+                        "qend": 87,
+                        "tstart": 3,
+                        "tend": 100,
+                        "prob": 0.47,
+                        "alntmscore": 0.67,
+                        "evalue": 0.37
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79382.1_25_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79382.1_25_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79382.1_25_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKKLIAVIATVAALTGCAASPTGGFKEIDCTAKFNVKTFPVNGFHEVKINAVRENRFSQKQYRLSVDNKEVKFINRWQNESKFIDLRCN",
+                "md5": "33b9b35476289041c14378795b4bb20d",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PS51257",
+                            "name": "PROKAR_LIPOPROTEIN",
+                            "description": "Prokaryotic membrane lipoprotein lipid attachment site profile.",
+                            "signatureLibraryRelease": {
+                                "library": "PROSITE_PROFILES",
+                                "version": "2023_05"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 17,
+                                "representative": true,
+                                "score": 6.0,
+                                "alignment": "MKKLIA------------------VIATVAALTGC",
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 17,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "model-ac": "PS51257"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501069.1_prot_QXV79382.1_25_unknown",
+                        "id": "MZ501069.1_prot_QXV79382.1_25_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79384.1_27_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79384.1_27_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q8CWS0-F1-model_v4",
+                        "function": "Small ribosomal subunit protein bS20",
+                        "qstart": 1,
+                        "qend": 82,
+                        "tstart": 6,
+                        "tend": 75,
+                        "prob": 0.6,
+                        "alntmscore": 0.7,
+                        "evalue": 0.56
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79384.1_27_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A1D6HAS2-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 5,
+                        "qend": 83,
+                        "tstart": 36,
+                        "tend": 121,
+                        "prob": 0.82,
+                        "alntmscore": 0.73,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79384.1_27_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0P0VBT3-F1-model_v4",
+                        "function": "Os01g0896900 protein",
+                        "qstart": 1,
+                        "qend": 59,
+                        "tstart": 219,
+                        "tend": 273,
+                        "prob": 0.5,
+                        "alntmscore": 0.81,
+                        "evalue": 0.34
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79384.1_27_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79384.1_27_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79384.1_27_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79425.1_68_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79425.1_68_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9HTF6-F1-model_v4",
+                        "function": "SPOR domain-containing protein",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 8,
+                        "tend": 55,
+                        "prob": 0.96,
+                        "alntmscore": 0.85,
+                        "evalue": 0.71
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79425.1_68_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0H3H1E8-F1-model_v4",
+                        "function": "YfiB protein",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 2,
+                        "tend": 55,
+                        "prob": 0.98,
+                        "alntmscore": 0.87,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79425.1_68_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0H3H1E8-F1-model_v4",
+                        "function": "YfiB protein",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 2,
+                        "tend": 55,
+                        "prob": 0.98,
+                        "alntmscore": 0.87,
+                        "evalue": 0.7
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79425.1_68_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79425.1_68_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79425.1_68_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79427.1_70_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79427.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0N4UEV0-F1-model_v4",
+                        "function": "DUF3099 domain-containing protein",
+                        "qstart": 4,
+                        "qend": 62,
+                        "tstart": 13,
+                        "tend": 67,
+                        "prob": 0.69,
+                        "alntmscore": 0.79,
+                        "evalue": 0.59
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79427.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q57919-F1-model_v4",
+                        "function": "Uncharacterized protein MJ0496",
+                        "qstart": 5,
+                        "qend": 73,
+                        "tstart": 1,
+                        "tend": 69,
+                        "prob": 0.94,
+                        "alntmscore": 0.81,
+                        "evalue": 0.56
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79427.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q57919-F1-model_v4",
+                        "function": "Uncharacterized protein MJ0496",
+                        "qstart": 5,
+                        "qend": 73,
+                        "tstart": 1,
+                        "tend": 69,
+                        "prob": 0.94,
+                        "alntmscore": 0.81,
+                        "evalue": 0.56
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79427.1_70_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79427.1_70_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79427.1_70_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79438.1_81_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79438.1_81_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O24901-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 8,
+                        "qend": 82,
+                        "tstart": 1,
+                        "tend": 98,
+                        "prob": 0.54,
+                        "alntmscore": 0.62,
+                        "evalue": 0.4
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79438.1_81_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A1D6IMK8-F1-model_v4",
+                        "function": "Apyrase 1",
+                        "qstart": 1,
+                        "qend": 82,
+                        "tstart": 55,
+                        "tend": 454,
+                        "prob": 0.63,
+                        "alntmscore": 0.61,
+                        "evalue": 0.34
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79438.1_81_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0H3H0U0-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 6,
+                        "qend": 82,
+                        "tstart": 239,
+                        "tend": 391,
+                        "prob": 0.6,
+                        "alntmscore": 0.64,
+                        "evalue": 0.34
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79438.1_81_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79438.1_81_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79438.1_81_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79430.1_73_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79430.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q7XZU2-F1-model_v4",
+                        "function": "Phosphoinositide phosphatase SAC3",
+                        "qstart": 4,
+                        "qend": 99,
+                        "tstart": 15,
+                        "tend": 131,
+                        "prob": 0.57,
+                        "alntmscore": 0.61,
+                        "evalue": 0.31
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79430.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q7XZU2-F1-model_v4",
+                        "function": "Phosphoinositide phosphatase SAC3",
+                        "qstart": 4,
+                        "qend": 99,
+                        "tstart": 15,
+                        "tend": 131,
+                        "prob": 0.57,
+                        "alntmscore": 0.61,
+                        "evalue": 0.31
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79430.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q7XZU2-F1-model_v4",
+                        "function": "Phosphoinositide phosphatase SAC3",
+                        "qstart": 4,
+                        "qend": 99,
+                        "tstart": 15,
+                        "tend": 131,
+                        "prob": 0.57,
+                        "alntmscore": 0.61,
+                        "evalue": 0.31
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79430.1_73_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79430.1_73_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79430.1_73_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79417.1_60_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79417.1_60_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-G4LWF7-F1-model_v4",
+                        "function": "CAI-2 protein, putative",
+                        "qstart": 24,
+                        "qend": 140,
+                        "tstart": 3,
+                        "tend": 126,
+                        "prob": 0.9,
+                        "alntmscore": 0.83,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79417.1_60_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q1G3A4-F1-model_v4",
+                        "function": "Plant invertase/pectin methylesterase inhibitor superfamily protein",
+                        "qstart": 1,
+                        "qend": 140,
+                        "tstart": 42,
+                        "tend": 186,
+                        "prob": 0.95,
+                        "alntmscore": 0.77,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79417.1_60_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A1C1CX30-F1-model_v4",
+                        "function": "MARVEL domain-containing protein",
+                        "qstart": 25,
+                        "qend": 140,
+                        "tstart": 16,
+                        "tend": 178,
+                        "prob": 0.92,
+                        "alntmscore": 0.86,
+                        "evalue": 0.63
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79417.1_60_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79417.1_60_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79417.1_60_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79444.1_87_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79444.1_87_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0A2V1V3-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 4,
+                        "qend": 42,
+                        "tstart": 13,
+                        "tend": 52,
+                        "prob": 0.98,
+                        "alntmscore": 0.92,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79444.1_87_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0R0H2I0-F1-model_v4",
+                        "function": "Membrane-associated 30 kDa protein, chloroplastic",
+                        "qstart": 4,
+                        "qend": 42,
+                        "tstart": 127,
+                        "tend": 166,
+                        "prob": 0.99,
+                        "alntmscore": 0.94,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79444.1_87_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0P0WLE7-F1-model_v4",
+                        "function": "Os05g0364500 protein",
+                        "qstart": 4,
+                        "qend": 39,
+                        "tstart": 31,
+                        "tend": 67,
+                        "prob": 0.98,
+                        "alntmscore": 0.94,
+                        "evalue": 0.43
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79444.1_87_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79444.1_87_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79444.1_87_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79439.1_82_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79439.1_82_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q8CZA5-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 52,
+                        "tstart": 10,
+                        "tend": 60,
+                        "prob": 0.82,
+                        "alntmscore": 0.79,
+                        "evalue": 0.62
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79439.1_82_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-X8FCY1-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 60,
+                        "tstart": 15,
+                        "tend": 148,
+                        "prob": 0.95,
+                        "alntmscore": 0.8,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79439.1_82_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q58620-F1-model_v4",
+                        "function": "Uncharacterized protein MJ1223",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 7,
+                        "tend": 57,
+                        "prob": 0.92,
+                        "alntmscore": 0.88,
+                        "evalue": 0.59
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79439.1_82_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79439.1_82_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79439.1_82_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79415.1_58_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501069.1_prot_QXV79415.1_58_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A1C1CXE6-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 4,
+                        "qend": 69,
+                        "tstart": 8,
+                        "tend": 87,
+                        "prob": 0.47,
+                        "alntmscore": 0.63,
+                        "evalue": 0.46
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501069.1_prot_QXV79415.1_58_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q8ZMV8-F1-model_v4",
+                        "function": "ABC transporter transmembrane region",
+                        "qstart": 4,
+                        "qend": 69,
+                        "tstart": 71,
+                        "tend": 135,
+                        "prob": 0.63,
+                        "alntmscore": 0.7,
+                        "evalue": 0.32
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501069.1_prot_QXV79415.1_58_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q8ZMV8-F1-model_v4",
+                        "function": "ABC transporter transmembrane region",
+                        "qstart": 4,
+                        "qend": 69,
+                        "tstart": 71,
+                        "tend": 135,
+                        "prob": 0.63,
+                        "alntmscore": 0.7,
+                        "evalue": 0.32
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79364.1_7_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79364.1_7_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79364.1_7_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79364.1_7_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MAKDYSSVMGLSCPGCLVDSTRYNIDGTGVCGSESIIAGKVVFFKERIDGYNIFVDHKEGGAVVAGVALRSNITTTVNEEDGYSDYKEGDAINILTRGVVWCVTQTIESPPEHGDLVYVNNDGFVAKSDGDEIVDGWIFTGDFYKFDETINIVGVRITPLYHRKYLLTGAIIEAENGYIEGTETINNVQLKVTVVPTWADDKTGQWTITNPQDPSVASVSRTGLVVPTGVGGRVNVNWTANDGSGVADQFDIVFTKTAGE",
+                "md5": "28e3fd84b051c2ca554081ac8dd4c976",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF22758",
+                            "name": "Phage_cement",
+                            "description": "Structural cement protein (E217 gp24/Pam3 gp6)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR054438",
+                                "name": "Struct_cement_gp24/gp6",
+                                "description": "Structural cement protein E217 gp24/Pam3 gp6",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 147,
+                                "representative": false,
+                                "hmmStart": 4,
+                                "hmmEnd": 135,
+                                "hmmLength": 146,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 7.6e-19,
+                                "score": 79.7,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 158,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 147,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 7.6e-19,
+                        "score": 79.7,
+                        "model-ac": "PF22758"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF02368",
+                            "name": "Big_2",
+                            "description": "Bacterial Ig-like domain (group 2)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003343",
+                                "name": "Big_2",
+                                "description": "Bacterial Ig-like domain, group 2",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "Viral Messenger RNA Synthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-168325"
+                                    },
+                                    {
+                                        "name": "alazopeptin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8293"
+                                    },
+                                    {
+                                        "name": "SUMOylation of RNA binding proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-4570464"
+                                    },
+                                    {
+                                        "name": "pyoverdine I biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6409"
+                                    },
+                                    {
+                                        "name": "SUMOylation of SUMOylation proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4085377"
+                                    },
+                                    {
+                                        "name": "HCMV Late Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9610379"
+                                    },
+                                    {
+                                        "name": "Nuclear Pore Complex (NPC) Disassembly",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-3301854"
+                                    },
+                                    {
+                                        "name": "Transport of the SLBP independent Mature mRNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-159227"
+                                    },
+                                    {
+                                        "name": "SUMOylation of RNA binding proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4570464"
+                                    },
+                                    {
+                                        "name": "Regulation of Glucokinase by Glucokinase Regulatory Protein",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-170822"
+                                    },
+                                    {
+                                        "name": "SUMOylation of DNA replication proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4615885"
+                                    },
+                                    {
+                                        "name": "UDP-3-acetamido-2,3-dideoxy-2-(seryl)amino-alpha-D-glucuronamide biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8229"
+                                    },
+                                    {
+                                        "name": "snRNP Assembly",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-191859"
+                                    },
+                                    {
+                                        "name": "Regulation of HSF1-mediated heat shock response",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3371453"
+                                    },
+                                    {
+                                        "name": "Rev-mediated nuclear export of HIV RNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-165054"
+                                    },
+                                    {
+                                        "name": "colchicine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5846"
+                                    },
+                                    {
+                                        "name": "echinocandin B degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7652"
+                                    },
+                                    {
+                                        "name": "paromomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7018"
+                                    },
+                                    {
+                                        "name": "indole degradation to anthranil and anthranilate",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7430"
+                                    },
+                                    {
+                                        "name": "pectin degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7246"
+                                    },
+                                    {
+                                        "name": "D-glutamate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8453"
+                                    },
+                                    {
+                                        "name": "SUMOylation of SUMOylation proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-4085377"
+                                    },
+                                    {
+                                        "name": "indole-3-acetate inactivation VIII",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5784"
+                                    },
+                                    {
+                                        "name": "Regulation of Glucokinase by Glucokinase Regulatory Protein",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-170822"
+                                    },
+                                    {
+                                        "name": "purine nucleobases degradation II (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5497"
+                                    },
+                                    {
+                                        "name": "Regulation of HSF1-mediated heat shock response",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3371453"
+                                    },
+                                    {
+                                        "name": "SUMOylation of DNA damage response and repair proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3108214"
+                                    },
+                                    {
+                                        "name": "SUMOylation of DNA replication proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-4615885"
+                                    },
+                                    {
+                                        "name": "Transport of the SLBP independent Mature mRNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-159227"
+                                    },
+                                    {
+                                        "name": "SUMOylation of chromatin organization proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-4551638"
+                                    },
+                                    {
+                                        "name": "Transport of Mature mRNA derived from an Intron-Containing Transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-159236"
+                                    },
+                                    {
+                                        "name": "Vpr-mediated nuclear import of PICs",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-180910"
+                                    },
+                                    {
+                                        "name": "Transcriptional regulation by small RNAs",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5578749"
+                                    },
+                                    {
+                                        "name": "Transport of Mature mRNA Derived from an Intronless Transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-159231"
+                                    },
+                                    {
+                                        "name": "tRNA processing in the nucleus",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6784531"
+                                    },
+                                    {
+                                        "name": "Regulation of HSF1-mediated heat shock response",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-3371453"
+                                    },
+                                    {
+                                        "name": "tunicamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7821"
+                                    },
+                                    {
+                                        "name": "Nuclear Pore Complex (NPC) Disassembly",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3301854"
+                                    },
+                                    {
+                                        "name": "Transport of the SLBP Dependant Mature mRNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-159230"
+                                    },
+                                    {
+                                        "name": "SUMOylation of RNA binding proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-4570464"
+                                    },
+                                    {
+                                        "name": "Transport of Mature mRNA derived from an Intron-Containing Transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-159236"
+                                    },
+                                    {
+                                        "name": "SUMOylation of SUMOylation proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-4085377"
+                                    },
+                                    {
+                                        "name": "tetramethylpyrazine degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7403"
+                                    },
+                                    {
+                                        "name": "base-degraded thiamine salvage",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6899"
+                                    },
+                                    {
+                                        "name": "SUMOylation of ubiquitinylation proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3232142"
+                                    },
+                                    {
+                                        "name": "S-benzyl-L-cysteine degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8418"
+                                    },
+                                    {
+                                        "name": "Transport of Mature mRNA Derived from an Intronless Transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-159231"
+                                    },
+                                    {
+                                        "name": "Transport of Ribonucleoproteins into the Host Nucleus",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-168271"
+                                    },
+                                    {
+                                        "name": "snRNP Assembly",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-191859"
+                                    },
+                                    {
+                                        "name": "SUMOylation of DNA replication proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-4615885"
+                                    },
+                                    {
+                                        "name": "NEP/NS2 Interacts with the Cellular Export Machinery",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-168333"
+                                    },
+                                    {
+                                        "name": "snRNP Assembly",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-191859"
+                                    },
+                                    {
+                                        "name": "L-mimosine degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8431"
+                                    },
+                                    {
+                                        "name": "SARS-CoV-2 activates/modulates innate and adaptive immune responses",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9705671"
+                                    },
+                                    {
+                                        "name": "kappa-carrageenan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6821"
+                                    },
+                                    {
+                                        "name": "Nuclear Pore Complex (NPC) Disassembly",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3301854"
+                                    },
+                                    {
+                                        "name": "Transport of the SLBP Dependant Mature mRNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-159230"
+                                    },
+                                    {
+                                        "name": "ferrichrome A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7571"
+                                    },
+                                    {
+                                        "name": "SUMOylation of chromatin organization proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-4551638"
+                                    },
+                                    {
+                                        "name": "Transcriptional regulation by small RNAs",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-5578749"
+                                    },
+                                    {
+                                        "name": "Transcriptional regulation by small RNAs",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5578749"
+                                    },
+                                    {
+                                        "name": "HCMV Early Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9609690"
+                                    },
+                                    {
+                                        "name": "butachlor degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7771"
+                                    },
+                                    {
+                                        "name": "linuron degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7496"
+                                    },
+                                    {
+                                        "name": "Regulation of Glucokinase by Glucokinase Regulatory Protein",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-170822"
+                                    },
+                                    {
+                                        "name": "indole-3-acetate activation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-1822"
+                                    },
+                                    {
+                                        "name": "SUMOylation of chromatin organization proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4551638"
+                                    },
+                                    {
+                                        "name": "ISG15 antiviral mechanism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1169408"
+                                    },
+                                    {
+                                        "name": "NS1 Mediated Effects on Host Pathways",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-168276"
+                                    },
+                                    {
+                                        "name": "ulvan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7647"
+                                    },
+                                    {
+                                        "name": "Transport of the SLBP Dependant Mature mRNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-159230"
+                                    },
+                                    {
+                                        "name": "Transport of Mature mRNA derived from an Intron-Containing Transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-159236"
+                                    },
+                                    {
+                                        "name": "Defective TPR may confer susceptibility towards thyroid papillary carcinoma (TPC)",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5619107"
+                                    },
+                                    {
+                                        "name": "N-(1-deoxy-D-fructos-1-yl)-L-asparagine degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8402"
+                                    },
+                                    {
+                                        "name": "SUMOylation of ubiquitinylation proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3232142"
+                                    },
+                                    {
+                                        "name": "4-hydroxypyridine degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8432"
+                                    },
+                                    {
+                                        "name": "Nuclear import of Rev protein",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-180746"
+                                    },
+                                    {
+                                        "name": "Transport of Mature mRNA Derived from an Intronless Transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-159231"
+                                    },
+                                    {
+                                        "name": "SUMOylation of DNA damage response and repair proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-3108214"
+                                    },
+                                    {
+                                        "name": "SUMOylation of DNA damage response and repair proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3108214"
+                                    },
+                                    {
+                                        "name": "taurine biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7850"
+                                    },
+                                    {
+                                        "name": "SUMOylation of ubiquitinylation proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-3232142"
+                                    },
+                                    {
+                                        "name": "Transport of the SLBP independent Mature mRNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-159227"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 186,
+                                "end": 246,
+                                "representative": true,
+                                "hmmStart": 18,
+                                "hmmEnd": 74,
+                                "hmmLength": 79,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 0.0042,
+                                "score": 28.3,
+                                "envelopeStart": 183,
+                                "envelopeEnd": 249,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 186,
+                                        "end": 246,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 0.0016,
+                        "score": 29.7,
+                        "model-ac": "PF02368"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501069.1_prot_QXV79364.1_7_unknown",
+                        "id": "MZ501069.1_prot_QXV79364.1_7_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79408.1_51_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79408.1_51_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79408.1_51_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79408.1_51_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79414.1_57_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79414.1_57_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79414.1_57_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79414.1_57_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79418.1_61_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79418.1_61_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79418.1_61_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79418.1_61_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79420.1_63_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79420.1_63_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79420.1_63_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79420.1_63_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MEQKTTKDYCDWLRELGRRLASGDIEEYKMSLIDLAGMLSGDDCYKITRSSSYSRTIINRVPEVRAAGRVSIKVEETEDDKFYVFRMVRESKRKIITPEELPAIKARAIKKFADRLLAAIPNIVDLEGDKLAGACEGVSRYQDMIREIIKEEEQ",
+                "md5": "a7c44cd1266c037ae64bd564a2ab4139",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23796",
+                            "name": "DUF7174",
+                            "description": "Family of unknown function (DUF7174)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055598",
+                                "name": "DUF7174",
+                                "description": "Protein of unknown function DUF7174",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 153,
+                                "representative": false,
+                                "hmmStart": 2,
+                                "hmmEnd": 153,
+                                "hmmLength": 153,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 8.8e-48,
+                                "score": 173.4,
+                                "envelopeStart": 3,
+                                "envelopeEnd": 153,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 153,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 7.7e-48,
+                        "score": 173.5,
+                        "model-ac": "PF23796"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501069.1_prot_QXV79420.1_63_unknown",
+                        "id": "MZ501069.1_prot_QXV79420.1_63_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79440.1_83_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79440.1_83_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79440.1_83_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79440.1_83_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79446.1_89_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501069.1_prot_QXV79446.1_89_unknown",
+                "clusterRep": "MZ501069.1_prot_QXV79446.1_89_unknown",
+                "members": [
+                    "MZ501069.1_prot_QXV79446.1_89_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79385.1_28_unknown",
+        "predictions": [
+            {
+                "method": "postulated function",
+                "target": "MZ501069.1_prot_QXV79385.1_28_unknown",
+                "function": "putative recombination protein"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKLSDQFDKVLPALHKARSLFVKVKKDRQNSHLKNRYATLDSVLDAITPALMDNELMIMQDGERIDVSTLRVETTVMHVSGQWVKFYFDIPIVKNDPQGVGSAFTYGRRYSAAAAFGLSQADDDAQIAVKTVNDWKRDIEKCESVGELQEVLKNAWKSSDAASKQVIRDHYEKRKAEIEIGGARGFNPAKPKENLASDTVDTPNSEKVKSQSITDFE",
+                "md5": "acbb172412961204d8fd72229423dfd4",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF04404",
+                            "name": "ERF",
+                            "description": "ERF superfamily",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR007499",
+                                "name": "ERF_bacteria_virus",
+                                "description": "Essential recombination function protein",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 14,
+                                "end": 132,
+                                "representative": false,
+                                "hmmStart": 5,
+                                "hmmEnd": 133,
+                                "hmmLength": 153,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 3e-16,
+                                "score": 71.2,
+                                "envelopeStart": 11,
+                                "envelopeEnd": 159,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 14,
+                                        "end": 132,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.8e-16,
+                        "score": 72.0,
+                        "model-ac": "PF04404"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501069.1_prot_QXV79385.1_28_unknown",
+                        "id": "MZ501069.1_prot_QXV79385.1_28_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79366.1_9_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MSKNLKLKVTGVCMIIIDGKRYHPGDEIEIESERINDSAIEYLIARGDVEVKDNSEINEQIKAKAEKKRKKDPTEGKSRKELEDGGEY",
+                "md5": "ea61ba22d8fab596f42633d2e940235d",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24231",
+                            "name": "DUF7444",
+                            "description": "Family of unknown function (DUF7444)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055867",
+                                "name": "DUF7444",
+                                "description": "Protein of unknown function DUF7444",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 2,
+                                "end": 88,
+                                "representative": false,
+                                "hmmStart": 4,
+                                "hmmEnd": 90,
+                                "hmmLength": 90,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 3.4e-33,
+                                "score": 124.8,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 88,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 2,
+                                        "end": 88,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.1e-33,
+                        "score": 124.9,
+                        "model-ac": "PF24231"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501069.1_prot_QXV79366.1_9_unknown",
+                        "id": "MZ501069.1_prot_QXV79366.1_9_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501069.1_prot_QXV79442.1_85_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MITINLSEQQARIMLSAFGWRDNDGLQATVKIYEPVAREVFSQLEHAFDPAGTEQAETAAWFGENGYRDQQVENWKRINETMEESGL",
+                "md5": "82727fe66c614d22ae9f78436fbfd8ca",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23805",
+                            "name": "DUF7180",
+                            "description": "Family of unknown function (DUF7180)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055604",
+                                "name": "DUF7180",
+                                "description": "Protein of unknown function DUF7180",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 85,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 77,
+                                "hmmLength": 79,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 5.1e-27,
+                                "score": 105.6,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 87,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 85,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 4.6e-27,
+                        "score": 105.8,
+                        "model-ac": "PF23805"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501069.1_prot_QXV79442.1_85_unknown",
+                        "id": "MZ501069.1_prot_QXV79442.1_85_unknown"
+                    }
+                ]
+            }
+        ]
+    }
+]

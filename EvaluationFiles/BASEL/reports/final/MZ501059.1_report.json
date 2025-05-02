@@ -1,0 +1,1792 @@
+[
+    {
+        "protein": "MZ501059.1_prot_QXV77382.1_7_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77382.1_7_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-A0A0H3GM88-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 6,
+                        "qend": 146,
+                        "tstart": 7,
+                        "tend": 162,
+                        "prob": 0.96,
+                        "alntmscore": 0.8,
+                        "evalue": 0.71
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77382.1_7_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-A0A0H3GM88-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 6,
+                        "qend": 146,
+                        "tstart": 7,
+                        "tend": 162,
+                        "prob": 0.96,
+                        "alntmscore": 0.8,
+                        "evalue": 0.71
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77382.1_7_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-A0A0H3GM88-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 6,
+                        "qend": 146,
+                        "tstart": 7,
+                        "tend": 162,
+                        "prob": 0.96,
+                        "alntmscore": 0.8,
+                        "evalue": 0.71
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77382.1_7_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77382.1_7_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77382.1_7_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MSDYGSIIGIVENGCLVDSSLYNIDGSPVMDVSAVIGKAVCVDRISCGYKIISHNFNENSKHYGIVTRDYMDFCKEYYDAGDPVNVITHGRIWVITQDEQDIPSYKDPVFVKDNGSISTSGFPTSWFFTGEYVRYSHGYILLSVQL",
+                "md5": "aaa5b929115dc95a088ccea30d4d3508",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23982",
+                            "name": "Phage_cement_4",
+                            "description": "Putative phage cement protein",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR056914",
+                                "name": "Gp53-like",
+                                "description": "XM1 gp53 minor capsid protein-like",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 142,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 150,
+                                "hmmLength": 154,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 2.8e-22,
+                                "score": 90.6,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 146,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 142,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.6e-22,
+                        "score": 90.7,
+                        "model-ac": "PF23982"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77382.1_7_unknown",
+                        "id": "MZ501059.1_prot_QXV77382.1_7_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77432.1_57_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77432.1_57_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0N4U9Z4-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 89,
+                        "tstart": 94,
+                        "tend": 189,
+                        "prob": 0.82,
+                        "alntmscore": 0.7,
+                        "evalue": 0.49
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77432.1_57_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0K0DUA8-F1-model_v4",
+                        "function": "FLYWCH-type domain-containing protein",
+                        "qstart": 1,
+                        "qend": 89,
+                        "tstart": 455,
+                        "tend": 546,
+                        "prob": 0.84,
+                        "alntmscore": 0.7,
+                        "evalue": 0.38
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77432.1_57_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A0N4U9Z4-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 89,
+                        "tstart": 94,
+                        "tend": 189,
+                        "prob": 0.82,
+                        "alntmscore": 0.7,
+                        "evalue": 0.49
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77453.1_78_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77453.1_78_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9VIT2-F1-model_v4",
+                        "function": "Phosphomevalonate kinase",
+                        "qstart": 1,
+                        "qend": 191,
+                        "tstart": 1,
+                        "tend": 187,
+                        "prob": 0.96,
+                        "alntmscore": 0.78,
+                        "evalue": 0.74
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77453.1_78_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9VIT2-F1-model_v4",
+                        "function": "Phosphomevalonate kinase",
+                        "qstart": 1,
+                        "qend": 191,
+                        "tstart": 1,
+                        "tend": 187,
+                        "prob": 0.96,
+                        "alntmscore": 0.78,
+                        "evalue": 0.74
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77453.1_78_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9VIT2-F1-model_v4",
+                        "function": "Phosphomevalonate kinase",
+                        "qstart": 1,
+                        "qend": 191,
+                        "tstart": 1,
+                        "tend": 187,
+                        "prob": 0.96,
+                        "alntmscore": 0.78,
+                        "evalue": 0.74
+                    }
+                ]
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501059.1_prot_QXV77453.1_78_unknown",
+                "function": "putative P-loop NTPase protein"
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77441.1_66_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77441.1_66_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A4I523-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 92,
+                        "tstart": 203,
+                        "tend": 1404,
+                        "prob": 0.77,
+                        "alntmscore": 0.67,
+                        "evalue": 0.33
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77441.1_66_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A4I523-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 92,
+                        "tstart": 203,
+                        "tend": 1404,
+                        "prob": 0.77,
+                        "alntmscore": 0.67,
+                        "evalue": 0.33
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77441.1_66_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q11194-F1-model_v4",
+                        "function": "Uncharacterized protein C04E7.3",
+                        "qstart": 20,
+                        "qend": 93,
+                        "tstart": 444,
+                        "tend": 514,
+                        "prob": 0.5,
+                        "alntmscore": 0.71,
+                        "evalue": 0.32
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77441.1_66_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77441.1_66_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77441.1_66_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77399.1_24_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77399.1_24_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q2G2C3-F1-model_v4",
+                        "function": "UPF0358 protein SAOUHSC_01062",
+                        "qstart": 7,
+                        "qend": 94,
+                        "tstart": 1,
+                        "tend": 91,
+                        "prob": 0.75,
+                        "alntmscore": 0.7,
+                        "evalue": 0.61
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77399.1_24_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A1D6P121-F1-model_v4",
+                        "function": "Protein ROOT HAIR DEFECTIVE 3 homolog 2",
+                        "qstart": 1,
+                        "qend": 96,
+                        "tstart": 3,
+                        "tend": 115,
+                        "prob": 0.92,
+                        "alntmscore": 0.75,
+                        "evalue": 0.49
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77399.1_24_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A175WEE9-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 4,
+                        "qend": 70,
+                        "tstart": 31,
+                        "tend": 716,
+                        "prob": 0.6,
+                        "alntmscore": 0.8,
+                        "evalue": 0.3
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77399.1_24_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77399.1_24_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77399.1_24_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77462.1_87_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77462.1_87_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-Q0IU77-F1-model_v4",
+                        "function": "Os11g0180200 protein",
+                        "qstart": 6,
+                        "qend": 71,
+                        "tstart": 1,
+                        "tend": 65,
+                        "prob": 0.6,
+                        "alntmscore": 0.67,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77462.1_87_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-Q58257-F1-model_v4",
+                        "function": "Tetrahydromethanopterin S-methyltransferase subunit E",
+                        "qstart": 1,
+                        "qend": 72,
+                        "tstart": 22,
+                        "tend": 158,
+                        "prob": 0.8,
+                        "alntmscore": 0.72,
+                        "evalue": 0.41
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77462.1_87_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-Q58257-F1-model_v4",
+                        "function": "Tetrahydromethanopterin S-methyltransferase subunit E",
+                        "qstart": 1,
+                        "qend": 72,
+                        "tstart": 22,
+                        "tend": 158,
+                        "prob": 0.8,
+                        "alntmscore": 0.72,
+                        "evalue": 0.41
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77462.1_87_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77462.1_87_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77462.1_87_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77450.1_75_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77450.1_75_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A0H3H1E8-F1-model_v4",
+                        "function": "YfiB protein",
+                        "qstart": 1,
+                        "qend": 59,
+                        "tstart": 2,
+                        "tend": 71,
+                        "prob": 0.92,
+                        "alntmscore": 0.77,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77450.1_75_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A0H3H1E8-F1-model_v4",
+                        "function": "YfiB protein",
+                        "qstart": 1,
+                        "qend": 59,
+                        "tstart": 2,
+                        "tend": 71,
+                        "prob": 0.92,
+                        "alntmscore": 0.77,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77450.1_75_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-F4JKW8-F1-model_v4",
+                        "function": "ABC subfamily C protein",
+                        "qstart": 1,
+                        "qend": 54,
+                        "tstart": 342,
+                        "tend": 414,
+                        "prob": 0.9,
+                        "alntmscore": 0.8,
+                        "evalue": 0.39
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77450.1_75_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77450.1_75_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77450.1_75_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77445.1_70_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77445.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-C0NAF0-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 2,
+                        "qend": 103,
+                        "tstart": 2,
+                        "tend": 155,
+                        "prob": 0.69,
+                        "alntmscore": 0.64,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77445.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-C0NAF0-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 2,
+                        "qend": 103,
+                        "tstart": 2,
+                        "tend": 155,
+                        "prob": 0.69,
+                        "alntmscore": 0.64,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77445.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-C0NAF0-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 2,
+                        "qend": 103,
+                        "tstart": 2,
+                        "tend": 155,
+                        "prob": 0.69,
+                        "alntmscore": 0.64,
+                        "evalue": 0.47
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77445.1_70_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77445.1_70_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77445.1_70_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77455.1_80_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77455.1_80_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K0F7G7-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 54,
+                        "tstart": 5,
+                        "tend": 68,
+                        "prob": 0.82,
+                        "alntmscore": 0.73,
+                        "evalue": 0.56
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77455.1_80_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K0F7G7-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 54,
+                        "tstart": 5,
+                        "tend": 68,
+                        "prob": 0.82,
+                        "alntmscore": 0.73,
+                        "evalue": 0.56
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77455.1_80_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A1C1D125-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 16,
+                        "qend": 46,
+                        "tstart": 1,
+                        "tend": 31,
+                        "prob": 0.47,
+                        "alntmscore": 0.87,
+                        "evalue": 0.43
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77455.1_80_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77455.1_80_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77455.1_80_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77421.1_46_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77421.1_46_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0R0FQM2-F1-model_v4",
+                        "function": "Myosin motor domain-containing protein",
+                        "qstart": 5,
+                        "qend": 65,
+                        "tstart": 90,
+                        "tend": 176,
+                        "prob": 0.57,
+                        "alntmscore": 0.62,
+                        "evalue": 0.34
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77421.1_46_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0R0FQM2-F1-model_v4",
+                        "function": "Myosin motor domain-containing protein",
+                        "qstart": 5,
+                        "qend": 65,
+                        "tstart": 90,
+                        "tend": 176,
+                        "prob": 0.57,
+                        "alntmscore": 0.62,
+                        "evalue": 0.34
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77421.1_46_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9HXM5-F1-model_v4",
+                        "function": "Inosine-5'-monophosphate dehydrogenase",
+                        "qstart": 1,
+                        "qend": 49,
+                        "tstart": 312,
+                        "tend": 453,
+                        "prob": 0.47,
+                        "alntmscore": 0.7,
+                        "evalue": 0.3
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77421.1_46_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77421.1_46_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77421.1_46_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77457.1_82_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77457.1_82_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q8ZS12-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 1,
+                        "qend": 81,
+                        "tstart": 20,
+                        "tend": 98,
+                        "prob": 0.54,
+                        "alntmscore": 0.61,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77457.1_82_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q8ZS12-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 1,
+                        "qend": 81,
+                        "tstart": 20,
+                        "tend": 98,
+                        "prob": 0.54,
+                        "alntmscore": 0.61,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77457.1_82_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q8ZS12-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 1,
+                        "qend": 81,
+                        "tstart": 20,
+                        "tend": 98,
+                        "prob": 0.54,
+                        "alntmscore": 0.61,
+                        "evalue": 0.47
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77457.1_82_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77457.1_82_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77457.1_82_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77463.1_88_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77463.1_88_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K0F7G7-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 67,
+                        "tstart": 4,
+                        "tend": 72,
+                        "prob": 0.69,
+                        "alntmscore": 0.65,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77463.1_88_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q4CS73-F1-model_v4",
+                        "function": "Polycystin cation channel PKD1/PKD2 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 68,
+                        "tstart": 99,
+                        "tend": 197,
+                        "prob": 0.75,
+                        "alntmscore": 0.65,
+                        "evalue": 0.35
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77463.1_88_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q2FWX7-F1-model_v4",
+                        "function": "YolD-like family protein",
+                        "qstart": 1,
+                        "qend": 65,
+                        "tstart": 79,
+                        "tend": 133,
+                        "prob": 0.6,
+                        "alntmscore": 0.72,
+                        "evalue": 0.43
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77463.1_88_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77463.1_88_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77463.1_88_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77452.1_77_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77452.1_77_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0R0J640-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 2,
+                        "qend": 57,
+                        "tstart": 1,
+                        "tend": 72,
+                        "prob": 0.63,
+                        "alntmscore": 0.65,
+                        "evalue": 0.52
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77452.1_77_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0K0E241-F1-model_v4",
+                        "function": "Doublecortin domain-containing protein",
+                        "qstart": 3,
+                        "qend": 59,
+                        "tstart": 1,
+                        "tend": 55,
+                        "prob": 0.77,
+                        "alntmscore": 0.72,
+                        "evalue": 0.39
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77452.1_77_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0K0EN22-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 4,
+                        "qend": 58,
+                        "tstart": 2,
+                        "tend": 54,
+                        "prob": 0.72,
+                        "alntmscore": 0.73,
+                        "evalue": 0.38
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77452.1_77_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77452.1_77_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77452.1_77_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77454.1_79_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77454.1_79_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0K0E4G7-F1-model_v4",
+                        "function": "SH3 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 64,
+                        "tstart": 429,
+                        "tend": 486,
+                        "prob": 0.54,
+                        "alntmscore": 0.63,
+                        "evalue": 0.3
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77454.1_79_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0K0E4G7-F1-model_v4",
+                        "function": "SH3 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 64,
+                        "tstart": 429,
+                        "tend": 486,
+                        "prob": 0.54,
+                        "alntmscore": 0.63,
+                        "evalue": 0.3
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77454.1_79_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0K0E4G7-F1-model_v4",
+                        "function": "SH3 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 64,
+                        "tstart": 429,
+                        "tend": 486,
+                        "prob": 0.54,
+                        "alntmscore": 0.63,
+                        "evalue": 0.3
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77454.1_79_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77454.1_79_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77454.1_79_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77430.1_55_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77430.1_55_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A1P6BGG2-F1-model_v4",
+                        "function": "Bm2045, isoform b",
+                        "qstart": 1,
+                        "qend": 46,
+                        "tstart": 99,
+                        "tend": 139,
+                        "prob": 0.54,
+                        "alntmscore": 0.73,
+                        "evalue": 0.38
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77430.1_55_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9LU49-F1-model_v4",
+                        "function": "F-box/kelch-repeat protein At5g51250",
+                        "qstart": 1,
+                        "qend": 49,
+                        "tstart": 250,
+                        "tend": 362,
+                        "prob": 0.72,
+                        "alntmscore": 0.71,
+                        "evalue": 0.35
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77430.1_55_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q17784-F1-model_v4",
+                        "function": "Septin and tuftelin-interacting protein 1 homolog",
+                        "qstart": 1,
+                        "qend": 37,
+                        "tstart": 785,
+                        "tend": 819,
+                        "prob": 0.57,
+                        "alntmscore": 0.85,
+                        "evalue": 0.29
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77430.1_55_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77430.1_55_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77430.1_55_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77448.1_73_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77448.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0H3H263-F1-model_v4",
+                        "function": "Lipoprotein YgdI/YgdR-like SH3-like domain-containing protein",
+                        "qstart": 2,
+                        "qend": 55,
+                        "tstart": 25,
+                        "tend": 72,
+                        "prob": 0.47,
+                        "alntmscore": 0.65,
+                        "evalue": 0.46
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77448.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P46109-F1-model_v4",
+                        "function": "Crk-like protein",
+                        "qstart": 1,
+                        "qend": 58,
+                        "tstart": 126,
+                        "tend": 184,
+                        "prob": 0.72,
+                        "alntmscore": 0.66,
+                        "evalue": 0.36
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77448.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A158Q3M7-F1-model_v4",
+                        "function": "Dynamin-binding protein",
+                        "qstart": 1,
+                        "qend": 55,
+                        "tstart": 1177,
+                        "tend": 1236,
+                        "prob": 0.72,
+                        "alntmscore": 0.69,
+                        "evalue": 0.31
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77448.1_73_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77448.1_73_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77448.1_73_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77423.1_48_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501059.1_prot_QXV77423.1_48_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P52124-F1-model_v4",
+                        "function": "Protein YfjI",
+                        "qstart": 53,
+                        "qend": 510,
+                        "tstart": 1,
+                        "tend": 453,
+                        "prob": 0.84,
+                        "alntmscore": 0.74,
+                        "evalue": 0.67
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501059.1_prot_QXV77423.1_48_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P52124-F1-model_v4",
+                        "function": "Protein YfjI",
+                        "qstart": 53,
+                        "qend": 510,
+                        "tstart": 1,
+                        "tend": 453,
+                        "prob": 0.84,
+                        "alntmscore": 0.74,
+                        "evalue": 0.67
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501059.1_prot_QXV77423.1_48_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P52124-F1-model_v4",
+                        "function": "Protein YfjI",
+                        "qstart": 53,
+                        "qend": 510,
+                        "tstart": 1,
+                        "tend": 453,
+                        "prob": 0.84,
+                        "alntmscore": 0.74,
+                        "evalue": 0.67
+                    }
+                ]
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501059.1_prot_QXV77423.1_48_unknown",
+                "function": "putative helicase"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MFDFDTNKLTPQQVIAIAESQGTSPLRVAIQSNGYRQSSSFWEPVKDINGANDRYPVISLGNDVDVVGKLSRSIAQSVQFPESSAYMHFIGCVSAAMVGRFQVEYHGTEQPTALYVVTSQPPSTGKSAINSLAIAPMVCEVERINEQRKKERKKIAAKLKGVEKELKAERSGTELAALFEEKEELEEKLEKMCDIVFPVSDTTPEGLAKINNRQGNFAVISDEATSINSLLGLTYANSDRKTNSELVLKAWDAGHVSIARANSENNMSFVALGCMSVIAQDETIKGIMDAGARGIGVSERFLLVREKTMLGERVFIDENGDLDYTPVDKELKAQYFQLIHNIMTEQNVVLKPSRSAMRVLNIARQQLEPDLADGGKYSHTMLRGALGKMDKQVIRIASVLHTIRNWFNPNGTPQKSREIEVETMQEALVMFSELSKTYINAANASGHAGDDAEMSKLIEIIIKISRQNKGVTNARAIYESARKVKPFTGQSGVMKRIEEQLLPMLEEKNYVCSVGKFVYVNPALMG",
+                "md5": "5c32054262059f6197472ded50b84d8c",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF13148",
+                            "name": "DUF3987",
+                            "description": "Protein of unknown function (DUF3987)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR025048",
+                                "name": "DUF3987",
+                                "description": "Protein of unknown function DUF3987)",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 81,
+                                "end": 432,
+                                "representative": false,
+                                "hmmStart": 3,
+                                "hmmEnd": 352,
+                                "hmmLength": 364,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 1.7e-39,
+                                "score": 147.6,
+                                "envelopeStart": 79,
+                                "envelopeEnd": 444,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 81,
+                                        "end": 432,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.5e-39,
+                        "score": 147.9,
+                        "model-ac": "PF13148"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77423.1_48_unknown",
+                        "id": "MZ501059.1_prot_QXV77423.1_48_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77384.1_9_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77384.1_9_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77384.1_9_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77384.1_9_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MAKEKEVTLVNTGVALIIIDRVDVMPGKEITVAESVLERQGTKSLVAQGKLTVKDNSELNDKIIEAFNEKRKPNPIEGKSKAQLEEGGEY",
+                "md5": "ae35f11e8d01e5e121690e5d48e0b9a7",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24231",
+                            "name": "DUF7444",
+                            "description": "Family of unknown function (DUF7444)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055867",
+                                "name": "DUF7444",
+                                "description": "Protein of unknown function DUF7444",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 90,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 90,
+                                "hmmLength": 90,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 2.4e-32,
+                                "score": 122.0,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 90,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 90,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.2e-32,
+                        "score": 122.2,
+                        "model-ac": "PF24231"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77384.1_9_unknown",
+                        "id": "MZ501059.1_prot_QXV77384.1_9_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77395.1_20_unknown",
+        "predictions": [
+            {
+                "method": "clusterMember",
+                "target": "MZ501059.1_prot_QXV77395.1_20_unknown",
+                "clusterRep": "MZ501090.1_prot_QXV82273.1_20_unknown",
+                "members": [
+                    "MZ501090.1_prot_QXV82273.1_20_unknown",
+                    "MZ501059.1_prot_QXV77395.1_20_unknown",
+                    "MZ501053.1_prot_QXV76502.1_20_unknown",
+                    "MZ501099.1_prot_QXV83665.1_20_unknown",
+                    "MZ501085.1_prot_QXV81624.1_20_unknown",
+                    "MZ501101.1_prot_QXV84019.1_20_unknown",
+                    "MZ501092.1_prot_QXV82457.1_20_known"
+                ],
+                "function": "minor tail protein",
+                "memberCount": 7,
+                "knownCount": 1,
+                "unknownCount": 6
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77400.1_25_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77400.1_25_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77400.1_25_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77400.1_25_unknown"
+                ],
+                "function": "putative recombination protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501059.1_prot_QXV77400.1_25_unknown",
+                "function": "putative recombination protein"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKFSEQNANVIKALFEARQLFTKVKKDKQNTHLKNKYATLDSVLDAIMPGLTDKGLFLTQDQKVGEDLKSMTVLTRFIHVESNEWVEYSFTLPMQKLDPQGGGSTNSYARRYALCTALGLATADDDANLATKNAQDWKKDLDACDNLTDLQETFKTAYKQSDAANRRIIKEHYDKLKAKMEIGKARGFNPAEPAANVAKNEKVENQPQQEVKSHSITDFE",
+                "md5": "00c5a12129d006d7f734c7aa1bb9a6c7",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF04404",
+                            "name": "ERF",
+                            "description": "ERF superfamily",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR007499",
+                                "name": "ERF_bacteria_virus",
+                                "description": "Essential recombination function protein",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 12,
+                                "end": 137,
+                                "representative": false,
+                                "hmmStart": 3,
+                                "hmmEnd": 136,
+                                "hmmLength": 153,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 4.1e-24,
+                                "score": 96.8,
+                                "envelopeStart": 10,
+                                "envelopeEnd": 146,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 12,
+                                        "end": 137,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.6e-24,
+                        "score": 97.4,
+                        "model-ac": "PF04404"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77400.1_25_unknown",
+                        "id": "MZ501059.1_prot_QXV77400.1_25_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77408.1_33_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77408.1_33_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77408.1_33_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77408.1_33_unknown"
+                ],
+                "function": "putative transcriptional regulator",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501059.1_prot_QXV77408.1_33_unknown",
+                "function": "putative transcriptional regulator"
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77413.1_38_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77413.1_38_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77413.1_38_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77413.1_38_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77415.1_40_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77415.1_40_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77415.1_40_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77415.1_40_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77427.1_52_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77427.1_52_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77427.1_52_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77427.1_52_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77434.1_59_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77434.1_59_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77434.1_59_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77434.1_59_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77437.1_62_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77437.1_62_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77437.1_62_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77437.1_62_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77438.1_63_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77438.1_63_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77438.1_63_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77438.1_63_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77440.1_65_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77440.1_65_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77440.1_65_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77440.1_65_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MEEFDYIPMKDFCNGLREKAKSIAEGEPLVIPLAMLVQKLHPEDARKVTASYIRTILVRTPEIKEKGSVSIKKCNCPDRGEYLEVTLNENKKRRVITSDDLPAIKEAAVSSAFEKFMHIQPDVTDLEGDQLVGATVALRRMKNLIKSMIKG",
+                "md5": "b835acbe2e0c993ed80121d6725a3fa3",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23796",
+                            "name": "DUF7174",
+                            "description": "Family of unknown function (DUF7174)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055598",
+                                "name": "DUF7174",
+                                "description": "Protein of unknown function DUF7174",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 9,
+                                "end": 150,
+                                "representative": false,
+                                "hmmStart": 4,
+                                "hmmEnd": 150,
+                                "hmmLength": 153,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 2.8e-44,
+                                "score": 162.0,
+                                "envelopeStart": 6,
+                                "envelopeEnd": 151,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 9,
+                                        "end": 150,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.6e-44,
+                        "score": 162.1,
+                        "model-ac": "PF23796"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77440.1_65_unknown",
+                        "id": "MZ501059.1_prot_QXV77440.1_65_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77442.1_67_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77442.1_67_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77442.1_67_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77442.1_67_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77443.1_68_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77443.1_68_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77443.1_68_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77443.1_68_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77444.1_69_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77444.1_69_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77444.1_69_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77444.1_69_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77446.1_71_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77446.1_71_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77446.1_71_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77446.1_71_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77449.1_74_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77449.1_74_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77449.1_74_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77449.1_74_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77451.1_76_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77451.1_76_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77451.1_76_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77451.1_76_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77456.1_81_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77456.1_81_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77456.1_81_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77456.1_81_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77458.1_83_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77458.1_83_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77458.1_83_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77458.1_83_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77460.1_85_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77460.1_85_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77460.1_85_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77460.1_85_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MIQINLSEEQAKSLLRGLGWRMGSGSEAVVNIKEEVAKELFAQLEHKLMPTSTSAAELAVWRHENGLNEMDVEKWKRKNCKEVVSVPMDVVRKNQLPYYPAFEVIMNIGG",
+                "md5": "115bce4afdc804f2275ac9f7da48a928",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23805",
+                            "name": "DUF7180",
+                            "description": "Family of unknown function (DUF7180)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055604",
+                                "name": "DUF7180",
+                                "description": "Protein of unknown function DUF7180",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 82,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 74,
+                                "hmmLength": 79,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 2.9e-26,
+                                "score": 103.2,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 86,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 82,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.2e-26,
+                        "score": 103.6,
+                        "model-ac": "PF23805"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77460.1_85_unknown",
+                        "id": "MZ501059.1_prot_QXV77460.1_85_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501059.1_prot_QXV77466.1_91_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501059.1_prot_QXV77466.1_91_unknown",
+                "clusterRep": "MZ501059.1_prot_QXV77466.1_91_unknown",
+                "members": [
+                    "MZ501059.1_prot_QXV77466.1_91_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MLMFIAGFGFCALICFFVYLCVSWGVRACVRDNELVIAVYKNKSDVWEITRNYEKIADEIAFRRKFGKPGSIKYID",
+                "md5": "7678af70ebed5698fa202b4114043e36",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23973",
+                            "name": "DUF7299",
+                            "description": "Family of unknown function (DUF7299)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055723",
+                                "name": "DUF7299",
+                                "description": "Protein of unknown function DUF7299",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 76,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 77,
+                                "hmmLength": 77,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 3.6e-23,
+                                "score": 92.8,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 76,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 76,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.3e-23,
+                        "score": 92.9,
+                        "model-ac": "PF23973"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501059.1_prot_QXV77466.1_91_unknown",
+                        "id": "MZ501059.1_prot_QXV77466.1_91_unknown"
+                    }
+                ]
+            }
+        ]
+    }
+]

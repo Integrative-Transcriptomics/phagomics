@@ -1,0 +1,1974 @@
+[
+    {
+        "protein": "MZ501073.1_prot_QXV79799.1_13_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79799.1_13_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GM94-F1-model_v4",
+                        "function": "Head-tail adaptor",
+                        "qstart": 2,
+                        "qend": 139,
+                        "tstart": 7,
+                        "tend": 122,
+                        "prob": 0.82,
+                        "alntmscore": 0.78,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79799.1_13_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GM94-F1-model_v4",
+                        "function": "Head-tail adaptor",
+                        "qstart": 2,
+                        "qend": 139,
+                        "tstart": 7,
+                        "tend": 122,
+                        "prob": 0.82,
+                        "alntmscore": 0.78,
+                        "evalue": 0.65
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79799.1_13_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GM94-F1-model_v4",
+                        "function": "Head-tail adaptor",
+                        "qstart": 2,
+                        "qend": 139,
+                        "tstart": 7,
+                        "tend": 122,
+                        "prob": 0.82,
+                        "alntmscore": 0.78,
+                        "evalue": 0.65
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79799.1_13_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79799.1_13_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79799.1_13_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MAAGYKLIGKNRLIPRKTFKGRHRVYNKTVGGPFANEGLELEYEEFDVLECVVQPLTGRAAKDYSSQINPEGDRQYEAFTVYSSTKLYSPDEGTYAMADQIQLPDIRGDLKWFTVLKCDAYVTSGGGRYRFFVVEEPEGED",
+                "md5": "5e8afbe08f04ca3d02f9034dede2c898",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF05521",
+                            "name": "Phage_H_T_join",
+                            "description": "Phage head-tail joining protein",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR008767",
+                                "name": "Phage_SPP1_head-tail_adaptor",
+                                "description": "Bacteriophage SPP1, head-tail adaptor",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 15,
+                                "end": 136,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 105,
+                                "hmmLength": 106,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 0.00011,
+                                "score": 34.0,
+                                "envelopeStart": 14,
+                                "envelopeEnd": 137,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 15,
+                                        "end": 136,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 9.7e-05,
+                        "score": 34.3,
+                        "model-ac": "PF05521"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501073.1_prot_QXV79799.1_13_unknown",
+                        "id": "MZ501073.1_prot_QXV79799.1_13_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79869.1_83_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79869.1_83_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-O13289-F1-model_v4",
+                        "function": "Peroxisomal catalase",
+                        "qstart": 9,
+                        "qend": 97,
+                        "tstart": 48,
+                        "tend": 373,
+                        "prob": 0.66,
+                        "alntmscore": 0.67,
+                        "evalue": 0.36
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79869.1_83_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-O13289-F1-model_v4",
+                        "function": "Peroxisomal catalase",
+                        "qstart": 9,
+                        "qend": 97,
+                        "tstart": 48,
+                        "tend": 373,
+                        "prob": 0.66,
+                        "alntmscore": 0.67,
+                        "evalue": 0.36
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79869.1_83_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0D2HD19-F1-model_v4",
+                        "function": "catalase",
+                        "qstart": 9,
+                        "qend": 97,
+                        "tstart": 52,
+                        "tend": 377,
+                        "prob": 0.66,
+                        "alntmscore": 0.67,
+                        "evalue": 0.35
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79860.1_74_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79860.1_74_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q5F7R8-F1-model_v4",
+                        "function": "HNH nuclease domain-containing protein",
+                        "qstart": 1,
+                        "qend": 156,
+                        "tstart": 3,
+                        "tend": 167,
+                        "prob": 0.57,
+                        "alntmscore": 0.77,
+                        "evalue": 0.6
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79860.1_74_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q5F7R8-F1-model_v4",
+                        "function": "HNH nuclease domain-containing protein",
+                        "qstart": 1,
+                        "qend": 156,
+                        "tstart": 3,
+                        "tend": 167,
+                        "prob": 0.57,
+                        "alntmscore": 0.77,
+                        "evalue": 0.6
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79860.1_74_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q5F7R8-F1-model_v4",
+                        "function": "HNH nuclease domain-containing protein",
+                        "qstart": 1,
+                        "qend": 156,
+                        "tstart": 3,
+                        "tend": 167,
+                        "prob": 0.57,
+                        "alntmscore": 0.77,
+                        "evalue": 0.6
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79860.1_74_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79860.1_74_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79860.1_74_unknown"
+                ],
+                "function": "putative homing endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501073.1_prot_QXV79860.1_74_unknown",
+                "function": "putative homing endonuclease"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MVDWSKYFTYRDGKLFWAYTAKAGRGRIIHYAGEEATGTDKDGYRVINVSGVGSVRRHRIIWEMHYGEIPEGLVVRHKNDMAGDDRIENLVLGTQGDNARDMIYSDKLNINNTSGYRGVRYHRGIKRWTASAGDIYLGCFKTKEDAIACRKLWEKGKFVPQELDVRNTSGVTGVFYVPSSGRWRVRVQSGKKRKSYGTYNTLEEAKAVRDKVMKDIEEFKDGE",
+                "md5": "a79af4039453b29c073d7352a9ad6a7d",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "SSF54171",
+                            "name": "DNA-binding domain",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR016177",
+                                "name": "DNA-bd_dom_sf",
+                                "description": "DNA-binding domain superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [
+                                    {
+                                        "name": "DNA binding",
+                                        "databaseName": "GO",
+                                        "category": "MOLECULAR_FUNCTION",
+                                        "id": "GO:0003677"
+                                    }
+                                ],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "24-epi-campesterol, fucosterol, and clionasterol biosynthesis (diatoms)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8238"
+                                    },
+                                    {
+                                        "name": "Cleavage of the damaged pyrimidine",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-110329"
+                                    },
+                                    {
+                                        "name": "echinomycin and triostin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7735"
+                                    },
+                                    {
+                                        "name": "coniferyl alcohol 9-methyl ether biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7643"
+                                    },
+                                    {
+                                        "name": "salvigenin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7325"
+                                    },
+                                    {
+                                        "name": "streptovaricin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8035"
+                                    },
+                                    {
+                                        "name": "Loss of phosphorylation of MECP2 at T308",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022535"
+                                    },
+                                    {
+                                        "name": "polymethylated quercetin glucoside biosynthesis I - quercetin series (Chrysosplenium)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7150"
+                                    },
+                                    {
+                                        "name": "shinorine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7751"
+                                    },
+                                    {
+                                        "name": "yatein biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7629"
+                                    },
+                                    {
+                                        "name": "dTDP-alpha-D-olivose, dTDP-alpha-D-oliose and dTDP-alpha-D-mycarose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6973"
+                                    },
+                                    {
+                                        "name": "yangonin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8104"
+                                    },
+                                    {
+                                        "name": "FR-900098 and FR-33289 antibiotics biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7419"
+                                    },
+                                    {
+                                        "name": "CDP-D-arabitol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6998"
+                                    },
+                                    {
+                                        "name": "plastoquinol-9 biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6978"
+                                    },
+                                    {
+                                        "name": "polymethylated quercetin glucoside biosynthesis II - quercetagetin series (Chrysosplenium)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7151"
+                                    },
+                                    {
+                                        "name": "crotonosine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8100"
+                                    },
+                                    {
+                                        "name": "tRNA-uridine 2-thiolation (cytoplasmic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7888"
+                                    },
+                                    {
+                                        "name": "bryostatin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8047"
+                                    },
+                                    {
+                                        "name": "SUMOylation of transcription cofactors",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3899300"
+                                    },
+                                    {
+                                        "name": "arctigenin and isoarctigenin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7631"
+                                    },
+                                    {
+                                        "name": "clorobiocin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8368"
+                                    },
+                                    {
+                                        "name": "dTDP-sibirosamine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8380"
+                                    },
+                                    {
+                                        "name": "Formation of WDR5-containing histone-modifying complexes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-9772755"
+                                    },
+                                    {
+                                        "name": "polymethylated kaempferol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7163"
+                                    },
+                                    {
+                                        "name": "Escherichia coli serotype O:8 O antigen biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8212"
+                                    },
+                                    {
+                                        "name": "Loss of MECP2 binding ability to 5hmC-DNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022534"
+                                    },
+                                    {
+                                        "name": "5-methoxy-6-methylbenzimidazole biosynthesis (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8095"
+                                    },
+                                    {
+                                        "name": "methylthiopropanonate degradation II (demethylation)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6045"
+                                    },
+                                    {
+                                        "name": "emetine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7135"
+                                    },
+                                    {
+                                        "name": "arginomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7569"
+                                    },
+                                    {
+                                        "name": "ginkgotoxin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8077"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase I Promoter Opening",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-73728"
+                                    },
+                                    {
+                                        "name": "phenylpropanoids methylation (ice plant)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7498"
+                                    },
+                                    {
+                                        "name": "platensimycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8179"
+                                    },
+                                    {
+                                        "name": "trans-zeatin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-2681"
+                                    },
+                                    {
+                                        "name": "nevadensin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7298"
+                                    },
+                                    {
+                                        "name": "MECP2 regulates transcription factors",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022707"
+                                    },
+                                    {
+                                        "name": "vestitol and sativan biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5729"
+                                    },
+                                    {
+                                        "name": "dTDP-4-O-demethyl-beta-L-noviose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7301"
+                                    },
+                                    {
+                                        "name": "CMP-diacetamido-8-epilegionaminic acid biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7719"
+                                    },
+                                    {
+                                        "name": "HATs acetylate histones",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-3214847"
+                                    },
+                                    {
+                                        "name": "kavain biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8103"
+                                    },
+                                    {
+                                        "name": "phosphinothricin tripeptide biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6322"
+                                    },
+                                    {
+                                        "name": "CDP-D-mannitol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7127"
+                                    },
+                                    {
+                                        "name": "corallopyronin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8438"
+                                    },
+                                    {
+                                        "name": "ephedrine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5883"
+                                    },
+                                    {
+                                        "name": "7,8-dimethylmenaquinone biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8364"
+                                    },
+                                    {
+                                        "name": "elloramycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7483"
+                                    },
+                                    {
+                                        "name": "chaxamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8036"
+                                    },
+                                    {
+                                        "name": "3-hydroxy-4-methyl-anthranilate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7717"
+                                    },
+                                    {
+                                        "name": "dimycocerosyl triglycosyl phenolphthiocerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7743"
+                                    },
+                                    {
+                                        "name": "sorgoleone biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5987"
+                                    },
+                                    {
+                                        "name": "hygromycin B biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8367"
+                                    },
+                                    {
+                                        "name": "dTDP-beta-L-mycarose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6976"
+                                    },
+                                    {
+                                        "name": "superpathway of nicotine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7342"
+                                    },
+                                    {
+                                        "name": "polymethylated myricetin biosynthesis (tomato)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7160"
+                                    },
+                                    {
+                                        "name": "PKMTs methylate histone lysines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-3214841"
+                                    },
+                                    {
+                                        "name": "dechlorogriseofulvin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7655"
+                                    },
+                                    {
+                                        "name": "meleagrin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7607"
+                                    },
+                                    {
+                                        "name": "ascomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8424"
+                                    },
+                                    {
+                                        "name": "gliotoxin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7533"
+                                    },
+                                    {
+                                        "name": "bacimethrin and bacimethrin pyrophosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7564"
+                                    },
+                                    {
+                                        "name": "ansatrienin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8040"
+                                    },
+                                    {
+                                        "name": "5-methoxybenzimidazole biosynthesis (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8096"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase I Transcription Initiation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-73762"
+                                    },
+                                    {
+                                        "name": "spirilloxanthin and 2,2'-diketo-spirilloxanthin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6581"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by the Human Silencing Hub (HUSH) complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9843970"
+                                    },
+                                    {
+                                        "name": "okenone biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7591"
+                                    },
+                                    {
+                                        "name": "Regulation of TP53 Activity through Acetylation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6804758"
+                                    },
+                                    {
+                                        "name": "PKMTs methylate histone lysines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3214841"
+                                    },
+                                    {
+                                        "name": "spinosyn biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7100"
+                                    },
+                                    {
+                                        "name": "vanillin biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5665"
+                                    },
+                                    {
+                                        "name": "gentamicin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7025"
+                                    },
+                                    {
+                                        "name": "diacylglyceryl-N,N,N-trimethylhomoserine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6795"
+                                    },
+                                    {
+                                        "name": "nicotine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5316"
+                                    },
+                                    {
+                                        "name": "Recognition and association of DNA glycosylase with site containing an affected pyrimidine",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-110328"
+                                    },
+                                    {
+                                        "name": "MECP2 regulates transcription of neuronal ligands",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022702"
+                                    },
+                                    {
+                                        "name": "3-hydroxy-4-methyl-anthranilate biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7765"
+                                    },
+                                    {
+                                        "name": "Regulation of PTEN gene transcription",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-8943724"
+                                    },
+                                    {
+                                        "name": "saframycin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7671"
+                                    },
+                                    {
+                                        "name": "7-dehydroporiferasterol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7155"
+                                    },
+                                    {
+                                        "name": "bixin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5305"
+                                    },
+                                    {
+                                        "name": "5,6-dehydrokavain biosynthesis (engineered)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8463"
+                                    },
+                                    {
+                                        "name": "sibiromycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8379"
+                                    },
+                                    {
+                                        "name": "Regulation of PTEN gene transcription",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-8943724"
+                                    },
+                                    {
+                                        "name": "autoinducer AI-2 biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6153"
+                                    },
+                                    {
+                                        "name": "MECP2 regulates transcription of genes involved in GABA signaling",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022927"
+                                    },
+                                    {
+                                        "name": "aucuparin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7739"
+                                    },
+                                    {
+                                        "name": "CMP-legionaminate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6749"
+                                    },
+                                    {
+                                        "name": "Displacement of DNA glycosylase by APEX1",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-110357"
+                                    },
+                                    {
+                                        "name": "pinobanksin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5059"
+                                    },
+                                    {
+                                        "name": "SUMOylation of transcription cofactors",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3899300"
+                                    },
+                                    {
+                                        "name": "p-HBAD biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7745"
+                                    },
+                                    {
+                                        "name": "griseofulvin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7653"
+                                    },
+                                    {
+                                        "name": "apratoxin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8361"
+                                    },
+                                    {
+                                        "name": "methiin metabolism",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7614"
+                                    },
+                                    {
+                                        "name": "1,3,5-trimethoxybenzene biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5765"
+                                    },
+                                    {
+                                        "name": "furaquinocin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8437"
+                                    },
+                                    {
+                                        "name": "Regulation of TP53 Activity through Acetylation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6804758"
+                                    },
+                                    {
+                                        "name": "L-methionine biosynthesis IV",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7977"
+                                    },
+                                    {
+                                        "name": "fusarin C biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7673"
+                                    },
+                                    {
+                                        "name": "6-gingerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6835"
+                                    },
+                                    {
+                                        "name": "PKMTs methylate histone lysines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-3214841"
+                                    },
+                                    {
+                                        "name": "spheroidene and spheroidenone biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6286"
+                                    },
+                                    {
+                                        "name": "epiberberine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8031"
+                                    },
+                                    {
+                                        "name": "blasticidin S biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7570"
+                                    },
+                                    {
+                                        "name": "choline biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3542"
+                                    },
+                                    {
+                                        "name": "aurofusarin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7695"
+                                    },
+                                    {
+                                        "name": "spermidine hydroxycinnamic acid conjugates biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6442"
+                                    },
+                                    {
+                                        "name": "Amaryllidacea alkaloids biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7826"
+                                    },
+                                    {
+                                        "name": "polymethylated quercetin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7161"
+                                    },
+                                    {
+                                        "name": "furaneol and mesifurane biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5975"
+                                    },
+                                    {
+                                        "name": "pinitol biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6739"
+                                    },
+                                    {
+                                        "name": "mithramycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7045"
+                                    },
+                                    {
+                                        "name": "mycofactocin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8122"
+                                    },
+                                    {
+                                        "name": "brassicicene C biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7517"
+                                    },
+                                    {
+                                        "name": "papaverine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7363"
+                                    },
+                                    {
+                                        "name": "gossypol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5773"
+                                    },
+                                    {
+                                        "name": "PKMTs methylate histone lysines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-3214841"
+                                    },
+                                    {
+                                        "name": "UCH proteinases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5689603"
+                                    },
+                                    {
+                                        "name": "6-methoxypodophyllotoxin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5479"
+                                    },
+                                    {
+                                        "name": "MECP2 regulates neuronal receptors and channels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022699"
+                                    },
+                                    {
+                                        "name": "8-O-methylated benzoxazinoid glucoside biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8076"
+                                    },
+                                    {
+                                        "name": "apicidin F biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7668"
+                                    },
+                                    {
+                                        "name": "grayanate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8326"
+                                    },
+                                    {
+                                        "name": "autoinducer AI-2 biosynthesis II (Vibrio)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6154"
+                                    },
+                                    {
+                                        "name": "gliotoxin inactivation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7534"
+                                    },
+                                    {
+                                        "name": "tetrahydromethanopterin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6148"
+                                    },
+                                    {
+                                        "name": "glucosinolate biosynthesis from tryptophan",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-601"
+                                    },
+                                    {
+                                        "name": "Regulation of MECP2 expression and activity",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-9022692"
+                                    },
+                                    {
+                                        "name": "Escherichia coli serotype O:52 O antigen biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8257"
+                                    },
+                                    {
+                                        "name": "geodin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7079"
+                                    },
+                                    {
+                                        "name": "hesperitin glycoside biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5105"
+                                    },
+                                    {
+                                        "name": "sulfazecin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8381"
+                                    },
+                                    {
+                                        "name": "Loss of MECP2 binding ability to the NCoR/SMRT complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022537"
+                                    },
+                                    {
+                                        "name": "bikaverin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7692"
+                                    },
+                                    {
+                                        "name": "6-methylpretetramide biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7811"
+                                    },
+                                    {
+                                        "name": "dTDP-beta-L-evernitrose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7439"
+                                    },
+                                    {
+                                        "name": "superpathway of scopolin and esculin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7186"
+                                    },
+                                    {
+                                        "name": "5,6-dimethylbenzimidazole biosynthesis II (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7729"
+                                    },
+                                    {
+                                        "name": "eupatolitin 3-O-glucoside biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7157"
+                                    },
+                                    {
+                                        "name": "lincomycin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6955"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase I Transcription Initiation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-73762"
+                                    },
+                                    {
+                                        "name": "Transcriptional regulation of brown and beige adipocyte differentiation by EBF2",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9844594"
+                                    },
+                                    {
+                                        "name": "Loss of MECP2 binding ability to 5mC-DNA",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022538"
+                                    },
+                                    {
+                                        "name": "phosalacine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7769"
+                                    },
+                                    {
+                                        "name": "phenolphthiocerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7742"
+                                    },
+                                    {
+                                        "name": "mycolate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWYG-321"
+                                    },
+                                    {
+                                        "name": "isoflavonoid biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-2083"
+                                    },
+                                    {
+                                        "name": "daphnetin modification",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7055"
+                                    },
+                                    {
+                                        "name": "thiocoraline biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7737"
+                                    },
+                                    {
+                                        "name": "tetracenomycin C biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7485"
+                                    },
+                                    {
+                                        "name": "esculetin modification",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7058"
+                                    },
+                                    {
+                                        "name": "dapdiamides biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7706"
+                                    },
+                                    {
+                                        "name": "PKMTs methylate histone lysines",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3214841"
+                                    },
+                                    {
+                                        "name": "10-methylstearate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8172"
+                                    },
+                                    {
+                                        "name": "gamma-coniciene and coniine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5748"
+                                    },
+                                    {
+                                        "name": "equisetin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7669"
+                                    },
+                                    {
+                                        "name": "CMP-N-acetyl-7-O-acetylneuraminate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7529"
+                                    },
+                                    {
+                                        "name": "apicidin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7667"
+                                    },
+                                    {
+                                        "name": "8-O-methylfusarubin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7689"
+                                    },
+                                    {
+                                        "name": "UCH proteinases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5689603"
+                                    },
+                                    {
+                                        "name": "10,13-epoxy-11-methyl-octadecadienoate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7691"
+                                    },
+                                    {
+                                        "name": "atranorin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8327"
+                                    },
+                                    {
+                                        "name": "Nuclear events stimulated by ALK signaling in cancer",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9725371"
+                                    },
+                                    {
+                                        "name": "beta-alanine betaine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-4021"
+                                    },
+                                    {
+                                        "name": "Regulation of TP53 Activity through Association with Co-factors",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-6804759"
+                                    },
+                                    {
+                                        "name": "superpathway of benzoxazinoid glucosides biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-4161"
+                                    },
+                                    {
+                                        "name": "colchicine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5846"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by KRAB-ZFP proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-9843940"
+                                    },
+                                    {
+                                        "name": "methylwyosine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7285"
+                                    },
+                                    {
+                                        "name": "Transcriptional Regulation by MECP2",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-8986944"
+                                    },
+                                    {
+                                        "name": "dTDP-beta-L-megosamine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7104"
+                                    },
+                                    {
+                                        "name": "Regulation of MECP2 expression and activity",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9022692"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by KRAB-ZFP proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-9843940"
+                                    },
+                                    {
+                                        "name": "HDACs deacetylate histones",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3214815"
+                                    },
+                                    {
+                                        "name": "tRNA-uridine 2-thiolation (thermophilic bacteria)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7904"
+                                    },
+                                    {
+                                        "name": "protein N-glycosylation (Haloferax volcanii)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7661"
+                                    },
+                                    {
+                                        "name": "gibberellin inactivation II (methylation)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6477"
+                                    },
+                                    {
+                                        "name": "Potential therapeutics for SARS",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9679191"
+                                    },
+                                    {
+                                        "name": "phthiocerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7741"
+                                    },
+                                    {
+                                        "name": "NoRC negatively regulates rRNA expression",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-427413"
+                                    },
+                                    {
+                                        "name": "hopanoid biosynthesis (bacteria)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7072"
+                                    },
+                                    {
+                                        "name": "Cleavage of the damaged pyrimidine",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-110329"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by Piwi-interacting RNAs (piRNAs)",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9845323"
+                                    },
+                                    {
+                                        "name": "viridicatumtoxin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7659"
+                                    },
+                                    {
+                                        "name": "rot-2'-enonate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6427"
+                                    },
+                                    {
+                                        "name": "dehydrophos biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6682"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by KRAB-ZFP proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-9843940"
+                                    },
+                                    {
+                                        "name": "colibactin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8117"
+                                    },
+                                    {
+                                        "name": "syringate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6339"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by KRAB-ZFP proteins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9843940"
+                                    },
+                                    {
+                                        "name": "3,5-dimethoxytoluene biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7076"
+                                    },
+                                    {
+                                        "name": "Regulation of endogenous retroelements by the Human Silencing Hub (HUSH) complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-9843970"
+                                    },
+                                    {
+                                        "name": "ERCC6 (CSB) and EHMT2 (G9a) positively regulate rRNA expression",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-427389"
+                                    },
+                                    {
+                                        "name": "aloenin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6310"
+                                    },
+                                    {
+                                        "name": "quinolinone B biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7705"
+                                    },
+                                    {
+                                        "name": "pyrrolomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8210"
+                                    },
+                                    {
+                                        "name": "(2R)-methoxymalonyl-[acp] biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8426"
+                                    },
+                                    {
+                                        "name": "staurosporine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6346"
+                                    },
+                                    {
+                                        "name": "dTDP-beta-L-4-epi-vancosamine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7440"
+                                    },
+                                    {
+                                        "name": "ajmaline and sarpagine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5301"
+                                    },
+                                    {
+                                        "name": "cytidine-5'-diphosphate-glycerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6626"
+                                    },
+                                    {
+                                        "name": "UCH proteinases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-5689603"
+                                    },
+                                    {
+                                        "name": "prodigiosin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7547"
+                                    },
+                                    {
+                                        "name": "HDACs deacetylate histones",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-3214815"
+                                    },
+                                    {
+                                        "name": "Displacement of DNA glycosylase by APEX1",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-110357"
+                                    },
+                                    {
+                                        "name": "homogalacturonan biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-1061"
+                                    },
+                                    {
+                                        "name": "queuosine biosynthesis III (queuosine salvage)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8106"
+                                    },
+                                    {
+                                        "name": "Regulation of MECP2 expression and activity",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-9022692"
+                                    },
+                                    {
+                                        "name": "arsenic detoxification (mammals)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-4202"
+                                    },
+                                    {
+                                        "name": "sulfur volatiles biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6736"
+                                    },
+                                    {
+                                        "name": "NAD salvage (plants)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5381"
+                                    },
+                                    {
+                                        "name": "neoxaline biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7608"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 169,
+                                "end": 213,
+                                "representative": false,
+                                "hmmLength": 63,
+                                "location-fragments": [
+                                    {
+                                        "start": 169,
+                                        "end": 213,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.09e-05,
+                        "model-ac": "0038039"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF13392",
+                            "name": "HNH_3",
+                            "description": "HNH endonuclease",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003615",
+                                "name": "HNH_nuc",
+                                "description": "HNH nuclease",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "[2Fe-2S] iron-sulfur cluster biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7250"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 56,
+                                "end": 100,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 46,
+                                "hmmLength": 46,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 4.6e-13,
+                                "score": 59.9,
+                                "envelopeStart": 55,
+                                "envelopeEnd": 100,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 56,
+                                        "end": 100,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.3e-13,
+                        "score": 60.9,
+                        "model-ac": "PF13392"
+                    },
+                    {
+                        "signature": {
+                            "accession": "SSF54060",
+                            "name": "His-Me finger endonucleases",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR044925",
+                                "name": "His-Me_finger_sf",
+                                "description": "His-Me finger superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "tunicamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7821"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7187"
+                                    },
+                                    {
+                                        "name": "Vitamin B5 (pantothenate) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-199220"
+                                    },
+                                    {
+                                        "name": "phosphatidate metabolism, as a signaling molecule",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7039"
+                                    },
+                                    {
+                                        "name": "Platelet degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-114608"
+                                    },
+                                    {
+                                        "name": "dZTP biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8289"
+                                    },
+                                    {
+                                        "name": "choline biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3561"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-140342"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7184"
+                                    },
+                                    {
+                                        "name": "FR-900098 and FR-33289 antibiotics biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7419"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-196843"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-140342"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8053"
+                                    },
+                                    {
+                                        "name": "mono-trans, poly-cis decaprenyl phosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6383"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-196843"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-196843"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-140342"
+                                    },
+                                    {
+                                        "name": "Platelet degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-114608"
+                                    },
+                                    {
+                                        "name": "CMP-diacetamido-8-epilegionaminic acid biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7719"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis II (Methanocaldococcus)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6797"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8051"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6545"
+                                    },
+                                    {
+                                        "name": "plasmalogen degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7783"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6147"
+                                    },
+                                    {
+                                        "name": "fosfomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5757"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides dephosphorylation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7206"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis III (Chlamydia)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7539"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 104,
+                                "representative": false,
+                                "hmmLength": 105,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 104,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 8.24e-18,
+                        "model-ac": "0044201"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501073.1_prot_QXV79860.1_74_unknown",
+                        "id": "MZ501073.1_prot_QXV79860.1_74_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79872.1_86_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79872.1_86_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A044RFV0-F1-model_v4",
+                        "function": "None",
+                        "qstart": 8,
+                        "qend": 81,
+                        "tstart": 1,
+                        "tend": 68,
+                        "prob": 0.6,
+                        "alntmscore": 0.7,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79872.1_86_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A3Q0KKS9-F1-model_v4",
+                        "function": "Tyrosine-protein kinase",
+                        "qstart": 1,
+                        "qend": 81,
+                        "tstart": 1,
+                        "tend": 67,
+                        "prob": 0.69,
+                        "alntmscore": 0.74,
+                        "evalue": 0.33
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79872.1_86_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-A0A3Q0KKS9-F1-model_v4",
+                        "function": "Tyrosine-protein kinase",
+                        "qstart": 1,
+                        "qend": 81,
+                        "tstart": 1,
+                        "tend": 67,
+                        "prob": 0.69,
+                        "alntmscore": 0.74,
+                        "evalue": 0.33
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79872.1_86_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79872.1_86_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79872.1_86_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79912.1_126_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79912.1_126_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O25047-F1-model_v4",
+                        "function": "HP0268 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 70,
+                        "tstart": 6,
+                        "tend": 80,
+                        "prob": 0.6,
+                        "alntmscore": 0.64,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79912.1_126_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q501S4-F1-model_v4",
+                        "function": "Citrate synthase-lysine N-methyltransferase CSKMT, mitochondrial",
+                        "qstart": 1,
+                        "qend": 71,
+                        "tstart": 60,
+                        "tend": 250,
+                        "prob": 0.89,
+                        "alntmscore": 0.75,
+                        "evalue": 0.45
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79912.1_126_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9BQ13-F1-model_v4",
+                        "function": "BTB/POZ domain-containing protein KCTD14",
+                        "qstart": 4,
+                        "qend": 71,
+                        "tstart": 144,
+                        "tend": 254,
+                        "prob": 0.89,
+                        "alntmscore": 0.77,
+                        "evalue": 0.45
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79965.1_179_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79965.1_179_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q5F9Z1-F1-model_v4",
+                        "function": "DUF2059 domain-containing protein",
+                        "qstart": 2,
+                        "qend": 104,
+                        "tstart": 22,
+                        "tend": 132,
+                        "prob": 0.72,
+                        "alntmscore": 0.7,
+                        "evalue": 0.5
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79965.1_179_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q5F9Z1-F1-model_v4",
+                        "function": "DUF2059 domain-containing protein",
+                        "qstart": 2,
+                        "qend": 104,
+                        "tstart": 22,
+                        "tend": 132,
+                        "prob": 0.72,
+                        "alntmscore": 0.7,
+                        "evalue": 0.5
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79965.1_179_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q5F9Z1-F1-model_v4",
+                        "function": "DUF2059 domain-containing protein",
+                        "qstart": 2,
+                        "qend": 104,
+                        "tstart": 22,
+                        "tend": 132,
+                        "prob": 0.72,
+                        "alntmscore": 0.7,
+                        "evalue": 0.5
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79965.1_179_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79965.1_179_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79965.1_179_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79800.1_14_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501073.1_prot_QXV79800.1_14_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q9I547-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 2,
+                        "qend": 157,
+                        "tstart": 3,
+                        "tend": 153,
+                        "prob": 0.89,
+                        "alntmscore": 0.83,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501073.1_prot_QXV79800.1_14_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GP05-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 2,
+                        "qend": 154,
+                        "tstart": 6,
+                        "tend": 163,
+                        "prob": 0.9,
+                        "alntmscore": 0.83,
+                        "evalue": 0.68
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501073.1_prot_QXV79800.1_14_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GSC5-F1-model_v4",
+                        "function": "Bacteriophage protein",
+                        "qstart": 21,
+                        "qend": 153,
+                        "tstart": 1,
+                        "tend": 133,
+                        "prob": 0.77,
+                        "alntmscore": 0.84,
+                        "evalue": 0.68
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79800.1_14_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79800.1_14_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79800.1_14_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MEAFEKVFSDLETTIAKLVKVATGRTVVLAESSTIPKPEGEFVLLQTLAINPTTWEDNEFQDAEGNAYVTHSYTVTYLLTAYRGRAYAALSRVLQAINLPMFYDKYFPLGSCFAYSNNSTISPQRVPLNKQTYENRATVMLTFNVRFVETDIGAFEDLQGIKAEITTHFPSPNSDKSVTDSGQ",
+                "md5": "42dc238e4dee75f9d9503bbbfbf8e07f",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23961",
+                            "name": "Phage_tail_terminator_9",
+                            "description": "Phage neck terminator protein",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 10,
+                                "end": 166,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 148,
+                                "hmmLength": 153,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 1.9e-17,
+                                "score": 74.9,
+                                "envelopeStart": 9,
+                                "envelopeEnd": 170,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 10,
+                                        "end": 166,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.5e-17,
+                        "score": 75.2,
+                        "model-ac": "PF23961"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501073.1_prot_QXV79800.1_14_unknown",
+                        "id": "MZ501073.1_prot_QXV79800.1_14_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79823.1_37_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79823.1_37_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79823.1_37_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79823.1_37_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79902.1_116_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79902.1_116_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79902.1_116_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79902.1_116_unknown"
+                ],
+                "function": "putative holin",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501073.1_prot_QXV79902.1_116_unknown",
+                "function": "putative holin"
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79932.1_146_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79932.1_146_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79932.1_146_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79932.1_146_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79968.1_182_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79968.1_182_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79968.1_182_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79968.1_182_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79989.1_203_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501073.1_prot_QXV79989.1_203_unknown",
+                "clusterRep": "MZ501073.1_prot_QXV79989.1_203_unknown",
+                "members": [
+                    "MZ501073.1_prot_QXV79989.1_203_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501073.1_prot_QXV79875.1_89_unknown",
+        "predictions": [
+            {
+                "method": "postulated function",
+                "target": "MZ501073.1_prot_QXV79875.1_89_unknown",
+                "function": "putative homing endonuclease"
+            }
+        ]
+    }
+]
