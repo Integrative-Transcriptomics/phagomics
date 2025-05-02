@@ -1,0 +1,80 @@
+[
+    {
+        "protein": "NC_001895.1_prot_NP_046770.1_15_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "NC_001895.1_prot_NP_046770.1_15_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GNI3-F1-model_v4",
+                        "function": "Conjugal transfer protein",
+                        "qstart": 3,
+                        "qend": 256,
+                        "tstart": 7,
+                        "tend": 277,
+                        "prob": 0.82,
+                        "alntmscore": 0.69,
+                        "evalue": 0.61
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "NC_001895.1_prot_NP_046770.1_15_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GNI3-F1-model_v4",
+                        "function": "Conjugal transfer protein",
+                        "qstart": 3,
+                        "qend": 256,
+                        "tstart": 7,
+                        "tend": 277,
+                        "prob": 0.82,
+                        "alntmscore": 0.69,
+                        "evalue": 0.61
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "NC_001895.1_prot_NP_046770.1_15_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A0H3GNI3-F1-model_v4",
+                        "function": "Conjugal transfer protein",
+                        "qstart": 3,
+                        "qend": 256,
+                        "tstart": 7,
+                        "tend": 277,
+                        "prob": 0.82,
+                        "alntmscore": 0.69,
+                        "evalue": 0.61
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "NC_001895.1_prot_NP_046770.1_15_unknown",
+                "clusterRep": "NC_001895.1_prot_NP_046770.1_15_unknown",
+                "members": [
+                    "NC_001895.1_prot_NP_046770.1_15_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "NC_001895.1_prot_NP_046789.1_34_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "NC_001895.1_prot_NP_046789.1_34_unknown",
+                "clusterRep": "NC_001895.1_prot_NP_046789.1_34_unknown",
+                "members": [
+                    "NC_001895.1_prot_NP_046789.1_34_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    }
+]

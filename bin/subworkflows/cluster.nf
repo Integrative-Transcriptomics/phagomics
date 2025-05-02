@@ -8,7 +8,7 @@ workflow CLUSTER {
         allProteins
     
     main:
-        cluster( allProteins )
+        cluster( allProteins ).reps
         | clusterRefine
 
         // split into files of 200 sequences

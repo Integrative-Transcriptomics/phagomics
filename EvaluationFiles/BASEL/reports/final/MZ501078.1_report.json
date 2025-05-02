@@ -1,0 +1,1022 @@
+[
+    {
+        "protein": "MZ501078.1_prot_QXV80646.1_21_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501078.1_prot_QXV80646.1_21_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q3E818-F1-model_v4",
+                        "function": "Uncharacterized protein YDR194W-A",
+                        "qstart": 1,
+                        "qend": 39,
+                        "tstart": 9,
+                        "tend": 50,
+                        "prob": 0.99,
+                        "alntmscore": 0.9,
+                        "evalue": 0.75
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501078.1_prot_QXV80646.1_21_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-X8F2M6-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 40,
+                        "tstart": 84,
+                        "tend": 136,
+                        "prob": 0.99,
+                        "alntmscore": 0.92,
+                        "evalue": 0.57
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501078.1_prot_QXV80646.1_21_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-X8FBW1-F1-model_v4",
+                        "function": "None",
+                        "qstart": 3,
+                        "qend": 40,
+                        "tstart": 421,
+                        "tend": 458,
+                        "prob": 0.99,
+                        "alntmscore": 0.94,
+                        "evalue": 0.46
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501078.1_prot_QXV80646.1_21_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80646.1_21_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80646.1_21_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80641.1_16_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501078.1_prot_QXV80641.1_16_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q5F7R8-F1-model_v4",
+                        "function": "HNH nuclease domain-containing protein",
+                        "qstart": 11,
+                        "qend": 163,
+                        "tstart": 1,
+                        "tend": 168,
+                        "prob": 0.94,
+                        "alntmscore": 0.8,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501078.1_prot_QXV80641.1_16_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q5F7R8-F1-model_v4",
+                        "function": "HNH nuclease domain-containing protein",
+                        "qstart": 11,
+                        "qend": 163,
+                        "tstart": 1,
+                        "tend": 168,
+                        "prob": 0.94,
+                        "alntmscore": 0.8,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501078.1_prot_QXV80641.1_16_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q5F7R8-F1-model_v4",
+                        "function": "HNH nuclease domain-containing protein",
+                        "qstart": 11,
+                        "qend": 163,
+                        "tstart": 1,
+                        "tend": 168,
+                        "prob": 0.94,
+                        "alntmscore": 0.8,
+                        "evalue": 0.7
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501078.1_prot_QXV80641.1_16_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80641.1_16_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80641.1_16_unknown"
+                ],
+                "function": "putative homing endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501078.1_prot_QXV80641.1_16_unknown",
+                "function": "putative homing endonuclease"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MEALDTLPSPASEGLREIVAKRFKVNREAPSGLSRVSGKPVGYKKSSGYWNIHVSVNNKSHHLLAHRVIWELTYGEIPSGMQIDHINRDRSDNRIENLRLVTMTENMHNKGDYVTNTTGHKYVMYRKDRNAYIFRIKRFGKLHTSYHKTLDEAVEAKRLFLNQ",
+                "md5": "fe1f34e4590197e6127f4ff2de72624d",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF13392",
+                            "name": "HNH_3",
+                            "description": "HNH endonuclease",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003615",
+                                "name": "HNH_nuc",
+                                "description": "HNH nuclease",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "[2Fe-2S] iron-sulfur cluster biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7250"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 64,
+                                "end": 107,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 45,
+                                "hmmLength": 46,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 8.4e-20,
+                                "score": 81.5,
+                                "envelopeStart": 63,
+                                "envelopeEnd": 108,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 64,
+                                        "end": 107,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 5.6e-20,
+                        "score": 82.0,
+                        "model-ac": "PF13392"
+                    },
+                    {
+                        "signature": {
+                            "accession": "SSF54060",
+                            "name": "His-Me finger endonucleases",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR044925",
+                                "name": "His-Me_finger_sf",
+                                "description": "His-Me finger superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "tunicamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7821"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7187"
+                                    },
+                                    {
+                                        "name": "Vitamin B5 (pantothenate) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-199220"
+                                    },
+                                    {
+                                        "name": "phosphatidate metabolism, as a signaling molecule",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7039"
+                                    },
+                                    {
+                                        "name": "Platelet degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-114608"
+                                    },
+                                    {
+                                        "name": "dZTP biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8289"
+                                    },
+                                    {
+                                        "name": "choline biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3561"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-140342"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7184"
+                                    },
+                                    {
+                                        "name": "FR-900098 and FR-33289 antibiotics biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7419"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-196843"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-140342"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8053"
+                                    },
+                                    {
+                                        "name": "mono-trans, poly-cis decaprenyl phosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6383"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-196843"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-196843"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-140342"
+                                    },
+                                    {
+                                        "name": "Platelet degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-114608"
+                                    },
+                                    {
+                                        "name": "CMP-diacetamido-8-epilegionaminic acid biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7719"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis II (Methanocaldococcus)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6797"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8051"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6545"
+                                    },
+                                    {
+                                        "name": "plasmalogen degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7783"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6147"
+                                    },
+                                    {
+                                        "name": "fosfomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5757"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides dephosphorylation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7206"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis III (Chlamydia)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7539"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 40,
+                                "end": 111,
+                                "representative": false,
+                                "hmmLength": 105,
+                                "location-fragments": [
+                                    {
+                                        "start": 40,
+                                        "end": 111,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 5.06e-22,
+                        "model-ac": "0044201"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501078.1_prot_QXV80641.1_16_unknown",
+                        "id": "MZ501078.1_prot_QXV80641.1_16_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80650.1_25_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501078.1_prot_QXV80650.1_25_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A5P3FWM3-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 143,
+                        "tstart": 2,
+                        "tend": 168,
+                        "prob": 0.57,
+                        "alntmscore": 0.59,
+                        "evalue": 0.51
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501078.1_prot_QXV80650.1_25_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A5P3FWM3-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 143,
+                        "tstart": 2,
+                        "tend": 168,
+                        "prob": 0.57,
+                        "alntmscore": 0.59,
+                        "evalue": 0.51
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501078.1_prot_QXV80650.1_25_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A5P3FWM3-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 143,
+                        "tstart": 2,
+                        "tend": 168,
+                        "prob": 0.57,
+                        "alntmscore": 0.59,
+                        "evalue": 0.51
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501078.1_prot_QXV80650.1_25_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80650.1_25_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80650.1_25_unknown"
+                ],
+                "function": "putative homing endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501078.1_prot_QXV80650.1_25_unknown",
+                "function": "putative homing endonuclease"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MIHPKLLIEPTDSCIEWTGAFHKNGYGVISLNRKVAAELGIPRVQFVHRASYMQHKGTIGDGLVVRHLCHNRKCFNPAHLEVGTQYDNFEDSVKVGRNKRKLLDEDVKSIRESTMSNRKLAKLYGVSSTTIFHIKHNNKWRNLNGTSTIQTA",
+                "md5": "f63fe5cc3ca44d458faee994c3de0474",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "SSF54060",
+                            "name": "His-Me finger endonucleases",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR044925",
+                                "name": "His-Me_finger_sf",
+                                "description": "His-Me finger superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "tunicamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7821"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7187"
+                                    },
+                                    {
+                                        "name": "Vitamin B5 (pantothenate) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-199220"
+                                    },
+                                    {
+                                        "name": "phosphatidate metabolism, as a signaling molecule",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7039"
+                                    },
+                                    {
+                                        "name": "Platelet degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-114608"
+                                    },
+                                    {
+                                        "name": "dZTP biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8289"
+                                    },
+                                    {
+                                        "name": "choline biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3561"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-140342"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7184"
+                                    },
+                                    {
+                                        "name": "FR-900098 and FR-33289 antibiotics biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7419"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-196843"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-140342"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8053"
+                                    },
+                                    {
+                                        "name": "mono-trans, poly-cis decaprenyl phosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6383"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-196843"
+                                    },
+                                    {
+                                        "name": "Vitamin B2 (riboflavin) metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-196843"
+                                    },
+                                    {
+                                        "name": "Apoptosis induced DNA fragmentation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-140342"
+                                    },
+                                    {
+                                        "name": "Platelet degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-114608"
+                                    },
+                                    {
+                                        "name": "CMP-diacetamido-8-epilegionaminic acid biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7719"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis II (Methanocaldococcus)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6797"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8051"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides de novo biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6545"
+                                    },
+                                    {
+                                        "name": "plasmalogen degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7783"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6147"
+                                    },
+                                    {
+                                        "name": "fosfomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5757"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides dephosphorylation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7206"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis III (Chlamydia)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7539"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 3,
+                                "end": 135,
+                                "representative": false,
+                                "hmmLength": 162,
+                                "location-fragments": [
+                                    {
+                                        "start": 3,
+                                        "end": 135,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.47e-33,
+                        "model-ac": "0034919"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF13392",
+                            "name": "HNH_3",
+                            "description": "HNH endonuclease",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003615",
+                                "name": "HNH_nuc",
+                                "description": "HNH nuclease",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "[2Fe-2S] iron-sulfur cluster biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7250"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 46,
+                                "end": 88,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 44,
+                                "hmmLength": 46,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 4.7e-07,
+                                "score": 40.7,
+                                "envelopeStart": 45,
+                                "envelopeEnd": 88,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 46,
+                                        "end": 88,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 4.5e-07,
+                        "score": 40.7,
+                        "model-ac": "PF13392"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501078.1_prot_QXV80650.1_25_unknown",
+                        "id": "MZ501078.1_prot_QXV80650.1_25_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80635.1_10_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501078.1_prot_QXV80635.1_10_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q8IBQ0-F1-model_v4",
+                        "function": "P53 and DNA damage-regulated protein 1",
+                        "qstart": 3,
+                        "qend": 44,
+                        "tstart": 50,
+                        "tend": 91,
+                        "prob": 0.9,
+                        "alntmscore": 0.81,
+                        "evalue": 0.49
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501078.1_prot_QXV80635.1_10_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q8IBQ0-F1-model_v4",
+                        "function": "P53 and DNA damage-regulated protein 1",
+                        "qstart": 3,
+                        "qend": 44,
+                        "tstart": 50,
+                        "tend": 91,
+                        "prob": 0.9,
+                        "alntmscore": 0.81,
+                        "evalue": 0.49
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501078.1_prot_QXV80635.1_10_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P44332-F1-model_v4",
+                        "function": "3'(2'),5'-bisphosphate nucleotidase CysQ",
+                        "qstart": 16,
+                        "qend": 45,
+                        "tstart": 1,
+                        "tend": 125,
+                        "prob": 0.54,
+                        "alntmscore": 0.81,
+                        "evalue": 0.32
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80631.1_6_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501078.1_prot_QXV80631.1_6_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80631.1_6_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80631.1_6_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MFRLLLNLLRHRVTYRFLMVLCAALGYASLTGDLSSLESTVCSILTCSD",
+                "md5": "1d3d18af32c38a920b4d399dbce533e6",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF17553",
+                            "name": "DUF5465",
+                            "description": "Family of unknown function (DUF5465)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR035581",
+                                "name": "DUF5465",
+                                "description": "Domain of unknown function DUF5465",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 31,
+                                "end": 49,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 19,
+                                "hmmLength": 19,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 2.5e-06,
+                                "score": 38.2,
+                                "envelopeStart": 31,
+                                "envelopeEnd": 49,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 31,
+                                        "end": 49,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 2.5e-06,
+                        "score": 38.2,
+                        "model-ac": "PF17553"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501078.1_prot_QXV80631.1_6_unknown",
+                        "id": "MZ501078.1_prot_QXV80631.1_6_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80642.1_17_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501078.1_prot_QXV80642.1_17_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80642.1_17_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80642.1_17_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80661.1_36_unknown",
+        "predictions": [
+            {
+                "method": "clusterMember",
+                "target": "MZ501078.1_prot_QXV80661.1_36_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80661.1_36_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80661.1_36_unknown",
+                    "NC_001604.1_prot_NP_041989.1_36_known"
+                ],
+                "function": "DUF5516 domain-containing protein",
+                "memberCount": 2,
+                "knownCount": 1,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "METVAYIGIGLCGLGVCLIAWGIWDLARIIKLIHDTK",
+                "md5": "ac7d5947187db0323b35d3bd51cfa87b",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF17637",
+                            "name": "DUF5516",
+                            "description": "Family of unknown function (DUF5516)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR035111",
+                                "name": "DUF5516",
+                                "description": "Protein of unknown function DUF5516",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 37,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 37,
+                                "hmmLength": 37,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 1.2e-17,
+                                "score": 74.6,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 37,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 37,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.2e-17,
+                        "score": 74.7,
+                        "model-ac": "PF17637"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501078.1_prot_QXV80661.1_36_unknown",
+                        "id": "MZ501078.1_prot_QXV80661.1_36_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80663.1_38_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501078.1_prot_QXV80663.1_38_unknown",
+                "clusterRep": "MZ501078.1_prot_QXV80663.1_38_unknown",
+                "members": [
+                    "MZ501078.1_prot_QXV80663.1_38_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MCFSPKVKVPKMDTNQIRAVEPAPLTQEVSGVEFGGSSDETDTEGTEVSGRKDLKVERDDSVAKSKASGTGSARMKSSIRKSAFGGKK",
+                "md5": "3be9db948de76e98fad604ade4a5db5a",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF17570",
+                            "name": "T7-like_gp67",
+                            "description": "Bacteriophage T7-like, protein 6.7",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR020134",
+                                "name": "Phage_T7-like_6.7",
+                                "description": "Bacteriophage T7-like, protein 6.7",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 61,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 60,
+                                "hmmLength": 61,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 2e-25,
+                                "score": 100.3,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 62,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 61,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.2e-25,
+                        "score": 100.9,
+                        "model-ac": "PF17570"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501078.1_prot_QXV80663.1_38_unknown",
+                        "id": "MZ501078.1_prot_QXV80663.1_38_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501078.1_prot_QXV80638.1_13_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MRNFEKMTKRSNRNAHDFEATKGRKLNKTKRDRSHKRSWEGQ",
+                "md5": "3bc59fc916c78434a2c3040b007dcacf",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF08200",
+                            "name": "Phage_1_1",
+                            "description": "Bacteriophage 1.1 Protein",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR013232",
+                                "name": "Phage_T7_Gp1.1",
+                                "description": "Bacteriophage T7, Gp1.1",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 40,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 45,
+                                "hmmLength": 45,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 9e-16,
+                                "score": 69.3,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 40,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 40,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 8.2e-16,
+                        "score": 69.4,
+                        "model-ac": "PF08200"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501078.1_prot_QXV80638.1_13_unknown",
+                        "id": "MZ501078.1_prot_QXV80638.1_13_unknown"
+                    }
+                ]
+            }
+        ]
+    }
+]

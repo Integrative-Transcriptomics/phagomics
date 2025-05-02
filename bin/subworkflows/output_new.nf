@@ -16,23 +16,23 @@ workflow REPORT_NEW {
 
     main:
         foldseekReport( alnfile )
-        | map{ it -> tuple((it.name =~ /^(.*?)_prot/)[0][1] , it) } // [phage, prot_id, path]
+        | map{ it -> tuple((it.name =~ /^(.*?)_prot/)[0][1] , it) } // [phage, path]
         | set{ fs }
         
         clusterReport( clusterfile, proteinDescriptionsfile )
         | flatten
-        | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, prot_id, path]
+        | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, path]
         | set{ cl }
         
         postulatedReport( proteinDescriptionsfile, clusterReps )
         | flatten
-        | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, prot_id, path]
+        | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, path]
         | set{ ps }
         
         // interproscanReport is done in modules/interproscan.nf
         interproscanReport
         | flatten
-        | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, prot_id, path]
+        | map{ it -> tuple((it.name[0..-9] =~ /^(.*?)_prot/)[0][1] , it) } // [phage, path]
         | set{ ip }
 
         fs.concat ( cl, ps, ip )

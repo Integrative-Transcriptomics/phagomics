@@ -1,0 +1,1192 @@
+[
+    {
+        "protein": "MH550421.1_prot_AXN58289.1_249_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MH550421.1_prot_AXN58289.1_249_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-P55771-F1-model_v4",
+                        "function": "Paired box protein Pax-9",
+                        "qstart": 9,
+                        "qend": 85,
+                        "tstart": 75,
+                        "tend": 234,
+                        "prob": 0.5,
+                        "alntmscore": 0.71,
+                        "evalue": 0.35
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MH550421.1_prot_AXN58289.1_249_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-P55771-F1-model_v4",
+                        "function": "Paired box protein Pax-9",
+                        "qstart": 9,
+                        "qend": 85,
+                        "tstart": 75,
+                        "tend": 234,
+                        "prob": 0.5,
+                        "alntmscore": 0.71,
+                        "evalue": 0.35
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MH550421.1_prot_AXN58289.1_249_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-P55771-F1-model_v4",
+                        "function": "Paired box protein Pax-9",
+                        "qstart": 9,
+                        "qend": 85,
+                        "tstart": 75,
+                        "tend": 234,
+                        "prob": 0.5,
+                        "alntmscore": 0.71,
+                        "evalue": 0.35
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58289.1_249_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58289.1_249_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58289.1_249_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MAREINSKSDYFNSLNDKDKNLIRHFIVEMGYTDTRDLREHIFECGVAKKFSFTCKCLREVIQHYENNLVAKHNFNKASVHKDKKKAFKESNRKQKHKGKVYDY",
+                "md5": "1bf68591d3c6134dfadd4d38223bb52c",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23876",
+                            "name": "DUF7230",
+                            "description": "Family of unknown function (DUF7230)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055654",
+                                "name": "DUF7230",
+                                "description": "Protein of unknown function DUF7230",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 67,
+                                "end": 100,
+                                "representative": false,
+                                "hmmStart": 4,
+                                "hmmEnd": 35,
+                                "hmmLength": 42,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 2.6e-07,
+                                "score": 41.9,
+                                "envelopeStart": 65,
+                                "envelopeEnd": 104,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 67,
+                                        "end": 100,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.4e-07,
+                        "score": 42.8,
+                        "model-ac": "PF23876"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58289.1_249_unknown",
+                        "id": "MH550421.1_prot_AXN58289.1_249_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58110.1_69_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MH550421.1_prot_AXN58110.1_69_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q2G116-F1-model_v4",
+                        "function": "Cytosolic protein",
+                        "qstart": 5,
+                        "qend": 58,
+                        "tstart": 1,
+                        "tend": 60,
+                        "prob": 0.96,
+                        "alntmscore": 0.86,
+                        "evalue": 0.7
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MH550421.1_prot_AXN58110.1_69_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q59044-F1-model_v4",
+                        "function": "Uncharacterized protein MJ1650",
+                        "qstart": 4,
+                        "qend": 60,
+                        "tstart": 173,
+                        "tend": 325,
+                        "prob": 0.98,
+                        "alntmscore": 0.89,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MH550421.1_prot_AXN58110.1_69_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-Q59044-F1-model_v4",
+                        "function": "Uncharacterized protein MJ1650",
+                        "qstart": 4,
+                        "qend": 60,
+                        "tstart": 173,
+                        "tend": 325,
+                        "prob": 0.98,
+                        "alntmscore": 0.89,
+                        "evalue": 0.47
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58047.1_6_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MH550421.1_prot_AXN58047.1_6_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-K0F5K5-F1-model_v4",
+                        "function": "Putative regulatory protein FmdB zinc ribbon domain-containing protein",
+                        "qstart": 1,
+                        "qend": 54,
+                        "tstart": 1,
+                        "tend": 52,
+                        "prob": 0.89,
+                        "alntmscore": 0.8,
+                        "evalue": 0.61
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MH550421.1_prot_AXN58047.1_6_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-K0F5K5-F1-model_v4",
+                        "function": "Putative regulatory protein FmdB zinc ribbon domain-containing protein",
+                        "qstart": 1,
+                        "qend": 54,
+                        "tstart": 1,
+                        "tend": 52,
+                        "prob": 0.89,
+                        "alntmscore": 0.8,
+                        "evalue": 0.61
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MH550421.1_prot_AXN58047.1_6_unknown_relaxed_rank_001_alphafold2_ptm_model_2_seed_000",
+                        "target": "AF-O64867-F1-model_v4",
+                        "function": "RING-type E3 ubiquitin transferase",
+                        "qstart": 1,
+                        "qend": 47,
+                        "tstart": 10,
+                        "tend": 53,
+                        "prob": 0.8,
+                        "alntmscore": 0.85,
+                        "evalue": 0.42
+                    }
+                ]
+            },
+            {
+                "method": "clusterMember",
+                "target": "MH550421.1_prot_AXN58047.1_6_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58047.1_6_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58047.1_6_unknown",
+                    "NC_000866.4_prot_NP_049623.1_8_known",
+                    "MZ501106.1_prot_QXV84855.1_119_unknown"
+                ],
+                "function": "FmdB-like transcriptional regulator",
+                "memberCount": 3,
+                "knownCount": 1,
+                "unknownCount": 2
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MPLYDYKCQSKDCAKEYEKIKKISERDTDVCPDCHRIAIRLVSAPKHVNGGFYDLLKG",
+                "md5": "49337ed0c56700b79ce2fd63eaf8a194",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF09723",
+                            "name": "Zn_ribbon_8",
+                            "description": "Zinc ribbon domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR013429",
+                                "name": "Regulatory_FmdB_Zinc_ribbon",
+                                "description": "Putative regulatory protein FmdB, zinc ribbon domain",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 36,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 34,
+                                "hmmLength": 41,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 2.2e-07,
+                                "score": 42.1,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 42,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 36,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.8e-07,
+                        "score": 42.4,
+                        "model-ac": "PF09723"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58047.1_6_unknown",
+                        "id": "MH550421.1_prot_AXN58047.1_6_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58149.1_108_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MH550421.1_prot_AXN58149.1_108_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0N4U0F5-F1-model_v4",
+                        "function": "Tubulin-specific chaperone A",
+                        "qstart": 1,
+                        "qend": 62,
+                        "tstart": 14,
+                        "tend": 77,
+                        "prob": 0.99,
+                        "alntmscore": 0.88,
+                        "evalue": 0.72
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MH550421.1_prot_AXN58149.1_108_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A2R8QCG5-F1-model_v4",
+                        "function": "GTPase IMAP family member 9",
+                        "qstart": 1,
+                        "qend": 62,
+                        "tstart": 269,
+                        "tend": 333,
+                        "prob": 1.0,
+                        "alntmscore": 0.94,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MH550421.1_prot_AXN58149.1_108_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A2R8QCG5-F1-model_v4",
+                        "function": "GTPase IMAP family member 9",
+                        "qstart": 1,
+                        "qend": 62,
+                        "tstart": 269,
+                        "tend": 333,
+                        "prob": 1.0,
+                        "alntmscore": 0.94,
+                        "evalue": 0.53
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58149.1_108_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58149.1_108_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58149.1_108_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58150.1_109_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MH550421.1_prot_AXN58150.1_109_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q2FYG8-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 5,
+                        "qend": 61,
+                        "tstart": 1,
+                        "tend": 57,
+                        "prob": 0.98,
+                        "alntmscore": 0.9,
+                        "evalue": 0.76
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MH550421.1_prot_AXN58150.1_109_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A044QUR1-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 61,
+                        "tstart": 66,
+                        "tend": 126,
+                        "prob": 1.0,
+                        "alntmscore": 0.94,
+                        "evalue": 0.47
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MH550421.1_prot_AXN58150.1_109_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P38304-F1-model_v4",
+                        "function": "Mediator of RNA polymerase II transcription subunit 8",
+                        "qstart": 2,
+                        "qend": 61,
+                        "tstart": 27,
+                        "tend": 86,
+                        "prob": 1.0,
+                        "alntmscore": 0.94,
+                        "evalue": 0.57
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58150.1_109_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58150.1_109_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58150.1_109_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58238.1_197_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MH550421.1_prot_AXN58238.1_197_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q54TQ0-F1-model_v4",
+                        "function": "NADAR domain-containing protein",
+                        "qstart": 1,
+                        "qend": 152,
+                        "tstart": 4,
+                        "tend": 147,
+                        "prob": 0.94,
+                        "alntmscore": 0.78,
+                        "evalue": 0.71
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MH550421.1_prot_AXN58238.1_197_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q57X94-F1-model_v4",
+                        "function": "NADAR domain-containing protein",
+                        "qstart": 1,
+                        "qend": 152,
+                        "tstart": 3,
+                        "tend": 149,
+                        "prob": 0.95,
+                        "alntmscore": 0.78,
+                        "evalue": 0.71
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MH550421.1_prot_AXN58238.1_197_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-P30176-F1-model_v4",
+                        "function": "N-glycosidase YbiA",
+                        "qstart": 1,
+                        "qend": 152,
+                        "tstart": 14,
+                        "tend": 157,
+                        "prob": 0.94,
+                        "alntmscore": 0.79,
+                        "evalue": 0.7
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58238.1_197_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58238.1_197_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58238.1_197_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MSELEIRSNFRWPSCALSNFAHWPFVMDGIQFGGLEGFLQGCKVKNVEQQRRIFGLSGLAAQQAGRSYARAQDRGTLFWLGVPFSRYSPAWKELYTNAYFEAAIQNKGFRDALQASKGKVLKHSMASGLTKDDTILTEAEFIDVLNLLRDSL",
+                "md5": "edd850f926717435c2c6c0fd08994b72",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF08010",
+                            "name": "Phage_30_3",
+                            "description": "Bacteriophage protein GP30.3",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR012596",
+                                "name": "Phage_T4_Y12G",
+                                "description": "Bacteriophage T4, Y12G",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 11,
+                                "end": 150,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 138,
+                                "hmmLength": 138,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 2.1e-66,
+                                "score": 233.4,
+                                "envelopeStart": 11,
+                                "envelopeEnd": 150,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 11,
+                                        "end": 150,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.8e-66,
+                        "score": 233.6,
+                        "model-ac": "PF08010"
+                    },
+                    {
+                        "signature": {
+                            "accession": "SSF143990",
+                            "name": "YbiA-like",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR037238",
+                                "name": "YbiA-like_sf",
+                                "description": "YbiA-like superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "flavin biosynthesis III (fungi)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6168"
+                                    },
+                                    {
+                                        "name": "NAD salvage (plants)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5381"
+                                    },
+                                    {
+                                        "name": "bacimethrin and bacimethrin pyrophosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7564"
+                                    },
+                                    {
+                                        "name": "trans-zeatin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-2681"
+                                    },
+                                    {
+                                        "name": "queuosine biosynthesis III (queuosine salvage)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8106"
+                                    },
+                                    {
+                                        "name": "superpathway of nicotine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7342"
+                                    },
+                                    {
+                                        "name": "nicotine biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5316"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis III (Chlamydia)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7539"
+                                    },
+                                    {
+                                        "name": "toxoflavin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7991"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 7,
+                                "end": 125,
+                                "representative": false,
+                                "hmmLength": 160,
+                                "location-fragments": [
+                                    {
+                                        "start": 7,
+                                        "end": 125,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 4.32e-16,
+                        "model-ac": "0051893"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58238.1_197_unknown",
+                        "id": "MH550421.1_prot_AXN58238.1_197_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58095.1_54_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58095.1_54_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58095.1_54_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58095.1_54_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58132.1_91_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58132.1_91_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58132.1_91_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58132.1_91_unknown"
+                ],
+                "function": "putative site-specific intron-like DNA endonuclease",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MH550421.1_prot_AXN58132.1_91_unknown",
+                "function": "putative site-specific intron-like DNA endonuclease"
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58136.1_95_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58136.1_95_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58136.1_95_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58136.1_95_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MFISSGSGLIRVEFKNDIFLSQGDDIIKMSYDEIKKICHTLESRGKVNAVIDIGDLWVTLYEVSEGFNIEDENNILAIDKRSDLFDVLKAYEQSNGGRKAVLIYQKPHSCGTASIISNIEGEVDTYMCVLKAGGDRHPDFISIRQNNGEISLSKSEAEAMIKYLTIVTPSMKG",
+                "md5": "3bf45e1f8707f8e7e2f295392f472332",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24448",
+                            "name": "T4_y05I_C",
+                            "description": "y05I-like putative transcription factor C-terminal domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 102,
+                                "end": 171,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 69,
+                                "hmmLength": 69,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 1.2e-16,
+                                "score": 72.1,
+                                "envelopeStart": 101,
+                                "envelopeEnd": 171,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 102,
+                                        "end": 171,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 6.7e-19,
+                        "score": 79.3,
+                        "model-ac": "PF24448"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF24449",
+                            "name": "T4_y05I_N",
+                            "description": "y05I-like putative transcription factor N-terminal domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 2,
+                                "end": 95,
+                                "representative": true,
+                                "hmmStart": 2,
+                                "hmmEnd": 98,
+                                "hmmLength": 99,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 1.5e-30,
+                                "score": 117.0,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 96,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 2,
+                                        "end": 95,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1e-30,
+                        "score": 117.6,
+                        "model-ac": "PF24449"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58136.1_95_unknown",
+                        "id": "MH550421.1_prot_AXN58136.1_95_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58183.1_142_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58183.1_142_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58183.1_142_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58183.1_142_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58195.1_154_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58195.1_154_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58195.1_154_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58195.1_154_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MNYTKIYNSLIERSLKRGLNKKKLDYYTESHHIVPKSMGGDDSRENRVLLTAREHYFAHELLFKIHRNSEMAYALIKFSKGTKEQRIVSKDYGWIKEETSKIRSETIKKFWANLSPNLKQERIKKAGKGIKKTKSLWTDEKRKEVNANIRKASVKYLESLSENEMLEYKERCSKQMKDFWSELKSDPQKYEKYLNKLSKGLAKVEKRNCPHCGIICDVGNYGKYHGDKCKVITGVSHSREKLKCPHCSKIMDKSHAKRYHFDNCKFKKVE",
+                "md5": "d2aaa174425c592c115dcd6ec6a44db6",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF13395",
+                            "name": "HNH_4",
+                            "description": "HNH endonuclease",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003615",
+                                "name": "HNH_nuc",
+                                "description": "HNH nuclease",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "[2Fe-2S] iron-sulfur cluster biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7250"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 25,
+                                "end": 52,
+                                "representative": false,
+                                "hmmStart": 15,
+                                "hmmEnd": 42,
+                                "hmmLength": 54,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 0.17,
+                                "score": 23.2,
+                                "envelopeStart": 17,
+                                "envelopeEnd": 54,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 25,
+                                        "end": 52,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 0.07,
+                        "score": 24.4,
+                        "model-ac": "PF13395"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58195.1_154_unknown",
+                        "id": "MH550421.1_prot_AXN58195.1_154_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58201.1_160_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58201.1_160_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58201.1_160_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58201.1_160_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58218.1_177_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MH550421.1_prot_AXN58218.1_177_unknown",
+                "clusterRep": "MH550421.1_prot_AXN58218.1_177_unknown",
+                "members": [
+                    "MH550421.1_prot_AXN58218.1_177_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MNYKLIYDNLINRAQNRARLNEYTETHHIIPRCMGGTNDKCNLVELTAEEHFIAHKLLAKIHPNHYGIIKAVICMGMNSNTHERHVNKSYAWERRKMAELQSGEGNPFYGKHHTEEHKQYMSKLMKSRPITWGNKISKTKRMNPTKWTEEAKRLHSINQSGKNNGMYGRKHSAKSIQKIKDNMPDNSGANNPAAKPIEVNGVKYKCMKDASKATGLSMYKLRILRKTVNL",
+                "md5": "583de099dccbeddcf13f514077a6ed9a",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF07460",
+                            "name": "NUMOD3",
+                            "description": "NUMOD3 motif",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR003611",
+                                "name": "NUMOD3",
+                                "description": "Nuclease associated modular domain 3",
+                                "type": "DOMAIN",
+                                "goXRefs": [
+                                    {
+                                        "name": "DNA binding",
+                                        "databaseName": "GO",
+                                        "category": "MOLECULAR_FUNCTION",
+                                        "id": "GO:0003677"
+                                    }
+                                ],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 94,
+                                "end": 122,
+                                "representative": false,
+                                "hmmStart": 9,
+                                "hmmEnd": 37,
+                                "hmmLength": 37,
+                                "hmmBounds": "C_TERMINAL_COMPLETE",
+                                "evalue": 0.00015,
+                                "score": 32.9,
+                                "envelopeStart": 93,
+                                "envelopeEnd": 122,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 94,
+                                        "end": 122,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            },
+                            {
+                                "start": 147,
+                                "end": 179,
+                                "representative": false,
+                                "hmmStart": 4,
+                                "hmmEnd": 36,
+                                "hmmLength": 37,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 0.69,
+                                "score": 21.2,
+                                "envelopeStart": 145,
+                                "envelopeEnd": 180,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 147,
+                                        "end": 179,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.9e-10,
+                        "score": 51.8,
+                        "model-ac": "PF07460"
+                    },
+                    {
+                        "signature": {
+                            "accession": "SSF64496",
+                            "name": "DNA-binding domain of intron-encoded endonucleases",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 146,
+                                "end": 218,
+                                "representative": false,
+                                "hmmLength": 96,
+                                "location-fragments": [
+                                    {
+                                        "start": 146,
+                                        "end": 218,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 5.49e-14,
+                        "model-ac": "0038860"
+                    },
+                    {
+                        "signature": {
+                            "accession": "SSF64496",
+                            "name": "DNA-binding domain of intron-encoded endonucleases",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 94,
+                                "end": 129,
+                                "representative": false,
+                                "hmmLength": 96,
+                                "location-fragments": [
+                                    {
+                                        "start": 94,
+                                        "end": 129,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 5.49e-08,
+                        "model-ac": "0038860"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58218.1_177_unknown",
+                        "id": "MH550421.1_prot_AXN58218.1_177_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58137.1_96_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MKRLVLEVSSLFGELAIEKVNNMYRLTQEDDMLYFTPSEIIHLTQIEKPYTDKIVSINDEHKIHFYSLCPGFNIESESICLSINNWDNFITYIKYFYYSNERKHSLKWLKNCNAIITNACDQCDQNDETVLNVSKCYEEGDVLTIRQIDDSRAHIVTFTKDEAIALKTYLDSVIPTMISK",
+                "md5": "b82b126200ab1589cad8f0a941acbdbb",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24448",
+                            "name": "T4_y05I_C",
+                            "description": "y05I-like putative transcription factor C-terminal domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 105,
+                                "end": 177,
+                                "representative": true,
+                                "hmmStart": 1,
+                                "hmmEnd": 69,
+                                "hmmLength": 69,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 2.2e-19,
+                                "score": 80.9,
+                                "envelopeStart": 105,
+                                "envelopeEnd": 177,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 105,
+                                        "end": 177,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.7e-20,
+                        "score": 83.4,
+                        "model-ac": "PF24448"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF24449",
+                            "name": "T4_y05I_N",
+                            "description": "y05I-like putative transcription factor N-terminal domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 4,
+                                "end": 100,
+                                "representative": true,
+                                "hmmStart": 1,
+                                "hmmEnd": 98,
+                                "hmmLength": 99,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 9.3e-37,
+                                "score": 137.0,
+                                "envelopeStart": 4,
+                                "envelopeEnd": 101,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 4,
+                                        "end": 100,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 9.3e-37,
+                        "score": 137.0,
+                        "model-ac": "PF24449"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58137.1_96_unknown",
+                        "id": "MH550421.1_prot_AXN58137.1_96_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MH550421.1_prot_AXN58051.1_10_unknown",
+        "predictions": [
+            {
+                "method": "interproscan",
+                "sequence": "MKFNYNPEYTPNPVDKPFDMDIASMYGTLVKPLEIKETFMTARTIETGKTYKLVETEIKTTELNLGYKALTSVFGEGEFVVKSFSKSNWYDKNKAYVIRAHRLDNDEVIKTIVFEAELILFQECDPTDLLTCAVAIKTPFISVCGWVTDQWIEDGVELLNVVHAGDFSVVPRSAVVAILN",
+                "md5": "bec430a414d3e80cbe2eed4a7c7cc087",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF17613",
+                            "name": "motB",
+                            "description": "Modifier of transcription",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR020230",
+                                "name": "Tscrpt_reg_MotB",
+                                "description": "Transcription regulator MotB",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 142,
+                                "end": 175,
+                                "representative": false,
+                                "hmmStart": 120,
+                                "hmmEnd": 153,
+                                "hmmLength": 162,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 0.00013,
+                                "score": 33.3,
+                                "envelopeStart": 134,
+                                "envelopeEnd": 180,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 142,
+                                        "end": 175,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 8.1e-05,
+                        "score": 34.0,
+                        "model-ac": "PF17613"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MH550421.1_prot_AXN58051.1_10_unknown",
+                        "id": "MH550421.1_prot_AXN58051.1_10_unknown"
+                    }
+                ]
+            }
+        ]
+    }
+]

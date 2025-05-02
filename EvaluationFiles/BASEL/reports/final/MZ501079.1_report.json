@@ -1,0 +1,3170 @@
+[
+    {
+        "protein": "MZ501079.1_prot_QXV80701.1_26_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80701.1_26_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A0A0R0KF87-F1-model_v4",
+                        "function": "Ninja-family protein",
+                        "qstart": 1,
+                        "qend": 74,
+                        "tstart": 51,
+                        "tend": 256,
+                        "prob": 0.5,
+                        "alntmscore": 0.57,
+                        "evalue": 0.35
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80701.1_26_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-Q2FZK7-F1-model_v4",
+                        "function": "Bifunctional autolysin",
+                        "qstart": 2,
+                        "qend": 71,
+                        "tstart": 169,
+                        "tend": 760,
+                        "prob": 0.69,
+                        "alntmscore": 0.67,
+                        "evalue": 0.31
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80701.1_26_unknown_relaxed_rank_001_alphafold2_ptm_model_1_seed_000",
+                        "target": "AF-A2CG63-F1-model_v4",
+                        "function": "AT-rich interactive domain-containing protein 4B",
+                        "qstart": 23,
+                        "qend": 75,
+                        "tstart": 571,
+                        "tend": 637,
+                        "prob": 0.47,
+                        "alntmscore": 0.73,
+                        "evalue": 0.27
+                    }
+                ]
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKKLIAVLIATVTLTGCANMPKRECTAIYENSGMQYSVAIFGVKRVGDRTIVKAGYPFNFQWVSIDNFKNADCSL",
+                "md5": "73e572664b220619081db6a5e8a54499",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PS51257",
+                            "name": "PROKAR_LIPOPROTEIN",
+                            "description": "Prokaryotic membrane lipoprotein lipid attachment site profile.",
+                            "signatureLibraryRelease": {
+                                "library": "PROSITE_PROFILES",
+                                "version": "2023_05"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 17,
+                                "representative": true,
+                                "score": 6.0,
+                                "alignment": "MKKLIA------------------VLIATVTLTGC",
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 17,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "model-ac": "PS51257"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80701.1_26_unknown",
+                        "id": "MZ501079.1_prot_QXV80701.1_26_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80745.1_70_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80745.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-X8F8P7-F1-model_v4",
+                        "function": "None",
+                        "qstart": 1,
+                        "qend": 58,
+                        "tstart": 4,
+                        "tend": 75,
+                        "prob": 0.9,
+                        "alntmscore": 0.77,
+                        "evalue": 0.62
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80745.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q8I318-F1-model_v4",
+                        "function": "Translation elongation factor P/YeiP central domain-containing protein",
+                        "qstart": 1,
+                        "qend": 61,
+                        "tstart": 28,
+                        "tend": 150,
+                        "prob": 0.93,
+                        "alntmscore": 0.78,
+                        "evalue": 0.5
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80745.1_70_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q8I318-F1-model_v4",
+                        "function": "Translation elongation factor P/YeiP central domain-containing protein",
+                        "qstart": 1,
+                        "qend": 61,
+                        "tstart": 28,
+                        "tend": 150,
+                        "prob": 0.93,
+                        "alntmscore": 0.78,
+                        "evalue": 0.5
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80745.1_70_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80745.1_70_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80745.1_70_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80738.1_63_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80738.1_63_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A3P7EV02-F1-model_v4",
+                        "function": "DOC domain-containing protein",
+                        "qstart": 1,
+                        "qend": 88,
+                        "tstart": 682,
+                        "tend": 953,
+                        "prob": 0.75,
+                        "alntmscore": 0.66,
+                        "evalue": 0.31
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80738.1_63_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A3P7EV02-F1-model_v4",
+                        "function": "DOC domain-containing protein",
+                        "qstart": 1,
+                        "qend": 88,
+                        "tstart": 682,
+                        "tend": 953,
+                        "prob": 0.75,
+                        "alntmscore": 0.66,
+                        "evalue": 0.31
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80738.1_63_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A3P7EV02-F1-model_v4",
+                        "function": "DOC domain-containing protein",
+                        "qstart": 1,
+                        "qend": 88,
+                        "tstart": 682,
+                        "tend": 953,
+                        "prob": 0.75,
+                        "alntmscore": 0.66,
+                        "evalue": 0.31
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80738.1_63_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80738.1_63_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80738.1_63_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80759.1_84_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80759.1_84_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P80680-F1-model_v4",
+                        "function": "Ferredoxin-thioredoxin reductase, variable chain",
+                        "qstart": 1,
+                        "qend": 73,
+                        "tstart": 20,
+                        "tend": 96,
+                        "prob": 0.6,
+                        "alntmscore": 0.61,
+                        "evalue": 0.49
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80759.1_84_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-Q68LP1-F1-model_v4",
+                        "function": "E3 ubiquitin-protein ligase MIB2",
+                        "qstart": 1,
+                        "qend": 74,
+                        "tstart": 261,
+                        "tend": 327,
+                        "prob": 0.77,
+                        "alntmscore": 0.72,
+                        "evalue": 0.33
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80759.1_84_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-I6XVR9-F1-model_v4",
+                        "function": "DUF4926 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 73,
+                        "tstart": 60,
+                        "tend": 116,
+                        "prob": 0.69,
+                        "alntmscore": 0.77,
+                        "evalue": 0.47
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80759.1_84_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80759.1_84_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80759.1_84_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80748.1_73_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80748.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0R0FIM3-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 167,
+                        "tstart": 6,
+                        "tend": 172,
+                        "prob": 0.47,
+                        "alntmscore": 0.72,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80748.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9ZVI2-F1-model_v4",
+                        "function": "HAD superfamily, subfamily IIIB acid phosphatase",
+                        "qstart": 16,
+                        "qend": 173,
+                        "tstart": 95,
+                        "tend": 251,
+                        "prob": 0.6,
+                        "alntmscore": 0.82,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80748.1_73_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O49195-F1-model_v4",
+                        "function": "Vegetative storage protein 1",
+                        "qstart": 16,
+                        "qend": 176,
+                        "tstart": 115,
+                        "tend": 270,
+                        "prob": 0.6,
+                        "alntmscore": 0.83,
+                        "evalue": 0.52
+                    }
+                ]
+            },
+            {
+                "method": "clusterMember",
+                "target": "MZ501079.1_prot_QXV80748.1_73_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80748.1_73_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80748.1_73_unknown",
+                    "MZ501069.1_prot_QXV79428.1_71_known",
+                    "MZ501090.1_prot_QXV82324.1_71_unknown",
+                    "MZ501099.1_prot_QXV83718.1_73_known",
+                    "MZ501085.1_prot_QXV81669.1_65_known"
+                ],
+                "function": "polynucleotide kinase",
+                "memberCount": 5,
+                "knownCount": 3,
+                "unknownCount": 2
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501079.1_prot_QXV80748.1_73_unknown",
+                "function": "putative polynucleotide kinase"
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MKKYEFELWGIKYHFSTSKPIVIVDLDGTLSDGTHRLHLLPTEDLHLTESWSEFNKAAVGDSPIKSTVAVVNGLWMSGFAIVILTGRSDEVIEDTCKWLNENGIKYDALIMRRKEDNRKDTIIKEEVLRAIGLENIVCAFDDSPNVVKHFRSLGITTYQVTEYDKPHSHIQSHGVEAIKITKRARFVGSKDSLVNASFTRGITYDVVSYHDKSFIVHDDSGCAWSFDHSDGDFVNAE",
+                "md5": "d15a5ef23b39341073324eed61a2884c",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "SSF56784",
+                            "name": "HAD-like",
+                            "description": null,
+                            "signatureLibraryRelease": {
+                                "library": "SUPERFAMILY",
+                                "version": "1.75"
+                            },
+                            "entry": {
+                                "accession": "IPR036412",
+                                "name": "HAD-like_sf",
+                                "description": "HAD-like superfamily",
+                                "type": "HOMOLOGOUS_SUPERFAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": [
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-446205"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-977347"
+                                    },
+                                    {
+                                        "name": "Formation of the Early Elongation Complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-113418"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-936837"
+                                    },
+                                    {
+                                        "name": "quercetin glucoside degradation (Allium)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7133"
+                                    },
+                                    {
+                                        "name": "Peroxisomal protein import",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SSC-9033241"
+                                    },
+                                    {
+                                        "name": "Sensory processing of sound by outer hair cells of the cochlea",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9662361"
+                                    },
+                                    {
+                                        "name": "fluoroacetate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6646"
+                                    },
+                                    {
+                                        "name": "Ribavirin ADME",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-9755088"
+                                    },
+                                    {
+                                        "name": "A-factor gamma-butyrolactone biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7878"
+                                    },
+                                    {
+                                        "name": "Abortive elongation of HIV-1 transcript in the absence of Tat",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167242"
+                                    },
+                                    {
+                                        "name": "Synthesis of PE",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1483213"
+                                    },
+                                    {
+                                        "name": "5,6-dimethylbenzimidazole biosynthesis I (aerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5523"
+                                    },
+                                    {
+                                        "name": "RHOH GTPase cycle",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-9013407"
+                                    },
+                                    {
+                                        "name": "Synthesis of PC",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-1483191"
+                                    },
+                                    {
+                                        "name": "GDP-D-glycero-alpha-D-manno-heptose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6478"
+                                    },
+                                    {
+                                        "name": "sitosterol degradation to androstenedione",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6948"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8051"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-977347"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-936837"
+                                    },
+                                    {
+                                        "name": "MLL4 and MLL3 complexes regulate expression of PPARG target genes in adipogenesis and hepatic steatosis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9841922"
+                                    },
+                                    {
+                                        "name": "fructan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-862"
+                                    },
+                                    {
+                                        "name": "Formation of RNA Pol II elongation complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-112382"
+                                    },
+                                    {
+                                        "name": "cardiolipin biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5269"
+                                    },
+                                    {
+                                        "name": "Abacavir metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-2161541"
+                                    },
+                                    {
+                                        "name": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5693565"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-5578775"
+                                    },
+                                    {
+                                        "name": "Formation of the Early Elongation Complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-113418"
+                                    },
+                                    {
+                                        "name": "ginkgotoxin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8077"
+                                    },
+                                    {
+                                        "name": "Urate synthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-GGA-421178"
+                                    },
+                                    {
+                                        "name": "nucleoside and nucleotide degradation (halobacteria)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8440"
+                                    },
+                                    {
+                                        "name": "2-deoxy-D-glucose 6-phosphate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8121"
+                                    },
+                                    {
+                                        "name": "thiamine diphosphate biosynthesis III (Staphylococcus)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6907"
+                                    },
+                                    {
+                                        "name": "Pyrimidine salvage",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-73614"
+                                    },
+                                    {
+                                        "name": "Purine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-74259"
+                                    },
+                                    {
+                                        "name": "flavin biosynthesis II (archaea)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6167"
+                                    },
+                                    {
+                                        "name": "sucrose biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7238"
+                                    },
+                                    {
+                                        "name": "phytate degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-4702"
+                                    },
+                                    {
+                                        "name": "Biosynthesis of maresins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-9018682"
+                                    },
+                                    {
+                                        "name": "Neutrophil degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6798695"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-446205"
+                                    },
+                                    {
+                                        "name": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-5693565"
+                                    },
+                                    {
+                                        "name": "Abacavir metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-2161541"
+                                    },
+                                    {
+                                        "name": "Ion influx/efflux at host-pathogen interface",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6803544"
+                                    },
+                                    {
+                                        "name": "dalcochinin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5821"
+                                    },
+                                    {
+                                        "name": "Synthesis of PC",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-1483191"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5578775"
+                                    },
+                                    {
+                                        "name": "mannitol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3881"
+                                    },
+                                    {
+                                        "name": "choline biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3385"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-418359"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5578775"
+                                    },
+                                    {
+                                        "name": "stachyose degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6527"
+                                    },
+                                    {
+                                        "name": "palustric acid biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5414"
+                                    },
+                                    {
+                                        "name": "linustatin bioactivation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7091"
+                                    },
+                                    {
+                                        "name": "Ribavirin ADME",
+                                        "databaseName": "Reactome",
+                                        "id": "R-XTR-9755088"
+                                    },
+                                    {
+                                        "name": "Purine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-74259"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Pre-transcription Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-674695"
+                                    },
+                                    {
+                                        "name": "anandamide biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8053"
+                                    },
+                                    {
+                                        "name": "oleate biosynthesis III (cyanobacteria)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7587"
+                                    },
+                                    {
+                                        "name": "L-canavanine degradation II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8419"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-418359"
+                                    },
+                                    {
+                                        "name": "2-chloroacrylate degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7425"
+                                    },
+                                    {
+                                        "name": "Pyrimidine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-73621"
+                                    },
+                                    {
+                                        "name": "Pyrimidine salvage",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-73614"
+                                    },
+                                    {
+                                        "name": "2-aminoethylphosphonate degradation II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6832"
+                                    },
+                                    {
+                                        "name": "Ion influx/efflux at host-pathogen interface",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6803544"
+                                    },
+                                    {
+                                        "name": "Neutrophil degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-6798695"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-977347"
+                                    },
+                                    {
+                                        "name": "Sialic acid metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-4085001"
+                                    },
+                                    {
+                                        "name": "2-methylpropene degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7778"
+                                    },
+                                    {
+                                        "name": "Acyl chain remodelling of PG",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-1482925"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Pre-transcription Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-674695"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-936837"
+                                    },
+                                    {
+                                        "name": "Synthesis of PE",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-1483213"
+                                    },
+                                    {
+                                        "name": "Peroxisomal protein import",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9033241"
+                                    },
+                                    {
+                                        "name": "Synthesis of PI",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-1483226"
+                                    },
+                                    {
+                                        "name": "CMP-legionaminate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6749"
+                                    },
+                                    {
+                                        "name": "virginiae butanolide type gamma-butyrolactones biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7881"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-418359"
+                                    },
+                                    {
+                                        "name": "1-(sn-glycero-3-phospho)-1D-myo-inositol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8430"
+                                    },
+                                    {
+                                        "name": "Synthesis of PC",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-1483191"
+                                    },
+                                    {
+                                        "name": "Tat-mediated HIV elongation arrest and recovery",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167243"
+                                    },
+                                    {
+                                        "name": "D-sorbitol biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5054"
+                                    },
+                                    {
+                                        "name": "trehalose degradation III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-2721"
+                                    },
+                                    {
+                                        "name": "Formation of the Early Elongation Complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-113418"
+                                    },
+                                    {
+                                        "name": "Synthesis of PI",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-1483226"
+                                    },
+                                    {
+                                        "name": "cis-geranyl-CoA degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6672"
+                                    },
+                                    {
+                                        "name": "Formation of the Early Elongation Complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-113418"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-936837"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-418359"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CFA-936837"
+                                    },
+                                    {
+                                        "name": "arachidonate metabolites biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8397"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-4419969"
+                                    },
+                                    {
+                                        "name": "lactate biosynthesis (archaea)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5197"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-1237112"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-418359"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-5578775"
+                                    },
+                                    {
+                                        "name": "geraniol biosynthesis (cytosol)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8176"
+                                    },
+                                    {
+                                        "name": "thiamine diphosphate salvage IV (yeast)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7356"
+                                    },
+                                    {
+                                        "name": "Synthesis of epoxy (EET) and dihydroxyeicosatrienoic acids (DHET)",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-2142670"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1237112"
+                                    },
+                                    {
+                                        "name": "patchoulol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6258"
+                                    },
+                                    {
+                                        "name": "TP53 Regulates Transcription of DNA Repair Genes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-6796648"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Transcription Elongation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-75955"
+                                    },
+                                    {
+                                        "name": "kojibiose degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7459"
+                                    },
+                                    {
+                                        "name": "3-phosphoinositide degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6368"
+                                    },
+                                    {
+                                        "name": "Trehalose biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MTU-868688"
+                                    },
+                                    {
+                                        "name": "starch degradation V",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6737"
+                                    },
+                                    {
+                                        "name": "2-aminoethylphosphonate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6839"
+                                    },
+                                    {
+                                        "name": "Mitochondrial Fatty Acid Beta-Oxidation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-77289"
+                                    },
+                                    {
+                                        "name": "(1,4)-beta-D-xylan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6717"
+                                    },
+                                    {
+                                        "name": "mRNA decay by 3' to 5' exoribonuclease",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-429958"
+                                    },
+                                    {
+                                        "name": "tetrahydromethanopterin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6148"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-977347"
+                                    },
+                                    {
+                                        "name": "curcumene biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6257"
+                                    },
+                                    {
+                                        "name": "CMP-8-amino-3,8-dideoxy-D-manno-octulosonate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7674"
+                                    },
+                                    {
+                                        "name": "photorespiration II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8362"
+                                    },
+                                    {
+                                        "name": "glycogen biosynthesis III (from alpha-maltose 1-phosphate)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7900"
+                                    },
+                                    {
+                                        "name": "dhurrin degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5976"
+                                    },
+                                    {
+                                        "name": "Purine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-74259"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-936837"
+                                    },
+                                    {
+                                        "name": "D-myo-inositol (1,4,5,6)-tetrakisphosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6366"
+                                    },
+                                    {
+                                        "name": "Triglyceride biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-75109"
+                                    },
+                                    {
+                                        "name": "Abacavir metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-2161541"
+                                    },
+                                    {
+                                        "name": "erythritol biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8373"
+                                    },
+                                    {
+                                        "name": "Pyrimidine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-73621"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-418359"
+                                    },
+                                    {
+                                        "name": "Abacavir metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-2161541"
+                                    },
+                                    {
+                                        "name": "Synthesis of PC",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-1483191"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-4419969"
+                                    },
+                                    {
+                                        "name": "3-dehydroquinate biosynthesis II (archaea)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6160"
+                                    },
+                                    {
+                                        "name": "Synthesis of PE",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-1483213"
+                                    },
+                                    {
+                                        "name": "lincomycin A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6955"
+                                    },
+                                    {
+                                        "name": "rutin degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6848"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SSC-5578775"
+                                    },
+                                    {
+                                        "name": "photorespiration I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-181"
+                                    },
+                                    {
+                                        "name": "3-phosphoinositide biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6352"
+                                    },
+                                    {
+                                        "name": "IM-2 type gamma-butyrolactones biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7882"
+                                    },
+                                    {
+                                        "name": "mycolate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWYG-321"
+                                    },
+                                    {
+                                        "name": "(+)-camphor biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6990"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-5578775"
+                                    },
+                                    {
+                                        "name": "Formation of RNA Pol II elongation complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-112382"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CFA-5578775"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-1237112"
+                                    },
+                                    {
+                                        "name": "CMP-N-acetyl-7-O-acetylneuraminate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7529"
+                                    },
+                                    {
+                                        "name": "docosahexaenoate metabolites biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8400"
+                                    },
+                                    {
+                                        "name": "Synthesis of PE",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-1483213"
+                                    },
+                                    {
+                                        "name": "Mitochondrial protein import",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1268020"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SSC-418359"
+                                    },
+                                    {
+                                        "name": "TP53 Regulates Transcription of DNA Repair Genes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-6796648"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-446205"
+                                    },
+                                    {
+                                        "name": "trehalose biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-881"
+                                    },
+                                    {
+                                        "name": "Sensory processing of sound by inner hair cells of the cochlea",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9662360"
+                                    },
+                                    {
+                                        "name": "beta-(1,4)-mannan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7456"
+                                    },
+                                    {
+                                        "name": "poly-hydroxy fatty acids biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6710"
+                                    },
+                                    {
+                                        "name": "Sialic acid metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-4085001"
+                                    },
+                                    {
+                                        "name": "Formation of RNA Pol II elongation complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-112382"
+                                    },
+                                    {
+                                        "name": "mannojirimycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7531"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-418359"
+                                    },
+                                    {
+                                        "name": "monoterpene biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-3041"
+                                    },
+                                    {
+                                        "name": "Purine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-74259"
+                                    },
+                                    {
+                                        "name": "androstenedione degradation I (aerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6944"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-PFA-936837"
+                                    },
+                                    {
+                                        "name": "Synthesis of PC",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1483191"
+                                    },
+                                    {
+                                        "name": "Potential therapeutics for SARS",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9679191"
+                                    },
+                                    {
+                                        "name": "icosapentaenoate metabolites biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8399"
+                                    },
+                                    {
+                                        "name": "mannosylfructose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6116"
+                                    },
+                                    {
+                                        "name": "farnesene biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5725"
+                                    },
+                                    {
+                                        "name": "Abacavir metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-2161541"
+                                    },
+                                    {
+                                        "name": "Formation of HIV elongation complex in the absence of HIV Tat",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167152"
+                                    },
+                                    {
+                                        "name": "CMP-N-acetylneuraminate biosynthesis I (eukaryotes)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6138"
+                                    },
+                                    {
+                                        "name": "tunicamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7821"
+                                    },
+                                    {
+                                        "name": "pyridoxal 5'-phosphate salvage II (plants)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7204"
+                                    },
+                                    {
+                                        "name": "Detoxification of Reactive Oxygen Species",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-3299685"
+                                    },
+                                    {
+                                        "name": "diethylphosphate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5491"
+                                    },
+                                    {
+                                        "name": "(Kdo)2-lipid A biosynthesis (P. gingivalis)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8247"
+                                    },
+                                    {
+                                        "name": "phosphate acquisition",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6348"
+                                    },
+                                    {
+                                        "name": "guanosine nucleotides degradation III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6608"
+                                    },
+                                    {
+                                        "name": "kappa-carrageenan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6821"
+                                    },
+                                    {
+                                        "name": "Synthesis of epoxy (EET) and dihydroxyeicosatrienoic acids (DHET)",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-2142670"
+                                    },
+                                    {
+                                        "name": "CMP-2-keto-3-deoxy-D-glycero-D-galacto-nononate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6140"
+                                    },
+                                    {
+                                        "name": "Synthesis of epoxy (EET) and dihydroxyeicosatrienoic acids (DHET)",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-2142670"
+                                    },
+                                    {
+                                        "name": "Pyrimidine salvage",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-73614"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-4419969"
+                                    },
+                                    {
+                                        "name": "(-)-camphor biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6991"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Transcription Elongation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-75955"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-GGA-936837"
+                                    },
+                                    {
+                                        "name": "mRNA decay by 3' to 5' exoribonuclease",
+                                        "databaseName": "Reactome",
+                                        "id": "R-GGA-429958"
+                                    },
+                                    {
+                                        "name": "NAD salvage (plants)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5381"
+                                    },
+                                    {
+                                        "name": "Pyrimidine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-73621"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-1237112"
+                                    },
+                                    {
+                                        "name": "mannosylglucosylglycerate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6686"
+                                    },
+                                    {
+                                        "name": "2-arachidonoylglycerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8052"
+                                    },
+                                    {
+                                        "name": "cardiolipin and phosphatidylethanolamine biosynthesis (Xanthomonas)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7509"
+                                    },
+                                    {
+                                        "name": "Abacavir metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-XTR-2161541"
+                                    },
+                                    {
+                                        "name": "cyanidin diglucoside biosynthesis (acyl-glucose dependent)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7256"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-1237112"
+                                    },
+                                    {
+                                        "name": "cholesterol degradation to androstenedione III (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8151"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-4419969"
+                                    },
+                                    {
+                                        "name": "rutin degradation (plants)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7134"
+                                    },
+                                    {
+                                        "name": "Ion influx/efflux at host-pathogen interface",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-6803544"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-936837"
+                                    },
+                                    {
+                                        "name": "paromomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7018"
+                                    },
+                                    {
+                                        "name": "septacidin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8366"
+                                    },
+                                    {
+                                        "name": "FR-900098 and FR-33289 antibiotics biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7419"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-418359"
+                                    },
+                                    {
+                                        "name": "photorespiration III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8363"
+                                    },
+                                    {
+                                        "name": "TP53 Regulates Transcription of DNA Repair Genes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-6796648"
+                                    },
+                                    {
+                                        "name": "santalene biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6254"
+                                    },
+                                    {
+                                        "name": "astaxanthin biosynthesis (flowering plants)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7636"
+                                    },
+                                    {
+                                        "name": "Ribavirin ADME",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9755088"
+                                    },
+                                    {
+                                        "name": "Pyrophosphate hydrolysis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-71737"
+                                    },
+                                    {
+                                        "name": "Synthesis of PI",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-1483226"
+                                    },
+                                    {
+                                        "name": "cichoriin interconversion",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7057"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-1237112"
+                                    },
+                                    {
+                                        "name": "ceramide and sphingolipid recycling and degradation (yeast)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7119"
+                                    },
+                                    {
+                                        "name": "Pyrimidine salvage",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-73614"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-GGA-5578775"
+                                    },
+                                    {
+                                        "name": "trehalose degradation IV",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-2722"
+                                    },
+                                    {
+                                        "name": "glucosylglycerate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5662"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-418359"
+                                    },
+                                    {
+                                        "name": "Formation of the HIV-1 Early Elongation Complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167158"
+                                    },
+                                    {
+                                        "name": "mRNA decay by 3' to 5' exoribonuclease",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-429958"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-4419969"
+                                    },
+                                    {
+                                        "name": "Ribavirin ADME",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-9755088"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Transcription Elongation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-75955"
+                                    },
+                                    {
+                                        "name": "1-(sn-glycero-1-phospho)-1D-myo-inositol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8429"
+                                    },
+                                    {
+                                        "name": "inosine 5'-phosphate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5695"
+                                    },
+                                    {
+                                        "name": "Biosynthesis of maresins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-9018682"
+                                    },
+                                    {
+                                        "name": "GDP-mannose biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5659"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-5578775"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-1237112"
+                                    },
+                                    {
+                                        "name": "XBP1(S) activates chaperone genes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-381038"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-446205"
+                                    },
+                                    {
+                                        "name": "linoleate metabolites biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8395"
+                                    },
+                                    {
+                                        "name": "mammalian high-mannose N-glycan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8436"
+                                    },
+                                    {
+                                        "name": "Biosynthesis of maresins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SSC-9018682"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-XTR-936837"
+                                    },
+                                    {
+                                        "name": "Ribavirin ADME",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-9755088"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-4419969"
+                                    },
+                                    {
+                                        "name": "CMP-diacetamido-8-epilegionaminic acid biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7719"
+                                    },
+                                    {
+                                        "name": "Ribavirin ADME",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-9755088"
+                                    },
+                                    {
+                                        "name": "type I lipoteichoic acid biosynthesis (S. aureus)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7817"
+                                    },
+                                    {
+                                        "name": "peptidoglycan recycling II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7883"
+                                    },
+                                    {
+                                        "name": "mRNA decay by 3' to 5' exoribonuclease",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-429958"
+                                    },
+                                    {
+                                        "name": "S-methyl-5-thio-alpha-D-ribose 1-phosphate degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-4361"
+                                    },
+                                    {
+                                        "name": "Glycolysis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-70171"
+                                    },
+                                    {
+                                        "name": "(aminomethyl)phosphonate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7805"
+                                    },
+                                    {
+                                        "name": "hygromycin B biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8367"
+                                    },
+                                    {
+                                        "name": "Tat-mediated elongation of the HIV-1 transcript",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167246"
+                                    },
+                                    {
+                                        "name": "Pyrophosphate hydrolysis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-71737"
+                                    },
+                                    {
+                                        "name": "pyoverdine I biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6409"
+                                    },
+                                    {
+                                        "name": "adenosylcobinamide-GDP salvage from assorted adenosylcobamides",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8282"
+                                    },
+                                    {
+                                        "name": "superpathway of cardiolipin biosynthesis (bacteria)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8401"
+                                    },
+                                    {
+                                        "name": "Peroxisomal protein import",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-9033241"
+                                    },
+                                    {
+                                        "name": "D-myo-inositol (3,4,5,6)-tetrakisphosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6365"
+                                    },
+                                    {
+                                        "name": "UTP and CTP dephosphorylation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7185"
+                                    },
+                                    {
+                                        "name": "Mitochondrial Fatty Acid Beta-Oxidation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-77289"
+                                    },
+                                    {
+                                        "name": "Pausing and recovery of HIV elongation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167290"
+                                    },
+                                    {
+                                        "name": "phosphatidate biosynthesis (yeast)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7411"
+                                    },
+                                    {
+                                        "name": "beta-caryophyllene biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6275"
+                                    },
+                                    {
+                                        "name": "starch degradation IV",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6735"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis II (Methanocaldococcus)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6797"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-4419969"
+                                    },
+                                    {
+                                        "name": "Pyrophosphate hydrolysis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-71737"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-446205"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-977347"
+                                    },
+                                    {
+                                        "name": "guanosine nucleotides degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6607"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-936837"
+                                    },
+                                    {
+                                        "name": "serinol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6456"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-XTR-1237112"
+                                    },
+                                    {
+                                        "name": "Synthesis of epoxy (EET) and dihydroxyeicosatrienoic acids (DHET)",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SSC-2142670"
+                                    },
+                                    {
+                                        "name": "1,3-propanediol biosynthesis (engineered)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7385"
+                                    },
+                                    {
+                                        "name": "TP53 Regulates Transcription of DNA Repair Genes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6796648"
+                                    },
+                                    {
+                                        "name": "butachlor degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7771"
+                                    },
+                                    {
+                                        "name": "mRNA decay by 3' to 5' exoribonuclease",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-429958"
+                                    },
+                                    {
+                                        "name": "androstenedione degradation II (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8152"
+                                    },
+                                    {
+                                        "name": "ulvan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7647"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DRE-1237112"
+                                    },
+                                    {
+                                        "name": "Pre-NOTCH Processing in Golgi",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1912420"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-XTR-4419969"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-446205"
+                                    },
+                                    {
+                                        "name": "Pyrimidine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-73621"
+                                    },
+                                    {
+                                        "name": "Synthesis of PI",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-1483226"
+                                    },
+                                    {
+                                        "name": "palmitoyl ethanolamide biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8055"
+                                    },
+                                    {
+                                        "name": "starch degradation II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6724"
+                                    },
+                                    {
+                                        "name": "glyphosate degradation III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7807"
+                                    },
+                                    {
+                                        "name": "APEX1-Independent Resolution of AP Sites via the Single Nucleotide Replacement Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-5649702"
+                                    },
+                                    {
+                                        "name": "Pyrimidine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-73621"
+                                    },
+                                    {
+                                        "name": "suberin monomers biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-1121"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis III (Chlamydia)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7539"
+                                    },
+                                    {
+                                        "name": "Neutrophil degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-PFA-6798695"
+                                    },
+                                    {
+                                        "name": "chitin degradation I (archaea)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6855"
+                                    },
+                                    {
+                                        "name": "Pyrimidine salvage",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-73614"
+                                    },
+                                    {
+                                        "name": "beta-1,4-D-mannosyl-N-acetyl-D-glucosamine degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7586"
+                                    },
+                                    {
+                                        "name": "bile acid biosynthesis, neutral pathway",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6061"
+                                    },
+                                    {
+                                        "name": "Defective PMM2 causes PMM2-CDG",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4043911"
+                                    },
+                                    {
+                                        "name": "heme b biosynthesis III (from siroheme)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7552"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-5578775"
+                                    },
+                                    {
+                                        "name": "Purine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DDI-74259"
+                                    },
+                                    {
+                                        "name": "Triglyceride biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-75109"
+                                    },
+                                    {
+                                        "name": "Pyrimidine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-GGA-73621"
+                                    },
+                                    {
+                                        "name": "cholesterol degradation to androstenedione II (cholesterol dehydrogenase)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6946"
+                                    },
+                                    {
+                                        "name": "roseoflavin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7863"
+                                    },
+                                    {
+                                        "name": "podophyllotoxin glucosides metabolism",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7491"
+                                    },
+                                    {
+                                        "name": "APEX1-Independent Resolution of AP Sites via the Single Nucleotide Replacement Pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5649702"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-936837"
+                                    },
+                                    {
+                                        "name": "mannosylglycerate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5656"
+                                    },
+                                    {
+                                        "name": "Sialic acid metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-4085001"
+                                    },
+                                    {
+                                        "name": "methyl phomopsenoate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7721"
+                                    },
+                                    {
+                                        "name": "daphnin interconversion",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7056"
+                                    },
+                                    {
+                                        "name": "guanosine nucleotides degradation II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6606"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-977347"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-446205"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-5578775"
+                                    },
+                                    {
+                                        "name": "Depolymerization of the Nuclear Lamina",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4419969"
+                                    },
+                                    {
+                                        "name": "maresin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8356"
+                                    },
+                                    {
+                                        "name": "Synthesis of CL",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-1483076"
+                                    },
+                                    {
+                                        "name": "CDP-diacylglycerol biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5667"
+                                    },
+                                    {
+                                        "name": "stigma estolide biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6453"
+                                    },
+                                    {
+                                        "name": "flavin biosynthesis III (fungi)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6168"
+                                    },
+                                    {
+                                        "name": "indole-3-acetate activation II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-1921"
+                                    },
+                                    {
+                                        "name": "sucrose biosynthesis III",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7347"
+                                    },
+                                    {
+                                        "name": "adenosine nucleotides degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6596"
+                                    },
+                                    {
+                                        "name": "Peroxisomal protein import",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-9033241"
+                                    },
+                                    {
+                                        "name": "yeast mannan degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8435"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-DME-1237112"
+                                    },
+                                    {
+                                        "name": "mannitol cycle",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6531"
+                                    },
+                                    {
+                                        "name": "dZTP biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8289"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Pre-transcription Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-674695"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-GGA-418359"
+                                    },
+                                    {
+                                        "name": "juvenile hormone III biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6575"
+                                    },
+                                    {
+                                        "name": "Synthesis of GDP-mannose",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-446205"
+                                    },
+                                    {
+                                        "name": "luteolin triglucuronide degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7445"
+                                    },
+                                    {
+                                        "name": "Sialic acid metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-4085001"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Pre-transcription Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-674695"
+                                    },
+                                    {
+                                        "name": "Sialic acid metabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-4085001"
+                                    },
+                                    {
+                                        "name": "6-hydroxymethyl-dihydropterin diphosphate biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6147"
+                                    },
+                                    {
+                                        "name": "chitin derivatives degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6906"
+                                    },
+                                    {
+                                        "name": "Formation of the Early Elongation Complex",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-113418"
+                                    },
+                                    {
+                                        "name": "thiamine diphosphate biosynthesis IV (eukaryotes)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6908"
+                                    },
+                                    {
+                                        "name": "Serine biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-977347"
+                                    },
+                                    {
+                                        "name": "fosfomycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5757"
+                                    },
+                                    {
+                                        "name": "phenylethanol glycoconjugate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7074"
+                                    },
+                                    {
+                                        "name": "cellulose and hemicellulose degradation (cellulolosome)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6784"
+                                    },
+                                    {
+                                        "name": "pyrimidine deoxyribonucleotides dephosphorylation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7206"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-936837"
+                                    },
+                                    {
+                                        "name": "cardiolipin biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5668"
+                                    },
+                                    {
+                                        "name": "(1R)-(2-amino-1-hydroxyethyl)phosphonate degradation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8465"
+                                    },
+                                    {
+                                        "name": "toxoflavin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7991"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SSC-936837"
+                                    },
+                                    {
+                                        "name": "salinosporamide A biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6627"
+                                    },
+                                    {
+                                        "name": "mono-trans, poly-cis decaprenyl phosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6383"
+                                    },
+                                    {
+                                        "name": "myxol-2' fucoside biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6279"
+                                    },
+                                    {
+                                        "name": "Methionine salvage pathway",
+                                        "databaseName": "Reactome",
+                                        "id": "R-BTA-1237112"
+                                    },
+                                    {
+                                        "name": "toyocamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6720"
+                                    },
+                                    {
+                                        "name": "Neutrophil degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-6798695"
+                                    },
+                                    {
+                                        "name": "Reduction of cytosolic Ca++ levels",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CFA-418359"
+                                    },
+                                    {
+                                        "name": "Neutrophil degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-6798695"
+                                    },
+                                    {
+                                        "name": "plasmalogen biosynthesis I (aerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7782"
+                                    },
+                                    {
+                                        "name": "glucosylglycerol biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7902"
+                                    },
+                                    {
+                                        "name": "validamycin biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-5818"
+                                    },
+                                    {
+                                        "name": "Formation of HIV-1 elongation complex containing HIV-1 Tat",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167200"
+                                    },
+                                    {
+                                        "name": "cholesterol degradation to androstenedione I (cholesterol oxidase)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6945"
+                                    },
+                                    {
+                                        "name": "testosterone degradation (anaerobic)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8155"
+                                    },
+                                    {
+                                        "name": "Pyrophosphate hydrolysis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-71737"
+                                    },
+                                    {
+                                        "name": "starch degradation I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-842"
+                                    },
+                                    {
+                                        "name": "Pyrophosphate hydrolysis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-RNO-71737"
+                                    },
+                                    {
+                                        "name": "Neutrophil degranulation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-6798695"
+                                    },
+                                    {
+                                        "name": "di-myo-inositol phosphate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6664"
+                                    },
+                                    {
+                                        "name": "Synthesis of PE",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-1483213"
+                                    },
+                                    {
+                                        "name": "base-degraded thiamine salvage",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6899"
+                                    },
+                                    {
+                                        "name": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-5693565"
+                                    },
+                                    {
+                                        "name": "Triglyceride biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-75109"
+                                    },
+                                    {
+                                        "name": "CMP-3-deoxy-D-manno-octulosonate biosynthesis",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-1269"
+                                    },
+                                    {
+                                        "name": "ent -kaurene biosynthesis II",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6653"
+                                    },
+                                    {
+                                        "name": "CMP-N-acetylneuraminate biosynthesis II (bacteria)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6139"
+                                    },
+                                    {
+                                        "name": "Biosynthesis of maresins",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-9018682"
+                                    },
+                                    {
+                                        "name": "ecdysteroid metabolism (arthropods)",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-7321"
+                                    },
+                                    {
+                                        "name": "HIV elongation arrest and recovery",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167287"
+                                    },
+                                    {
+                                        "name": "Purine catabolism",
+                                        "databaseName": "Reactome",
+                                        "id": "R-XTR-74259"
+                                    },
+                                    {
+                                        "name": "Triglyceride biosynthesis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SCE-75109"
+                                    },
+                                    {
+                                        "name": "oleandomycin activation/inactivation",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-6972"
+                                    },
+                                    {
+                                        "name": "erythritol biosynthesis I",
+                                        "databaseName": "MetaCyc",
+                                        "id": "PWY-8372"
+                                    },
+                                    {
+                                        "name": "Ion homeostasis",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-5578775"
+                                    },
+                                    {
+                                        "name": "RNA Polymerase II Pre-transcription Events",
+                                        "databaseName": "Reactome",
+                                        "id": "R-MMU-674695"
+                                    },
+                                    {
+                                        "name": "TP53 Regulates Transcription of DNA Repair Genes",
+                                        "databaseName": "Reactome",
+                                        "id": "R-SPO-6796648"
+                                    },
+                                    {
+                                        "name": "Ion transport by P-type ATPases",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-936837"
+                                    },
+                                    {
+                                        "name": "Pausing and recovery of Tat-mediated HIV elongation",
+                                        "databaseName": "Reactome",
+                                        "id": "R-HSA-167238"
+                                    },
+                                    {
+                                        "name": "mRNA decay by 3' to 5' exoribonuclease",
+                                        "databaseName": "Reactome",
+                                        "id": "R-CEL-429958"
+                                    }
+                                ]
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 18,
+                                "end": 161,
+                                "representative": false,
+                                "hmmLength": 149,
+                                "location-fragments": [
+                                    {
+                                        "start": 18,
+                                        "end": 161,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 6.17e-19,
+                        "model-ac": "0040657"
+                    },
+                    {
+                        "signature": {
+                            "accession": "PF25109",
+                            "name": "HAD_PNKP",
+                            "description": "Polynucleotide kinase PNKP phosphatase domain",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR056782",
+                                "name": "HAD_PNKP",
+                                "description": "Polynucleotide kinase, PNKP phosphatase domain",
+                                "type": "DOMAIN",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 21,
+                                "end": 162,
+                                "representative": true,
+                                "hmmStart": 3,
+                                "hmmEnd": 140,
+                                "hmmLength": 143,
+                                "hmmBounds": "INCOMPLETE",
+                                "evalue": 3.2e-17,
+                                "score": 74.4,
+                                "envelopeStart": 19,
+                                "envelopeEnd": 164,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 21,
+                                        "end": 162,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.9e-18,
+                        "score": 78.4,
+                        "model-ac": "PF25109"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80748.1_73_unknown",
+                        "id": "MZ501079.1_prot_QXV80748.1_73_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80765.1_90_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80765.1_90_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P54052-F1-model_v4",
+                        "function": "Large ribosomal subunit protein eL20",
+                        "qstart": 1,
+                        "qend": 60,
+                        "tstart": 3,
+                        "tend": 60,
+                        "prob": 0.93,
+                        "alntmscore": 0.79,
+                        "evalue": 0.64
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80765.1_90_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-K7L9Z3-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 60,
+                        "tstart": 7,
+                        "tend": 66,
+                        "prob": 0.95,
+                        "alntmscore": 0.79,
+                        "evalue": 0.62
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80765.1_90_unknown_relaxed_rank_001_alphafold2_ptm_model_4_seed_000",
+                        "target": "AF-P54052-F1-model_v4",
+                        "function": "Large ribosomal subunit protein eL20",
+                        "qstart": 1,
+                        "qend": 60,
+                        "tstart": 3,
+                        "tend": 60,
+                        "prob": 0.93,
+                        "alntmscore": 0.79,
+                        "evalue": 0.64
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80765.1_90_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80765.1_90_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80765.1_90_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80751.1_76_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80751.1_76_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O54829-F1-model_v4",
+                        "function": "Regulator of G-protein signaling 7",
+                        "qstart": 7,
+                        "qend": 37,
+                        "tstart": 244,
+                        "tend": 274,
+                        "prob": 0.54,
+                        "alntmscore": 0.64,
+                        "evalue": 0.29
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80751.1_76_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O54829-F1-model_v4",
+                        "function": "Regulator of G-protein signaling 7",
+                        "qstart": 7,
+                        "qend": 37,
+                        "tstart": 244,
+                        "tend": 274,
+                        "prob": 0.54,
+                        "alntmscore": 0.64,
+                        "evalue": 0.29
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80751.1_76_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-O54829-F1-model_v4",
+                        "function": "Regulator of G-protein signaling 7",
+                        "qstart": 7,
+                        "qend": 37,
+                        "tstart": 244,
+                        "tend": 274,
+                        "prob": 0.54,
+                        "alntmscore": 0.64,
+                        "evalue": 0.29
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80703.1_28_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80703.1_28_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A132Z1M7-F1-model_v4",
+                        "function": "DUF1507 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 92,
+                        "tstart": 1,
+                        "tend": 99,
+                        "prob": 0.93,
+                        "alntmscore": 0.76,
+                        "evalue": 0.68
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80703.1_28_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A132Z1M7-F1-model_v4",
+                        "function": "DUF1507 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 92,
+                        "tstart": 1,
+                        "tend": 99,
+                        "prob": 0.93,
+                        "alntmscore": 0.76,
+                        "evalue": 0.68
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80703.1_28_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A132Z1M7-F1-model_v4",
+                        "function": "DUF1507 domain-containing protein",
+                        "qstart": 1,
+                        "qend": 92,
+                        "tstart": 1,
+                        "tend": 99,
+                        "prob": 0.93,
+                        "alntmscore": 0.76,
+                        "evalue": 0.68
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80703.1_28_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80703.1_28_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80703.1_28_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80732.1_57_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80732.1_57_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0G2K133-F1-model_v4",
+                        "function": "ubiquitinyl hydrolase 1",
+                        "qstart": 3,
+                        "qend": 75,
+                        "tstart": 50,
+                        "tend": 125,
+                        "prob": 0.87,
+                        "alntmscore": 0.74,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80732.1_57_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0G2K133-F1-model_v4",
+                        "function": "ubiquitinyl hydrolase 1",
+                        "qstart": 3,
+                        "qend": 75,
+                        "tstart": 50,
+                        "tend": 125,
+                        "prob": 0.87,
+                        "alntmscore": 0.74,
+                        "evalue": 0.53
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80732.1_57_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-A0A0G2K133-F1-model_v4",
+                        "function": "ubiquitinyl hydrolase 1",
+                        "qstart": 3,
+                        "qend": 75,
+                        "tstart": 50,
+                        "tend": 125,
+                        "prob": 0.87,
+                        "alntmscore": 0.74,
+                        "evalue": 0.53
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80766.1_91_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80766.1_91_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9LUD7-F1-model_v4",
+                        "function": "Putative callose synthase 8",
+                        "qstart": 1,
+                        "qend": 77,
+                        "tstart": 767,
+                        "tend": 1498,
+                        "prob": 0.47,
+                        "alntmscore": 0.57,
+                        "evalue": 0.27
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80766.1_91_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9LUD7-F1-model_v4",
+                        "function": "Putative callose synthase 8",
+                        "qstart": 1,
+                        "qend": 77,
+                        "tstart": 767,
+                        "tend": 1498,
+                        "prob": 0.47,
+                        "alntmscore": 0.57,
+                        "evalue": 0.27
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80766.1_91_unknown_relaxed_rank_001_alphafold2_ptm_model_3_seed_000",
+                        "target": "AF-Q9LUD7-F1-model_v4",
+                        "function": "Putative callose synthase 8",
+                        "qstart": 1,
+                        "qend": 77,
+                        "tstart": 767,
+                        "tend": 1498,
+                        "prob": 0.47,
+                        "alntmscore": 0.57,
+                        "evalue": 0.27
+                    }
+                ]
+            },
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80766.1_91_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80766.1_91_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80766.1_91_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MLNLISAFVFGFVFAVIILLIASEKICKFLAKNGKFASATWNNKMQRWDVRGHYLTIGSKIHQHLKNQEDEKVKYKC",
+                "md5": "95cff6f3dbba884e85bd675f5a4627cf",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23973",
+                            "name": "DUF7299",
+                            "description": "Family of unknown function (DUF7299)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055723",
+                                "name": "DUF7299",
+                                "description": "Protein of unknown function DUF7299",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 76,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 76,
+                                "hmmLength": 77,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 1.8e-27,
+                                "score": 106.5,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 77,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 76,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.7e-27,
+                        "score": 106.6,
+                        "model-ac": "PF23973"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80766.1_91_unknown",
+                        "id": "MZ501079.1_prot_QXV80766.1_91_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80737.1_62_unknown",
+        "predictions": [
+            {
+                "method": "foldseek",
+                "hits": [
+                    {
+                        "criteria": "best e-value",
+                        "query": "MZ501079.1_prot_QXV80737.1_62_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-A0A133CKS7-F1-model_v4",
+                        "function": "DUF4649 family protein",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 1,
+                        "tend": 58,
+                        "prob": 0.77,
+                        "alntmscore": 0.71,
+                        "evalue": 0.55
+                    },
+                    {
+                        "criteria": "best probability",
+                        "query": "MZ501079.1_prot_QXV80737.1_62_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K0EZE7-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 2,
+                        "tend": 58,
+                        "prob": 0.89,
+                        "alntmscore": 0.76,
+                        "evalue": 0.51
+                    },
+                    {
+                        "criteria": "best aln-score",
+                        "query": "MZ501079.1_prot_QXV80737.1_62_unknown_relaxed_rank_001_alphafold2_ptm_model_5_seed_000",
+                        "target": "AF-K0EZE7-F1-model_v4",
+                        "function": "Uncharacterized protein",
+                        "qstart": 1,
+                        "qend": 50,
+                        "tstart": 2,
+                        "tend": 58,
+                        "prob": 0.89,
+                        "alntmscore": 0.76,
+                        "evalue": 0.51
+                    }
+                ]
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MVTLITWEHENSQPEVREFETVAACYNLAKNGGFYKAQIVNEFGVVDYEF",
+                "md5": "c3381bb56d495a50a9ff1f22937ced25",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23776",
+                            "name": "DUF7170",
+                            "description": "Protein of unknown function (DUF7170)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055594",
+                                "name": "DUF7170",
+                                "description": "Protein of unknown function DUF7170",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 50,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 50,
+                                "hmmLength": 52,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 4.1e-25,
+                                "score": 98.9,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 50,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 50,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 3.8e-25,
+                        "score": 99.0,
+                        "model-ac": "PF23776"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80737.1_62_unknown",
+                        "id": "MZ501079.1_prot_QXV80737.1_62_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80697.1_22_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80697.1_22_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80697.1_22_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80697.1_22_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80710.1_35_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80710.1_35_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80710.1_35_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80710.1_35_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80736.1_61_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80736.1_61_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80736.1_61_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80736.1_61_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80741.1_66_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80741.1_66_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80741.1_66_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80741.1_66_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80743.1_68_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80743.1_68_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80743.1_68_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80743.1_68_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MNKALIGVLIAIATLTGCEKASESTVVVGVESDFKVGRLFTVDGCTAYRFYDNGRAIYYTNCKGATDSTYRIGKNVMHQQVTTDIK",
+                "md5": "f4cc666f6c7f09464ffe7a638f4bc3c8",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PS51257",
+                            "name": "PROKAR_LIPOPROTEIN",
+                            "description": "Prokaryotic membrane lipoprotein lipid attachment site profile.",
+                            "signatureLibraryRelease": {
+                                "library": "PROSITE_PROFILES",
+                                "version": "2023_05"
+                            },
+                            "entry": null
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 18,
+                                "representative": true,
+                                "score": 5.0,
+                                "alignment": "MNKALIG-----------------VLIAIATLTGC",
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 18,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "model-ac": "PS51257"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80743.1_68_unknown",
+                        "id": "MZ501079.1_prot_QXV80743.1_68_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80744.1_69_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80744.1_69_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80744.1_69_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80744.1_69_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MARRITKDLKVLNKENVVKILVIWGYNEETAKQKVDAGYDLAVKAMPNDDAKGIANYVAFF",
+                "md5": "fc67030d078b819ad317b3e1ea5f9694",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF24196",
+                            "name": "DUF7421",
+                            "description": "Family of unknown function (DUF7421)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055844",
+                                "name": "DUF7421",
+                                "description": "Protein of unknown function DUF7421",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 61,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 61,
+                                "hmmLength": 61,
+                                "hmmBounds": "COMPLETE",
+                                "evalue": 6.6e-38,
+                                "score": 139.9,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 61,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 61,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 6e-38,
+                        "score": 140.0,
+                        "model-ac": "PF24196"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80744.1_69_unknown",
+                        "id": "MZ501079.1_prot_QXV80744.1_69_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80752.1_77_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80752.1_77_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80752.1_77_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80752.1_77_unknown"
+                ],
+                "function": "putative DNA-binding protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "postulated function",
+                "target": "MZ501079.1_prot_QXV80752.1_77_unknown",
+                "function": "putative DNA-binding protein"
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80758.1_83_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80758.1_83_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80758.1_83_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80758.1_83_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80760.1_85_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80760.1_85_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80760.1_85_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80760.1_85_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            },
+            {
+                "method": "interproscan",
+                "sequence": "MITINLSEKQAYQVMSYISGFGMEGAMGEVADQICRQLTPAPTRAAETAAWRNEAGYIQKAIEDWKRKNETAEDAGL",
+                "md5": "19126c51f5fef5dd02ff36289d0792b2",
+                "matches": [
+                    {
+                        "signature": {
+                            "accession": "PF23805",
+                            "name": "DUF7180",
+                            "description": "Family of unknown function (DUF7180)",
+                            "signatureLibraryRelease": {
+                                "library": "PFAM",
+                                "version": "37.2"
+                            },
+                            "entry": {
+                                "accession": "IPR055604",
+                                "name": "DUF7180",
+                                "description": "Protein of unknown function DUF7180",
+                                "type": "FAMILY",
+                                "goXRefs": [],
+                                "pathwayXRefs": []
+                            }
+                        },
+                        "locations": [
+                            {
+                                "start": 1,
+                                "end": 75,
+                                "representative": false,
+                                "hmmStart": 1,
+                                "hmmEnd": 77,
+                                "hmmLength": 79,
+                                "hmmBounds": "N_TERMINAL_COMPLETE",
+                                "evalue": 1.6e-24,
+                                "score": 97.7,
+                                "envelopeStart": 1,
+                                "envelopeEnd": 77,
+                                "postProcessed": true,
+                                "location-fragments": [
+                                    {
+                                        "start": 1,
+                                        "end": 75,
+                                        "dc-status": "CONTINUOUS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "evalue": 1.5e-24,
+                        "score": 97.8,
+                        "model-ac": "PF23805"
+                    }
+                ],
+                "xref": [
+                    {
+                        "name": "MZ501079.1_prot_QXV80760.1_85_unknown",
+                        "id": "MZ501079.1_prot_QXV80760.1_85_unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "protein": "MZ501079.1_prot_QXV80764.1_89_unknown",
+        "predictions": [
+            {
+                "method": "singletonCluster",
+                "target": "MZ501079.1_prot_QXV80764.1_89_unknown",
+                "clusterRep": "MZ501079.1_prot_QXV80764.1_89_unknown",
+                "members": [
+                    "MZ501079.1_prot_QXV80764.1_89_unknown"
+                ],
+                "function": "hypothetical protein",
+                "memberCount": 1,
+                "knownCount": 0,
+                "unknownCount": 1
+            }
+        ]
+    }
+]

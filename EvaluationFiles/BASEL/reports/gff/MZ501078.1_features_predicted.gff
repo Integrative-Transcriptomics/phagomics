@@ -1,0 +1,110 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ASM2089279v1
+#!genome-build-accession NCBI_Assembly:GCA_020892795.1
+##sequence-region MZ501078.1 1 39451
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2852037
+###
+##predicted functions and domains via #github link#
+MZ501078.1	Genbank	region	1	39451	.	+	.	ID=MZ501078.1:1..39451;Dbxref=taxon:2852037;collected-by=Alexander Harms;collection-date=08-Nov-2020;country=Switzerland: Basel;gbkey=Src;genome=genomic;identified-by=Alexander Harms;isolation-source=sewage plant inflow;lat-lon=47.56 N 7.59 E;mol_type=genomic DNA;nat-host=Escherichia coli K-12;strain=Bas65
+MZ501078.1	Genbank	gene	1	204	.	+	.	ID=gene-bas65_0001;Name=bas65_0001;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0001
+MZ501078.1	Genbank	CDS	1	204	.	+	0	ID=cds-QXV80626.1;Parent=gene-bas65_0001;Dbxref=NCBI_GP:QXV80626.1;Name=QXV80626.1;gbkey=CDS;locus_tag=bas65_0001;product=holin;protein_id=QXV80626.1;transl_table=11
+MZ501078.1	Genbank	gene	208	477	.	+	.	ID=gene-bas65_0002;Name=bas65_0002;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0002
+MZ501078.1	Genbank	CDS	208	477	.	+	0	ID=cds-QXV80627.1;Parent=gene-bas65_0002;Dbxref=NCBI_GP:QXV80627.1;Name=QXV80627.1;gbkey=CDS;locus_tag=bas65_0002;product=terminase small subunit;protein_id=QXV80627.1;transl_table=11
+MZ501078.1	Genbank	gene	572	1015	.	+	.	ID=gene-bas65_0003;Name=bas65_0003;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0003
+MZ501078.1	Genbank	CDS	572	1015	.	+	0	ID=cds-QXV80628.1;Parent=gene-bas65_0003;Dbxref=NCBI_GP:QXV80628.1;Name=QXV80628.1;gbkey=CDS;locus_tag=bas65_0003;product=i-spanin;protein_id=QXV80628.1;transl_table=11
+MZ501078.1	Genbank	gene	687	938	.	+	.	ID=gene-bas65_0004;Name=bas65_0004;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0004
+MZ501078.1	Genbank	CDS	687	938	.	+	0	ID=cds-QXV80629.1;Parent=gene-bas65_0004;Dbxref=NCBI_GP:QXV80629.1;Name=QXV80629.1;gbkey=CDS;locus_tag=bas65_0004;product=o-spanin;protein_id=QXV80629.1;transl_table=11
+MZ501078.1	Genbank	gene	1025	2785	.	+	.	ID=gene-bas65_0005;Name=bas65_0005;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0005
+MZ501078.1	Genbank	CDS	1025	2785	.	+	0	ID=cds-QXV80630.1;Parent=gene-bas65_0005;Dbxref=NCBI_GP:QXV80630.1;Name=QXV80630.1;gbkey=CDS;locus_tag=bas65_0005;product=terminase large subunit;protein_id=QXV80630.1;transl_table=11
+MZ501078.1	Genbank	gene	3059	3208	.	+	.	ID=gene-bas65_0006;Name=bas65_0006;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0006
+MZ501078.1	Genbank	CDS	3059	3208	.	+	0	ID=cds-QXV80631.1;Parent=gene-bas65_0006;Dbxref=NCBI_GP:QXV80631.1;Name=QXV80631.1;gbkey=CDS;locus_tag=bas65_0006;product=hypothetical protein;protein_id=QXV80631.1;transl_table=11;cluster=singletonCluster;domain=Domain of unknown function DUF5465
+MZ501078.1	Genbank	gene	4348	4710	.	+	.	ID=gene-bas65_0007;Name=bas65_0007;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0007
+MZ501078.1	Genbank	CDS	4348	4710	.	+	0	ID=cds-QXV80632.1;Parent=gene-bas65_0007;Dbxref=NCBI_GP:QXV80632.1;Name=QXV80632.1;Note=restriction inhibitor Ocr;gbkey=CDS;locus_tag=bas65_0007;product=restriction inhibitor;protein_id=QXV80632.1;transl_table=11
+MZ501078.1	Genbank	gene	4710	4865	.	+	.	ID=gene-bas65_0008;Name=bas65_0008;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0008
+MZ501078.1	Genbank	CDS	4710	4865	.	+	0	ID=cds-QXV80633.1;Parent=gene-bas65_0008;Dbxref=NCBI_GP:QXV80633.1;Name=QXV80633.1;gbkey=CDS;locus_tag=bas65_0008;product=hypothetical protein;protein_id=QXV80633.1;transl_table=11
+MZ501078.1	Genbank	gene	4862	5098	.	+	.	ID=gene-bas65_0009;Name=bas65_0009;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0009
+MZ501078.1	Genbank	CDS	4862	5098	.	+	0	ID=cds-QXV80634.1;Parent=gene-bas65_0009;Dbxref=NCBI_GP:QXV80634.1;Name=QXV80634.1;gbkey=CDS;locus_tag=bas65_0009;product=hypothetical protein;protein_id=QXV80634.1;transl_table=11
+MZ501078.1	Genbank	gene	5139	5276	.	+	.	ID=gene-bas65_0010;Name=bas65_0010;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0010
+MZ501078.1	Genbank	CDS	5139	5276	.	+	0	ID=cds-QXV80635.1;Parent=gene-bas65_0010;Dbxref=NCBI_GP:QXV80635.1;Name=QXV80635.1;gbkey=CDS;locus_tag=bas65_0010;product=hypothetical protein;protein_id=QXV80635.1;transl_table=11;foldseek=3'(2'),5'-bisphosphate nucleotidase CysQ
+MZ501078.1	Genbank	gene	5307	6386	.	+	.	ID=gene-bas65_0011;Name=bas65_0011;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0011
+MZ501078.1	Genbank	CDS	5307	6386	.	+	0	ID=cds-QXV80636.1;Parent=gene-bas65_0011;Dbxref=NCBI_GP:QXV80636.1;Name=QXV80636.1;Note=T3/T7-like protein kinase;gbkey=CDS;locus_tag=bas65_0011;product=protein kinase;protein_id=QXV80636.1;transl_table=11
+MZ501078.1	Genbank	gene	6457	9108	.	+	.	ID=gene-bas65_0012;Name=bas65_0012;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0012
+MZ501078.1	Genbank	CDS	6457	9108	.	+	0	ID=cds-QXV80637.1;Parent=gene-bas65_0012;Dbxref=NCBI_GP:QXV80637.1;Name=QXV80637.1;Note=T3/T7-like RNA polymerase;gbkey=CDS;locus_tag=bas65_0012;product=RNA polymerase;protein_id=QXV80637.1;transl_table=11
+MZ501078.1	Genbank	gene	9294	9422	.	+	.	ID=gene-bas65_0013;Name=bas65_0013;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0013
+MZ501078.1	Genbank	CDS	9294	9422	.	+	0	ID=cds-QXV80638.1;Parent=gene-bas65_0013;Dbxref=NCBI_GP:QXV80638.1;Name=QXV80638.1;gbkey=CDS;locus_tag=bas65_0013;product=hypothetical protein;protein_id=QXV80638.1;transl_table=11;domain=Bacteriophage T7, Gp1.1
+MZ501078.1	Genbank	gene	9424	9681	.	+	.	ID=gene-bas65_0014;Name=bas65_0014;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0014
+MZ501078.1	Genbank	CDS	9424	9681	.	+	0	ID=cds-QXV80639.1;Parent=gene-bas65_0014;Dbxref=NCBI_GP:QXV80639.1;Name=QXV80639.1;gbkey=CDS;locus_tag=bas65_0014;product=host dGTPase inhibitor;protein_id=QXV80639.1;transl_table=11
+MZ501078.1	Genbank	gene	9748	10779	.	+	.	ID=gene-bas65_0015;Name=bas65_0015;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0015
+MZ501078.1	Genbank	CDS	9748	10779	.	+	0	ID=cds-QXV80640.1;Parent=gene-bas65_0015;Dbxref=NCBI_GP:QXV80640.1;Name=QXV80640.1;gbkey=CDS;locus_tag=bas65_0015;product=ATP-dependent DNA ligase;protein_id=QXV80640.1;transl_table=11
+MZ501078.1	Genbank	gene	10709	11200	.	+	.	ID=gene-bas65_0016;Name=bas65_0016;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0016
+MZ501078.1	Genbank	CDS	10709	11200	.	+	0	ID=cds-QXV80641.1;Parent=gene-bas65_0016;Dbxref=NCBI_GP:QXV80641.1;Name=QXV80641.1;gbkey=CDS;locus_tag=bas65_0016;product=putative homing endonuclease;protein_id=QXV80641.1;transl_table=11;foldseek=HNH nuclease domain-containing protein;cluster=singletonCluster;domain=HNH nuclease;domain=His-Me finger superfamily
+MZ501078.1	Genbank	gene	11268	11357	.	+	.	ID=gene-bas65_0017;Name=bas65_0017;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0017
+MZ501078.1	Genbank	CDS	11268	11357	.	+	0	ID=cds-QXV80642.1;Parent=gene-bas65_0017;Dbxref=NCBI_GP:QXV80642.1;Name=QXV80642.1;gbkey=CDS;locus_tag=bas65_0017;product=hypothetical protein;protein_id=QXV80642.1;transl_table=11;cluster=singletonCluster
+MZ501078.1	Genbank	gene	11382	11498	.	+	.	ID=gene-bas65_0018;Name=bas65_0018;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0018
+MZ501078.1	Genbank	CDS	11382	11498	.	+	0	ID=cds-QXV80643.1;Parent=gene-bas65_0018;Dbxref=NCBI_GP:QXV80643.1;Name=QXV80643.1;gbkey=CDS;locus_tag=bas65_0018;product=hypothetical protein;protein_id=QXV80643.1;transl_table=11
+MZ501078.1	Genbank	gene	11524	11784	.	+	.	ID=gene-bas65_0019;Name=bas65_0019;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0019
+MZ501078.1	Genbank	CDS	11524	11784	.	+	0	ID=cds-QXV80644.1;Parent=gene-bas65_0019;Dbxref=NCBI_GP:QXV80644.1;Name=QXV80644.1;gbkey=CDS;locus_tag=bas65_0019;product=hypothetical protein;protein_id=QXV80644.1;transl_table=11
+MZ501078.1	Genbank	gene	11784	12323	.	+	.	ID=gene-bas65_0020;Name=bas65_0020;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0020
+MZ501078.1	Genbank	CDS	11784	12323	.	+	0	ID=cds-QXV80645.1;Parent=gene-bas65_0020;Dbxref=NCBI_GP:QXV80645.1;Name=QXV80645.1;gbkey=CDS;locus_tag=bas65_0020;product=hypothetical protein;protein_id=QXV80645.1;transl_table=11
+MZ501078.1	Genbank	gene	12313	12435	.	+	.	ID=gene-bas65_0021;Name=bas65_0021;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0021
+MZ501078.1	Genbank	CDS	12313	12435	.	+	0	ID=cds-QXV80646.1;Parent=gene-bas65_0021;Dbxref=NCBI_GP:QXV80646.1;Name=QXV80646.1;gbkey=CDS;locus_tag=bas65_0021;product=hypothetical protein;protein_id=QXV80646.1;transl_table=11;foldseek=Uncharacterized protein YDR194W-A;cluster=singletonCluster
+MZ501078.1	Genbank	gene	12437	12631	.	+	.	ID=gene-bas65_0022;Name=bas65_0022;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0022
+MZ501078.1	Genbank	CDS	12437	12631	.	+	0	ID=cds-QXV80647.1;Parent=gene-bas65_0022;Dbxref=NCBI_GP:QXV80647.1;Name=QXV80647.1;gbkey=CDS;locus_tag=bas65_0022;product=host RNA polymerase inhibitor;protein_id=QXV80647.1;transl_table=11
+MZ501078.1	Genbank	gene	12697	13395	.	+	.	ID=gene-bas65_0023;Name=bas65_0023;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0023
+MZ501078.1	Genbank	CDS	12697	13395	.	+	0	ID=cds-QXV80648.1;Parent=gene-bas65_0023;Dbxref=NCBI_GP:QXV80648.1;Name=QXV80648.1;gbkey=CDS;locus_tag=bas65_0023;product=ssDNA-binding protein;protein_id=QXV80648.1;transl_table=11
+MZ501078.1	Genbank	gene	13396	13851	.	+	.	ID=gene-bas65_0024;Name=bas65_0024;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0024
+MZ501078.1	Genbank	CDS	13396	13851	.	+	0	ID=cds-QXV80649.1;Parent=gene-bas65_0024;Dbxref=NCBI_GP:QXV80649.1;Name=QXV80649.1;gbkey=CDS;locus_tag=bas65_0024;product=endonuclease;protein_id=QXV80649.1;transl_table=11
+MZ501078.1	Genbank	gene	13848	14306	.	+	.	ID=gene-bas65_0025;Name=bas65_0025;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0025
+MZ501078.1	Genbank	CDS	13848	14306	.	+	0	ID=cds-QXV80650.1;Parent=gene-bas65_0025;Dbxref=NCBI_GP:QXV80650.1;Name=QXV80650.1;gbkey=CDS;locus_tag=bas65_0025;product=putative homing endonuclease;protein_id=QXV80650.1;transl_table=11;foldseek=None;cluster=singletonCluster;domain=His-Me finger superfamily;domain=HNH nuclease
+MZ501078.1	Genbank	gene	14278	14733	.	+	.	ID=gene-bas65_0026;Name=bas65_0026;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0026
+MZ501078.1	Genbank	CDS	14278	14733	.	+	0	ID=cds-QXV80651.1;Parent=gene-bas65_0026;Dbxref=NCBI_GP:QXV80651.1;Name=QXV80651.1;gbkey=CDS;locus_tag=bas65_0026;product=endolysin;protein_id=QXV80651.1;transl_table=11
+MZ501078.1	Genbank	gene	14805	16505	.	+	.	ID=gene-bas65_0027;Name=bas65_0027;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0027
+MZ501078.1	Genbank	CDS	14805	16505	.	+	0	ID=cds-QXV80652.1;Parent=gene-bas65_0027;Dbxref=NCBI_GP:QXV80652.1;Name=QXV80652.1;gbkey=CDS;locus_tag=bas65_0027;product=DNA primase/helicase;protein_id=QXV80652.1;transl_table=11
+MZ501078.1	Genbank	gene	16591	16803	.	+	.	ID=gene-bas65_0028;Name=bas65_0028;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0028
+MZ501078.1	Genbank	CDS	16591	16803	.	+	0	ID=cds-QXV80653.1;Parent=gene-bas65_0028;Dbxref=NCBI_GP:QXV80653.1;Name=QXV80653.1;gbkey=CDS;locus_tag=bas65_0028;product=hypothetical protein;protein_id=QXV80653.1;transl_table=11
+MZ501078.1	Genbank	gene	16823	17092	.	+	.	ID=gene-bas65_0029;Name=bas65_0029;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0029
+MZ501078.1	Genbank	CDS	16823	17092	.	+	0	ID=cds-QXV80654.1;Parent=gene-bas65_0029;Dbxref=NCBI_GP:QXV80654.1;Name=QXV80654.1;gbkey=CDS;locus_tag=bas65_0029;product=hypothetical protein;protein_id=QXV80654.1;transl_table=11
+MZ501078.1	Genbank	gene	17167	17574	.	+	.	ID=gene-bas65_0030;Name=bas65_0030;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0030
+MZ501078.1	Genbank	CDS	17167	17574	.	+	0	ID=cds-QXV80655.1;Parent=gene-bas65_0030;Dbxref=NCBI_GP:QXV80655.1;Name=QXV80655.1;gbkey=CDS;locus_tag=bas65_0030;product=hypothetical protein;protein_id=QXV80655.1;transl_table=11
+MZ501078.1	Genbank	gene	17593	19707	.	+	.	ID=gene-bas65_0031;Name=bas65_0031;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0031
+MZ501078.1	Genbank	CDS	17593	19707	.	+	0	ID=cds-QXV80656.1;Parent=gene-bas65_0031;Dbxref=NCBI_GP:QXV80656.1;Name=QXV80656.1;gbkey=CDS;locus_tag=bas65_0031;product=DNA polymerase;protein_id=QXV80656.1;transl_table=11
+MZ501078.1	Genbank	gene	19727	20029	.	+	.	ID=gene-bas65_0032;Name=bas65_0032;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0032
+MZ501078.1	Genbank	CDS	19727	20029	.	+	0	ID=cds-QXV80657.1;Parent=gene-bas65_0032;Dbxref=NCBI_GP:QXV80657.1;Name=QXV80657.1;gbkey=CDS;locus_tag=bas65_0032;product=host HNS-interacting protein;protein_id=QXV80657.1;transl_table=11
+MZ501078.1	Genbank	gene	20029	20238	.	+	.	ID=gene-bas65_0033;Name=bas65_0033;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0033
+MZ501078.1	Genbank	CDS	20029	20238	.	+	0	ID=cds-QXV80658.1;Parent=gene-bas65_0033;Dbxref=NCBI_GP:QXV80658.1;Name=QXV80658.1;gbkey=CDS;locus_tag=bas65_0033;product=inhibitor of RpoS-bound host RNAP;protein_id=QXV80658.1;transl_table=11
+MZ501078.1	Genbank	gene	20238	20396	.	+	.	ID=gene-bas65_0034;Name=bas65_0034;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0034
+MZ501078.1	Genbank	CDS	20238	20396	.	+	0	ID=cds-QXV80659.1;Parent=gene-bas65_0034;Dbxref=NCBI_GP:QXV80659.1;Name=QXV80659.1;gbkey=CDS;locus_tag=bas65_0034;product=host RecBCD nuclease inhibitor;protein_id=QXV80659.1;transl_table=11
+MZ501078.1	Genbank	gene	20383	21285	.	+	.	ID=gene-bas65_0035;Name=bas65_0035;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0035
+MZ501078.1	Genbank	CDS	20383	21285	.	+	0	ID=cds-QXV80660.1;Parent=gene-bas65_0035;Dbxref=NCBI_GP:QXV80660.1;Name=QXV80660.1;gbkey=CDS;locus_tag=bas65_0035;product=exonuclease;protein_id=QXV80660.1;transl_table=11
+MZ501078.1	Genbank	gene	21273	21386	.	+	.	ID=gene-bas65_0036;Name=bas65_0036;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0036
+MZ501078.1	Genbank	CDS	21273	21386	.	+	0	ID=cds-QXV80661.1;Parent=gene-bas65_0036;Dbxref=NCBI_GP:QXV80661.1;Name=QXV80661.1;gbkey=CDS;locus_tag=bas65_0036;product=hypothetical protein;protein_id=QXV80661.1;transl_table=11;cluster=DUF5516 domain-containing protein;clusterRep=MZ501078.1_prot_QXV80661.1_36_unknown;domain=Protein of unknown function DUF5516
+MZ501078.1	Genbank	gene	21484	21738	.	+	.	ID=gene-bas65_0037;Name=bas65_0037;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0037
+MZ501078.1	Genbank	CDS	21484	21738	.	+	0	ID=cds-QXV80662.1;Parent=gene-bas65_0037;Dbxref=NCBI_GP:QXV80662.1;Name=QXV80662.1;gbkey=CDS;locus_tag=bas65_0037;product=hypothetical protein;protein_id=QXV80662.1;transl_table=11
+MZ501078.1	Genbank	gene	21743	22009	.	+	.	ID=gene-bas65_0038;Name=bas65_0038;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0038
+MZ501078.1	Genbank	CDS	21743	22009	.	+	0	ID=cds-QXV80663.1;Parent=gene-bas65_0038;Dbxref=NCBI_GP:QXV80663.1;Name=QXV80663.1;gbkey=CDS;locus_tag=bas65_0038;product=hypothetical protein;protein_id=QXV80663.1;transl_table=11;cluster=singletonCluster;domain=Bacteriophage T7-like, protein 6.7
+MZ501078.1	Genbank	gene	22009	22410	.	+	.	ID=gene-bas65_0039;Name=bas65_0039;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0039
+MZ501078.1	Genbank	CDS	22009	22410	.	+	0	ID=cds-QXV80664.1;Parent=gene-bas65_0039;Dbxref=NCBI_GP:QXV80664.1;Name=QXV80664.1;gbkey=CDS;locus_tag=bas65_0039;product=hypothetical protein;protein_id=QXV80664.1;transl_table=11
+MZ501078.1	Genbank	gene	22414	22716	.	+	.	ID=gene-bas65_0040;Name=bas65_0040;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0040
+MZ501078.1	Genbank	CDS	22414	22716	.	+	0	ID=cds-QXV80665.1;Parent=gene-bas65_0040;Dbxref=NCBI_GP:QXV80665.1;Name=QXV80665.1;gbkey=CDS;locus_tag=bas65_0040;product=tail assembly protein;protein_id=QXV80665.1;transl_table=11
+MZ501078.1	Genbank	gene	22731	24341	.	+	.	ID=gene-bas65_0041;Name=bas65_0041;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0041
+MZ501078.1	Genbank	CDS	22731	24341	.	+	0	ID=cds-QXV80666.1;Parent=gene-bas65_0041;Dbxref=NCBI_GP:QXV80666.1;Name=QXV80666.1;gbkey=CDS;locus_tag=bas65_0041;product=head-tail-joining protein;protein_id=QXV80666.1;transl_table=11
+MZ501078.1	Genbank	gene	24441	25364	.	+	.	ID=gene-bas65_0042;Name=bas65_0042;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0042
+MZ501078.1	Genbank	CDS	24441	25364	.	+	0	ID=cds-QXV80667.1;Parent=gene-bas65_0042;Dbxref=NCBI_GP:QXV80667.1;Name=QXV80667.1;gbkey=CDS;locus_tag=bas65_0042;product=capsid assembly protein;protein_id=QXV80667.1;transl_table=11
+MZ501078.1	Genbank	gene	25463	26506	.	+	.	ID=gene-bas65_0043;Name=bas65_0043;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0043
+MZ501078.1	Genbank	CDS	25463	26506	.	+	0	ID=cds-QXV80668.1;Parent=gene-bas65_0043;Dbxref=NCBI_GP:QXV80668.1;Name=QXV80668.1;gbkey=CDS;locus_tag=bas65_0043;product=major capsid protein;protein_id=QXV80668.1;transl_table=11
+MZ501078.1	Genbank	gene	26727	27317	.	+	.	ID=gene-bas65_0044;Name=bas65_0044;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0044
+MZ501078.1	Genbank	CDS	26727	27317	.	+	0	ID=cds-QXV80669.1;Parent=gene-bas65_0044;Dbxref=NCBI_GP:QXV80669.1;Name=QXV80669.1;gbkey=CDS;locus_tag=bas65_0044;product=tail tube protein A;protein_id=QXV80669.1;transl_table=11
+MZ501078.1	Genbank	gene	27338	29722	.	+	.	ID=gene-bas65_0045;Name=bas65_0045;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0045
+MZ501078.1	Genbank	CDS	27338	29722	.	+	0	ID=cds-QXV80670.1;Parent=gene-bas65_0045;Dbxref=NCBI_GP:QXV80670.1;Name=QXV80670.1;gbkey=CDS;locus_tag=bas65_0045;product=tail tube protein B;protein_id=QXV80670.1;transl_table=11
+MZ501078.1	Genbank	gene	29803	30219	.	+	.	ID=gene-bas65_0046;Name=bas65_0046;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0046
+MZ501078.1	Genbank	CDS	29803	30219	.	+	0	ID=cds-QXV80671.1;Parent=gene-bas65_0046;Dbxref=NCBI_GP:QXV80671.1;Name=QXV80671.1;gbkey=CDS;locus_tag=bas65_0046;product=putative scaffold protein;protein_id=QXV80671.1;transl_table=11
+MZ501078.1	Genbank	gene	30224	30814	.	+	.	ID=gene-bas65_0047;Name=bas65_0047;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0047
+MZ501078.1	Genbank	CDS	30224	30814	.	+	0	ID=cds-QXV80672.1;Parent=gene-bas65_0047;Dbxref=NCBI_GP:QXV80672.1;Name=QXV80672.1;gbkey=CDS;locus_tag=bas65_0047;product=DNA injection channel protein A;protein_id=QXV80672.1;transl_table=11
+MZ501078.1	Genbank	gene	30821	33064	.	+	.	ID=gene-bas65_0048;Name=bas65_0048;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0048
+MZ501078.1	Genbank	CDS	30821	33064	.	+	0	ID=cds-QXV80673.1;Parent=gene-bas65_0048;Dbxref=NCBI_GP:QXV80673.1;Name=QXV80673.1;gbkey=CDS;locus_tag=bas65_0048;product=DNA injection protein B;protein_id=QXV80673.1;transl_table=11
+MZ501078.1	Genbank	gene	33091	37551	.	+	.	ID=gene-bas65_0049;Name=bas65_0049;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0049
+MZ501078.1	Genbank	CDS	33091	37551	.	+	0	ID=cds-QXV80674.1;Parent=gene-bas65_0049;Dbxref=NCBI_GP:QXV80674.1;Name=QXV80674.1;gbkey=CDS;locus_tag=bas65_0049;product=DNA injection protein C;protein_id=QXV80674.1;transl_table=11
+MZ501078.1	Genbank	gene	37624	39423	.	+	.	ID=gene-bas65_0050;Name=bas65_0050;gbkey=Gene;gene_biotype=protein_coding;locus_tag=bas65_0050
+MZ501078.1	Genbank	CDS	37624	39423	.	+	0	ID=cds-QXV80675.1;Parent=gene-bas65_0050;Dbxref=NCBI_GP:QXV80675.1;Name=QXV80675.1;gbkey=CDS;locus_tag=bas65_0050;product=tail fiber protein;protein_id=QXV80675.1;transl_table=11

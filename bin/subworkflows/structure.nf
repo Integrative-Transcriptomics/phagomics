@@ -10,9 +10,9 @@ workflow STRUCTURE_PREDICITON {
     main:
         if( params.wsl ) {
             // testsetup with cached results
-            // Channel.fromPath(["./100test/*_rank_001*.pdb", "./100test/*_rank_001*.json"]) 
+            // Channel.fromPath(["./res/*_rank_001*.pdb", "./res/*_rank_001*.json"]) 
             // | map { it -> 
-            //     tuple((it =~ /100test\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
+            //     tuple((it =~ /res\/(.*?)_(unrelaxed|relaxed|scores)/)[0][1], it)
             // }
             // Output is colabofold .pdb and .json. The following extracts the id from filename and maps
             // the files according to id

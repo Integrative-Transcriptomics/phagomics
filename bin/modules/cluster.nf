@@ -9,8 +9,8 @@ process mmseqscluster {
     path(prot_db)
 
     output:
-    path("protein_clusters/clu1_rep_seq.*"), emit: reps
-    //path("protein_clusters/clu1*.*") // get rest of cluster files if needed (requires input change in refinement step)
+    path("protein_clusters/clu1_rep_seq.fasta"), emit: reps
+    path("protein_clusters/clu1_cluster.tsv")
 
     script:
     """
@@ -22,8 +22,7 @@ process mmseqscluster {
         protein_clusters/tmp \
         --max-seqs 50000 \
         -c 0.9 \
-        --min-seq-id 0.9 \
-        --threads 5
+        --min-seq-id 0.9
     """
 }
 
@@ -49,7 +48,6 @@ process mmseqsclusterRefine {
         protein_clusters/tmp \
         --max-seqs 50000 \
         -c 0.75 \
-        --min-seq-id 0.6 \
-        --threads 5
+        --min-seq-id 0.6
     """
 }

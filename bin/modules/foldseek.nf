@@ -1,10 +1,13 @@
 #!/usr/bin/env nextflow
 
 // mount for database
-if( (params.foldseekdb ==  ".") || (params.validdb ==  "."))
+if( (params.foldseekdb ==  ".") )
     throw new Exception("Missing foldseek database(s)!")
 database = file(params.foldseekdb)
-validateDB = file(params.validdb)
+
+if( params.validdb ) {
+    validateDB = file(params.validdb)
+}
 
 // Input: [gene-id, path] rank 1 predicted structures, .pdb format
 // Output: Foldseek aln file
@@ -13,7 +16,7 @@ validateDB = file(params.validdb)
 process foldseek {
     //debug true
     publishDir "$params.outDir/foldseek", mode: 'copy'
-    maxForks 10
+    maxForks 6
     containerOptions { "--rm" }
 
     input:
@@ -41,18 +44,18 @@ process foldseekValidate {
     // Can't have TM-score (alntmscore) with current BaselDB setup
     //debug true
     publishDir "$params.outDir/foldseek/validate", mode: 'copy'
-    maxForks 4 // to run locally with limited memory
+    maxForks 1 // to run locally with limited memory
     containerOptions { "--rm" }
 
     input:
     tuple val(id), path(structures), path(json)
 
     output:
-    tuple val(id), path(aln), path(json)
+    tuple val(id), path("*.tsv"), path(json)
 
     script:
     """
-    foldseek easy-search "$structures" "$validateDB" aln tmp \
+    foldseek easy-search "$structures" "$validateDB" ${id}.tsv tmp \
     --format-output "query,target,fident,evalue,bits" 
     """
 }
