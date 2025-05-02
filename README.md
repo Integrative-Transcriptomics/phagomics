@@ -50,7 +50,7 @@ Results are stored in the `results` directory. Files for each major step are sto
 
 `analysis.py` calculates statistics about the results. Also must be run before `getPdbs.py`.
 
-`getPdbs.py` gets the .pdb files (protein structure files) from the colabfold subfolder, for structures that had a putative function assigned through [`Foldseek`](https://github.com/steineggerlab/foldseek).
+`getPdbs.py` gets the .pdb files (protein structure files) from the colabfold subfolder, for structures that had a putative function assigned through [`Foldseek`](https://github.com/steineggerlab/foldseek). These can then be clustered using Foldseek to identify similar predicted structures.
 
 `visualizationScripts.py` creates three figures: 
 1. Barplot showing the ratio of **known** to **unknown** proteins per phage.
