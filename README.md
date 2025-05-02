@@ -18,7 +18,6 @@ The pipeline can be run using the two Docker images provided in `dockerfiles`.
   <img alt="Fallback" src="pipeline-subway-alt.png">
 </picture>
 
---
 1. Input proteins are filtered based on their annotation. Proteins annotated with **hypothetical, putative** or **postulated** are labelled as **unknown**. The rest as **known**.
 2. Proteins are clusters twice using [`MMseqs2`](https://github.com/soedinglab/MMseqs2). First to reduce redundance, and second to group related proteins. The cluster representatives are used for further analysis.
     - **Unknown** proteins that are clustered together with **known** proteins are assigned the function of the **known** protein. 
