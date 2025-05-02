@@ -11,7 +11,13 @@ The pipeline is build using Nextflow and Python. All scripts can found in `bin/`
 The pipeline can be run using the two Docker images provided in `dockerfiles`.
 
 ## Pipeline summary
-![image](pipeline-subway.png)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="pipeline-subway-alt.png">
+  <source media="(prefers-color-scheme: light)" srcset="pipeline-subway.png">
+  <img alt="Fallback" src="pipeline-subway-alt.png">
+</picture>
+
 --
 1. Input proteins are filtered based on their annotation. Proteins annotated with **hypothetical, putative** or **postulated** are labelled as **unknown**. The rest as **known**.
 2. Proteins are clusters twice using [`MMseqs2`](https://github.com/soedinglab/MMseqs2). First to reduce redundance, and second to group related proteins. The cluster representatives are used for further analysis.
