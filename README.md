@@ -37,6 +37,15 @@ nextflow run main.nf \
 --colabdb=databaseDirectory/colabfolddb \
 --email=valid-E-mail-adress
 ```
+
+To run without the colabfold structure database and with the Foldseek database downloaded like instructed below:
+```bash
+nextflow run main.nf \
+--foldseekdb=databases/af_prot/db \
+--wsl \
+--email=valid-E-mail-adress
+```
+
 For further information run:
 ```bash
 nextflow run main.nf --help
@@ -44,6 +53,32 @@ nextflow run main.nf --help
 
 ## Pipeline output
 Results are stored in the `results` directory. Files for each major step are stored in sepereate sub-folders.
+
+## Docker
+Docker images can be installed with:
+```bash
+docker build -t phagomics dockerfiles/docker_phage_image
+```
+and
+```bash
+docker build -t colabfold dockerfiles/docker_colabfold
+```
+
+## Databases
+### Foldseek (Structural alignment)
+The Foldseek database (Alphafold/Proteome) can be downloaded via the docker image using the following commands:
+```bash
+mkdir -p databases/af_prot
+```
+```bash
+docker run --rm \
+-v ./databases/af_prot:/data \
+phagomics \
+foldseek databases Alphafold/Proteome /data/db /data/tmp
+```
+
+### Colabfold (structure MSA generation)
+For information on how to install the colabfold search database (~2TB!) used for structure prediction, visit: https://colabfold.mmseqs.com/
 
 ## Analysis scripts
 `bin/analysisScripts/analysis.py`, `bin/analysisScripts/visualizationScripts.py` and `bin/analysisScripts/getPdbs.py` are the main scipts and can be used with default pipeline execution (fingers crossed).
