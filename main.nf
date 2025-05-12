@@ -1,5 +1,10 @@
 #!/usr/bin/env nextflow
 
+if (params.help) {
+        helpMsg()
+        exit 0
+    }
+
 include { FILTER                } from "./bin/subworkflows/filter.nf"
 include { CLUSTER               } from "./bin/subworkflows/cluster.nf"
 include { STRUCTURE_PREDICITON  } from "./bin/subworkflows/structure.nf"
@@ -35,12 +40,8 @@ def helpMsg() {
     """
 }
 
-workflow {
 
-    if (params.help) {
-        helpMsg()
-        exit 0
-    }
+workflow {
 
     ///
     /// IMPORT & FILTERING
