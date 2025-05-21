@@ -87,6 +87,8 @@ For information on how to install the colabfold search database (~2TB!) used for
 
 `getPdbs.py` gets the .pdb files (protein structure files) from the colabfold subfolder, for structures that had a putative function assigned through [`Foldseek`](https://github.com/steineggerlab/foldseek). These can then be clustered using Foldseek to identify similar predicted structures.
 
+For more details and a example workflow see `bin/analysisScripts/analysis_workflow.md`
+
 `visualizationScripts.py` creates three figures: 
 1. Barplot showing the ratio of **known** to **unknown** proteins per phage.
 2. Barplot showing the cluster sizes and makeup.
